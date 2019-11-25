@@ -34,6 +34,7 @@ function the_excerpt_max_charlength( $charlength ){
     <meta name="HandheldFriendly" content="true">
 
     <!-- Stylesheet -->
+    <link href="<?php bloginfo('template_url'); ?>/static/css/main.css" rel="stylesheet" type="text/css">
     <link href="<?php bloginfo('template_url'); ?>/static/css/main.min.css" rel="stylesheet" type="text/css">
     <link href="<?php bloginfo('template_url'); ?>/static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
 
