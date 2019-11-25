@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2504e9bb-1d3f-497a-8647-f16f282eb8dc" name="Default Changelist" comment="" />
+    <list default="true" id="2504e9bb-1d3f-497a-8647-f16f282eb8dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +21,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-807">
+            <state relative-caret-position="612">
               <caret line="36" column="105" selection-start-line="36" selection-start-column="105" selection-end-line="36" selection-end-column="105" />
             </state>
           </provider>
@@ -31,8 +33,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front-page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="-2006">
+              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+              <folding>
+                <element signature="e#169#268#0#HTML" expanded="true" />
+                <element signature="e#4861#4959#0#HTML" expanded="true" />
+                <element signature="e#10399#10492#0#HTML" expanded="true" />
+                <element signature="e#11103#11196#0#HTML" expanded="true" />
+                <element signature="e#11833#11926#0#HTML" expanded="true" />
+                <element signature="e#12646#12739#0#HTML" expanded="true" />
+                <element signature="e#13350#13443#0#HTML" expanded="true" />
+                <element signature="e#14080#14173#0#HTML" expanded="true" />
+                <element signature="e#14893#14986#0#HTML" expanded="true" />
+                <element signature="e#15597#15690#0#HTML" expanded="true" />
+                <element signature="e#16327#16420#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="56" column="61" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="61" />
+            <state relative-caret-position="417">
+              <caret line="142" selection-start-line="142" selection-end-line="142" />
             </state>
           </provider>
         </entry>
@@ -59,8 +74,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>ЛИДЕР В ОБЛАСТИ ИННОВАЦИОННЫХ РЕШЕНИЙ</find>
       <find>static</find>
     </findStrings>
+    <dirStrings>
+      <dir>E:\Git\infNTY</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,6 +89,7 @@
       <list>
         <option value="$PROJECT_DIR$/front-page.php" />
         <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/footer.php" />
       </list>
     </option>
   </component>
@@ -83,7 +103,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1300" />
@@ -150,15 +170,15 @@
       <option name="presentableId" value="Default" />
       <updated>1574231659464</updated>
       <workItem from="1574231660534" duration="796000" />
-      <workItem from="1574655958201" duration="2325000" />
+      <workItem from="1574655958201" duration="2842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3121000" />
+    <option name="totallyTimeSpent" value="3638000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
@@ -193,13 +213,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="56" column="61" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-136">
@@ -213,17 +226,37 @@
     <entry file="file://$PROJECT_DIR$/front-page — копия.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-page.php">
+    <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="612">
+          <caret line="36" column="105" selection-start-line="36" selection-start-column="105" selection-end-line="36" selection-end-column="105" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
+    <entry file="file://$PROJECT_DIR$/front-page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-807">
-          <caret line="36" column="105" selection-start-line="36" selection-start-column="105" selection-end-line="36" selection-end-column="105" />
+        <state relative-caret-position="-2006">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="e#169#268#0#HTML" expanded="true" />
+            <element signature="e#4861#4959#0#HTML" expanded="true" />
+            <element signature="e#10399#10492#0#HTML" expanded="true" />
+            <element signature="e#11103#11196#0#HTML" expanded="true" />
+            <element signature="e#11833#11926#0#HTML" expanded="true" />
+            <element signature="e#12646#12739#0#HTML" expanded="true" />
+            <element signature="e#13350#13443#0#HTML" expanded="true" />
+            <element signature="e#14080#14173#0#HTML" expanded="true" />
+            <element signature="e#14893#14986#0#HTML" expanded="true" />
+            <element signature="e#15597#15690#0#HTML" expanded="true" />
+            <element signature="e#16327#16420#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
         </state>
       </provider>
     </entry>
