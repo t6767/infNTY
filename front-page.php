@@ -14,6 +14,7 @@
     <meta name="HandheldFriendly" content="true">
 
     <!-- Stylesheet -->
+    <link href="<?php bloginfo('template_url'); ?>/static/css/main.css" rel="stylesheet" type="text/css">
     <link href="<?php bloginfo('template_url'); ?>/static/css/main.min.css" rel="stylesheet" type="text/css">
     <link href="<?php bloginfo('template_url'); ?>/static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
 
@@ -394,7 +395,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <img src="static/img/general/logo2.svg" class="footer__logo" alt="">
+                        <img src="<?php bloginfo('template_url'); ?>/static/img/general/logo2.svg" class="footer__logo" alt="">
                         <p>Все права защищены
                             <br>2019 год</p>
                     </div>
