@@ -34,8 +34,8 @@ function the_excerpt_max_charlength( $charlength ){
     <meta name="HandheldFriendly" content="true">
 
     <!-- Stylesheet -->
-    <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
-    <link href="static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
+    <link href="<?php bloginfo('template_url'); ?>/static/css/main.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php bloginfo('template_url'); ?>/static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
 
     <!--  Open Graph Tags -->
     <meta property="og:title" content="" />
@@ -58,8 +58,8 @@ function the_excerpt_max_charlength( $charlength ){
         (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
     </script>
     <!--[if lt IE 9 ]>
-    <script src="static/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script>
-    <script src="static/js/separate-js/respond.min.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/static/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/static/js/separate-js/respond.min.js" type="text/javascript"></script>
     <meta content="no" http-equiv="imagetoolbar">
     <![endif]-->
 </head>
