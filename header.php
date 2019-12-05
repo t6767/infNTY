@@ -104,7 +104,7 @@ function the_excerpt_max_charlength( $charlength ){
                             wp_nav_menu(array('menu' => 'menue', 'menu_class' => 'menue'));
                             ?>
                         </nav>
-                        <div class="lang">
+                        <div class="lang" style="display: none">
                             <a href="/ru/" class="lang__link -active">РУС</a>
                             <a href="/kz/" class="lang__link">КАЗ</a>
                         </div>
