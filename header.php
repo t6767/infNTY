@@ -51,7 +51,7 @@ function the_excerpt_max_charlength( $charlength ){
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/favicon.png">
 
     <script>
         (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
