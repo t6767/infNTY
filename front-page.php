@@ -42,7 +42,6 @@
     <script src="<?php bloginfo('template_url'); ?>/static/js/separate-js/respond.min.js" type="text/javascript"></script>
     <meta content="no" http-equiv="imagetoolbar">
     <![endif]-->
-    <?php wp_head(); ?>
 </head>
 
 <body>
