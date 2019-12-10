@@ -164,10 +164,6 @@ if (($_SERVER[REQUEST_URI]=="/") || ($_SERVER[REQUEST_URI]=="/ru/") || ($_SERVER
                         wp_nav_menu(array('menu' => 'menue', 'menu_class' => 'menue'));
                         ?>
                     </nav>
-                    <div class="lang">
-                        <a href="#" class="lang__link -active">РУС</a>
-                        <a href="#" class="lang__link">КАЗ</a>
-                    </div>
                     <button type="button" class="burger jsBurgerMenu">
                         <span class="burger__item"></span>
                     </button>
