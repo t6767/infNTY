@@ -17,7 +17,7 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/star" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -66,7 +66,7 @@
       <workItem from="1574655958201" duration="3647000" />
       <workItem from="1575521807135" duration="621000" />
       <workItem from="1575887417624" duration="21000" />
-      <workItem from="1575960020177" duration="3508000" />
+      <workItem from="1575960020177" duration="3778000" />
     </task>
     <servers />
   </component>
