@@ -17,6 +17,21 @@ function the_excerpt_max_charlength( $charlength ){
         echo $excerpt;
     }
 }
+
+$transperent="";
+if (($_SERVER[REQUEST_URI]=="/") || ($_SERVER[REQUEST_URI]=="/ru/") || ($_SERVER[REQUEST_URI]=="/kz/"))
+{
+    $transperent=" -transparent";
+}
+
+///////////////дополнитьь
+/*
+  <nav class="navigation">
+                                <a href="#" class="navigation__link">Решения</a>
+                                <a href="#" class="navigation__link -active">Услуги</a>
+                                <a href="#" class="navigation__link">Контакты</a>
+                            </nav>
+ */
 ?>
 <!doctype html>
 <html class="no-js" lang="ru">
@@ -66,50 +81,97 @@ function the_excerpt_max_charlength( $charlength ){
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-<div class="wrapper">
-    <div class="menu">
-        <div class="menu__col">
-            <button type="button" class="menu__close">
-                <span class="menu__close-item"></span>
-            </button>
-            <div class="menu__inner">
+<body>
 
+<div class="menu">
+    <div class="menu__col">
+        <button type="button" class="menu__close">Закрыть</button>
+        <div class="menu__inner">
+            <form class="menu__search">
+                <input type="search" class="menu__search-input">
+                <button type="button" class="menu__search-button">Искать</button>
+            </form>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">О компании</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Решения</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Услуги</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Пресс-центр</a>
+                    <ul class="menu__sublist">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Новости</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">События</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Мероприятия</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">СМИ о нас</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакт с PR-службой</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Услуги</a>
+                </li>
+            </ul>
+            <div class="menu__footer">
+                <div class="menu__info">
+                    <p><strong>Алматы</strong>
+                    </p>
+                    <a href="#" class="menu__phone">+7 (727) 232 22 22</a>
+                </div>
+                <div class="menu__info">
+                    <p><strong>Нур-Султан</strong>
+                    </p>
+                    <a href="#" class="menu__phone">+7 (727) 232 22 22</a>
+                </div>
+                <div class="menu__social">
+                    <a href="#" class="menu__footer-link -facebook"></a>
+                    <a href="#" class="menu__footer-link -linkedin"></a>
+                    <a href="#" class="menu__footer-link -youtube"></a>
+                    <a href="#" class="menu__footer-link -twitter"></a>
+                </div>
             </div>
         </div>
-        <div class="menu__overlay"></div>
     </div>
+    <div class="menu__overlay"></div>
+</div>
 
-    <!-- App Begin -->
-    <div class="app">
+<!-- App Begin -->
+<div class="app">
 
-        <!-- App Wrapper Begin -->
-        <div class="app__wrapper">
-            <?php
-            $transperent="";
-            if (($_SERVER[REQUEST_URI]=="/") || ($_SERVER[REQUEST_URI]=="/ru/") || ($_SERVER[REQUEST_URI]=="/kz/"))
-            {
-                $transperent=" -transparent";
-            }
-            ?>
-            <!-- Header Begin -->
-            <header class="header<?=$transperent ?>">
-                <div class="container header__container">
-                    <a href="/" class="logo" title="infin-it">Infin-it</a>
-                    <div class="header__right">
-                        <nav class="navigation">
-                            <?php
-                            wp_nav_menu(array('menu' => 'menue', 'menu_class' => 'menue'));
-                            ?>
-                        </nav>
-                        <div class="lang" style="display: none">
-                            <a href="/ru/" class="lang__link -active">РУС</a>
-                            <a href="/kz/" class="lang__link">КАЗ</a>
-                        </div>
-                        <button type="button" class="burger jsBurgerMenu">
-                            <span class="burger__item"></span>
-                        </button>
+    <!-- App Wrapper Begin -->
+    <div class="app__wrapper">
+
+        <!-- Header Begin -->
+        <header class="header<?=$transperent ?>">
+            <div class="container header__container">
+                <a href="#" class="logo" title="infin-it">Infin-it</a>
+                <div class="header__right">
+                    <nav class="navigation">
+                        <?php
+                        wp_nav_menu(array('menu' => 'menue', 'menu_class' => 'menue'));
+                        ?>
+                    </nav>
+                    <div class="lang">
+                        <a href="#" class="lang__link -active">РУС</a>
+                        <a href="#" class="lang__link">КАЗ</a>
                     </div>
+                    <button type="button" class="burger jsBurgerMenu">
+                        <span class="burger__item"></span>
+                    </button>
                 </div>
-            </header>
-            <!--/. Header end -->
+            </div>
+        </header>
+        <!--/. Header end -->

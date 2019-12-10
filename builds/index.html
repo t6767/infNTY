@@ -118,14 +118,14 @@
             <div class="app__wrapper">
 
                 <!-- Header Begin -->
-                <header class="header -transparent">
+                <header class="header<?=$transperent ?>">
                     <div class="container header__container">
                         <a href="#" class="logo" title="infin-it">Infin-it</a>
                         <div class="header__right">
                             <nav class="navigation">
-                                <a href="#" class="navigation__link">Решения</a>
-                                <a href="#" class="navigation__link -active">Услуги</a>
-                                <a href="#" class="navigation__link">Контакты</a>
+                                <?php
+                            wp_nav_menu(array('menu' => 'menue', 'menu_class' => 'menue'));
+                                ?>
                             </nav>
                             <div class="lang">
                                 <a href="#" class="lang__link -active">РУС</a>
