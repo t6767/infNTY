@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2504e9bb-1d3f-497a-8647-f16f282eb8dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,16 +15,6 @@
     <execution>
       <executable />
     </execution>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>ЛИДЕР В ОБЛАСТИ ИННОВАЦИОННЫХ РЕШЕНИЙ</find>
-      <find>static</find>
-      <find>main.</find>
-    </findStrings>
-    <dirStrings>
-      <dir>E:\Git\infNTY</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,7 +65,7 @@
       <workItem from="1574655958201" duration="3647000" />
       <workItem from="1575521807135" duration="621000" />
       <workItem from="1575887417624" duration="21000" />
-      <workItem from="1575960020177" duration="2971000" />
+      <workItem from="1575960020177" duration="3166000" />
     </task>
     <servers />
   </component>

@@ -67,7 +67,7 @@ if (($_SERVER[REQUEST_URI]=="/") || ($_SERVER[REQUEST_URI]=="/ru/") || ($_SERVER
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/favicon.png">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
     </script>
