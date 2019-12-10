@@ -42,6 +42,7 @@
     <script src="static/js/separate-js/respond.min.js" type="text/javascript"></script>
     <meta content="no" http-equiv="imagetoolbar">
     <![endif]-->
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -584,7 +585,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="static/js/main.min.js"></script>
 <script src="static/js/separate-js/scripts.js"></script>
-
+<?php wp_footer(); ?>
 </body>
 
 </html>
