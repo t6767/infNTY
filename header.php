@@ -157,7 +157,7 @@ if (($_SERVER[REQUEST_URI]=="/") || ($_SERVER[REQUEST_URI]=="/ru/") || ($_SERVER
         <!-- Header Begin -->
         <header class="header<?=$transperent ?>">
             <div class="container header__container">
-                <a href="#" class="logo" title="infin-it">Infin-it</a>
+                <a href="/" class="logo" title="infin-it">Infin-it</a>
                 <div class="header__right">
                     <nav class="navigation">
                         <?php
