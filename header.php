@@ -17,21 +17,6 @@ function the_excerpt_max_charlength( $charlength ){
         echo $excerpt;
     }
 }
-
-$transperent="";
-if (($_SERVER[REQUEST_URI]=="/") || ($_SERVER[REQUEST_URI]=="/ru/") || ($_SERVER[REQUEST_URI]=="/kz/"))
-{
-    $transperent=" -transparent";
-}
-
-///////////////дополнитьь
-/*
-  <nav class="navigation">
-                                <a href="#" class="navigation__link">Решения</a>
-                                <a href="#" class="navigation__link -active">Услуги</a>
-                                <a href="#" class="navigation__link">Контакты</a>
-                            </nav>
- */
 ?>
 <!doctype html>
 <html class="no-js" lang="ru">
@@ -40,13 +25,14 @@ if (($_SERVER[REQUEST_URI]=="/") || ($_SERVER[REQUEST_URI]=="/ru/") || ($_SERVER
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php bloginfo('name'); ?></title>
-    <meta content="" name="description">
+    <meta content="<?php bloginfo('description'); ?>" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="format-detection" content="telephone=no">
     <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
     <meta name="HandheldFriendly" content="true">
+
     <!-- Stylesheet -->
     <link href="<?php bloginfo('template_url'); ?>/static/css/main.min.css" rel="stylesheet" type="text/css">
     <link href="<?php bloginfo('template_url'); ?>/static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
@@ -67,7 +53,7 @@ if (($_SERVER[REQUEST_URI]=="/") || ($_SERVER[REQUEST_URI]=="/ru/") || ($_SERVER
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/favicon.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script>
         (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
     </script>
@@ -76,8 +62,6 @@ if (($_SERVER[REQUEST_URI]=="/") || ($_SERVER[REQUEST_URI]=="/ru/") || ($_SERVER
     <script src="<?php bloginfo('template_url'); ?>/static/js/separate-js/respond.min.js" type="text/javascript"></script>
     <meta content="no" http-equiv="imagetoolbar">
     <![endif]-->
-</head>
-
     <?php wp_head(); ?>
 </head>
 
@@ -153,7 +137,13 @@ if (($_SERVER[REQUEST_URI]=="/") || ($_SERVER[REQUEST_URI]=="/ru/") || ($_SERVER
 
     <!-- App Wrapper Begin -->
     <div class="app__wrapper">
-
+        <?php
+        $transperent="";
+        if ($_SERVER['REQUEST_URI']=="/")
+        {
+            $transperent=" -transparent";
+        }
+        ?>
         <!-- Header Begin -->
         <header class="header<?=$transperent ?>">
             <div class="container header__container">
