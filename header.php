@@ -32,9 +32,7 @@ function the_excerpt_max_charlength( $charlength ){
     <meta name="format-detection" content="telephone=no">
     <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
     <meta name="HandheldFriendly" content="true">
-
     <!-- Stylesheet -->
-    <link href="<?php bloginfo('template_url'); ?>/static/css/main.css" rel="stylesheet" type="text/css">
     <link href="<?php bloginfo('template_url'); ?>/static/css/main.min.css" rel="stylesheet" type="text/css">
     <link href="<?php bloginfo('template_url'); ?>/static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
 
