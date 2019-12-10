@@ -14,8 +14,8 @@
     <meta name="HandheldFriendly" content="true">
 
     <!-- Stylesheet -->
-    <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
-    <link href="static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
+    <link href="<?php bloginfo('template_url'); ?>/static/css/main.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php bloginfo('template_url'); ?>/static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
 
     <!--  Open Graph Tags -->
     <meta property="og:title" content="" />
@@ -38,8 +38,8 @@
         (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
     </script>
     <!--[if lt IE 9 ]>
-    <script src="static/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script>
-    <script src="static/js/separate-js/respond.min.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/static/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/static/js/separate-js/respond.min.js" type="text/javascript"></script>
     <meta content="no" http-equiv="imagetoolbar">
     <![endif]-->
     <?php wp_head(); ?>
@@ -166,8 +166,8 @@
                 <div class="entry__slider">
                     <div class="swiper-container jsEntrySlider">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background-image: url('static/img/content/entry-1.jpg')"></div>
-                            <div class="swiper-slide" style="background-image: url('static/img/content/entry-2.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/entry-1.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/entry-2.jpg')"></div>
                         </div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                         </div>
                         <div class="col-md-4 text-right">
                             <div class="intro-about__top-content">
-                                <img src="static/img/content/infin.png" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/infin.png" alt="">
                                 <div class="intro-about__top-stats">
                                     <div>
                                         <span class="jsCountStats">10</span>+
@@ -230,13 +230,13 @@
             <!-- Cta Begin -->
             <section class="cta">
                 <div class="container">
-                    <div class="cta__card" style="background-image: url('static/img/content/info-bg.jpg')">
+                    <div class="cta__card" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/info-bg.jpg')">
                         <div class="cta__left">
                             <div class="cta__title">Заполните бриф и получите план реализации Вашего проекта</div>
                             <div class="cta__subtitle">С расчетом стоимости и сроков реализации</div>
                             <a href="#" class="button cta__button">Заполнить бриф</a>
                         </div>
-                        <img src="static/img/general/briefing.png" class="cta__icon" alt="">
+                        <img src="<?php bloginfo('template_url'); ?>/static/img/general/briefing.png" class="cta__icon" alt="">
                     </div>
                 </div>
             </section>
@@ -318,71 +318,71 @@
                     <div class="features row">
                         <div class="features__col">
                             <a href="#" class="features__item">
-                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">мобильный банкинг</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('static/img/content/p2.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p2.jpg')"></div>
                             </a>
                             <a href="#" class="features__item">
-                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">портал самообслуживания</div>
                                 <div class="features__text">Коммуникация без участия или с минимальным участием менеджеров Банка</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('static/img/content/p3.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p3.jpg')"></div>
                             </a>
                             <a href="#" class="features__item">
-                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">мобильный банкинг</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('static/img/content/p4.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p4.jpg')"></div>
                             </a>
                         </div>
                         <div class="features__col">
                             <a href="#" class="features__item">
-                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">мобильный банкинг</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('static/img/content/p2.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p2.jpg')"></div>
                             </a>
                             <a href="#" class="features__item">
-                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">портал самообслуживания</div>
                                 <div class="features__text">Коммуникация без участия или с минимальным участием менеджеров Банка</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('static/img/content/p3.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p3.jpg')"></div>
                             </a>
                             <a href="#" class="features__item">
-                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">мобильный банкинг</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('static/img/content/p4.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p4.jpg')"></div>
                             </a>
                         </div>
                         <div class="features__col">
                             <a href="#" class="features__item">
-                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">мобильный банкинг</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('static/img/content/p2.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p2.jpg')"></div>
                             </a>
                             <a href="#" class="features__item">
-                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">портал самообслуживания</div>
                                 <div class="features__text">Коммуникация без участия или с минимальным участием менеджеров Банка</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('static/img/content/p3.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p3.jpg')"></div>
                             </a>
                             <a href="#" class="features__item">
-                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">мобильный банкинг</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('static/img/content/p4.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p4.jpg')"></div>
                             </a>
                         </div>
                     </div>
@@ -396,34 +396,34 @@
                     <div class="section__background-title" data-parallax='{"y": 80, "smoothness": 65}'>НАМ ДОВЕРЯЮТ</div>
                     <div class="row align-items-center" vertical-gutter="40">
                         <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="static/img/content/prime_source.png" class="w-100" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/prime_source.png" class="w-100" alt="">
                         </div>
                         <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="static/img/content/sberbank.png" class="w-100" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/sberbank.png" class="w-100" alt="">
                         </div>
                         <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="static/img/content/forbes-logo.png" class="w-100" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/forbes-logo.png" class="w-100" alt="">
                         </div>
                         <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="static/img/content/prime_source.png" class="w-100" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/prime_source.png" class="w-100" alt="">
                         </div>
                         <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="static/img/content/sberbank.png" class="w-100" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/sberbank.png" class="w-100" alt="">
                         </div>
                         <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="static/img/content/forbes-logo.png" class="w-100" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/forbes-logo.png" class="w-100" alt="">
                         </div>
                         <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="static/img/content/prime_source.png" class="w-100" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/prime_source.png" class="w-100" alt="">
                         </div>
                         <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="static/img/content/sberbank.png" class="w-100" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/sberbank.png" class="w-100" alt="">
                         </div>
                         <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="static/img/content/forbes-logo.png" class="w-100" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/forbes-logo.png" class="w-100" alt="">
                         </div>
                         <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="static/img/content/forbes-logo.png" class="w-100" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/forbes-logo.png" class="w-100" alt="">
                         </div>
                     </div>
                 </div>
@@ -496,7 +496,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <img src="static/img/general/logo2.svg" class="footer__logo" alt="">
+                        <img src="<?php bloginfo('template_url'); ?>/static/img/general/logo2.svg" class="footer__logo" alt="">
                         <p>Все права защищены
                             <br>2019 год</p>
                     </div>
@@ -583,8 +583,8 @@
 
 <!-- Main scripts. You can replace it, but I recommend you to leave it here -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="static/js/main.min.js"></script>
-<script src="static/js/separate-js/scripts.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/static/js/main.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/static/js/separate-js/scripts.js"></script>
 <?php wp_footer(); ?>
 </body>
 
