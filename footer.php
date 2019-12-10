@@ -1,5 +1,5 @@
 <!-- Footer Begin -->
-<footer class="footer">
+<footer class="footer" style="background: #FFFFEF;">
     <div class="container">
         <div class="row" vertical-gutter="40">
             <div class="col-sm-6 col-lg-3">
