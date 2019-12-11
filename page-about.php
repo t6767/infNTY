@@ -3,7 +3,7 @@
 <?php
 var_dump($_GET);
 global $mystrings;
-$mystrings="77777777";
+echo $mystrings;
 ?>
 <main role="main" class="app__main">
 
