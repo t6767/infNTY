@@ -124,13 +124,208 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
+                        <div class="row" vertical-gutter="40" data-gutter="40">
+                            <?php
+                            global $paged;
+                            if ( get_query_var('paged') )
+                                $my_page = get_query_var('paged');
+                            else {
+                                if ( get_query_var('page') )
+                                    $my_page = get_query_var('page');
+                                else
+                                    $my_page = 1;
+                                set_query_var('paged', $my_page);
+                                $paged = $my_page;
+                            }
 
+
+                            $query = new WP_Query(
+                                array(
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'posts_per_page' => 4,
+                                    'cat' => [17,19,18,7],  //1 7 8
+                                    'post__not_in' => array(get_the_ID()),
+                                    'orderby' => 'date',
+                                    'order' => 'DESC',
+                                    'paged' => $my_page
+                                )
+                            );
+
+
+                            if ($query->have_posts()) {
+                                while ($query->have_posts()) {
+                                    $query->the_post();
+                                    $date = get_the_date( "d.m.Y");
+                                    ?>
+
+                                    <div class="col-md-6">
+                                        <div class="news">
+                                            <a href="<?php the_permalink(); ?>">
+                                                <?php the_post_thumbnail(array(533 ,200)); ?>
+                                            </a>
+                                            <div class="news__content">
+                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / <?php the_category(', '); ?>
+                                                <a href="<?php the_permalink(); ?>" class="news__title"><?php the_title(); ?></a>
+                                                <div class="news__text">
+                                                    <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php
+                                }
+                                if(function_exists('wp_pagenavi')) {
+                                    ?>
+                                    <div class="col-md-12">
+                                        <?php
+                                        wp_pagenavi(array('query' => $query));
+                                        ?>
+                                    </div>
+                                    <?php
+                                    $wp_query = null;
+                                    $wp_query = $query;
+                                }
+                                wp_reset_postdata();
+                            }
+                            ?>
+                        </div>
                     </div>
                     <div class="tab-pane" id="tabs-3" role="tabpanel">
+                        <div class="row" vertical-gutter="40" data-gutter="40">
+                            <?php
+                            global $paged;
+                            if ( get_query_var('paged') )
+                                $my_page = get_query_var('paged');
+                            else {
+                                if ( get_query_var('page') )
+                                    $my_page = get_query_var('page');
+                                else
+                                    $my_page = 1;
+                                set_query_var('paged', $my_page);
+                                $paged = $my_page;
+                            }
 
+
+                            $query = new WP_Query(
+                                array(
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'posts_per_page' => 4,
+                                    'cat' => [17,19,18,7],  //1 7 8
+                                    'post__not_in' => array(get_the_ID()),
+                                    'orderby' => 'date',
+                                    'order' => 'DESC',
+                                    'paged' => $my_page
+                                )
+                            );
+
+
+                            if ($query->have_posts()) {
+                                while ($query->have_posts()) {
+                                    $query->the_post();
+                                    $date = get_the_date( "d.m.Y");
+                                    ?>
+
+                                    <div class="col-md-6">
+                                        <div class="news">
+                                            <a href="<?php the_permalink(); ?>">
+                                                <?php the_post_thumbnail(array(533 ,200)); ?>
+                                            </a>
+                                            <div class="news__content">
+                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / <?php the_category(', '); ?>
+                                                <a href="<?php the_permalink(); ?>" class="news__title"><?php the_title(); ?></a>
+                                                <div class="news__text">
+                                                    <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php
+                                }
+                                if(function_exists('wp_pagenavi')) {
+                                    ?>
+                                    <div class="col-md-12">
+                                        <?php
+                                        wp_pagenavi(array('query' => $query));
+                                        ?>
+                                    </div>
+                                    <?php
+                                    $wp_query = null;
+                                    $wp_query = $query;
+                                }
+                                wp_reset_postdata();
+                            }
+                            ?>
+                        </div>
                     </div>
                     <div class="tab-pane" id="tabs-4" role="tabpanel">
+                        <div class="row" vertical-gutter="40" data-gutter="40">
+                            <?php
+                            global $paged;
+                            if ( get_query_var('paged') )
+                                $my_page = get_query_var('paged');
+                            else {
+                                if ( get_query_var('page') )
+                                    $my_page = get_query_var('page');
+                                else
+                                    $my_page = 1;
+                                set_query_var('paged', $my_page);
+                                $paged = $my_page;
+                            }
 
+
+                            $query = new WP_Query(
+                                array(
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'posts_per_page' => 4,
+                                    'cat' => [17,19,18,7],  //1 7 8
+                                    'post__not_in' => array(get_the_ID()),
+                                    'orderby' => 'date',
+                                    'order' => 'DESC',
+                                    'paged' => $my_page
+                                )
+                            );
+
+
+                            if ($query->have_posts()) {
+                                while ($query->have_posts()) {
+                                    $query->the_post();
+                                    $date = get_the_date( "d.m.Y");
+                                    ?>
+
+                                    <div class="col-md-6">
+                                        <div class="news">
+                                            <a href="<?php the_permalink(); ?>">
+                                                <?php the_post_thumbnail(array(533 ,200)); ?>
+                                            </a>
+                                            <div class="news__content">
+                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / <?php the_category(', '); ?>
+                                                <a href="<?php the_permalink(); ?>" class="news__title"><?php the_title(); ?></a>
+                                                <div class="news__text">
+                                                    <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php
+                                }
+                                if(function_exists('wp_pagenavi')) {
+                                    ?>
+                                    <div class="col-md-12">
+                                        <?php
+                                        wp_pagenavi(array('query' => $query));
+                                        ?>
+                                    </div>
+                                    <?php
+                                    $wp_query = null;
+                                    $wp_query = $query;
+                                }
+                                wp_reset_postdata();
+                            }
+                            ?>
+                        </div>
                     </div>
                 </div>
             </div>
