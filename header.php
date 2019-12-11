@@ -137,6 +137,7 @@ function the_excerpt_max_charlength( $charlength ){
 
     <!-- App Wrapper Begin -->
     <div class="app__wrapper">
+
         <?php
         $transperent="";
         if ($_SERVER['REQUEST_URI']=="/")
