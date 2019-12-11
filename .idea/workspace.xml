@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2504e9bb-1d3f-497a-8647-f16f282eb8dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resheniya-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page-novosti.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-novosti.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +21,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1UY7j1epNInHbEiJeMf0Ju2PdTP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -57,7 +61,7 @@
       <workItem from="1575887417624" duration="21000" />
       <workItem from="1575960020177" duration="4070000" />
       <workItem from="1576037062875" duration="351000" />
-      <workItem from="1576037528827" duration="15390000" />
+      <workItem from="1576037528827" duration="16793000" />
     </task>
     <servers />
   </component>

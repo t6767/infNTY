@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php global $p123; ?>
 <!-- App Main Begin -->
 <main role="main" class="app__main">
 
