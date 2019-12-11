@@ -58,7 +58,7 @@
 
                         <div class="row" vertical-gutter="40" data-gutter="40">
                             <?php
-                            global $paged;
+                            global $paged1;
                             if ( get_query_var('paged') )
                                 $my_page = get_query_var('paged');
                             else {
@@ -67,7 +67,7 @@
                                 else
                                     $my_page = 1;
                                 set_query_var('paged', $my_page);
-                                $paged = $my_page;
+                                $paged1 = $my_page;
                             }
 
 
@@ -126,7 +126,7 @@
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
                         <div class="row" vertical-gutter="40" data-gutter="40">
                             <?php
-                            global $paged;
+                            global $paged2;
                             if ( get_query_var('paged') )
                                 $my_page = get_query_var('paged');
                             else {
@@ -135,7 +135,7 @@
                                 else
                                     $my_page = 1;
                                 set_query_var('paged', $my_page);
-                                $paged = $my_page;
+                                $paged2 = $my_page;
                             }
 
 
@@ -194,7 +194,7 @@
                     <div class="tab-pane" id="tabs-3" role="tabpanel">
                         <div class="row" vertical-gutter="40" data-gutter="40">
                             <?php
-                            global $paged;
+                            global $paged3;
                             if ( get_query_var('paged') )
                                 $my_page = get_query_var('paged');
                             else {
@@ -203,7 +203,7 @@
                                 else
                                     $my_page = 1;
                                 set_query_var('paged', $my_page);
-                                $paged = $my_page;
+                                $paged3 = $my_page;
                             }
 
 
@@ -262,7 +262,7 @@
                     <div class="tab-pane" id="tabs-4" role="tabpanel">
                         <div class="row" vertical-gutter="40" data-gutter="40">
                             <?php
-                            global $paged;
+                            global $paged4;
                             if ( get_query_var('paged') )
                                 $my_page = get_query_var('paged');
                             else {
@@ -271,7 +271,7 @@
                                 else
                                     $my_page = 1;
                                 set_query_var('paged', $my_page);
-                                $paged = $my_page;
+                                $paged4 = $my_page;
                             }
 
 
