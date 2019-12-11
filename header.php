@@ -24,7 +24,7 @@ function the_excerpt_max_charlength( $charlength ){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php bloginfo('name'); ?>11</title>
+    <title><?php bloginfo('name'); ?></title>
     <meta content="<?php bloginfo('description'); ?>" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -150,11 +150,9 @@ function the_excerpt_max_charlength( $charlength ){
             <div class="container header__container">
                 <a href="/" class="logo" title="infin-it">Infin-it</a>
                 <div class="header__right">
-                    <nav class="navigation">
                         <?php
-                        wp_nav_menu(array('menu' => 'menue', 'menu_class' => 'menue'));
+                        wp_nav_menu(array('menu' => 'menue', 'menu_class' => 'navigation'));
                         ?>
-                    </nav>
                     <button type="button" class="burger jsBurgerMenu">
                         <span class="burger__item"></span>
                     </button>
