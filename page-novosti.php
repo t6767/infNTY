@@ -144,7 +144,7 @@
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
                                     'posts_per_page' => 4,
-                                    'cat' => [17,19,18,7],  //1 7 8
+                                    'cat' => [7],  //1 7 8
                                     'post__not_in' => array(get_the_ID()),
                                     'orderby' => 'date',
                                     'order' => 'DESC',
@@ -212,7 +212,7 @@
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
                                     'posts_per_page' => 4,
-                                    'cat' => [17,19,18,7],  //1 7 8
+                                    'cat' => [18],  //1 7 8
                                     'post__not_in' => array(get_the_ID()),
                                     'orderby' => 'date',
                                     'order' => 'DESC',
@@ -280,7 +280,7 @@
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
                                     'posts_per_page' => 4,
-                                    'cat' => [17,19,18,7],  //1 7 8
+                                    'cat' => [19],  //1 7 8
                                     'post__not_in' => array(get_the_ID()),
                                     'orderby' => 'date',
                                     'order' => 'DESC',
