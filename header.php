@@ -62,6 +62,13 @@ function the_excerpt_max_charlength( $charlength ){
     <script src="<?php bloginfo('template_url'); ?>/static/js/separate-js/respond.min.js" type="text/javascript"></script>
     <meta content="no" http-equiv="imagetoolbar">
     <![endif]-->
+    <style>
+        .navigation__link > a {
+            color: #000;
+            text-transform: uppercase;
+            outline: none;
+        }
+    </style>
     <?php wp_head(); ?>
 </head>
 
