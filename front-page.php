@@ -58,7 +58,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="intro-about__text">
-                                <p>11InFin-IT Solution является научно-производственной компанией, занимающейся разработкой инновационных решений в области цифровых каналов для международного рынка.</p>
+                                <p>InFin-IT Solution является научно-производственной компанией, занимающейся разработкой инновационных решений в области цифровых каналов для международного рынка.</p>
 
                                 <p>InFin-IT входит в группу компаний OpenCivilization, представленную в США, Голландии, Белоруссии, России и Казахстане.</p>
 
@@ -199,71 +199,71 @@
                     <div class="features row">
                         <div class="features__col">
                             <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">мобильный банкинг</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p2.jpg')"></div>
+                                <div class="features__background" style="background-image: url('static/img/content/p2.jpg')"></div>
                             </a>
                             <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">портал самообслуживания</div>
                                 <div class="features__text">Коммуникация без участия или с минимальным участием менеджеров Банка</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p3.jpg')"></div>
+                                <div class="features__background" style="background-image: url('static/img/content/p3.jpg')"></div>
                             </a>
-                            <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
+                            <a href="#" class="features__item -inverted">
+                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">мобильный банкинг</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p4.jpg')"></div>
+                                <div class="features__background" style="background-image: url('static/img/content/p4.jpg')"></div>
                             </a>
                         </div>
                         <div class="features__col">
                             <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">мобильный банкинг</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p2.jpg')"></div>
+                                <div class="features__background" style="background-image: url('static/img/content/p2.jpg')"></div>
                             </a>
-                            <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
+                            <a href="#" class="features__item -inverted">
+                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">портал самообслуживания</div>
                                 <div class="features__text">Коммуникация без участия или с минимальным участием менеджеров Банка</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p3.jpg')"></div>
+                                <div class="features__background" style="background-image: url('static/img/content/p3.jpg')"></div>
                             </a>
                             <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">мобильный банкинг</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p4.jpg')"></div>
+                                <div class="features__background" style="background-image: url('static/img/content/p4.jpg')"></div>
                             </a>
                         </div>
                         <div class="features__col">
-                            <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
+                            <a href="#" class="features__item -inverted">
+                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">мобильный банкинг</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p2.jpg')"></div>
+                                <div class="features__background" style="background-image: url('static/img/content/p2.jpg')"></div>
                             </a>
                             <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">портал самообслуживания</div>
                                 <div class="features__text">Коммуникация без участия или с минимальным участием менеджеров Банка</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p3.jpg')"></div>
+                                <div class="features__background" style="background-image: url('static/img/content/p3.jpg')"></div>
                             </a>
                             <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
+                                <img src="static/img/content/touch.svg" class="features__icon" alt="">
                                 <div class="features__title">мобильный банкинг</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p4.jpg')"></div>
+                                <div class="features__background" style="background-image: url('static/img/content/p4.jpg')"></div>
                             </a>
                         </div>
                     </div>
