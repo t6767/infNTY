@@ -57,7 +57,7 @@
                                 <div class="about__top-content">
                                     <img src="<?php bloginfo('template_url'); ?>/static/img/content/infin.png" alt="">
                                     <div class="about__top-stats">
-                                        10 +
+                                        101 +
                                         <br>
                                         <span>лет развития<br>и создания нового</span>
                                     </div>
