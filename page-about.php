@@ -318,96 +318,68 @@
                     </div>
                     <div class="tab-pane" id="tabs-4" role="tabpanel">
                         <div class="row" vertical-gutter="30">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="vacancy">
-                                    <a href="#" class="vacancy__title">Компьютерщик</a>
-                                    <div class="vacancy__content">
-                                        <div class="vacancy__text">
-                                            <p>
-                                                Обязанности:
-                                                <br>- Обеспечение бесперебойной работы сети и устройств
-                                                <br>- Сборка компьютеров, настройка сети, ремонт компьютеров, настройка ПО
-                                            </p>
+                            <?php
+                            global $paged3;
+                            if ( get_query_var('paged') )
+                                $my_page = get_query_var('paged');
+                            else {
+                                if ( get_query_var('page') )
+                                    $my_page = get_query_var('page');
+                                else
+                                    $my_page = 1;
+                                set_query_var('paged', $my_page);
+                                $paged3 = $my_page;
+                            }
+
+
+                            $query = new WP_Query(
+                                array(
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'posts_per_page' => 4,
+                                    'cat' => [20],  //1 7 8
+                                    'post__not_in' => array(get_the_ID()),
+                                    'orderby' => 'date',
+                                    'order' => 'DESC',
+                                    'paged' => $my_page
+                                )
+                            );
+
+
+                            if ($query->have_posts()) {
+                                while ($query->have_posts()) {
+                                    $query->the_post();
+                                    $date = get_the_date( "d.m.Y");
+                                    ?>
+
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="vacancy">
+                                            <a href="#" class="vacancy__title"><?php the_title(); ?></a>
+                                            <div class="vacancy__content">
+                                                <div class="vacancy__text">
+                                                    <p>
+                                                        <?=new_excerpt_more(the_excerpt_max_charlength(150))?>                                                    </p>
+                                                </div>
+                                                <a href="<?php the_permalink(); ?>" class="vacancy__link">Читать полностью</a>
+                                            </div>
                                         </div>
-                                        <a href="#" class="vacancy__link">Читать полностью</a>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="vacancy">
-                                    <a href="#" class="vacancy__title">Компьютерщик</a>
-                                    <div class="vacancy__content">
-                                        <div class="vacancy__text">
-                                            <p>
-                                                Обязанности:
-                                                <br>- Обеспечение бесперебойной работы сети и устройств
-                                                <br>- Сборка компьютеров, настройка сети, ремонт компьютеров, настройка ПО
-                                            </p>
-                                        </div>
-                                        <a href="#" class="vacancy__link">Читать полностью</a>
+                                    <?php
+                                }
+                                if(function_exists('wp_pagenavi')) {
+                                    ?>
+                                    <div class="col-md-12">
+                                        <?php
+                                        wp_pagenavi(array('query' => $query));
+                                        ?>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="vacancy">
-                                    <a href="#" class="vacancy__title">Компьютерщик</a>
-                                    <div class="vacancy__content">
-                                        <div class="vacancy__text">
-                                            <p>
-                                                Обязанности:
-                                                <br>- Обеспечение бесперебойной работы сети и устройств
-                                                <br>- Сборка компьютеров, настройка сети, ремонт компьютеров, настройка ПО
-                                            </p>
-                                        </div>
-                                        <a href="#" class="vacancy__link">Читать полностью</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="vacancy">
-                                    <a href="#" class="vacancy__title">Компьютерщик</a>
-                                    <div class="vacancy__content">
-                                        <div class="vacancy__text">
-                                            <p>
-                                                Обязанности:
-                                                <br>- Обеспечение бесперебойной работы сети и устройств
-                                                <br>- Сборка компьютеров, настройка сети, ремонт компьютеров, настройка ПО
-                                            </p>
-                                        </div>
-                                        <a href="#" class="vacancy__link">Читать полностью</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="vacancy">
-                                    <a href="#" class="vacancy__title">Компьютерщик</a>
-                                    <div class="vacancy__content">
-                                        <div class="vacancy__text">
-                                            <p>
-                                                Обязанности:
-                                                <br>- Обеспечение бесперебойной работы сети и устройств
-                                                <br>- Сборка компьютеров, настройка сети, ремонт компьютеров, настройка ПО
-                                            </p>
-                                        </div>
-                                        <a href="#" class="vacancy__link">Читать полностью</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="vacancy">
-                                    <a href="#" class="vacancy__title">Компьютерщик</a>
-                                    <div class="vacancy__content">
-                                        <div class="vacancy__text">
-                                            <p>
-                                                Обязанности:
-                                                <br>- Обеспечение бесперебойной работы сети и устройств
-                                                <br>- Сборка компьютеров, настройка сети, ремонт компьютеров, настройка ПО
-                                            </p>
-                                        </div>
-                                        <a href="#" class="vacancy__link">Читать полностью</a>
-                                    </div>
-                                </div>
-                            </div>
+                                    <?php
+                                    $wp_query = null;
+                                    $wp_query = $query;
+                                }
+                                wp_reset_postdata();
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
