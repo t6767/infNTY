@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 <!-- App Main Begin -->
+<?php
+var_dump($_GET);
+?>
 <main role="main" class="app__main">
 
     <!-- Page Begin -->
