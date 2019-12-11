@@ -74,7 +74,7 @@
 <noindex>
 
     <!-- Modal Cta Begin -->
-    <div id="modal-cta" class="modal fade" tabindex="-1" role="dialog">
+    <div id="modal-1" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -103,17 +103,49 @@
     </div>
     <!--/. Modal Cta End -->
 
+    <!-- Modal Cta Begin -->
+    <div id="modal-2" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&#10005;</span>
+                </button>
+                <form class="form">
+                    <h2 class="form__title">Связаться с нами</h2>
+                    <div class="control">
+                        <input type="text" name="name" class="control__input" placeholder="Имя">
+                    </div>
+                    <div class="control">
+                        <input type="text" name="company" class="control__input" placeholder="Компания">
+                    </div>
+                    <div class="control">
+                        <input type="text" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
+                    </div>
+                    <div class="control">
+                        <input type="text" name="email" class="control__input" placeholder="Email">
+                    </div>
+                    <div class="control">
+                        <textarea class="control__textarea" placeholder="Сообщение"></textarea>
+                    </div>
+                    <div class="text-right">
+                        <button type="submit" class="button -bordered form__button">отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--/. Modal Cta End -->
+
+
     <!-- Modal Success Begin -->
-    <div id="modal-success" class="modal fade" tabindex="-1" role="dialog">
+    <div id="modal-3" class="modal modal-success fade" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&#10005;</span>
                 </button>
-                <div class="modal__success">
-                    <h2 class="modal__title">Спасибо!</h2>
-                    <div class="modal__subtitle">Наш менеджер перезвонит Вам!</div>
-                </div>
+                <img src="static/img/general/success.svg" alt="">
+                <h2 class="modal__title">Ваша заявка успешно отправлена <br>Спасибо!</h2>
             </div>
         </div>
     </div>
