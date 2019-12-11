@@ -97,7 +97,7 @@
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team">
                                     <div class="team__avatar">
-                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/avatar.jpg" alt="">
+                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/avatar.png" alt="">
                                     </div>
                                     <div class="team__header">
                                         <div class="team__name">Alibek Kulseitov</div>
@@ -133,7 +133,7 @@
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team">
                                     <div class="team__avatar">
-                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/avatar.jpg" alt="">
+                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/avatar.png" alt="">
                                     </div>
                                     <div class="team__header">
                                         <div class="team__name">Alibek Kulseitov</div>
@@ -169,7 +169,7 @@
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team">
                                     <div class="team__avatar">
-                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/avatar.jpg" alt="">
+                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/avatar.png" alt="">
                                     </div>
                                     <div class="team__header">
                                         <div class="team__name">Alibek Kulseitov</div>
@@ -205,7 +205,7 @@
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team">
                                     <div class="team__avatar">
-                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/avatar.jpg" alt="">
+                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/avatar.png" alt="">
                                     </div>
                                     <div class="team__header">
                                         <div class="team__name">Alibek Kulseitov</div>
