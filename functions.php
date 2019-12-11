@@ -32,11 +32,13 @@ function new_excerpt_more($more) {
 
 add_filter("excerpt_more", "new_excerpt_more");
 
-function menu_items_move_class_from_li_to_a( $atts, $item, $args ) {
-    $class = $item->classes[0];
-    if ( strpos($class, 'menu-item') === false ) {
-        $atts['class'] = $class;
+function wph_css_class_to_menu($classes, $item){
+    if( $item->title == "РЕШЕНИЯ" ){
+        $classes[] = "menu-home123";
     }
-    return $atts;
+    if( $item->title == "Рубрики" ){
+        $classes[] = "menu-categories";
+    }
+    return $classes;
 }
-add_filter( 'nav_menu_link_attributes', 'menu_items_move_class_from_li_to_a', 10, 3 );
+add_filter('nav_menu_css_class' , 'wph_css_class_to_menu' , 10 , 2);
