@@ -52,7 +52,7 @@
             <!--/. Entry End -->
 
             <!-- Intro About Begin -->
-            <section id="intro-about" class="intro-about section wow">
+            <section id="intro-about" class="intro-about section">
                 <div class="container section__container">
                     <div class="section__background-title" data-parallax='{"y": 80, "smoothness": 45}'>О КОМПАНИИ</div>
                     <div class="row">
