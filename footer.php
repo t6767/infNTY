@@ -28,7 +28,7 @@
                 <a href="#" data-target="#modal-1" data-toggle="modal" class="footer__link">Контакт с PR-службой</a>
             </div>
             <div class="col-sm-6 col-lg-3">
-                <div class="footer__title">контакты1</div>
+                <div class="footer__title">контакты</div>
                 <p>+7 (727) 232 22 22
                     <br>Алматы</p>
                 <ul class="social footer__social">
