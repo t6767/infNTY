@@ -76,7 +76,7 @@ function the_excerpt_max_charlength( $charlength ){
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body style="background: #f9f9f9">
 
 <div class="menu">
     <div class="menu__col">
