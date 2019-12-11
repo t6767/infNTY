@@ -30,15 +30,3 @@ function new_excerpt_more($more) {
 
 }
 
-add_filter("excerpt_more", "new_excerpt_more");
-
-function wph_css_class_to_menu($classes, $item){
-    if( $item->title == "РЕШЕНИЯ" ){
-        $classes[] = "menu-home123";
-    }
-    if( $item->title == "Рубрики" ){
-        $classes[] = "menu-categories";
-    }
-    return $classes;
-}
-add_filter('nav_menu_css_class' , 'wph_css_class_to_menu' , 10 , 2);
