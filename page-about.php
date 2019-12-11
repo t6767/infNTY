@@ -1,10 +1,5 @@
 <?php get_header(); ?>
 <!-- App Main Begin -->
-<?php
-var_dump($_GET);
-global $mystrings;
-var_dump($mystrings);
-?>
 <main role="main" class="app__main">
 
     <!-- Page Begin -->
@@ -23,7 +18,7 @@ var_dump($mystrings);
                         <a href="#" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        О компании11
+                        О компании
                     </li>
                 </ul>
             </div>
