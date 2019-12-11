@@ -1,4 +1,8 @@
 <?php get_header(); ?>
+<?php
+global $mystrings;
+$mystrings="77777777";
+?>
 <!-- App Main Begin -->
 <main role="main" class="app__main">
 

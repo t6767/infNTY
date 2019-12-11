@@ -2,6 +2,8 @@
 <!-- App Main Begin -->
 <?php
 var_dump($_GET);
+global $mystrings;
+$mystrings="77777777";
 ?>
 <main role="main" class="app__main">
 
