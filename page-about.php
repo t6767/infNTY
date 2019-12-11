@@ -3,7 +3,7 @@
 <?php
 var_dump($_GET);
 global $mystrings;
-echo $mystrings."999";
+var_dump($mystrings);
 ?>
 <main role="main" class="app__main">
 

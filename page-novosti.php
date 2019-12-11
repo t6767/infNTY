@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 <?php
 global $mystrings;
-$mystrings="77777777";
+$mystrings[] = 'string1';
+$mystrings[] = 'string2';
+$mystrings[] = 'string3';
 ?>
 <!-- App Main Begin -->
 <main role="main" class="app__main">
