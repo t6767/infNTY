@@ -24,7 +24,7 @@ function the_excerpt_max_charlength( $charlength ){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php bloginfo('name'); ?>777733444</title>
+    <title><?php bloginfo('name'); ?></title>
     <meta content="<?php bloginfo('description'); ?>" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,6 +67,10 @@ function the_excerpt_max_charlength( $charlength ){
             color: #000;
             text-transform: uppercase;
             outline: none;
+        }
+        .navigation__link > a .-active, .navigation__link > a:focus, .navigation__link > a:hover {
+            color: #1a73e8;
+            text-decoration: none;
         }
     </style>
     <?php wp_head(); ?>
