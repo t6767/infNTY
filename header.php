@@ -77,7 +77,7 @@ function the_excerpt_max_charlength( $charlength ){
             </form>
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="#" class="menu__link">О компании</a>
+                    <a href="#" class="menu__link">О компании1</a>
                 </li>
                 <li class="menu__item">
                     <a href="#" class="menu__link">Решения</a>
