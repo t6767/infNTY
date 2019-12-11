@@ -66,7 +66,7 @@
                                 <p><strong>Представлены в США, Голландии, Белоруссии, России и Казахстане</strong>
                                 </p>
                             </div>
-                            <div class="intro-about__stats">
+                            <div class="intro-about__stats wow">
                                 <div class="intro-about__stats-item">
                                     <div>
                                         <span class="jsCountStats">200</span>+
