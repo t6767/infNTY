@@ -25,7 +25,7 @@
                 $foterMenue1 = str_replace("navigation__link", "footer__link", $foterMenue1);
                 echo $foterMenue1;
                 ?>
-                <a href="#" data-target="#modal-cta" data-toggle="modal" class="footer__link">Контакт с PR-службой</a>
+                <a href="#" data-target="#modal-1" data-toggle="modal" class="footer__link">Контакт с PR-службой</a>
             </div>
             <div class="col-sm-6 col-lg-3">
                 <div class="footer__title">контакты</div>
