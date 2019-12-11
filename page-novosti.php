@@ -51,7 +51,7 @@
                         <a href="#" class="category-select__sublink">Государственный сектор</a>
                     </div>
                 </div>-->
-                    <button type="button" class="button -bordered page__topbar-button" data-target="#modal-cta" data-toggle="modal">контакт с pr-службой</button>
+                    <button type="button" class="button -bordered page__topbar-button" data-target="#modal-1" data-toggle="modal">контакт с pr-службой</button>
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabs-1" role="tabpanel">
