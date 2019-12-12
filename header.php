@@ -94,6 +94,9 @@ function the_excerpt_max_charlength( $charlength ){
                 <input type="search" class="menu__search-input">
                 <button type="button" class="menu__search-button">Искать</button>
             </form>
+            <?php
+            wp_nav_menu(array('menu' => 'popupmemu1', 'menu_class' => 'menu__list'));
+            ?>
             <ul class="menu__list">
                 <li class="menu__item">
                     <a href="#" class="menu__link">О компании1</a>
