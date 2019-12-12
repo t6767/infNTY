@@ -112,6 +112,10 @@ function the_excerpt_max_charlength( $charlength ){
             list-style: none;
             list-style-position: outside;
         }
+        menu__link:hover {
+            color: #fff;
+            text-decoration: none;
+        }
     </style>
     <?php wp_head(); ?>
 </head>
