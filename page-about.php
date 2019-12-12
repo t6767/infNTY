@@ -7,7 +7,7 @@
     switch (hash) {
  //       case "#story": alert(1); break;
         case "#team":
-            alert(element.className);
+            alert(document.getElementById("t1").className);
             document.getElementById('t1').className='tabs__link'; break;
         case "#rewue": alert(31); document.getElementById('t1').className='tabs__link11'; break;
         case "#vacancy": alert(41); document.getElementById('t1').className='tabs__link11'; break;
