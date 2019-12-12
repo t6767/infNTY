@@ -80,6 +80,13 @@ function the_excerpt_max_charlength( $charlength ){
             color: #c4c4c4;
             text-decoration: none;
         }
+        .menu__link > a {
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: .9375rem;
+            display: block;
+        }
     </style>
     <?php wp_head(); ?>
 </head>
