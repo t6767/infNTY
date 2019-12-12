@@ -5,7 +5,7 @@
             <div class="col-sm-6 col-lg-3">
                 <div class="footer__title">о нас</div>
                 <?php
-                $foterMenue1=wp_nav_menu(array('menu' => 'footermenue1', 'menu_class' => 'footermenue1', 'echo'=> false));
+                $foterMenue1=wp_nav_menu(array('menu' => 'footermenue1', 'menu_class' => 'footer__menu', 'echo'=> false));
                 $foterMenue1 = str_replace("navigation__link", "footer__link", $foterMenue1);
                 echo $foterMenue1;
                 ?>
@@ -13,7 +13,7 @@
             <div class="col-sm-6 col-lg-3">
                 <div class="footer__title">Решения</div>
                 <?php
-                $foterMenue1=wp_nav_menu(array('menu' => 'footermenue2', 'menu_class' => 'footermenue1', 'echo'=> false));
+                $foterMenue1=wp_nav_menu(array('menu' => 'footermenue2', 'menu_class' => 'footer__menu', 'echo'=> false));
                 $foterMenue1 = str_replace("navigation__link", "footer__link", $foterMenue1);
                 echo $foterMenue1;
                 ?>
@@ -21,7 +21,7 @@
             <div class="col-xs-6 col-lg-3">
                 <div class="footer__title">пресс-центр</div>
                 <?php
-                $foterMenue1=wp_nav_menu(array('menu' => 'footermenue3', 'menu_class' => 'footermenue3', 'echo'=> false));
+                $foterMenue1=wp_nav_menu(array('menu' => 'footermenue3', 'menu_class' => 'footer__menu', 'echo'=> false));
                 $foterMenue1 = str_replace("navigation__link", "footer__link", $foterMenue1);
                 echo $foterMenue1;
                 ?>
