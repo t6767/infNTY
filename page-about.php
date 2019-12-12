@@ -5,9 +5,9 @@
     var hash = window.location.hash;
     switch (hash) {
  //       case "#story": alert(1); break;
-        case "#team": alert(2); document.getElementById('t1').className='tabs__link11'; break;
-        case "#rewue": alert(3); document.getElementById('t1').className='tabs__link11'; break;
-        case "#vacancy": alert(4); document.getElementById('t1').className='tabs__link11'; break;
+        case "#team": alert(21); document.getElementById('t1').className='tabs__link11'; break;
+        case "#rewue": alert(31); document.getElementById('t1').className='tabs__link11'; break;
+        case "#vacancy": alert(41); document.getElementById('t1').className='tabs__link11'; break;
     }
 </script>
     <!-- Page Begin -->
