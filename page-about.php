@@ -5,7 +5,8 @@
     var hash = window.location.hash;
     switch (hash) {
  //       case "#story": alert(1); break;
-        case "#team": alert(211); $('#t1').removeClass('tabs__link').addClass('yyy');
+        case "#team": $('#t1').removeClass('tabs__link').addClass('yyy');
+            alert(211);
             document.getElementById('t1').className='tabs__link'; break;
         case "#rewue": alert(31); document.getElementById('t1').className='tabs__link11'; break;
         case "#vacancy": alert(41); document.getElementById('t1').className='tabs__link11'; break;
