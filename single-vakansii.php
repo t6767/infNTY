@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+get_header();
+$dpole = get_post_meta( $wp_query->post->ID, 'kontakt' );
+?>
 <main role="main" class="app__main">
 
     <!-- Page Begin -->
@@ -50,9 +53,7 @@
                             <div class="aside-news__header">Контактная информация:</div>
                             <div class="aside-news__content">
                                 <div class="aside-news__text">
-                                    Малика
-                                    <br>hr@infin-it.kz
-                                    <br>+7 (555) 5557129
+                                    <?=$dpole ?>
                                 </div>
                             </div>
                         </div>
@@ -67,8 +68,6 @@
 
 </main>
 <?php
-$dpole = get_post_meta( $wp_query->post->ID, 'kontakt' );
-var_dump($dpole);
 echo "<pre>";
 var_dump($wp_query->post);
 echo "</pre>";
