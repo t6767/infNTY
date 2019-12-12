@@ -27,7 +27,7 @@
                         <a href="#" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        О компании
+                        О компании888
                     </li>
                 </ul>
             </div>
