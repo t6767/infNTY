@@ -3,9 +3,10 @@
 <main role="main" class="app__main">
 <script>
     var hash = window.location.hash;
+    var element = document.getElementById("t1");
     switch (hash) {
  //       case "#story": alert(1); break;
-        case "#team":  var element = document.getElementById("t1");
+        case "#team":
             alert(element.className);
             document.getElementById('t1').className='tabs__link'; break;
         case "#rewue": alert(31); document.getElementById('t1').className='tabs__link11'; break;
