@@ -94,6 +94,11 @@ function the_excerpt_max_charlength( $charlength ){
             color: #fff;
             display: block;
         }
+        .menu__link2 > a:hover {
+            color: #fff;
+            text-decoration: none;
+            opacity: .8;
+        }
         .sub-menu
         {
             margin: 0;
