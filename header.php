@@ -76,6 +76,10 @@ function the_excerpt_max_charlength( $charlength ){
         {
             color: #000;
         }
+        a:hover {
+            color: #c4c4c4;
+            text-decoration: none;
+        }
     </style>
     <?php wp_head(); ?>
 </head>
