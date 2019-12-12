@@ -36,10 +36,10 @@
                             <a class="tabs__link" data-toggle="tab" id="t2" href="#tabs-2" onclick="changeHash('#team');"  role="tab">Команда</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" id="t3" href="#tabs-3" role="tab">Отзывы</a>
+                            <a class="tabs__link" data-toggle="tab" id="t3" href="#tabs-3"  onclick="changeHash('#rewue');" role="tab">Отзывы</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" id="t4" href="#tabs-4" role="tab">Вакансии</a>
+                            <a class="tabs__link" data-toggle="tab" id="t4" href="#tabs-4" onclick="changeHash('#vacancy');" role="tab">Вакансии</a>
                         </li>
                     </ul>
                 </div>
