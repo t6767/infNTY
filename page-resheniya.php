@@ -54,11 +54,7 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                        <!-- Features Begin -->
-                        <section class="section">
-                            <div class="container section__container">
-                                <div class="section__background-title -red" data-parallax='{"y": 80, "smoothness": 65}'>DIGITAL BANK</div>
-                                <div class="features row">
+                        <div class="features row">
                                     <div class="features__col">
                                         <a href="#" class="features__item">
                                             <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-1.svg" class="features__icon" alt="">
@@ -129,9 +125,6 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-                        </section>
-                        <!--/. Features End -->
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
 
