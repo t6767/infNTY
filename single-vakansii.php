@@ -1,47 +1,98 @@
 <?php get_header(); ?>
+<main role="main" class="app__main">
 
-    <section id="primary" class="content-area">
-        <main id="main" class="site-main">
+    <!-- Page Begin -->
+    <div class="page">
 
-            <?php
+        <!-- Page Header Begin -->
+        <div class="page__header" style="background-image: url('static/img/content/header-bg.jpg')">
+            <div class="container">
+                <div class="page__header-title typed-effect">
+                    <div id="js-typed-strings">
+                        <p>Компьютерщик</p>
+                    </div>
+                </div>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        Компьютерщик
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--/. Page Header End -->
 
-            /* Start the Loop */
-            while ( have_posts() ) :
-                the_post();
+        <!-- Page Content Begin -->
+        <div class="page__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="article">
+                            <p>Опыт работы: 1-3 года</p>
+                            <h4 class="mb-2">Обязанности</h4>
+                            <ul>
+                                <li>Обеспечение бесперебойной работы сети и устройств</li>
+                                <li>Сборка компьютеров, настройка сети, ремонт компьютеров, настройка ПО</li>
+                                <li>Выезд к клиентам компании, как физическим, так и юридическим лицам</li>
+                                <li>Аппаратное обеспечение ремонт оргтехники (принтеры, копиры)</li>
+                                <li>Диагностика неисправности компьютера (аппаратная, программная)</li>
+                                <li>Ремонт, настройка, модернизация ПК</li>
+                            </ul>
+                            <hr />
+                            <h4 class="mb-2">Обязанности</h4>
+                            <ul>
+                                <li>Обеспечение бесперебойной работы сети и устройств</li>
+                                <li>Сборка компьютеров, настройка сети, ремонт компьютеров, настройка ПО</li>
+                                <li>Выезд к клиентам компании, как физическим, так и юридическим лицам</li>
+                                <li>Аппаратное обеспечение ремонт оргтехники (принтеры, копиры)</li>
+                                <li>Диагностика неисправности компьютера (аппаратная, программная)</li>
+                                <li>Ремонт, настройка, модернизация ПК</li>
+                            </ul>
+                            <hr />
+                            <h4 class="mb-2">Обязанности</h4>
+                            <ul>
+                                <li>Обеспечение бесперебойной работы сети и устройств</li>
+                                <li>Сборка компьютеров, настройка сети, ремонт компьютеров, настройка ПО</li>
+                                <li>Выезд к клиентам компании, как физическим, так и юридическим лицам</li>
+                                <li>Аппаратное обеспечение ремонт оргтехники (принтеры, копиры)</li>
+                                <li>Диагностика неисправности компьютера (аппаратная, программная)</li>
+                                <li>Ремонт, настройка, модернизация ПК</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="aside-news">
+                            <div class="aside-news__header">Другие вакансии</div>
+                            <div class="aside-news__content">
+                                <div class="aside-news__title">Компьютерщик</div>
+                                <div class="aside-news__text">
+                                    <p>Обязанности:</p>
+                                    <p>- Обеспечение бесперебойной работы сети и устройств</p>
+                                    <p>- Сборка компьютеров, настройка сети, ремонт компьютеров, настройка ПО</p>
+                                </div>
+                                <a href="#" class="button -bordered aside-news__button">Читать далее</a>
+                            </div>
+                        </div>
+                        <div class="aside-news">
+                            <div class="aside-news__header">Контактная информация:</div>
+                            <div class="aside-news__content">
+                                <div class="aside-news__text">
+                                    Малика
+                                    <br>hr@infin-it.kz
+                                    <br>+7 (555) 5557129
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/. Page Content End -->
 
-                get_template_part( 'template-parts/content/content', 'single' );
+    </div>
+    <!--/. Page End -->
 
-                if ( is_singular( 'attachment' ) ) {
-                    // Parent post navigation.
-                    the_post_navigation(
-                        array(
-                            /* translators: %s: parent post link */
-                            'prev_text' => sprintf( __( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'twentynineteen' ), '%title' ),
-                        )
-                    );
-                } elseif ( is_singular( 'post' ) ) {
-                    // Previous/next post navigation.
-                    the_post_navigation(
-                        array(
-                            'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next Post', 'twentynineteen' ) . '</span> ' .
-                                '<span class="screen-reader-text">' . __( 'Next post:', 'twentynineteen' ) . '</span> <br/>' .
-                                '<span class="post-title">%title</span>',
-                            'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous Post', 'twentynineteen' ) . '</span> ' .
-                                '<span class="screen-reader-text">' . __( 'Previous post:', 'twentynineteen' ) . '</span> <br/>' .
-                                '<span class="post-title">%title</span>',
-                        )
-                    );
-                }
-
-                // If comments are open or we have at least one comment, load up the comment template.
-                if ( comments_open() || get_comments_number() ) {
-                    comments_template();
-                }
-
-            endwhile; // End of the loop.
-            ?>
-
-        </main><!-- #main -->
-    </section><!-- #primary -->
-
+</main>
 <?php get_footer(); ?>
