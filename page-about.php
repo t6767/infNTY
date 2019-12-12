@@ -38,10 +38,6 @@
                         </li>
                         <li class="tabs__item">
                             <a class="tabs__link" data-toggle="tab" id="tab2x" onclick="alert('Клик2');" href="#tabs-2" role="tab">Команда</a>
-                            <script>
-                                let event = new Event("click");
-                                tab2x.dispatchEvent(event);
-                            </script>
                         </li>
                         <li class="tabs__item">
                             <a class="tabs__link" data-toggle="tab" href="#tabs-3" role="tab">Отзывы</a>
@@ -396,7 +392,10 @@
 
     </div>
     <!--/. Page End -->
-
+    <script>
+        let event = new Event("click");
+        tab2x.dispatchEvent(event);
+    </script>
 </main>
 <!--/. App Main End -->
 <?php get_footer(); ?>
