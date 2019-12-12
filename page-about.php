@@ -17,7 +17,7 @@
                         <a href="#" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        О компании11112
+                        О компании
                     </li>
                 </ul>
             </div>
@@ -30,10 +30,10 @@
                 <div class="page__topbar">
                     <ul class="nav tabs">
                         <li class="tabs__item">
-                            <a class="tabs__link active" data-toggle="tab" id="t1" href="#tabs-1" role="tab">История компании</a>
+                            <a class="tabs__link active" data-toggle="tab" id="t1" onclick="changeHash('');" href="#tabs-1" role="tab">История компании</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" id="t2" href="#tabs-2" role="tab">Команда</a>
+                            <a class="tabs__link" data-toggle="tab" id="t2" href="#tabs-2" onclick="changeHash('#team');"  role="tab">Команда</a>
                         </li>
                         <li class="tabs__item">
                             <a class="tabs__link" data-toggle="tab" id="t3" href="#tabs-3" role="tab">Отзывы</a>
