@@ -67,11 +67,10 @@
 
 </main>
 <?php
+$dpole = get_post_meta( $wp_query->post->ID, 'kontakt' );
+var_dump($dpole);
 echo "<pre>";
 var_dump($wp_query->post);
 echo "</pre>";
-$dpole = get_post_meta( $wp_query->post->ID, 'kontakt' );
-var_dump($dpole);
-
 ?>
 <?php get_footer(); ?>
