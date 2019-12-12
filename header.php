@@ -87,6 +87,13 @@ function the_excerpt_max_charlength( $charlength ){
             margin-bottom: .9375rem;
             display: block;
         }
+        .menu__link2 > a {
+            font-weight: 400;
+            text-transform: none;
+            margin-bottom: .3125rem;
+            color: #fff;
+            display: block;
+        }
     </style>
     <?php wp_head(); ?>
 </head>
