@@ -303,17 +303,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center">
-                            <div class="sk-chase">
-                                <div class="sk-chase-dot"></div>
-                                <div class="sk-chase-dot"></div>
-                                <div class="sk-chase-dot"></div>
-                                <div class="sk-chase-dot"></div>
-                                <div class="sk-chase-dot"></div>
-                                <div class="sk-chase-dot"></div>
-                            </div>
-                            <p>Пример лоадера</p>
-                        </div>
                     </div>
                     <div class="tab-pane" id="tabs-4" role="tabpanel">
                         <div class="row" vertical-gutter="30">
