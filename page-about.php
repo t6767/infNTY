@@ -31,7 +31,7 @@
                 <div class="page__topbar">
                     <ul class="nav tabs">
                         <li class="tabs__item">
-                            <a class="tabs__link active" data-toggle="tab" href="#tabs-1" role="tab">История компании</a>
+                            <a class="tabs__link active" data-toggle="tab" id="tab1x" href="#tabs-1" role="tab">История1 компании</a>
                         </li>
                         <li class="tabs__item">
                             <a class="tabs__link" data-toggle="tab" href="#tabs-2" role="tab">Команда</a>
