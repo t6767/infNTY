@@ -395,9 +395,9 @@
     var element = document.getElementById("t1");
     switch (hash) {
         //       case "#story": alert(1); break;
-        case "#team": document.getElementById('t1').className='tabs__link'; document.getElementById('tabs-1').style.display="none" document.getElementById('t2').className='tabs__link active'; break;
-        case "#rewue": document.getElementById('t1').className='tabs__link'; document.getElementById('tabs-1').style.display="none" document.getElementById('t3').className='tabs__link active'; break;
-        case "#vacancy": document.getElementById('t1').className='tabs__link'; document.getElementById('tabs-1').style.display="none" document.getElementById('t4').className='tabs__link active'; break;
+        case "#team": document.getElementById('t1').className='tabs__link'; document.getElementById('tabs-1').style.display="none"; document.getElementById('t2').className='tabs__link active'; break;
+        case "#rewue": document.getElementById('t1').className='tabs__link'; document.getElementById('tabs-1').style.display="none"; document.getElementById('t3').className='tabs__link active'; break;
+        case "#vacancy": document.getElementById('t1').className='tabs__link'; document.getElementById('tabs-1').style.display="none"; document.getElementById('t4').className='tabs__link active'; break;
     }
 </script>
 
