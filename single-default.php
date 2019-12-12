@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
 <?php
-var_dump($wp_query->post);
+echo $wp_query->post["post_content"];
 ?>
+
 
 <?php get_footer(); ?>
