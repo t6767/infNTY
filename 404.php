@@ -13,36 +13,63 @@
 get_header(); ?>
     <!-- App Main Begin -->
     <main role="main" class="app__main">
-    <!-- Page Begin -->
-    <div class="page">
-        <div class="page__content">
-            <div class="container">
-                <section>
 
-<div class="wrap">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+        <!-- Page Begin -->
+        <div class="page">
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentyseventeen' ); ?></h1>
-				</header><!-- .page-header -->
-				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentyseventeen' ); ?></p>
-
-					<?php get_search_form(); ?>gvgrttyytytbty
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div><!-- .wrap -->
-                </section>
+            <!-- Page Header Begin -->
+            <div class="page__header" style="background-image: url('static/img/content/header-bg.jpg')">
+                <div class="container">
+                    <div class="page__header-title typed-effect">
+                        <div id="js-typed-strings">
+                            <p>Новости</p>
+                        </div>
+                    </div>
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Ошибка 404</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            Ошибка 404
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <!--/. Page Header End -->
+
+            <!-- Page Content Begin -->
+            <div class="page__content">
+                <div class="container">
+                    <div class="not-found">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="not-found__title">Ой!</div>
+                                <h3>Похоже, мы не можем найти<br>нужную вам страницу</h3>
+                                <h5>Код Ошибки: 404</h5>
+                                <p>
+                                    Вот несколько полезных ссылок:
+                                    <br>
+                                    <a href="/">Главная</a>
+                                    <br>
+                                    <a href="#">Поиск по сайту</a>
+                                    <br>
+                                    <a href="/novosti/">Новости</a>
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img src="static/img/general/not-found.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/. Page Content End -->
+
         </div>
-        <!--/. Page Content End -->
-    </div>
         <!--/. Page End -->
+
     </main>
     <!--/. App Main End -->
 <?php
 get_footer();
+?>
