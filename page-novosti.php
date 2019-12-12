@@ -98,11 +98,11 @@
                                                 <?php the_post_thumbnail(array(533 ,200)); ?>
                                             </a>
                                             <div class="news__content">
-                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / <?php the_category(', '); ?>
                                                 <a href="<?php the_permalink(); ?>" class="news__title"><?php the_title(); ?></a>
                                                 <div class="news__text">
                                                     <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
                                                 </div>
+                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?> / <?php the_category(', '); ?></a>
                                             </div>
                                         </div>
                                     </div>
