@@ -1,19 +1,7 @@
 <?php get_header(); ?>
 <!-- App Main Begin -->
 <main role="main" class="app__main">
-<script>
-    var hash = window.location.hash;
-    var element = document.getElementById("t1");
-    switch (hash) {
- //       case "#story": alert(1); break;
-        case "#team":
-            alert(document.getElementById("t1").className);
-            document.getElementById('t1').className='tabs__link'; break;
-        case "#rewue": alert(31); document.getElementById('t1').className='tabs__link11'; break;
-        case "#vacancy": alert(41); document.getElementById('t1').className='tabs__link11'; break;
-    }
-</script>
-    <!-- Page Begin -->
+<!-- Page Begin -->
     <div class="page">
 
         <!-- Page Header Begin -->
@@ -402,4 +390,17 @@
     <!--/. Page End -->
 </main>
 <!--/. App Main End -->
+<script>
+    var hash = window.location.hash;
+    var element = document.getElementById("t1");
+    switch (hash) {
+        //       case "#story": alert(1); break;
+        case "#team":
+            alert(document.getElementById("t1").className);
+            document.getElementById('t1').className='tabs__link'; break;
+        case "#rewue": alert(31); document.getElementById('t1').className='tabs__link11'; break;
+        case "#vacancy": alert(41); document.getElementById('t1').className='tabs__link11'; break;
+    }
+</script>
+
 <?php get_footer(); ?>
