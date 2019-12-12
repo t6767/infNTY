@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2504e9bb-1d3f-497a-8647-f16f282eb8dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page-about.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-about.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,6 +31,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -61,7 +63,7 @@
       <workItem from="1576037062875" duration="351000" />
       <workItem from="1576037528827" duration="21459000" />
       <workItem from="1576123282523" duration="48000" />
-      <workItem from="1576128946870" duration="1921000" />
+      <workItem from="1576128946870" duration="2974000" />
     </task>
     <servers />
   </component>

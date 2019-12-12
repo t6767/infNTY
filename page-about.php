@@ -3,12 +3,11 @@
 <main role="main" class="app__main">
 <script>
     var hash = window.location.hash;
-    alert(hash);
     switch (hash) {
-        case "#story": alert(1); break;
-        case "#team": alert(2); break;
-        case "#rewue": alert(3); break;
-        case "#vacancy": alert(4); break;
+ //       case "#story": alert(1); break;
+        case "#team": alert(2); document.getElementById('t1').className='tabs__link'; break;
+        case "#rewue": alert(3); document.getElementById('t1').className='tabs__link'; break;
+        case "#vacancy": alert(4); document.getElementById('t1').className='tabs__link'; break;
     }
 </script>
     <!-- Page Begin -->
@@ -40,16 +39,16 @@
                 <div class="page__topbar">
                     <ul class="nav tabs">
                         <li class="tabs__item">
-                            <a class="tabs__link active" data-toggle="tab" href="#tabs-1" role="tab">История компании</a>
+                            <a class="tabs__link active" data-toggle="tab" id="t1" href="#tabs-1" role="tab">История компании</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" href="#tabs-2" role="tab">Команда</a>
+                            <a class="tabs__link" data-toggle="tab" id="t2" href="#tabs-2" role="tab">Команда</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" href="#tabs-3" role="tab">Отзывы</a>
+                            <a class="tabs__link" data-toggle="tab" id="t3" href="#tabs-3" role="tab">Отзывы</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" href="#tabs-4" role="tab">Вакансии</a>
+                            <a class="tabs__link" data-toggle="tab" id="t4" href="#tabs-4" role="tab">Вакансии</a>
                         </li>
                     </ul>
                 </div>
