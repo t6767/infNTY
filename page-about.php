@@ -386,22 +386,24 @@
         //       case "#story": alert(1); break;
         case "#team":
             document.getElementById('t2').className='tabs__link active';
-            document.getElementById('tabs-2').style.display="block"; break;
+            document.getElementById('tabs-2').style.display="block";
             document.getElementById('tabs-1').style.display="block";
             document.getElementById('t1').className='tabs__link active';
             document.getElementById('t3').className='tabs__link';
             document.getElementById('tabs-3').style.display="none";
             document.getElementById('t4').className='tabs__link';
             document.getElementById('tabs-4').style.display="none";
+            break;
         case "#rewue":
             document.getElementById('t3').className='tabs__link active';
-            document.getElementById('tabs-3').style.display="block"; break;
+            document.getElementById('tabs-3').style.display="block";
             document.getElementById('tabs-1').style.display="block";
             document.getElementById('t1').className='tabs__link active';
             document.getElementById('t2').className='tabs__link';
             document.getElementById('tabs-2').style.display="none";
             document.getElementById('t4').className='tabs__link';
             document.getElementById('tabs-4').style.display="none";
+            break;
         case "#vacancy":
             document.getElementById('t2').className='tabs__link';
             document.getElementById('tabs-2').style.display="none";
@@ -410,7 +412,8 @@
             document.getElementById('t1').className='tabs__link';
             document.getElementById('tabs-1').style.display="none";
             document.getElementById('t4').className='tabs__link active';
-            document.getElementById('tabs-4').style.display="block"; break;
+            document.getElementById('tabs-4').style.display="block";
+            break;
         default:
             document.getElementById('tabs-1').style.display="block";
             document.getElementById('t1').className='tabs__link active';
@@ -430,22 +433,24 @@
             //       case "#story": alert(1); break;
             case "#team":
                 document.getElementById('t2').className='tabs__link active';
-                document.getElementById('tabs-2').style.display="block"; break;
+                document.getElementById('tabs-2').style.display="block";
                 document.getElementById('tabs-1').style.display="block";
                 document.getElementById('t1').className='tabs__link active';
                 document.getElementById('t3').className='tabs__link';
                 document.getElementById('tabs-3').style.display="none";
                 document.getElementById('t4').className='tabs__link';
                 document.getElementById('tabs-4').style.display="none";
+                break;
             case "#rewue":
                 document.getElementById('t3').className='tabs__link active';
-                document.getElementById('tabs-3').style.display="block"; break;
+                document.getElementById('tabs-3').style.display="block";
                 document.getElementById('tabs-1').style.display="block";
                 document.getElementById('t1').className='tabs__link active';
                 document.getElementById('t2').className='tabs__link';
                 document.getElementById('tabs-2').style.display="none";
                 document.getElementById('t4').className='tabs__link';
                 document.getElementById('tabs-4').style.display="none";
+                break;
             case "#vacancy":
                 document.getElementById('t2').className='tabs__link';
                 document.getElementById('tabs-2').style.display="none";
@@ -454,7 +459,8 @@
                 document.getElementById('t1').className='tabs__link';
                 document.getElementById('tabs-1').style.display="none";
                 document.getElementById('t4').className='tabs__link active';
-                document.getElementById('tabs-4').style.display="block"; break;
+                document.getElementById('tabs-4').style.display="block";
+                break;
             default:
                 document.getElementById('tabs-1').style.display="block";
                 document.getElementById('t1').className='tabs__link active';
