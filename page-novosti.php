@@ -102,7 +102,7 @@
                                                 <div class="news__text">
                                                     <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
                                                 </div>
-                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?> / <?php the_category(', '); ?></a>
+                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / <?php the_category(', '); ?>
                                             </div>
                                         </div>
                                     </div>
