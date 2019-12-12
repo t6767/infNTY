@@ -17,7 +17,7 @@
                         <a href="#" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        О компании888
+                        О компании
                     </li>
                 </ul>
             </div>
@@ -388,6 +388,18 @@
         case "#rewue": document.getElementById('t1').className='tabs__link'; document.getElementById('tabs-1').style.display="none"; document.getElementById('t3').className='tabs__link active'; document.getElementById('tabs-3').style.display="block"; break;
         case "#vacancy": document.getElementById('t1').className='tabs__link'; document.getElementById('tabs-1').style.display="none"; document.getElementById('t4').className='tabs__link active'; document.getElementById('tabs-4').style.display="block"; break;
     }
+
+    function locationHashChanged() {
+        var hash = window.location.hash;
+        var element = document.getElementById("t1");
+        switch (hash) {
+            //       case "#story": alert(1); break;
+            case "#team": document.getElementById('t1').className='tabs__link'; document.getElementById('tabs-1').style.display="none"; document.getElementById('t2').className='tabs__link active'; document.getElementById('tabs-2').style.display="block"; break;
+            case "#rewue": document.getElementById('t1').className='tabs__link'; document.getElementById('tabs-1').style.display="none"; document.getElementById('t3').className='tabs__link active'; document.getElementById('tabs-3').style.display="block"; break;
+            case "#vacancy": document.getElementById('t1').className='tabs__link'; document.getElementById('tabs-1').style.display="none"; document.getElementById('t4').className='tabs__link active'; document.getElementById('tabs-4').style.display="block"; break;
+        }
+    }
+    window.onhashchange = locationHashChanged;
 </script>
 
 <?php get_footer(); ?>
