@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php
-echo $wp_query->post["post_content"];
+echo $wp_query->post->post_content;
 ?>
 
 
