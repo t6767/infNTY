@@ -395,11 +395,9 @@
     var element = document.getElementById("t1");
     switch (hash) {
         //       case "#story": alert(1); break;
-        case "#team":
-            alert(document.getElementById("t1").className);
-            document.getElementById('t1').className='tabs__link'; break;
-        case "#rewue": alert(31); document.getElementById('t1').className='tabs__link11'; break;
-        case "#vacancy": alert(41); document.getElementById('t1').className='tabs__link11'; break;
+        case "#team": document.getElementById('t1').className='tabs__link'; document.getElementById('tabs-1').style.display="none" document.getElementById('t2').className='tabs__link active'; break;
+        case "#rewue": document.getElementById('t1').className='tabs__link'; document.getElementById('tabs-1').style.display="none" document.getElementById('t3').className='tabs__link active'; break;
+        case "#vacancy": document.getElementById('t1').className='tabs__link'; document.getElementById('tabs-1').style.display="none" document.getElementById('t4').className='tabs__link active'; break;
     }
 </script>
 
