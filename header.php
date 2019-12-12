@@ -115,7 +115,7 @@ function the_excerpt_max_charlength( $charlength ){
         menu__link:hover {
             color: #fff;
             text-decoration: none;
-            opacity: 1;
+            opacity: 1 !important;
         }
     </style>
     <?php wp_head(); ?>
