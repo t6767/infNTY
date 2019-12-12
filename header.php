@@ -72,7 +72,7 @@ function the_excerpt_max_charlength( $charlength ){
             color: #1a73e8;
             text-decoration: none;
         }
-        .footer__link
+        .a
         {
             color: #000;
         }
