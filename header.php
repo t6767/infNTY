@@ -72,7 +72,7 @@ function the_excerpt_max_charlength( $charlength ){
             color: #1a73e8;
             text-decoration: none;
         }
-        .a
+        a
         {
             color: #000;
         }
