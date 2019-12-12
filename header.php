@@ -134,40 +134,6 @@ function the_excerpt_max_charlength( $charlength ){
             <?php
             wp_nav_menu(array('menu' => 'popupmemu1', 'menu_class' => 'menu__list'));
             ?>
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a href="#" class="menu__link">О компании1</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Решения</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Услуги</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Пресс-центр</a>
-                    <ul class="menu__sublist">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Новости</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">События</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Мероприятия</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">СМИ о нас</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Контакт с PR-службой</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Услуги</a>
-                </li>
-            </ul>
             <div class="menu__footer">
                 <div class="menu__info">
                     <p><strong>Алматы</strong>
