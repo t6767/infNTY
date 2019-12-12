@@ -27,7 +27,7 @@ get_header(); ?>
                     </div>
                     <ul class="breadcrumbs">
                         <li class="breadcrumbs__item">
-                            <a href="#" class="breadcrumbs__link">Ошибка 404</a>
+                            <a href="/" class="breadcrumbs__link">Главная</a>
                         </li>
                         <li class="breadcrumbs__item">
                             Ошибка 404
