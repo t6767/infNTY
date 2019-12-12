@@ -4,6 +4,12 @@
 <script>
     var hash = window.location.hash;
     alert(hash);
+    switch (hash) {
+        case "#story": alert(1); break;
+        case "#team": alert(2); break;
+        case "#rewue": alert(3); break;
+        case "#vacancy": alert(4); break;
+    }
 </script>
     <!-- Page Begin -->
     <div class="page">
@@ -34,10 +40,10 @@
                 <div class="page__topbar">
                     <ul class="nav tabs">
                         <li class="tabs__item">
-                            <a class="tabs__link active" data-toggle="tab" id="tab1x" href="#tabs-1" role="tab">История компании</a>
+                            <a class="tabs__link active" data-toggle="tab" href="#tabs-1" role="tab">История компании</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" id="tab2x" onclick="alert('Клик2');" href="#tabs-2" role="tab">Команда</a>
+                            <a class="tabs__link" data-toggle="tab" href="#tabs-2" role="tab">Команда</a>
                         </li>
                         <li class="tabs__item">
                             <a class="tabs__link" data-toggle="tab" href="#tabs-3" role="tab">Отзывы</a>
@@ -392,10 +398,6 @@
 
     </div>
     <!--/. Page End -->
-    <script>
-        let event = new Event("click");
-        tab2x.dispatchEvent(event);
-    </script>
 </main>
 <!--/. App Main End -->
 <?php get_footer(); ?>
