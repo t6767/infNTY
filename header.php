@@ -94,6 +94,14 @@ function the_excerpt_max_charlength( $charlength ){
             color: #fff;
             display: block;
         }
+        .sub-menu
+        {
+            margin: 0;
+            padding: 0 0 .625rem .9375rem;
+            text-indent: 0;
+            list-style: none;
+            list-style-position: outside;
+        }
     </style>
     <?php wp_head(); ?>
 </head>
