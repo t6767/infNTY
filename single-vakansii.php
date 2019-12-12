@@ -66,4 +66,9 @@
     <!--/. Page End -->
 
 </main>
+<?php
+echo "<pre>";
+var_dump($wp_query->post);
+echo "</pre>";
+?>
 <?php get_footer(); ?>
