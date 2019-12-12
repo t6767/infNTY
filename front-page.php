@@ -199,71 +199,71 @@
                     <div class="features row">
                         <div class="features__col">
                             <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
-                                <div class="features__title">мобильный банкинг</div>
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-1.svg" class="features__icon" alt="">
+                                <div class="features__title">Интернет-банкинг</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p2.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-1.jpg')"></div>
                             </a>
                             <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
-                                <div class="features__title">портал самообслуживания</div>
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-4.svg" class="features__icon" alt="">
+                                <div class="features__title">маркетплейс</div>
                                 <div class="features__text">Коммуникация без участия или с минимальным участием менеджеров Банка</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p3.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-4.jpg')"></div>
                             </a>
                             <a href="#" class="features__item -inverted">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
-                                <div class="features__title">мобильный банкинг</div>
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-7.svg" class="features__icon" alt="">
+                                <div class="features__title">программа лояльности</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p4.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-7.jpg')"></div>
                             </a>
                         </div>
                         <div class="features__col">
                             <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
-                                <div class="features__title">мобильный банкинг</div>
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-2.svg" class="features__icon" alt="">
+                                <div class="features__title">Мобильный банкинг</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p2.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-2.jpg')"></div>
                             </a>
                             <a href="#" class="features__item -inverted">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
-                                <div class="features__title">портал самообслуживания</div>
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-5.svg" class="features__icon" alt="">
+                                <div class="features__title">чат-боты</div>
                                 <div class="features__text">Коммуникация без участия или с минимальным участием менеджеров Банка</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p3.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-5.jpg')"></div>
                             </a>
                             <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
-                                <div class="features__title">мобильный банкинг</div>
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-8.svg" class="features__icon" alt="">
+                                <div class="features__title">тендерная площадка</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p4.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-8.jpg')"></div>
                             </a>
                         </div>
                         <div class="features__col">
                             <a href="#" class="features__item -inverted">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
-                                <div class="features__title">мобильный банкинг</div>
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-3.svg" class="features__icon" alt="">
+                                <div class="features__title">Портал самообслуживания</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p2.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-3.jpg')"></div>
                             </a>
                             <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
-                                <div class="features__title">портал самообслуживания</div>
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-6.svg" class="features__icon" alt="">
+                                <div class="features__title">Единый платежный шлюз</div>
                                 <div class="features__text">Коммуникация без участия или с минимальным участием менеджеров Банка</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p3.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-6.jpg')"></div>
                             </a>
                             <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/touch.svg" class="features__icon" alt="">
-                                <div class="features__title">мобильный банкинг</div>
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-9.svg" class="features__icon" alt="">
+                                <div class="features__title">qr-платежи и переводы</div>
                                 <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/p4.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-9.jpg')"></div>
                             </a>
                         </div>
                     </div>
