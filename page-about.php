@@ -57,7 +57,7 @@
                                 <div class="about__top-content">
                                     <img src="<?php bloginfo('template_url'); ?>/static/img/content/infin.png" alt="">
                                     <div class="about__top-stats">
-                                        101 +
+                                        10 +
                                         <br>
                                         <span>лет развития<br>и создания нового</span>
                                     </div>
@@ -358,7 +358,7 @@
                                             <div class="vacancy__content">
                                                 <div class="vacancy__text">
                                                     <p>
-                                                        <?=new_excerpt_more(the_excerpt_max_charlength(150))?>                                                    </p>
+                                                        <?php the_excerpt(); ?>                                                    </p>
                                                 </div>
                                                 <a href="<?php the_permalink(); ?>" class="vacancy__link">Читать полностью</a>
                                             </div>
