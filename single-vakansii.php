@@ -53,7 +53,7 @@ $dpole = get_post_meta( $wp_query->post->ID, 'kontakt' );
                             <div class="aside-news__header">Контактная информация:</div>
                             <div class="aside-news__content">
                                 <div class="aside-news__text">
-                                    <?=$dpole ?>
+                                    <?=$dpole[0] ?>
                                 </div>
                             </div>
                         </div>
@@ -68,8 +68,8 @@ $dpole = get_post_meta( $wp_query->post->ID, 'kontakt' );
 
 </main>
 <?php
-echo "<pre>";
-var_dump($wp_query->post);
-echo "</pre>";
+//echo "<pre>";
+//var_dump($wp_query->post);
+//echo "</pre>";
 ?>
 <?php get_footer(); ?>
