@@ -37,7 +37,7 @@
                             <a class="tabs__link active" data-toggle="tab" id="tab1x" href="#tabs-1" role="tab">История компании</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" id="tab2x" onclick="alert('Клик!');" href="#tabs-2" role="tab">Команда</a>
+                            <a class="tabs__link" data-toggle="tab" id="tab2x" onclick="alert('Клик2');" href="#tabs-2" role="tab">Команда</a>
                             <script>
                                 let event = new Event("click");
                                 tab2x.dispatchEvent(event);
