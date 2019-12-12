@@ -9,15 +9,15 @@
             <div class="container">
                 <div class="page__header-title typed-effect">
                     <div id="js-typed-strings">
-                        <p>Компьютерщик</p>
+                        <p><?=$wp_query->post->post_title ?></p>
                     </div>
                 </div>
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs__item">
-                        <a href="#" class="breadcrumbs__link">Главная</a>
+                        <a href="/" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        Компьютерщик
+                        <?=$wp_query->post->post_title ?>
                     </li>
                 </ul>
             </div>
