@@ -40,11 +40,15 @@ $the_query = new WP_Query( $args );
         <div class="page__content">
             <div class="container">
                 <div class="search-results">
-                    <form class="search-results__header">
+                    <form class="search-results__header" id="searchform" method="get" action="<?php echo home_url('/'); ?>">
                         <div class="control mb-0">
-                            <input type="search" class="control__input search-results__input" placeholder="Найти" value="<?=$s?>">
+                            <input type="search" class="control__input search-results__input" name="s" placeholder="Найти" value="<?=$s?>">
                         </div>
-                        <button type="submit" class="button -bordered search-results__button">Искать</button>
+                        <input type="hidden" name="post_type[]" value="book" />
+                        <input type="hidden" name="post_type[]" value="magazine" />
+                        <input type="hidden" name="post_type[]" value="ebook" />
+                        <input type="hidden" name="post_type[]" value="pdf" />
+                        <button type="submit" class="button -bordered search-results__button" value="Search">Искать</button>
                     </form>
                     <?php
                         if ( $the_query->have_posts() ) {
