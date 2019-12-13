@@ -32,7 +32,7 @@ get_header();
                 <div class="row">
                     <div class="col-md-8">
                         <div class="article">
-                            <div style="float: right"><?php the_post_thumbnail(); ?> </div>
+                            <div><?php the_post_thumbnail(); ?> </div>
                             <?php echo $wp_query->post->post_content; ?>
                         </div>
                     </div>
