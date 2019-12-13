@@ -1,3 +1,6 @@
+<?php
+get_header();
+?>
 <main role="main" class="app__main">
 
     <!-- Page Begin -->
