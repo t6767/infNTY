@@ -52,7 +52,7 @@ $the_query = new WP_Query( $args );
                                     <a href="<?php the_permalink(); ?>" class="search-results__title"><?php the_title(); ?></a>
                                     <p><?=the_excerpt()?></p>
                                     <p class="mb-2">Дата: <?php echo get_the_date("d.m.Y"); ?></p>
-                                    <p>Путь: <a href="/">Главная</a> / <a href="/novosti/"><?php the_category(', '); ?></a>
+                                    <p>Путь: <a href="/">Главная</a> / <?php the_category(', '); ?>
                                     </p>
                                 </div>
                                 <?php
