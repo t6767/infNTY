@@ -128,7 +128,11 @@ function the_excerpt_max_charlength( $charlength ){
         <button type="button" class="menu__close">Закрыть</button>
         <div class="menu__inner">
             <form class="menu__search" id="searchform" method="get" action="<?php echo home_url('/'); ?>">
-                <input type="search" class="menu__search-input" value="<?php the_search_query(); ?>">
+                <input type="text" class="menu__search-input" value="<?php the_search_query(); ?>">
+                <input type="hidden" name="post_type[]" value="book" />
+                <input type="hidden" name="post_type[]" value="magazine" />
+                <input type="hidden" name="post_type[]" value="ebook" />
+                <input type="hidden" name="post_type[]" value="pdf" />
                 <button type="submit" class="menu__search-button" value="Search">Искать</button>
             </form>
 <!--            <form id="searchform" method="get" action="<?php echo home_url('/'); ?>">
