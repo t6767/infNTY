@@ -1,5 +1,9 @@
 <?php get_header(); ?>
-<?php $s=get_search_query(); ?>
+<?php
+$s=get_search_query();
+$args = array('s' =>$s );
+$the_query = new WP_Query( $args );
+?>
 <!-- App Main Begin -->
 <main role="main" class="app__main">
 
@@ -71,5 +75,7 @@
 
 </main>
 <!--/. App Main End -->
-<?php var_dump($s); ?>
+<pre>
+<?php var_dump($the_query); ?>
+</pre>
 <?php get_footer(); ?>
