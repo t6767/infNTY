@@ -4,6 +4,12 @@ $s=get_search_query();
 $args = array('s' =>$s );
 $the_query = new WP_Query( $args );
 ?>
+<style>
+    a
+    {
+    color: #1a73e8;
+    }
+</style>
 <!-- App Main Begin -->
 <main role="main" class="app__main">
 
