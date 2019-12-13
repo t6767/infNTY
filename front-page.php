@@ -278,7 +278,7 @@
                 </div>
             </section>
             <!--/. Partners End -->
-
+            <?php get_search_form(); ?>
         </main>
         <!--/. App Main End -->
 <?php get_footer(); ?>
