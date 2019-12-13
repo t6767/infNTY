@@ -174,14 +174,14 @@
                             </a>
                         </div>
                         <div class="col-md-4">
-                            <a href="#" class="info-card">
+                            <a href="/about/#rewue" class="info-card">
                                 <div class="info-card__title">Отывы заказчиков и партнеров</div>
                                 <div class="info-card__text">InFin-IT Solution является научно-производственной компанией, занимающейся разработкой инновационных решений в области цифровых каналов для международного рынка.</div>
                                 <div class="info-card__link">Подробнее</div>
                             </a>
                         </div>
                         <div class="col-md-4">
-                            <a href="#" class="info-card">
+                            <a href="/novosti/" class="info-card">
                                 <div class="info-card__title">Пресс-центр</div>
                                 <div class="info-card__text">InFin-IT Solution является научно-производственной компанией, занимающейся разработкой инновационных решений в области цифровых каналов для международного рынка.</div>
                                 <div class="info-card__link">Подробнее</div>
