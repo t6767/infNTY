@@ -89,7 +89,7 @@
                         <input type="text" name="company" class="control__input" placeholder="Компания">
                     </div>
                     <div class="control">
-                        <input type="text" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
+                        <input type="text" name="phone" class="control__input" placeholder="+78 (***) ***-**-**">
                     </div>
                     <div class="control">
                         <input type="text" name="email" class="control__input" placeholder="Email">

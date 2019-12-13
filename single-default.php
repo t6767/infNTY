@@ -8,5 +8,5 @@ var_dump($wp_query->post);
 echo "</pre>";
 ?>
 </div>
-
+<?php the_post_thumbnail(array(533 ,200)); ?>
 <?php get_footer(); ?>
