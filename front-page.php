@@ -221,8 +221,11 @@
                                     <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-1.svg" class="features__icon" alt="">
                                     <div class="features__title"><?php the_title(); ?></div>
                                     <div class="features__text"><?=the_excerpt_max_charlength(150)?></div>
-                                    <div class="features__link">Подробнее<?=$dpole[0]?>33</div>
+                                    <div class="features__link">Под<?=$query->get_the_ID() ?>робне<?=$dpole[0]?>е</div>
                                     <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-1.jpg')"></div>
+                                <?php
+                                var_dump($dpole[0]);
+                                ?>
                                 </a>
                                 <?php
                                 $i++;
