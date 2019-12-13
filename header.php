@@ -104,6 +104,9 @@ function the_excerpt_max_charlength( $charlength ){
             text-decoration: none;
             opacity: .8;
         }
+        .ttt > a{
+            color:#1a73e8;
+        }
         .sub-menu
         {
             margin: 0;
@@ -135,15 +138,6 @@ function the_excerpt_max_charlength( $charlength ){
                 <input type="hidden" name="post_type[]" value="pdf" />
                 <button type="submit" class="menu__search-button" value="Search">Искать</button>
             </form>
-<!--            <form id="searchform" method="get" action="<?php echo home_url('/'); ?>">
-                <input type="text" class="search-field" name="s" placeholder="Search" value="<?php the_search_query(); ?>">
-                <input type="hidden" name="post_type[]" value="book" />
-                <input type="hidden" name="post_type[]" value="magazine" />
-                <input type="hidden" name="post_type[]" value="ebook" />
-                <input type="hidden" name="post_type[]" value="pdf" />
-                <input type="submit" value="Search">
-            </form>
--->
             <?php
             wp_nav_menu(array('menu' => 'popupmemu1', 'menu_class' => 'menu__list'));
             ?>
