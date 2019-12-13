@@ -60,6 +60,7 @@
                                 array(
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
+                                    'posts_per_page' => 9,
                                     'cat' => [23],
                                     'post__not_in' => array(get_the_ID()),
                                     'orderby' => 'date',
@@ -82,7 +83,7 @@
                                         <div class="features__title"><?php the_title(); ?></div>
                                         <div class="features__text"><?=the_excerpt_max_charlength(150)?></div>
                                         <div class="features__link">Подробнее</div>
-                                        <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-1.jpg')"></div>
+                                        <div class="features__background" style="background-image: url('<?=get_the_post_thumbnail_url()?>')"></div>
                                     </a>
                                     <?php
                                     $i++;
