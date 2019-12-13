@@ -215,13 +215,13 @@
                             while ($query->have_posts()) {
                                 if ($i==0) {echo '<div class="features__col">';}
                                 $query->the_post();
-                                $dpole = get_post_meta( $query->post->ID, 'vid' );
+                                $dpole = get_post_meta( $query->the_post()->ID, 'vid' );
                                 ?>
                                 <a href="<?=get_permalink()?>" class="features__item">
                                     <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-1.svg" class="features__icon" alt="">
                                     <div class="features__title"><?php the_title(); ?></div>
                                     <div class="features__text"><?=the_excerpt_max_charlength(150)?></div>
-                                    <div class="features__link">Подробнее<?=$dpole[0]?></div>
+                                    <div class="features__link">Подробнее<?=$dpole[0]?>33</div>
                                     <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-1.jpg')"></div>
                                 </a>
                                 <?php
