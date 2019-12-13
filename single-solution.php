@@ -134,7 +134,7 @@ get_header();
                                 </div>
                             </div>
                             <div class="text-center mt-5">
-                                <a href="#" id="linkesho" onclick="document.getElementById('linkesho').style.display='none'; document.getElementById('showmore').style.display='flex'; ">Посмотреть ещё</a>
+                                <a href="javascript:void(0);" id="linkesho" onclick="document.getElementById('linkesho').style.display='none'; document.getElementById('showmore').style.display='flex'; ">Посмотреть ещё</a>
                             </div>
                             <div class="row" vertical-gutter="30" id="showmore" style="display: none;">
                                 <div class="col-md-6">
