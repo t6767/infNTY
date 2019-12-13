@@ -39,7 +39,6 @@ get_header();
                 </div>
                 </div>
             </div>
-        </div>
         <!--/. Page Content End -->
 
     </div>
