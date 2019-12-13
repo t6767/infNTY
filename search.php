@@ -50,10 +50,7 @@ $the_query = new WP_Query( $args );
                                 ?>
                                 <div class="search-results__item">
                                     <a href="<?php the_permalink(); ?>" class="search-results__title"><?php the_title(); ?></a>
-                                    <p>... ИТ сервисов, определенное на уровне правления или высшего руководства.
-                                        Названия таких структур попадают в одну из следующих категорий: Разработка
-                                        прикладных систем Эксплуатация Поддержка Безопасность Архитектурное
-                                        планирование И так далее Эти структуры начинают ссылаться ...</p>
+                                    <p><?=the_excerpt()?></p>
                                     <p class="mb-2">Дата: <?php echo get_the_date("d.m.Y"); ?></p>
                                     <p>Путь: <a href="/">Главная</a> / <a href="/novosti/"><?php the_category(', '); ?></a>
                                     </p>
