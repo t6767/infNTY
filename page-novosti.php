@@ -32,16 +32,16 @@
                 <div class="page__topbar">
                     <ul class="nav tabs">
                         <li class="tabs__item">
-                            <a class="tabs__link active" data-toggle="tab" href="#tabs-1" role="tab">Новости</a>
+                            <a class="tabs__link active" data-toggle="tab" id="t1" onclick="changeHash('');" href="#tabs-1" role="tab">Новости</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" href="#tabs-2" role="tab">События</a>
+                            <a class="tabs__link" data-toggle="tab"  id="t2" onclick="changeHash('');" href="#tabs-2" role="tab">События</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" href="#tabs-3" role="tab">Мероприятия</a>
+                            <a class="tabs__link" data-toggle="tab"  id="t3" onclick="changeHash('');" href="#tabs-3" role="tab">Мероприятия</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" href="#tabs-4" role="tab">СМИ о нас</a>
+                            <a class="tabs__link" data-toggle="tab"  id="t4" onclick="changeHash('');" href="#tabs-4" role="tab">СМИ о нас</a>
                         </li>
                     </ul>
                     <!--<div class="category-select dropdown">
@@ -338,4 +338,67 @@
 
 </main>
 <!--/. App Main End -->
+<script>
+    function hashKoder(hash) {
+        switch (hash) {
+            //       case "#story": alert(1); break;
+            case "#sobitiya":
+                document.getElementById('t2').className='tabs__link active';
+                document.getElementById('tabs-2').style.display="block";
+                document.getElementById('t1').className='tabs__link';
+                document.getElementById('tabs-1').style.display="none";
+                document.getElementById('t3').className='tabs__link';
+                document.getElementById('tabs-3').style.display="none";
+                document.getElementById('t4').className='tabs__link';
+                document.getElementById('tabs-4').style.display="none";
+                break;
+            case "#meropriyatiya":
+                document.getElementById('t3').className='tabs__link active';
+                document.getElementById('tabs-3').style.display="block";
+                document.getElementById('t1').className='tabs__link';
+                document.getElementById('tabs-1').style.display="none";
+                document.getElementById('t2').className='tabs__link';
+                document.getElementById('tabs-2').style.display="none";
+                document.getElementById('t4').className='tabs__link';
+                document.getElementById('tabs-4').style.display="none";
+                break;
+            case "#smionas":
+                document.getElementById('t2').className='tabs__link';
+                document.getElementById('tabs-2').style.display="none";
+                document.getElementById('t3').className='tabs__link';
+                document.getElementById('tabs-3').style.display="none";
+                document.getElementById('t1').className='tabs__link';
+                document.getElementById('tabs-1').style.display="none";
+                document.getElementById('t4').className='tabs__link active';
+                document.getElementById('tabs-4').style.display="block";
+                break;
+            default:
+                document.getElementById('tabs-1').style.display="block";
+                document.getElementById('t1').className='tabs__link active';
+                document.getElementById('t2').className='tabs__link';
+                document.getElementById('tabs-2').style.display="none";
+                document.getElementById('t3').className='tabs__link';
+                document.getElementById('tabs-3').style.display="none";
+                document.getElementById('t4').className='tabs__link';
+                document.getElementById('tabs-4').style.display="none";
+                break;
+        }
+    }
+
+    var hash = window.location.hash;
+    hashKoder(hash);
+
+    function locationHashChanged() {
+        var hash = window.location.hash;
+        hashKoder(hash);
+    }
+
+    function changeHash(h)
+    {
+        window.location.hash=h;
+        var hash = window.location.hash;
+        hashKoder(hash);
+    }
+    window.onhashchange = locationHashChanged;
+</script>
 <?php get_footer(); ?>
