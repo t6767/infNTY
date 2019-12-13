@@ -225,7 +225,7 @@
                                     <div class="features__title"><?php the_title(); ?></div>
                                     <div class="features__text"><?=the_excerpt_max_charlength(150)?></div>
                                     <div class="features__link">Подробнее</div>
-                                    <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-1.jpg')"></div>
+                                    <div class="features__background" style="background-image: url('<?=get_the_post_thumbnail_url()?>')"></div>
                                 </a>
                                 <?php
                                 $i++;
