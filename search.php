@@ -47,7 +47,7 @@ $the_query = new WP_Query( $args );
                     <?php
                         if ( $the_query->have_posts() ) {
                             ?>
-                            <h5>Результаты поиска <?=wp_count_posts()?></h5>
+                            <h5>Результаты поиска <?=$the_query->found_posts?></h5>
                     <?php
                             while ( $the_query->have_posts() ) {
                                 $the_query->the_post();
