@@ -228,7 +228,6 @@
                                     <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-1.jpg')"></div>
                                 </a>
                                 <?php
-                                var_dump($icon);
                                 $i++;
                                 if ($i==3) {echo '</div>'; $i=0;}
                             }
