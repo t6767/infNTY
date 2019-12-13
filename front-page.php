@@ -221,7 +221,7 @@
                                 if ($icon[0]!='') $ic=$icon[0]; else $ic="features-icon-1.svg";
                                 ?>
                                 <a href="<?=get_permalink()?>" class="features__item<?=$style?>">
-                                    <img src="<?php bloginfo('template_url'); ?>/static/img/general/<?=$ic?>>" class="features__icon" alt="">
+                                    <img src="<?php bloginfo('template_url'); ?>/static/img/general/<?=$ic?>" class="features__icon" alt="">
                                     <div class="features__title"><?php the_title(); ?></div>
                                     <div class="features__text"><?=the_excerpt_max_charlength(150)?></div>
                                     <div class="features__link">Подробнее</div>
