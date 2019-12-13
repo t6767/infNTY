@@ -34,7 +34,7 @@ get_header();
                     <div class="article__img">
                         <img src="<?=get_the_post_thumbnail_url()?>" alt="">
                     </div>
-                    <?php echo $wp_query->post->post_content; ?>
+                    <p><?php echo $wp_query->post->post_content; ?></p>
                 </div>
             </div>
         </div>
