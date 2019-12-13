@@ -81,5 +81,11 @@ $the_query = new WP_Query( $args );
     <!--/. Page End -->
 
 </main>
+    <style>
+        a
+        {
+            color: #000;
+        }
+    </style>
 <!--/. App Main End -->
 <?php get_footer(); ?>
