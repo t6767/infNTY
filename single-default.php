@@ -1,13 +1,14 @@
 <?php
 get_header();
 ?>
+<!-- App Main Begin -->
 <main role="main" class="app__main">
 
     <!-- Page Begin -->
     <div class="page">
 
         <!-- Page Header Begin -->
-        <div class="page__header" style="background-image: url('static/img/content/header-bg.jpg')">
+        <div class="page__header" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/header-bg.jpg')">
             <div class="container">
                 <div class="page__header-title typed-effect">
                     <div id="js-typed-strings">
@@ -29,20 +30,20 @@ get_header();
         <!-- Page Content Begin -->
         <div class="page__content">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="article">
-                            <div style="float: right"><?php the_post_thumbnail(); ?> </div>
-                            <?php echo $wp_query->post->post_content; ?>
-                        </div>
+                <div class="article">
+                    <div class="article__img">
+                        <img src="<?=get_the_post_thumbnail_url()?>" alt="">
                     </div>
-                </div>
+                    <?php echo $wp_query->post->post_content; ?>
                 </div>
             </div>
+        </div>
         <!--/. Page Content End -->
 
     </div>
     <!--/. Page End -->
 
 </main>
+<!--/. App Main End -->
+
 <?php get_footer(); ?>
