@@ -215,7 +215,7 @@
                             while ($query->have_posts()) {
                                 if ($i==0) {echo '<div class="features__col">';}
                                 $query->the_post();
-                                $dpole = get_post_meta( $query->the_post()->ID, 'vid' );
+                                $dpole = get_post_meta( $query->get_the_ID(), 'vid' );
                                 ?>
                                 <a href="<?=get_permalink()?>" class="features__item">
                                     <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-1.svg" class="features__icon" alt="">
