@@ -30,9 +30,9 @@ get_header();
         <div class="page__content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col">
                         <div class="article">
-                            <div><?php the_post_thumbnail(); ?> </div>
+                            <div style="float: right"><?php the_post_thumbnail(); ?> </div>
                             <?php echo $wp_query->post->post_content; ?>
                         </div>
                     </div>
