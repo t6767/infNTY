@@ -244,36 +244,28 @@
                 <div class="container section__container">
                     <div class="section__background-title" data-parallax='{"y": 80, "smoothness": 65}'>НАМ ДОВЕРЯЮТ</div>
                     <div class="row align-items-center" vertical-gutter="40">
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/prime_source.png" class="w-100" alt="">
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/sberbank.png" class="w-100" alt="">
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/forbes-logo.png" class="w-100" alt="">
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/prime_source.png" class="w-100" alt="">
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/sberbank.png" class="w-100" alt="">
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/forbes-logo.png" class="w-100" alt="">
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/prime_source.png" class="w-100" alt="">
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/sberbank.png" class="w-100" alt="">
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/forbes-logo.png" class="w-100" alt="">
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
-                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/forbes-logo.png" class="w-100" alt="">
-                        </div>
+                        <?php
+                        $query = new WP_Query(
+                            array(
+                                'post_type' => 'post',
+                                'post_status' => 'publish',
+                                'cat' => [26],
+                                'post__not_in' => array(get_the_ID()),
+                                'orderby' => 'date',
+                                'order' => 'DESC',
+                                'paged' => $my_page
+                            )
+                        );
+                        if ($query->have_posts()) {
+                            while ($query->have_posts()) {
+                                $query->the_post();
+                                ?>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-2dot4">
+                                    <img src="<?=get_the_post_thumbnail_url()?>" class="w-100" alt="">
+                                </div>
+                                <?php
+                            }}
+                        ?>
                     </div>
                 </div>
             </section>
