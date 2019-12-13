@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php $s=get_search_query(); ?>
 <!-- App Main Begin -->
 <main role="main" class="app__main">
 
@@ -70,4 +71,5 @@
 
 </main>
 <!--/. App Main End -->
+<?php var_dump($s); ?>
 <?php get_footer(); ?>
