@@ -136,6 +136,36 @@ get_header();
                             <div class="text-center mt-5">
                                 <a href="#">Посмотреть ещё</a>
                             </div>
+                            <div class="row" vertical-gutter="30">
+                                <div class="col-md-6">
+                                    <div class="projects">
+                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/reviews.png" class="projects__img" alt="">
+                                        <p>BANK - казахстанский розничный системообразующий банк. Головной офис находится в Алма-Ате.</p>
+                                        <strong>ИТ-поддержка производства и центрального офиса</strong>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="projects">
+                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/reviews.png" class="projects__img" alt="">
+                                        <p>BANK - казахстанский розничный системообразующий банк. Головной офис находится в Алма-Ате.</p>
+                                        <strong>ИТ-поддержка производства и центрального офиса</strong>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="projects">
+                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/reviews.png" class="projects__img" alt="">
+                                        <p>BANK - казахстанский розничный системообразующий банк. Головной офис находится в Алма-Ате.</p>
+                                        <strong>ИТ-поддержка производства и центрального офиса</strong>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="projects">
+                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/reviews.png" class="projects__img" alt="">
+                                        <p>BANK - казахстанский розничный системообразующий банк. Головной офис находится в Алма-Ате.</p>
+                                        <strong>ИТ-поддержка производства и центрального офиса</strong>
+                                    </div>
+                                </div>
+                            </div>
                             <form class="form -cta">
                                 <h2 class="form__title">Связаться с нами</h2>
                                 <div class="row align-items-end" vertical-gutter="30">
