@@ -13,15 +13,15 @@ get_header();
             <div class="container">
                 <div class="page__header-title typed-effect">
                     <div id="js-typed-strings">
-                        <p>Решения</p>
+                        <p><?=$wp_query->post->post_title ?></p>
                     </div>
                 </div>
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs__item">
-                        <a href="#" class="breadcrumbs__link">Главная</a>
+                        <a href="/" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        Решения
+                        <?=$wp_query->post->post_title ?>
                     </li>
                 </ul>
             </div>
@@ -98,15 +98,10 @@ get_header();
                     </div>
                     <div class="col-md-8">
                         <div class="article">
-                            <h1>Интернет-банкинг</h1>
-                            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей
-                                стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.</p>
-                            <ul>
-                                <li>Консалтинг и бизнес-приложения</li>
-                                <li>Инфраструктура и инженерные системы</li>
-                                <li>Системы безопасности</li>
-                                <li>Аутсорсинг и сервис</li>
-                            </ul>
+                            <h1><?=$wp_query->post->post_title ?></h1>
+                            <p>
+                                <?php echo $wp_query->post->post_content; ?>
+                            </p>
                             <h2 class="mt-4">Примеры реализации</h2>
                             <div class="row" vertical-gutter="30">
                                 <div class="col-md-6">
