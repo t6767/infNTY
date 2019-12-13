@@ -134,9 +134,9 @@ get_header();
                                 </div>
                             </div>
                             <div class="text-center mt-5">
-                                <a href="#" id="linkesho" onclick=" document.getElementById('linkesho').style.display='none;'">Посмотреть ещё</a>
+                                <a href="#" id="linkesho" onclick="document.getElementById('linkesho').style.display='none'; document.getElementById('showmore').style.display='block'; ">Посмотреть ещё</a>
                             </div>
-                            <div class="row" vertical-gutter="30" id="showmore">
+                            <div class="row" vertical-gutter="30" id="showmore" style="display: none;">
                                 <div class="col-md-6">
                                     <div class="projects">
                                         <img src="<?php bloginfo('template_url'); ?>/static/img/content/reviews.png" class="projects__img" alt="">
