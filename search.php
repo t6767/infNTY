@@ -42,6 +42,9 @@ $the_query = new WP_Query( $args );
                     </form>
                     <?php
                         if ( $the_query->have_posts() ) {
+                            ?>
+                            <h5>Результаты поиска 23</h5>
+                    <?php
                             while ( $the_query->have_posts() ) {
                                 $the_query->the_post();
                                 ?>
@@ -51,7 +54,7 @@ $the_query = new WP_Query( $args );
                                         Названия таких структур попадают в одну из следующих категорий: Разработка
                                         прикладных систем Эксплуатация Поддержка Безопасность Архитектурное
                                         планирование И так далее Эти структуры начинают ссылаться ...</p>
-                                    <p class="mb-2">Дата: <?php echo get_the_date("d.m.Y"); ?>></p>
+                                    <p class="mb-2">Дата: <?php echo get_the_date("d.m.Y"); ?></p>
                                     <p>Путь: <a href="/">Главная</a> / <a href="/novosti/"><?php the_category(', '); ?></a>
                                     </p>
                                 </div>
