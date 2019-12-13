@@ -127,10 +127,19 @@ function the_excerpt_max_charlength( $charlength ){
     <div class="menu__col">
         <button type="button" class="menu__close">Закрыть</button>
         <div class="menu__inner">
-            <form class="menu__search">
-                <input type="search" class="menu__search-input">
-                <button type="button" class="menu__search-button">Искать</button>
+            <form class="menu__search" id="searchform" method="get" action="<?php echo home_url('/'); ?>">
+                <input type="search" class="menu__search-input" value="<?php the_search_query(); ?>">
+                <button type="submit" class="menu__search-button" value="Search">Искать</button>
             </form>
+<!--            <form id="searchform" method="get" action="<?php echo home_url('/'); ?>">
+                <input type="text" class="search-field" name="s" placeholder="Search" value="<?php the_search_query(); ?>">
+                <input type="hidden" name="post_type[]" value="book" />
+                <input type="hidden" name="post_type[]" value="magazine" />
+                <input type="hidden" name="post_type[]" value="ebook" />
+                <input type="hidden" name="post_type[]" value="pdf" />
+                <input type="submit" value="Search">
+            </form>
+-->
             <?php
             wp_nav_menu(array('menu' => 'popupmemu1', 'menu_class' => 'menu__list'));
             ?>

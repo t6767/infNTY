@@ -278,14 +278,6 @@
                 </div>
             </section>
             <!--/. Partners End -->
-            <form id="searchform" method="get" action="<?php echo home_url('/'); ?>">
-                <input type="text" class="search-field" name="s" placeholder="Search" value="<?php the_search_query(); ?>">
-                <input type="hidden" name="post_type[]" value="book" />
-                <input type="hidden" name="post_type[]" value="magazine" />
-                <input type="hidden" name="post_type[]" value="ebook" />
-                <input type="hidden" name="post_type[]" value="pdf" />
-                <input type="submit" value="Search">
-            </form>
         </main>
         <!--/. App Main End -->
 <?php get_footer(); ?>
