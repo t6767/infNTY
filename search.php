@@ -78,7 +78,4 @@ $the_query = new WP_Query( $args );
 
 </main>
 <!--/. App Main End -->
-<pre>
-<?php var_dump($the_query); ?>
-</pre>
 <?php get_footer(); ?>
