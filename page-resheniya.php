@@ -60,7 +60,7 @@
                                 array(
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
-                                    'cat' => [23],
+                                    'cat' => [22],
                                     'post__not_in' => array(get_the_ID()),
                                     'orderby' => 'date',
                                     'order' => 'DESC',
