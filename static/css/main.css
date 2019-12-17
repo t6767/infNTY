@@ -21168,6 +21168,12 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   z-index: -4;
 }
 
+@media (max-width: 1199.98px) {
+  .section__background-title {
+    left: 0;
+  }
+}
+
 @media (max-width: 991.98px) {
   .section__background-title {
     font-size: 80px;
@@ -21384,6 +21390,11 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   text-decoration: none;
 }
 
+.features__item:hover .features__icon, .features__item:focus .features__icon {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
 .features__item:hover:before,
 .features__item:hover .features__background, .features__item:focus:before,
 .features__item:focus .features__background {
@@ -21440,6 +21451,8 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   position: absolute;
   top: 25px;
   right: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (max-width: 767.98px) {
@@ -21901,6 +21914,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #fff;
 }
 
 @media (max-width: 767.98px) {
