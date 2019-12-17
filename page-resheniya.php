@@ -71,7 +71,7 @@
                             $i=0;
                             if ($query->have_posts()) {
                                 while ($query->have_posts()) {
-                                    if ($i==0) {echo '<div class="features__col">';}
+                                    if ($i==0) {echo '<div class="col-md-6 col-lg-4">';}
                                     $query->the_post();
                                     $dpole = get_post_meta( get_the_ID(), 'vid' );
                                     $icon = get_post_meta( get_the_ID(), 'icon' );

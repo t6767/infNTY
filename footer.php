@@ -53,7 +53,7 @@
                         </a>
                     </li>
                 </ul>
-                <img src="<?php bloginfo('template_url'); ?>/static/img/general/logo2.svg" class="footer__logo" alt="">
+                <img src="<?php bloginfo('template_url'); ?>/static/img/general/logo.svg" class="footer__logo" alt="">
                 <p>Все права защищены
                     <br>2019 год</p>
             </div>

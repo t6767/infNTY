@@ -28,11 +28,11 @@
         <!-- Page Content Begin -->
         <div class="page__content">
             <div class="container">
-<section>
-    <?php if (have_posts()): while (have_posts()): the_post(); ?>
-        <?php the_content(); ?>
-    <?php endwhile; endif; ?>
-</section>
+			<section>
+				<?php if (have_posts()): while (have_posts()): the_post(); ?>
+					<?php the_content(); ?>
+				<?php endwhile; endif; ?>
+			</section>
             </div>
         </div>
         <!--/. Page Content End -->
