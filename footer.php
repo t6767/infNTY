@@ -183,11 +183,9 @@
                 'solution': solution
             },
             success:function(html){
-                alert(html);
                 $('#ajax').html(html);
             },
             error:function(html){
-                alert(3);
                 $('body').css('cursor','default');
                 alert('Ошибка подключения!');
             },
