@@ -247,48 +247,32 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-3" role="tabpanel">
-                        <div class="reviews mb-3 mb-md-4">
-                            <div class="reviews__img lg">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/review.jpg" data-src="<?php bloginfo('template_url'); ?>/static/img/content/review.jpg" alt="">
-                            </div>
-                            <div class="reviews__content">
-                                <div class="reviews__header">
-                                    <div class="reviews__title">Компания Vitek</div>
-                                    <img src="<?php bloginfo('template_url'); ?>/static/img/content/reviews.png" class="reviews__logo" alt="">
+
+
+                        <?php
+                        $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'cat' => [27], 'orderby' => 'date', 'order' => 'DESC'));
+                        if ($query->have_posts()) { while ($query->have_posts()) {
+                            $query->the_post();
+                            ?>
+
+                            <div class="reviews mb-3 mb-md-4">
+                                <div class="reviews__img lg">
+                                    <img src="<?=get_the_post_thumbnail_url()?>" data-src="<?=get_the_post_thumbnail_url()?>" alt="">
                                 </div>
-                                <div class="spoiler">
-                                    <div class="spoiler__inner jsSpoilerInner" data-height="100">
-                                        <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив,
-                                            мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты. Когда от милой моей
-                                            долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и, прильнув
-                                            к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок. ahe leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                                            1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <div class="reviews__content">
+                                    <div class="reviews__header">
+                                        <div class="reviews__title"><?php the_title(); ?></div>
+                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/reviews.png" class="reviews__logo" alt="">
                                     </div>
-                                    <button type="button" class="spoiler__more jsSpoilerMore" data-open="Читать полностью" data-close="Скрыть">Читать полностью</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews mb-3 mb-md-4">
-                            <div class="reviews__img lg">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/review.jpg" data-src="<?php bloginfo('template_url'); ?>/static/img/content/review.jpg" alt="">
-                            </div>
-                            <div class="reviews__content">
-                                <div class="reviews__header">
-                                    <div class="reviews__title">Компания Vitek</div>
-                                    <img src="<?php bloginfo('template_url'); ?>/static/img/content/reviews.png" class="reviews__logo" alt="">
-                                </div>
-                                <div class="spoiler">
-                                    <div class="spoiler__inner jsSpoilerInner" data-height="100">
-                                        <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив,
-                                            мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты. Когда от милой моей
-                                            долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и, прильнув
-                                            к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок. ahe leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                                            1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <div class="spoiler">
+                                        <div class="spoiler__inner jsSpoilerInner" data-height="100">
+                                            <p><?php the_content(); ?></p>
+                                        </div>
+                                        <button type="button" class="spoiler__more jsSpoilerMore" data-open="Читать полностью" data-close="Скрыть">Читать полностью</button>
                                     </div>
-                                    <button type="button" class="spoiler__more jsSpoilerMore" data-open="Читать полностью" data-close="Скрыть">Читать полностью</button>
                                 </div>
                             </div>
-                        </div>
+                            <?php }} ?>
                         <div class="reviews mb-3 mb-md-4">
                             <div class="reviews__img lg">
                                 <img src="<?php bloginfo('template_url'); ?>/static/img/content/review.jpg" data-src="<?php bloginfo('template_url'); ?>/static/img/content/review.jpg" alt="">
