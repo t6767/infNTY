@@ -21166,6 +21166,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
       -ms-user-select: none;
           user-select: none;
   z-index: -4;
+  left: -30px;
 }
 
 @media (max-width: 1199.98px) {
