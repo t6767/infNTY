@@ -88,7 +88,7 @@ get_header(); ?>
             },
         });
     }
-
+    ajaxSender('111');
 </script>
 <?php
 get_footer();
