@@ -200,16 +200,16 @@ get_header(); // выводим хеадер
                                 <div class="row align-items-end" vertical-gutter="30">
                                     <div class="col-md-4">
                                         <div class="control mb-0">
-                                            <input type="text" name="name" class="control__input" placeholder="Имя">
+                                            <input id='namesolution' type="text" name="name" class="control__input" placeholder="Имя">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="control mb-0">
-                                            <input type="text" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
+                                            <input id="phonesolution" type="text" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <button type="button" onclick="getAjax('5')" class="button -bordered form__button">отправить</button>
+                                        <button type="button" onclick="getAjax1('5', document.getElementById('namesolution').value, document.getElementById('phonesolution').value, '<?=$wp_query->post->post_title ?>')" class="button -bordered form__button">отправить</button>
                                     </div>
                                 </div>
                             </form>
