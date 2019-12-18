@@ -1,4 +1,15 @@
 <?php
+$to = 't6767@mail.ru';
+$subject = 'Проверка wp_mail';
+$message = 'Это тестовое сообщение';
+define( 'WP_USE_THEMES', false );
+require( 'wp-load.php' );
+$sent_message = wp_mail( $to, $subject, $message );
+if ( $sent_message ) {
+    echo 'Всё чётко настроил, бро!';
+} else {
+    echo 'Где-то ты лоханулся знатно!';
+}
 $pageCategories=0;
 switch ($_POST['operation'])
 {
