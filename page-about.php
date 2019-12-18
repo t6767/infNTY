@@ -66,11 +66,11 @@
                                     $post_388 = get_post( 388 );
                                     $PTitle = $post_388->post_title;
                                     $PContent=$post_388->post_content;
-                                    $PImage=$post_388->get_the_post_thumbnail_url;
+                                    $PImage = wp_get_attachment_url( get_post_thumbnail_id($post_388->ID), 'thumbnail' );
                                     // html код редактируется теперь внутри поста
                                     ?>
                                     <?=$PContent?>
-                                    <?=$PImage?>111
+                                    <?=$PImage?>222
                                 </div>
                                 <div class="about__stats">
                                     <div class="about__stats-item">
