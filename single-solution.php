@@ -97,7 +97,7 @@ get_header(); // выводим хеадер
                                 </a>
                                 <div class="aside-news__content">
                                     <a href="<?php the_permalink(); ?>" class="aside-news__title"><?php the_title(); ?></a>
-                                    <div class="aside-news__text"><?=new_excerpt_more(the_excerpt_max_charlength(150))?></div>
+                                    <div class="aside-news__text"><?=the_excerpt_max_charlength(150)?></div>
                                     <a href="<?php the_permalink(); ?>" class="aside-news__date"><?=$date ?> / Nur.kz</a>
                                     <a href="<?php the_permalink(); ?>" class="button -bordered aside-news__button">Читать далее</a>
                                 </div>
