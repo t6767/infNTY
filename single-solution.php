@@ -1,6 +1,5 @@
 <?php
-get_header();
-//$dpole = get_post_meta( $wp_query->post->ID, 'kontakt' );
+get_header(); // выводим хеадер
 ?>
 <!-- App Main Begin -->
 <main role="main" class="app__main">
@@ -14,6 +13,7 @@ get_header();
                 <div class="page__header-title typed-effect">
                     <div id="js-typed-strings">
                         <p><?=$wp_query->post->post_title ?></p>
+                        <!--Выводим заголовок поста решений-->
                     </div>
                 </div>
                 <ul class="breadcrumbs">
@@ -25,6 +25,7 @@ get_header();
                     </li>
                     <li class="breadcrumbs__item">
                         <?=$wp_query->post->post_title ?>
+                        <!--Выводим заголовок поста решений-->
                     </li>
                 </ul>
             </div>
@@ -43,9 +44,11 @@ get_header();
                                 </button>
                                 <div id="collapseOne" class="collapse show" data-parent="#aside-menu">
                                     <?php
+                                    /* Организуем цикл в котором выводим названия и ссылки постов заданной категории*/
                                     $query = new WP_Query( array('post_type' => 'post', 'post_status' => 'publish', 'cat' => [23], 'orderby' => 'date', 'order' => 'DESC'));
                                     if ($query->have_posts()) { while ($query->have_posts()) { $query->the_post();
                                     ?>
+                                    <!-- Сама html ссылка прокачана по самые яйца -->
                                     <a href="<?=get_permalink()?>" class="aside-menu__sublink"><?php the_title(); ?></a>
                                     <?php }}  ?>
                                 </div>
@@ -55,14 +58,14 @@ get_header();
                                     Корпоративный сектор
                                 </button>
                                 <div id="collapseTwo" class="collapse" data-parent="#aside-menu">
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
+                                    <?php
+                                    /* Организуем цикл в котором выводим названия и ссылки постов заданной категории*/
+                                    $query = new WP_Query( array('post_type' => 'post', 'post_status' => 'publish', 'cat' => [24], 'orderby' => 'date', 'order' => 'DESC'));
+                                    if ($query->have_posts()) { while ($query->have_posts()) { $query->the_post();
+                                        ?>
+                                        <!-- Сама html ссылка прокачана по самые яйца -->
+                                        <a href="<?=get_permalink()?>" class="aside-menu__sublink"><?php the_title(); ?></a>
+                                    <?php }}  ?>
                                 </div>
                             </div>
                             <div class="aside-menu__item">
@@ -70,14 +73,14 @@ get_header();
                                     Государственный сектор
                                 </button>
                                 <div id="collapseThree" class="collapse" data-parent="#aside-menu">
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
+                                    <?php
+                                    /* Организуем цикл в котором выводим названия и ссылки постов заданной категории*/
+                                    $query = new WP_Query( array('post_type' => 'post', 'post_status' => 'publish', 'cat' => [25], 'orderby' => 'date', 'order' => 'DESC'));
+                                    if ($query->have_posts()) { while ($query->have_posts()) { $query->the_post();
+                                        ?>
+                                        <!-- Сама html ссылка прокачана по самые яйца -->
+                                        <a href="<?=get_permalink()?>" class="aside-menu__sublink"><?php the_title(); ?></a>
+                                    <?php }}  ?>
                                 </div>
                             </div>
                         </div>
