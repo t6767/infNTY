@@ -40,6 +40,32 @@ $dpole = get_post_meta( $wp_query->post->ID, 'kontakt' );
                         <div class="aside-news">
                             <div class="aside-news__header">Другие вакансии</div>
                             <div class="aside-news__content">
+                                <a href="#" class="aside-news__item">
+                                    <div class="aside-news__item-title">Компьютерщик</div>
+                                    <div class="aside-news__item-text">
+                                        <p>Обязанности:</p>
+                                        <p>- Обеспечение бесперебойной работы сети и устройств</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="aside-news__item">
+                                    <div class="aside-news__item-title">Компьютерщик</div>
+                                    <div class="aside-news__item-text">
+                                        <p>Обязанности:</p>
+                                        <p>- Обеспечение бесперебойной работы сети и устройств</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="aside-news__item">
+                                    <div class="aside-news__item-title">Компьютерщик</div>
+                                    <div class="aside-news__item-text">
+                                        <p>Обязанности:</p>
+                                        <p>- Обеспечение бесперебойной работы сети и устройств</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="aside-news">
+                            <div class="aside-news__header">Другие вакансии</div>
+                            <div class="aside-news__content">
                                 <div class="aside-news__title">Компьютерщик</div>
                                 <div class="aside-news__text">
                                     <p>Обязанности:</p>
