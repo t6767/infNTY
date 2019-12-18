@@ -97,6 +97,7 @@ get_header(); // выводим хеадер
                             </div>
                         </div>
                         <div class="aside-news">
+                            <div class="aside-news__header">Последняя новость</div>
                             <a href="#">
                                 <img src="<?php bloginfo('template_url'); ?>/static/img/content/p3.jpg" class="aside-news__img" alt="">
                             </a>
