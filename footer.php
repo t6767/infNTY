@@ -173,6 +173,7 @@
 <!-- Main scripts. You can replace it, but I recommend you to leave it here -->
 <script>
     function getAjax(operation) {
+        alert(1);
         $.ajax({
             type:'POST',
             url:'/ajax.php',
@@ -180,9 +181,11 @@
                 'operation':operation
             },
             success:function(html){
+                alert(2);
                 $('#ajax').html(html);
             },
             error:function(html){
+                alert(3);
                 $('body').css('cursor','default');
                 alert('Ошибка подключения!');
             },
