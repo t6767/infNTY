@@ -59,7 +59,7 @@
             ?>
             <section id="intro-about" class="intro-about section">
                 <div class="container section__container">
-                    <div class="section__background-title" data-parallax='{"y": 80, "smoothness": 45}'><?=$PTitle ?>11</div>
+                    <div class="section__background-title" data-parallax='{"y": 80, "smoothness": 45}'><?=$PTitle ?></div>
                     <div class="row">
                         <div class="col-md-8">
                             <div class="intro-about__text">
