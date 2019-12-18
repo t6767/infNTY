@@ -212,6 +212,27 @@
             },
         });
     }
+
+    function getAjaxContactForm(operation, name, message, phone, email) {
+        $.ajax({
+            type:'POST',
+            url:'/ajax.php',
+            data:{
+                'operation':operation,
+                'name': name,
+                'message': message,
+                'phone': phone,
+                'email': email
+            },
+            success:function(html){
+                $('#ajax').html(html);
+            },
+            error:function(html){
+                $('body').css('cursor','default');
+                alert('Ошибка подключения!');
+            },
+        });
+    }
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/static/js/main.min.js"></script>

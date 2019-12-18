@@ -35,19 +35,19 @@
                                         <form class="form">
                                             <h2 class="form__title">Написать нам</h2>
                                             <div class="control">
-                                                <input type="text" name="name" class="control__input" placeholder="Имя">
+                                                <input type="text" id="kontaktpagename" name="name" class="control__input" placeholder="Имя">
                                             </div>
                                             <div class="control">
-                                                <input type="text" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
+                                                <input type="text" id="kontaktpagephone" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
                                             </div>
                                             <div class="control">
-                                                <input type="text" name="email" class="control__input" placeholder="Email">
+                                                <input type="text" id="kontaktpageemail" name="email" class="control__input" placeholder="Email">
                                             </div>
                                             <div class="control mt-md-3">
-                                                <textarea class="control__input -textarea" placeholder="Сообщение"></textarea>
+                                                <textarea id="kontaktpagemessage" class="control__input -textarea" placeholder="Сообщение"></textarea>
                                             </div>
                                             <div class="text-center mt-4">
-                                                <button type="submit" class="button -bordered form__button">отправить</button>
+                                                <button type="button" onclick="getAjaxContactForm('2', document.getElementById('kontaktpagename').value, document.getElementById('kontaktpagephone').value, document.getElementById('kontaktpageemail').value, document.getElementById('kontaktpagemessage').value);" class="button -bordered form__button">отправить</button>
                                             </div>
                                         </form>
                                         <div class="contacts2__info">
