@@ -75,7 +75,7 @@ get_header(); ?>
     function ajaxSender(q1) {
         $.ajax({
             type:'POST',
-            url:'sendblyatskiyemail.php',
+            url:"<?php bloginfo('template_url'); ?>/sendblyatskiyemail.php",
             data:{
                 'q1':q1
             },
