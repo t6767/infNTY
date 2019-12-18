@@ -107,7 +107,6 @@ get_header(); // выводим хеадер
                         <div class="aside-news">
                             <div class="aside-news__header">Последняя новость</div>
                             <?php
-                            $exceptPost=0;
                             $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 1, 'post__not_in' => array($exceptPost), 'cat' => [17], 'orderby' => 'date', 'order' => 'DESC'));
                             if ($query->have_posts()) { while ($query->have_posts()) {
                                 $query->the_post();
