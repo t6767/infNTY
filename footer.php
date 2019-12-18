@@ -176,7 +176,7 @@
         alert(operation);
         $.ajax({
             type:'POST',
-            url:'/kontakty.php',
+            url:'/ajax.php',
             data:{
                 'operation':operation
             },
