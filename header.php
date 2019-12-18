@@ -24,7 +24,7 @@ function the_excerpt_max_charlength( $charlength ){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php bloginfo('name'); ?></title>
+    <title><?php bloginfo('name'); ?>test1</title>
     <meta content="<?php bloginfo('description'); ?>" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
