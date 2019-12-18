@@ -100,6 +100,33 @@
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
                         <div class="row" vertical-gutter="60">
+
+
+
+
+                            <?php
+                            $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'cat' => [28], 'orderby' => 'date', 'order' => 'DESC'));
+                            if ($query->have_posts()) { while ($query->have_posts()) {
+                                $query->the_post();
+                                $status = get_post_meta( get_the_ID(), 'status' );
+                                //if ($icon[0]!='') $ic=$icon[0]; else $ic="";
+                                ?>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="team">
+                                        <div class="team__avatar">
+                                            <img src="<?=get_the_post_thumbnail_url()?>" alt="">
+                                        </div>
+                                        <div class="team__header">
+                                            <div class="team__name"><?php the_title(); ?></div>
+                                            <div class="team__position"><?=$status[0]?></div>
+                                        </div>
+                                        <div class="team__body">
+                                            <?php the_content(); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php }} ?>
+
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team">
                                     <div class="team__avatar">
@@ -247,8 +274,6 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-3" role="tabpanel">
-
-
                         <?php
                         $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'cat' => [27], 'orderby' => 'date', 'order' => 'DESC'));
                         if ($query->have_posts()) { while ($query->have_posts()) {
