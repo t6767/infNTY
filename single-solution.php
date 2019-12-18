@@ -21,6 +21,9 @@ get_header();
                         <a href="/" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
+                        <a href="/resheniya/" class="breadcrumbs__link">Решения</a>
+                    </li>
+                    <li class="breadcrumbs__item">
                         <?=$wp_query->post->post_title ?>
                     </li>
                 </ul>
@@ -39,14 +42,12 @@ get_header();
                                     Решения банковской сферы
                                 </button>
                                 <div id="collapseOne" class="collapse show" data-parent="#aside-menu">
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
-                                    <a href="#" class="aside-menu__sublink">Интернет-банкинг</a>
+                                    <?php
+                                    $query = new WP_Query( array('post_type' => 'post', 'post_status' => 'publish', 'cat' => [23], 'post__not_in' => array(get_the_ID()), 'orderby' => 'date', 'order' => 'DESC'));
+                                    if ($query->have_posts()) { while ($query->have_posts()) { $query->the_post();
+                                    ?>
+                                    <a href="<?=get_permalink()?>" class="aside-menu__sublink"><?php the_title(); ?></a>
+                                    <?php }}  ?>
                                 </div>
                             </div>
                             <div class="aside-menu__item">
