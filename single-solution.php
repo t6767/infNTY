@@ -209,7 +209,7 @@ get_header(); // выводим хеадер
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <button type="submit" class="button -bordered form__button">отправить</button>
+                                        <button type="button" onclick="getAjax('5')" class="button -bordered form__button">отправить</button>
                                     </div>
                                 </div>
                             </form>
