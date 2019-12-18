@@ -21170,7 +21170,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 
 @media (max-width: 1199.98px) {
   .section__background-title {
-    left: 0;
+    left: -30px;
   }
 }
 
@@ -21178,7 +21178,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   .section__background-title {
     font-size: 80px;
     font-size: 5rem;
-    left: -60px;
+    left: 0;
   }
 }
 
@@ -21395,6 +21395,10 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
           filter: brightness(0) invert(1);
 }
 
+.features__item:hover .features__link, .features__item:focus .features__link {
+  color: #fff;
+}
+
 .features__item:hover:before,
 .features__item:hover .features__background, .features__item:focus:before,
 .features__item:focus .features__background {
@@ -21418,7 +21422,8 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 }
 
 .features__item.-inverted .features__title,
-.features__item.-inverted .features__text {
+.features__item.-inverted .features__text,
+.features__item.-inverted .features__link {
   color: #fff;
 }
 
@@ -21464,7 +21469,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 }
 
 .features__link {
-  color: #fff;
+  color: #E20E17;
   text-decoration: underline;
   margin-top: auto;
 }
