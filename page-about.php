@@ -70,7 +70,7 @@
                                     // html код редактируется теперь внутри поста
                                     ?>
                                     <?=$PContent?>
-                                    <?=$PImage?>
+                                    <?=$PImage?>111
                                 </div>
                                 <div class="about__stats">
                                     <div class="about__stats-item">
