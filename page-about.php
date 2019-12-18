@@ -90,11 +90,11 @@
                                 </div>
                             </div>
                             <img src="<?=$PImage?>" class="my-3" alt="">
-                            <div class="row" vertical-gutter="20">
-                               <div class="col-sm-4" style="text-align: center; font-weight: 700">Масштабируемость Экспертизы</div>
-                               <div class="col-sm-4" style="text-align: center; font-weight: 700">Центр Компетенции</div>
-                               <div class="col-sm-4" style="text-align: center; font-weight: 700">Масштабируемость Ресурсов</div>
-                           </div>
+                           <div class="row" vertical-gutter="20">
+                                <div class="col-sm-4"><div style="text-align: center; font-weight: 700; background: #eacace; color: #000; padding: 5px 0;">Масштабируемость Экспертизы</div></div>
+                                <div class="col-sm-4"><div style="text-align: center; font-weight: 700; background: #fad4a0; color: #000; padding: 5px 0;">Центр Компетенции</div></div>
+                                <div class="col-sm-4"><div style="text-align: center; font-weight: 700; background: #91eeb7; color: #000; padding: 5px 0;">Масштабируемость Ресурсов</div></div>
+                            </div>
                            <p class="mt-3">Digital Community – наш бренд, который позволяет эффективно масштабировать экспертизу и ресурсы сохраняя и приумножая компетенцию в рамках динамично меняющегося рынка.</p>
                         </div>
                     </div>
