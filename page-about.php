@@ -88,6 +88,11 @@
                                     </div>
                                 </div>
                             </div>
+                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/DC.png" class="about__notes" alt="">
+                            Масштабируемость Экспертизы<br>
+                            Центр Компетенции<br>
+                            Масштабируемость Ресурсов<br>
+                            Digital Community – наш бренд, который позволяет эффективно масштабировать экспертизу и ресурсы сохраняя и приумножая компетенцию в рамках динамично меняющегося рынка.
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
