@@ -29,7 +29,7 @@
             </div>
             <div class="col-sm-6 col-lg-3">
                 <div class="footer__title">контакты</div>
-                <p><a href="tel:+7(727)2620826">+7 (727) 262 08 26</ a>
+                <p><a href="tel:+7(727)2620826">+7 (727) 262 08 26 </a>
                     <br>Алматы</p>
                 <ul class="social footer__social">
                     <li class="social__item">
