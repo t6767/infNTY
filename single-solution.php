@@ -97,7 +97,15 @@ get_header(); // выводим хеадер
                             </div>
                         </div>
                         <div class="aside-news">
-                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/p3.jpg" alt="">
+                            <a href="#">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/p3.jpg" class="aside-news__img" alt="">
+                            </a>
+                            <div class="aside-news__content">
+                                <a href="#" class="aside-news__title">Немного о компании-интеграторе </a>
+                                <div class="aside-news__text">InFin-IT Solution является инновационной научно-производственной компанией...</div>
+                                <a href="#" class="aside-news__date">23.05.2019 / Nur.kz</a>
+                                <a href="#" class="button -bordered aside-news__button">Читать далее</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-8">
