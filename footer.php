@@ -83,19 +83,19 @@
                 <form class="form">
                     <h2 class="form__title">Связаться с нами</h2>
                     <div class="control">
-                        <input type="text" name="name" class="control__input" placeholder="Имя">
+                        <input type="text" id="namenodal1" name="name" class="control__input" placeholder="Имя">
                     </div>
                     <div class="control">
-                        <input type="text" name="company" class="control__input" placeholder="Компания">
+                        <input type="text" id="companymodal1" name="company" class="control__input" placeholder="Компания">
                     </div>
                     <div class="control">
-                        <input type="text" name="phone" class="control__input" placeholder="+78 (***) ***-**-**">
+                        <input type="text" id="phonemodal1" name="phone" class="control__input" placeholder="+78 (***) ***-**-**">
                     </div>
                     <div class="control">
-                        <input type="text" name="email" class="control__input" placeholder="Email">
+                        <input type="text" name="email" id="emailmodal1" class="control__input" placeholder="Email">
                     </div>
                     <div class="text-right">
-                        <button type="submit" class="button -bordered form__button">отправить</button>
+                        <button type="button" onclick="getAjaxModal1('1', document.getElementById('namenodal1').value, document.getElementById('companymodal1').value, document.getElementById('phonemodal1').value, document.getElementById('emailmodal1').value)" class="button -bordered form__button">отправить</button>
                     </div>
                 </form>
             </div>
@@ -181,6 +181,27 @@
                 'name': name,
                 'phone': phone,
                 'solution': solution
+            },
+            success:function(html){
+                $('#ajax').html(html);
+            },
+            error:function(html){
+                $('body').css('cursor','default');
+                alert('Ошибка подключения!');
+            },
+        });
+    }
+
+    function getAjaxModal1(operation, name, company, phone, email) {
+        $.ajax({
+            type:'POST',
+            url:'/ajax.php',
+            data:{
+                'operation':operation,
+                'name': name,
+                'company': company,
+                'phone': phone,
+                'email': email
             },
             success:function(html){
                 $('#ajax').html(html);
