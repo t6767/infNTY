@@ -196,7 +196,7 @@ get_header(); // выводим хеадер
                             </div>
                             <form class="form -cta" method="post" action="/ajax.php">
                                 <input name="operation" type="hidden" value="5">
-                                <h2 class="form__title">Связаться с нами1</h2>
+                                <h2 class="form__title">Связаться с нами</h2>
                                 <div class="row align-items-end" vertical-gutter="30">
                                     <div class="col-md-4">
                                         <div class="control mb-0">
