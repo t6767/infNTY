@@ -52,9 +52,13 @@
             <!--/. Entry End -->
 
             <!-- Intro About Begin -->
+            <?php
+            $post_388 = get_post( 388 );
+            $PTitle = $post_388->post_title;
+            ?>
             <section id="intro-about" class="intro-about section">
                 <div class="container section__container">
-                    <div class="section__background-title" data-parallax='{"y": 80, "smoothness": 45}'>О КОМПАНИИ</div>
+                    <div class="section__background-title" data-parallax='{"y": 80, "smoothness": 45}'><?=$PTitle ?></div>
                     <div class="row">
                         <div class="col-md-8">
                             <div class="intro-about__text">
