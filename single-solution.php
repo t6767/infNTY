@@ -209,7 +209,7 @@ get_header(); // выводим хеадер
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <button type="button" onclick="getAjax1('5', document.getElementById('namesolution').value, document.getElementById('phonesolution').value, '<?=$wp_query->post->post_title ?>')" class="button -bordered form__button">отправить</button>
+                                        <button type="button" onclick="getAjax1('5', document.getElementById('namesolution').value, document.getElementById('phonesolution').value, '<?=$wp_query->post->post_title ?>')" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal">отправить</button>
                                     </div>
                                 </div>
                             </form>
