@@ -32,7 +32,7 @@
                 <p><a href="tel:+7(727)2620826">+7 (727) 262 08 26 </a>
                     <br>Алматы</p>
                 <ul class="social footer__social">
-                    <li onclick="getAjax(5)" class="social__item">
+                    <li onclick="getAjax('5')" class="social__item">
                         <a href="#" class="social__link">
                             <i class="fa fa-facebook"></i>
                         </a>
@@ -173,7 +173,7 @@
 <!-- Main scripts. You can replace it, but I recommend you to leave it here -->
 <script>
     function getAjax(operation) {
-        alert(1);
+        alert(operation);
         $.ajax({
             type:'POST',
             url:'/ajax.php',
