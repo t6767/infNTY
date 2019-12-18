@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2504e9bb-1d3f-497a-8647-f16f282eb8dc" name="Default Changelist" comment="Заменил лого в футере, переделал классы на странице РЕШЕНИЯ">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/single-solution.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-solution.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,7 +72,7 @@
       <workItem from="1576208801215" duration="27021000" />
       <workItem from="1576409009625" duration="11000" />
       <workItem from="1576609408118" duration="2384000" />
-      <workItem from="1576643153188" duration="2107000" />
+      <workItem from="1576643153188" duration="3119000" />
     </task>
     <task id="LOCAL-00001" summary="Заменил лого в футере, переделал классы на странице РЕШЕНИЯ">
       <created>1576612224584</created>

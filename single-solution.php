@@ -86,15 +86,22 @@ get_header(); // выводим хеадер
                         </div>
                         <div class="aside-news">
                             <div class="aside-news__header">Последняя новость</div>
-                            <a href="#">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/p3.jpg" class="aside-news__img" alt="">
-                            </a>
-                            <div class="aside-news__content">
-                                <a href="#" class="aside-news__title">Немного о компании-интеграторе </a>
-                                <div class="aside-news__text">InFin-IT Solution является инновационной научно-производственной компанией...</div>
-                                <a href="#" class="aside-news__date">23.05.2019 / Nur.kz</a>
-                                <a href="#" class="button -bordered aside-news__button">Читать далее</a>
-                            </div>
+                            <?php
+                            $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 1, 'cat' => [17], 'orderby' => 'date', 'order' => 'DESC'));
+                            if ($query->have_posts()) { while ($query->have_posts()) {
+                            $query->the_post();
+                            $date = get_the_date( "d.m.Y");
+                            ?>
+                                <a href="<?php the_permalink(); ?>">
+                                    <img src="<?=get_the_post_thumbnail_url()?>" class="aside-news__img" alt="">
+                                </a>
+                                <div class="aside-news__content">
+                                    <a href="<?php the_permalink(); ?>" class="aside-news__title"><?php the_title(); ?></a>
+                                    <div class="aside-news__text"><?=new_excerpt_more(the_excerpt_max_charlength(150))?></div>
+                                    <a href="<?php the_permalink(); ?>" class="aside-news__date"><?=$date ?> / Nur.kz</a>
+                                    <a href="<?php the_permalink(); ?>" class="button -bordered aside-news__button">Читать далее</a>
+                                </div>
+                            <?php }} ?>
                         </div>
                         <div class="aside-news">
                             <div class="aside-news__header">Последняя новость</div>
