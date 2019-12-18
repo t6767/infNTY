@@ -181,7 +181,7 @@
                 'operation':operation
             },
             success:function(html){
-                alert(2);
+                alert(html);
                 $('#ajax').html(html);
             },
             error:function(html){
