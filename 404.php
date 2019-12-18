@@ -70,8 +70,8 @@ get_header(); ?>
 
     </main>
     <!--/. App Main End -->
-    <div id="masters"></div>
-<script>ttt();</script>
+    <div id="ajax"></div>
+<script> getAjax(5);</script>
 <?php
 get_footer();
 ?>

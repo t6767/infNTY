@@ -175,18 +175,18 @@
 <script src="<?php bloginfo('template_url'); ?>/static/js/main.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/static/js/separate-js/scripts.js"></script>
 <script>
-    function ttt() {
+    function getAjax(operation) {
         $.ajax({
-            type: 'POST',
-            url: 'ajax.php',
-            data: {
-                'operation': 5
+            type:'POST',
+            url:'/ajax.php',
+            data:{
+                'operation':operation
             },
-            timeout: 20000,
-            success: function (html) {
-                alert(html);
+            success:function(html){
+                $('#ajax').html(html);
             },
-            error: function (html) {
+            error:function(html){
+                $('body').css('cursor','default');
                 alert('Ошибка подключения!');
             },
         });
