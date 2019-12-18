@@ -90,9 +90,9 @@
                             </div>
                             <img src="<?php bloginfo('template_url'); ?>/static/img/content/DC.png" class="about__notes" alt="">
                             <div class="row">
-                            <div class="col-3">Масштабируемость Экспертизы</div>
-                            <div class="col-3">Центр Компетенции</div>
-                            <div class="col-3">Масштабируемость Ресурсов</div>
+                            <div class="col-3" style="text-align: center">Масштабируемость Экспертизы</div>
+                            <div class="col-3" style="text-align: center">Центр Компетенции</div>
+                            <div class="col-3" style="text-align: center">Масштабируемость Ресурсов</div>
                             </div>
                             Digital Community – наш бренд, который позволяет эффективно масштабировать экспертизу и ресурсы сохраняя и приумножая компетенцию в рамках динамично меняющегося рынка.
                         </div>
