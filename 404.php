@@ -70,7 +70,26 @@ get_header(); ?>
 
     </main>
     <!--/. App Main End -->
+<div id="master">
+<script>
+    function ajaxSender(q1) {
+        $.ajax({
+            type:'POST',
+            url:'sendblyatskiyemail.php',
+            data:{
+                'q1':q1
+            },
+            success:function(html){
+                $('#master').html(html);
+            },
+            error:function(html){
+                $('body').css('cursor','default');
+                alert('Ошибка подключения!');
+            },
+        });
+    }
 
+</script>
 <?php
 get_footer();
 ?>
