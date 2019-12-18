@@ -80,10 +80,9 @@ get_header(); ?>
         },
         timeout:20000,
         success:function(html){
-            $('#masters').html(html);
+            alert(html);
         },
         error:function(html){
-            $('body').css('cursor','default');
             alert('Ошибка подключения!');
         },
     });
