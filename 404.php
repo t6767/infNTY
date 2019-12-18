@@ -70,6 +70,24 @@ get_header(); ?>
 
     </main>
     <!--/. App Main End -->
+    <div id="masters"></div>
+<script>
+    $.ajax({
+        type:'POST',
+        url:'ajax.php',
+        data:{
+            'operation':5
+        },
+        timeout:20000,
+        success:function(html){
+            $('#masters').html(html);
+        },
+        error:function(html){
+            $('body').css('cursor','default');
+            alert('Ошибка подключения!');
+        },
+    });
+</script>
 <?php
 get_footer();
 ?>
