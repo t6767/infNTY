@@ -71,5 +71,11 @@ get_header(); ?>
     </main>
     <!--/. App Main End -->
 <?php
+//$attachments[] = WP_CONTENT_DIR . '/uploads/file_1.zip';
+//$attachments[] = WP_CONTENT_DIR . '/uploads/file_2.zip';
+$headers[] = 'From: Миша <t6767@mail.ru>';
+$headers[] = 'Content-type: text/html; charset=utf-8';
+
+wp_mail('t6767@mail.ru', 'Какая-то тема', 'Какое-то сообщение', $headers); //, $attachments);
 get_footer();
 ?>
