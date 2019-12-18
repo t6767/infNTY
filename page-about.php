@@ -90,11 +90,11 @@
                             </div>
                             <img src="<?php bloginfo('template_url'); ?>/static/img/content/DC.png" class="about__notes" alt="">
                             <div class="row">
-                            <div class="col" style="text-align: center">Масштабируемость Экспертизы</div>
-                            <div class="col" style="text-align: center">Центр Компетенции</div>
-                            <div class="col" style="text-align: center">Масштабируемость Ресурсов</div>
+                            <div class="col" style="text-align: center; font-weight: 700">Масштабируемость Экспертизы</div>
+                            <div class="col" style="text-align: center; font-weight: 700">Центр Компетенции</div>
+                            <div class="col" style="text-align: center; font-weight: 700">Масштабируемость Ресурсов</div>
                             </div>
-                            Digital Community – наш бренд, который позволяет эффективно масштабировать экспертизу и ресурсы сохраняя и приумножая компетенцию в рамках динамично меняющегося рынка.
+                            <p>Digital Community – наш бренд, который позволяет эффективно масштабировать экспертизу и ресурсы сохраняя и приумножая компетенцию в рамках динамично меняющегося рынка.</p>
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
