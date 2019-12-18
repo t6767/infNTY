@@ -81,7 +81,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
-                                    <div class="contacts2__map"></div>
+                                    <div class="contacts2__map"><iframe src="https://yandex.kz/map-widget/v1/-/CBqRVWDJWA" width="100%" height="400px" frameborder="0"></iframe></div>
                                 </div>
                             </div>
                         </div>
