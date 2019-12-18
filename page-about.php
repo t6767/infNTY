@@ -253,6 +253,8 @@
                         $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'cat' => [27], 'orderby' => 'date', 'order' => 'DESC'));
                         if ($query->have_posts()) { while ($query->have_posts()) {
                             $query->the_post();
+                            $icon = get_post_meta( get_the_ID(), 'icon' );
+                            //if ($icon[0]!='') $ic=$icon[0]; else $ic="";
                             ?>
 
                             <div class="reviews mb-3 mb-md-4">
@@ -262,7 +264,7 @@
                                 <div class="reviews__content">
                                     <div class="reviews__header">
                                         <div class="reviews__title"><?php the_title(); ?></div>
-                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/reviews.png" class="reviews__logo" alt="">
+                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/<?=$icon[0]?>" class="reviews__logo" alt="">
                                     </div>
                                     <div class="spoiler">
                                         <div class="spoiler__inner jsSpoilerInner" data-height="100">
