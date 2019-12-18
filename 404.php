@@ -71,22 +71,7 @@ get_header(); ?>
     </main>
     <!--/. App Main End -->
     <div id="masters"></div>
-<script>
-    $.ajax({
-        type:'POST',
-        url:'ajax.php',
-        data:{
-            'operation':5
-        },
-        timeout:20000,
-        success:function(html){
-            alert(html);
-        },
-        error:function(html){
-            alert('Ошибка подключения!');
-        },
-    });
-</script>
+<script>ttt();</script>
 <?php
 get_footer();
 ?>

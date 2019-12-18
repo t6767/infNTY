@@ -174,6 +174,24 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/static/js/main.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/static/js/separate-js/scripts.js"></script>
+<script>
+    function ttt() {
+        $.ajax({
+            type: 'POST',
+            url: 'ajax.php',
+            data: {
+                'operation': 5
+            },
+            timeout: 20000,
+            success: function (html) {
+                alert(html);
+            },
+            error: function (html) {
+                alert('Ошибка подключения!');
+            },
+        });
+    }
+</script>
 <?php wp_footer(); ?>
 </body>
 
