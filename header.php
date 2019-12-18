@@ -145,12 +145,7 @@ function the_excerpt_max_charlength( $charlength ){
                 <div class="menu__info">
                     <p><strong>Алматы</strong>
                     </p>
-                    <a href="#" class="menu__phone">+7 (727) 232 22 22</a>
-                </div>
-                <div class="menu__info">
-                    <p><strong>Нур-Султан</strong>
-                    </p>
-                    <a href="#" class="menu__phone">+7 (727) 232 22 22</a>
+                    <a href="tel:+77272620826" class="menu__phone">+7 (727) 262 08 26</a>
                 </div>
                 <div class="menu__social">
                     <a href="#" class="menu__footer-link -facebook"></a>
