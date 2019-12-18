@@ -70,7 +70,6 @@
                                     // html код редактируется теперь внутри поста
                                     ?>
                                     <?=$PContent?>
-                                    <?=$PImage?>222
                                 </div>
                                 <div class="about__stats">
                                     <div class="about__stats-item">
@@ -90,7 +89,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?php bloginfo('template_url'); ?>/static/img/content/DC.png" class="about__notes" alt="">
+                            <img src="<?=$PImage?>" class="about__notes" alt="">
                             <div class="row">
                             <div class="col" style="text-align: center; font-weight: 700">Масштабируемость Экспертизы</div>
                             <div class="col" style="text-align: center; font-weight: 700">Центр Компетенции</div>
