@@ -43,7 +43,7 @@ get_header();
                                 </button>
                                 <div id="collapseOne" class="collapse show" data-parent="#aside-menu">
                                     <?php
-                                    $query = new WP_Query( array('post_type' => 'post', 'post_status' => 'publish', 'cat' => [23], 'post__not_in' => array(get_the_ID()), 'orderby' => 'date', 'order' => 'DESC'));
+                                    $query = new WP_Query( array('post_type' => 'post', 'post_status' => 'publish', 'cat' => [23], 'orderby' => 'date', 'order' => 'DESC'));
                                     if ($query->have_posts()) { while ($query->have_posts()) { $query->the_post();
                                     ?>
                                     <a href="<?=get_permalink()?>" class="aside-menu__sublink"><?php the_title(); ?></a>
