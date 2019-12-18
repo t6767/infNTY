@@ -95,7 +95,7 @@
                         <input type="text" name="email" id="emailmodal1" class="control__input" placeholder="Email">
                     </div>
                     <div class="text-right">
-                        <button type="button" onclick="getAjaxModal1('1', document.getElementById('namenodal1').value, document.getElementById('companymodal1').value, document.getElementById('phonemodal1').value, document.getElementById('emailmodal1').value)" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal">отправить</button>
+                        <button type="button" onclick="getAjaxModal1('1', document.getElementById('namenodal1').value, document.getElementById('companymodal1').value, document.getElementById('phonemodal1').value, document.getElementById('emailmodal1').value)" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal" data-dismiss="modal">отправить</button>
                     </div>
                 </form>
             </div>
