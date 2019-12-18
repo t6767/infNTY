@@ -51,9 +51,10 @@
                                             </div>
                                         </form>
                                         <div class="contacts2__info">
-                                            г. Алматы, улица
-                                            <br>+7 (727) 232 22 22
-                                            <br>almaty.info@infin-it.kz
+                                            Республика Казахстан, г. Алматы, пр. Достык 117/6, 6 этаж
+                                            <br>Почтовый индекс: 050059
+                                            <br>+7 (727) 262 08 26
+                                            <br>info@infin-it.kz
                                         </div>
                                         <ul class="social contacts2__social">
                                             <li class="social__item">
