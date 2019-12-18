@@ -66,9 +66,11 @@
                                     $post_388 = get_post( 388 );
                                     $PTitle = $post_388->post_title;
                                     $PContent=$post_388->post_content;
+                                    $PImage=$post_388->get_the_post_thumbnail_url;
                                     // html код редактируется теперь внутри поста
                                     ?>
                                     <?=$PContent?>
+                                    <?=$PImage?>
                                 </div>
                                 <div class="about__stats">
                                     <div class="about__stats-item">
