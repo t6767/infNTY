@@ -70,8 +70,6 @@ get_header(); ?>
 
     </main>
     <!--/. App Main End -->
-    <div id="ajax"></div>
-<script> getAjax(5);</script>
 <?php
 get_footer();
 ?>
