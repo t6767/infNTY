@@ -24,12 +24,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="130" />
-    <option name="width" value="1440" />
-    <option name="height" value="780" />
-  </component>
   <component name="ProjectId" id="1UY7j1epNInHbEiJeMf0Ju2PdTP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -82,7 +76,7 @@
       <workItem from="1576643153188" duration="5489000" />
       <workItem from="1576670682763" duration="2463000" />
       <workItem from="1576710792545" duration="139000" />
-      <workItem from="1576727708721" duration="132000" />
+      <workItem from="1576727708721" duration="971000" />
     </task>
     <task id="LOCAL-00001" summary="Заменил лого в футере, переделал классы на странице РЕШЕНИЯ">
       <created>1576612224584</created>
