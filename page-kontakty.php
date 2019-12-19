@@ -99,18 +99,23 @@
 <script>
     function ff() {
         alert(1);
-        alert(2);
+        var OK = emailpattern.exec(document.getElementById('kontaktpageemail').value);
+        if (!OK)
+            alert(" isn't a phone number with area code!");
+        else
+            alert("Thanks, your phone number is ");
     }
-/*    var emailpattern = "/^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i";
-    alert(3);
-    mail.blur(function(){
-        if(mail.val() != '') {
-            if (mail.val().search(emailpattern) == 0) {
-                alert("ttt");
-            } else { alert("ne sootv"); }
-        } else alert('Введите email');
-    }
+    var emailpattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
+    /*
+        alert(3);
+        mail.blur(function(){
+            if(mail.val() != '') {
+                if (mail.val().search(emailpattern) == 0) {
+                    alert("ttt");
+                } else { alert("ne sootv"); }
+            } else alert('Введите email');
+        }
 
- */
+     */
 </script>
 <?php get_footer(); ?>
