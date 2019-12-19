@@ -28,7 +28,7 @@
             <!-- Page Content Begin -->
             <div class="page__content">
                 <div class="container">
-                    <div class="features row">
+                    <div class="row" data-gutter="20">
                         <?php
                         $query = new WP_Query(
                             array(
@@ -41,28 +41,25 @@
                                 'order' => 'DESC',
                             )
                         );
-                        $i=0;
                         if ($query->have_posts()) {
                             while ($query->have_posts()) {
-                                if ($i==0) {echo '<div class="features__col">';}
                                 $query->the_post();
                                 $dpole = get_post_meta( get_the_ID(), 'vid' );
                                 $icon = get_post_meta( get_the_ID(), 'icon' );
                                 if ((int)$dpole[0] > 0) $style=" -inverted"; else $style="";
                                 if ($icon[0]!='') $ic=$icon[0]; else $ic="features-icon-1.svg";
                                 ?>
-                                <a href="<?=get_permalink()?>" class="features__item<?=$style?>">
-                                    <img src="<?php bloginfo('template_url'); ?>/static/img/general/<?=$ic?>" class="features__icon" alt="">
-                                    <div class="features__title"><?php the_title(); ?></div>
-                                    <div class="features__text"><?=the_excerpt_max_charlength(150)?></div>
-                                    <div class="features__link">Подробнее</div>
-                                    <div class="features__background" style="background-image: url('<?=get_the_post_thumbnail_url()?>')"></div>
-                                </a>
+                                <div class="col-md-6 col-lg-4">
+                                    <a href="<?=get_permalink()?>" class="features__item<?=$style?>">
+                                        <img src="<?php bloginfo('template_url'); ?>/static/img/general/<?=$ic?>" class="features__icon" alt="">
+                                        <div class="features__title"><?php the_title(); ?></div>
+                                        <div class="features__text"><?=the_excerpt_max_charlength(150)?></div>
+                                        <div class="features__link">Подробнее</div>
+                                        <div class="features__background" style="background-image: url('<?=get_the_post_thumbnail_url()?>"></div>
+                                    </a>
+                                </div>
                                 <?php
-                                $i++;
-                                if ($i==3) {echo '</div>'; $i=0;}
                             }
-                            if (($i>0) && ($i<3)) {echo '</div>';}
                         }
                         ?>
                     </div>
