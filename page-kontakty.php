@@ -47,7 +47,7 @@
                                                 <textarea id="kontaktpagemessage" class="control__input -textarea" placeholder="Сообщение"></textarea>
                                             </div>
                                             <div class="text-center mt-4">
-                                                <button type="button" onclick="getAjaxContactForm('2', document.getElementById('kontaktpagename').value, document.getElementById('kontaktpagemessage').value, document.getElementById('kontaktpagephone').value, document.getElementById('kontaktpageemail').value);" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal">отправить</button>
+                                                <button type="button" onclick="getAjaxContactForm('2', document.getElementById('kontaktpagename').value, document.getElementById('kontaktpagemessage').value, document.getElementById('kontaktpagephone').value, document.getElementById('kontaktpageemail').value);" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal" disabled>отправить</button>
                                             </div>
                                         </form>
                                         <div class="contacts2__info">
@@ -114,6 +114,8 @@
         }
         var emailpattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
         var phonepatern = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+        var email=0;
+        var tel=0;
 
     </script>
 <?php get_footer(); ?>
