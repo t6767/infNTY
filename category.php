@@ -34,8 +34,7 @@
             <div class="page__content">
                 <div class="container">
                     <section>
-                        <div class="row" vertical-gutter="40" data-gutter="40">
-                            <div id="masters">
+                        <div class="row" vertical-gutter="40" data-gutter="40" id="masters">
                             <?php
                             $categories = get_the_category();
                             $category_id = $categories[0]->cat_ID;
@@ -77,9 +76,8 @@
                                 }
                             }
                             ?>
-                            </div>
-                            <button onclick="getAjaxXXX(10, '<?=$category_id?>', ids)">Показать еще</button>
                         </div>
+                        <button onclick="getAjaxXXX(10, '<?=$category_id?>', ids)">Показать еще</button>
                     </section>
                 </div>
             </div>
