@@ -74,7 +74,7 @@
                             }
                             ?>
                             <script>let ids="";</script>
-                            <button onclick="getAjaxModal1(10, <?=$category_id?>, ids)">Показать еще</button>
+                            <button onclick="getAjaxXXX(10, '<?=$category_id?>', ids)">Показать еще</button>
                         </div>
                     </section>
                 </div>
@@ -85,7 +85,7 @@
     </main>
     <!--/. App Main End -->
 <script>
-    function getAjaxModal1(operation, category, ids) {
+    function getAjaxXXX(operation, category, ids) {
     $.ajax({
     type:'POST',
     url:'/ajax.php',
