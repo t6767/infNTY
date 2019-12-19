@@ -41,7 +41,7 @@
                                                 <input type="text" id="kontaktpagephone" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
                                             </div>
                                             <div class="control">
-                                                <input type="text" id="kontaktpageemail" name="email" class="control__input" placeholder="Email">
+                                                <input type="text" onblur="ff()" id="kontaktpageemail" name="email" class="control__input" placeholder="Email">
                                             </div>
                                             <div class="control mt-md-3">
                                                 <textarea id="kontaktpagemessage" class="control__input -textarea" placeholder="Сообщение"></textarea>
@@ -97,9 +97,10 @@
         </main>
         <!--/. App Main End -->
 <script>
-    alert(1);
-    var mail = $('#kontaktpageemail');
-    alert(2);
+    function ff() {
+        alert(1);
+        alert(2);
+    }
 /*    var emailpattern = "/^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i";
     alert(3);
     mail.blur(function(){
