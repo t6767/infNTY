@@ -73,6 +73,8 @@
                                 }
                             }
                             ?>
+                            <script>let ids="";</script>
+                            <button onclick="getAjaxModal1(10, <?=$category_id?>, ids)">Показать еще</button>
                         </div>
                     </section>
                 </div>
@@ -82,5 +84,26 @@
         <!--/. Page End -->
     </main>
     <!--/. App Main End -->
+<script>
+    function getAjaxModal1(operation, category, ids) {
+    $.ajax({
+    type:'POST',
+    url:'/ajax.php',
+    data:{
+    'operation':operation,
+    'name': name,
+    'company': category,
+    'phone': ids
+    },
+    success:function(html){
+    $('#masters').html("123");
+    },
+    error:function(html){
+    $('body').css('cursor','default');
+    alert('Ошибка подключения!');
+    },
+    });
+    }
+</script>
 <?php get_footer(); ?>
 <?php get_footer(); ?>
