@@ -113,6 +113,7 @@
                 alert("телефон корректен");
         }
         var emailpattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
-        var phonepatern = 8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2};
+        var phonepatern = /\(?\d{3}\)?([-\/\.])\d{3}\1\d{4}/;
+
     </script>
 <?php get_footer(); ?>
