@@ -102,7 +102,7 @@
                         <div class="row" vertical-gutter="20" data-gutter="20">
                             <div class="col-md-6 col-lg-4">
                                 <a href="#" class="solution">
-                                    <img src="%=static=%img/general/features-icon-1.svg" class="solution__icon" alt="">
+                                    <img src="<?php bloginfo('template_url'); ?>/static/general/features-icon-1.svg" class="solution__icon" alt="">
                                     <div class="solution__content">
                                         <div class="solution__title">интернет-банкинг</div>
                                         <div class="solution__link">Подробнее</div>
@@ -112,7 +112,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <a href="#" class="solution">
-                                    <img src="%=static=%img/general/features-icon-2.svg" class="solution__icon" alt="">
+                                    <img src="<?php bloginfo('template_url'); ?>/static/general/features-icon-2.svg" class="solution__icon" alt="">
                                     <div class="solution__content">
                                         <div class="solution__title">МОБИЛЬНЫЙ БАНКИНГ</div>
                                         <div class="solution__link">Подробнее</div>
@@ -122,7 +122,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <a href="#" class="solution">
-                                    <img src="%=static=%img/general/features-icon-3.svg" class="solution__icon" alt="">
+                                    <img src="<?php bloginfo('template_url'); ?>/static/general/features-icon-3.svg" class="solution__icon" alt="">
                                     <div class="solution__content">
                                         <div class="solution__title">Портал самообслуживания</div>
                                         <div class="solution__link">Подробнее</div>
@@ -132,7 +132,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <a href="#" class="solution">
-                                    <img src="%=static=%img/general/features-icon-4.svg" class="solution__icon" alt="">
+                                    <img src="<?php bloginfo('template_url'); ?>/static/general/features-icon-4.svg" class="solution__icon" alt="">
                                     <div class="solution__content">
                                         <div class="solution__title">Маркетплейс</div>
                                         <div class="solution__link">Подробнее</div>
@@ -142,7 +142,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <a href="#" class="solution">
-                                    <img src="%=static=%img/general/features-icon-5.svg" class="solution__icon" alt="">
+                                    <img src="<?php bloginfo('template_url'); ?>/static/general/features-icon-5.svg" class="solution__icon" alt="">
                                     <div class="solution__content">
                                         <div class="solution__title">чат-боты</div>
                                         <div class="solution__link">Подробнее</div>
@@ -152,7 +152,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <a href="#" class="solution">
-                                    <img src="%=static=%img/general/features-icon-6.svg" class="solution__icon" alt="">
+                                    <img src="<?php bloginfo('template_url'); ?>/static/general/features-icon-6.svg" class="solution__icon" alt="">
                                     <div class="solution__content">
                                         <div class="solution__title">единый платежный шлюз</div>
                                         <div class="solution__link">Подробнее</div>
@@ -162,7 +162,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <a href="#" class="solution">
-                                    <img src="%=static=%img/general/features-icon-7.svg" class="solution__icon" alt="">
+                                    <img src="<?php bloginfo('template_url'); ?>/static/general/features-icon-7.svg" class="solution__icon" alt="">
                                     <div class="solution__content">
                                         <div class="solution__title">программа лояльности</div>
                                         <div class="solution__link">Подробнее</div>
@@ -172,7 +172,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <a href="#" class="solution">
-                                    <img src="%=static=%img/general/features-icon-8.svg" class="solution__icon" alt="">
+                                    <img src="<?php bloginfo('template_url'); ?>/static/general/features-icon-8.svg" class="solution__icon" alt="">
                                     <div class="solution__content">
                                         <div class="solution__title">тендерная площадка</div>
                                         <div class="solution__link">Подробнее</div>
@@ -182,7 +182,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <a href="#" class="solution">
-                                    <img src="%=static=%img/general/features-icon-9.svg" class="solution__icon" alt="">
+                                    <img src="<?php bloginfo('template_url'); ?>/static/general/features-icon-9.svg" class="solution__icon" alt="">
                                     <div class="solution__content">
                                         <div class="solution__title">qr-платежи
                                             и переводы</div>
