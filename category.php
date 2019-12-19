@@ -18,7 +18,13 @@
                             <a href="/" class="breadcrumbs__link">Главная</a>
                         </li>
                         <li class="breadcrumbs__item">
-                            <a href="/ru/novosti/" class="breadcrumbs__link">Новости</a>
+                            <a href="/novosti/" class="breadcrumbs__link">ПРЕСС-ЦЕНТР
+                            <?php
+                            $categories = get_the_category();
+                            $category_id = $categories[0]->cat_ID;
+                            echo $category_id;
+                            ?>
+                            </a>
                         </li>
                         <li class="breadcrumbs__item">
                             <?php echo single_cat_title( '', false ); ?>
@@ -33,19 +39,6 @@
                     <section>
                         <div class="row" vertical-gutter="40" data-gutter="40">
                             <?php
-                            global $paged1;
-                            if ( get_query_var('paged') )
-                                $my_page = get_query_var('paged');
-                            else {
-                                if ( get_query_var('page') )
-                                    $my_page = get_query_var('page');
-                                else
-                                    $my_page = 1;
-                                set_query_var('paged', $my_page);
-                                $paged1 = $my_page;
-                            }
-
-
                             $query = new WP_Query(
                                 array(
                                     'post_type' => 'post',
@@ -55,7 +48,6 @@
                                     'post__not_in' => array(get_the_ID()),
                                     'orderby' => 'date',
                                     'order' => 'DESC',
-                                    'paged' => $my_page
                                 )
                             );
 
@@ -82,18 +74,6 @@
                                     </div>
                                     <?php
                                 }
-                                if(function_exists('wp_pagenavi')) {
-                                    ?>
-                                    <div class="col-md-12">
-                                        <?php
-                                        wp_pagenavi(array('query' => $query));
-                                        ?>
-                                    </div>
-                                    <?php
-                                    $wp_query = null;
-                                    $wp_query = $query;
-                                }
-                                wp_reset_postdata();
                             }
                             ?>
                         </div>
