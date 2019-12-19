@@ -58,7 +58,7 @@
                         <h2 style="color: #1A73E8">Краткое описание решения и его преимуществ</h2>
                         <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. </p>
                         <h5>Продукты в рамках решения:</h5>
-                        <div class="features row" data-gutter="20">
+                        <div class="row" vertical-gutter="20" data-gutter="20">
                             <?php
                             $query = new WP_Query(
                                 array(
@@ -66,36 +66,27 @@
                                     'post_status' => 'publish',
                                     'posts_per_page' => 9,
                                     'cat' => [23],
-                                    'post__not_in' => array(get_the_ID()),
                                     'orderby' => 'date',
                                     'order' => 'DESC',
-                                    'paged' => $my_page
                                 )
                             );
-                            $i=0;
                             if ($query->have_posts()) {
                                 while ($query->have_posts()) {
-                                    if ($i==0) {echo '<div class="col-md-6 col-lg-4">';}
                                     $query->the_post();
-                                    $dpole = get_post_meta( get_the_ID(), 'vid' );
                                     $icon = get_post_meta( get_the_ID(), 'icon' );
-                                    if ((int)$dpole[0] > 0) $style=" -inverted"; else $style="";
                                     if ($icon[0]!='') $ic=$icon[0]; else $ic="features-icon-1.svg";
                                     ?>
-                                    <a href="<?=get_permalink()?>" class="features__item<?=$style?>">
-                                        <img src="<?php bloginfo('template_url'); ?>/static/img/general/<?=$ic?>" class="features__icon" alt="">
-                                        <div class="features__title"><?php the_title(); ?></div>
-                                        <div class="features__text"><?=the_excerpt_max_charlength(150)?></div>
-                                        <div class="features__link">Подробнее</div>
-                                        <div class="features__background" style="background-image: url('<?=get_the_post_thumbnail_url()?>')"></div>
-                                    </a>
-                                    <?php
-                                    $i++;
-                                    if ($i==3) {echo '</div>'; $i=0;}
-                                }
-                                if (($i>0) && ($i<3)) {echo '</div>';}
-                            }
-                            ?>
+                                    <div class="col-md-6 col-lg-4">
+                                        <a href="<?=get_permalink()?>" class="solution">
+                                            <img src="<?php bloginfo('template_url'); ?>/static/img/general/<?=$ic?>" class="solution__icon" alt="">
+                                            <div class="solution__content">
+                                                <div class="solution__title"><?php the_title(); ?></div>
+                                                <div class="solution__link">Подробнее</div>
+                                            </div>
+                                            <div class="solution__background" style="background-image: url('<?=get_the_post_thumbnail_url()?>')"></div>
+                                        </a>
+                                    </div>
+                                    <?php }}  ?>
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
