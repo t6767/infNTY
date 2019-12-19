@@ -20,6 +20,9 @@ $dpole = get_post_meta( $wp_query->post->ID, 'kontakt' );
                         <a href="/" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
+                        <a href="/about/#vacancy" class="breadcrumbs__link">Вакансии</a>
+                    </li>
+                    <li class="breadcrumbs__item">
                         <?=$wp_query->post->post_title ?>
                     </li>
                 </ul>
@@ -40,27 +43,28 @@ $dpole = get_post_meta( $wp_query->post->ID, 'kontakt' );
                         <div class="aside-news">
                             <div class="aside-news__header">Другие вакансии</div>
                             <div class="aside-news__content">
-                                <a href="#" class="aside-news__item">
-                                    <div class="aside-news__item-title">Компьютерщик</div>
-                                    <div class="aside-news__item-text">
-                                        <p>Обязанности:</p>
-                                        <p>- Обеспечение бесперебойной работы сети и устройств</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="aside-news__item">
-                                    <div class="aside-news__item-title">Компьютерщик</div>
-                                    <div class="aside-news__item-text">
-                                        <p>Обязанности:</p>
-                                        <p>- Обеспечение бесперебойной работы сети и устройств</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="aside-news__item">
-                                    <div class="aside-news__item-title">Компьютерщик</div>
-                                    <div class="aside-news__item-text">
-                                        <p>Обязанности:</p>
-                                        <p>- Обеспечение бесперебойной работы сети и устройств</p>
-                                    </div>
-                                </a>
+                                <?php
+                                $query = new WP_Query( array( 'post_type' => 'post', 'post_status' => 'publish',
+                                        'posts_per_page' => 3,
+                                        'cat' => [20],  //1 7 8
+                                        'post__not_in' => array($wp_query->post->ID),
+                                        'orderby' => 'date',
+                                        'order' => 'DESC',
+                                    )
+                                );
+                                if ($query->have_posts()) {
+                                while ($query->have_posts()) {
+                                    $query->the_post();
+                                    ?>
+                                    <a href="<?php the_permalink(); ?>" class="aside-news__item">
+                                        <div class="aside-news__item-title"><?php the_title(); ?></div>
+                                        <div class="aside-news__item-text">
+                                            <p><?php the_excerpt(); ?> </p>
+                                        </div>
+                                    </a>
+                                    <?php
+                                }}
+                                ?>
                             </div>
                         </div>
                         <div class="aside-news">
