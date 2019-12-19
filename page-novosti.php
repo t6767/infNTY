@@ -123,6 +123,9 @@
                             }
                             ?>
                         </div>
+                        <div class="text-center mt-5">
+                            <a href="#">Показать еще</a>
+                        </div>
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
                         <div class="row" vertical-gutter="40" data-gutter="40">
