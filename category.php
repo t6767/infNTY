@@ -31,16 +31,41 @@
             <div class="page__content">
                 <div class="container">
                     <section>
-                        <div class="row" id="ajax" vertical-gutter="40" data-gutter="40">
-
-
-
+                        <div class="row" vertical-gutter="40" data-gutter="40">
                             <?php
-                            if ( have_posts() ) {
-                                while ( have_posts() ) {
-                                    the_post();
+                            global $paged1;
+                            if ( get_query_var('paged') )
+                                $my_page = get_query_var('paged');
+                            else {
+                                if ( get_query_var('page') )
+                                    $my_page = get_query_var('page');
+                                else
+                                    $my_page = 1;
+                                set_query_var('paged', $my_page);
+                                $paged1 = $my_page;
+                            }
+
+
+                            $query = new WP_Query(
+                                array(
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'posts_per_page' => 4,
+                                    'cat' => [17],  //1 7 8
+                                    'post__not_in' => array(get_the_ID()),
+                                    'orderby' => 'date',
+                                    'order' => 'DESC',
+                                    'paged' => $my_page
+                                )
+                            );
+
+
+                            if ($query->have_posts()) {
+                                while ($query->have_posts()) {
+                                    $query->the_post();
                                     $date = get_the_date( "d.m.Y");
                                     ?>
+
                                     <div class="col-md-6">
                                         <div class="news">
                                             <a href="<?php the_permalink(); ?>">
@@ -57,21 +82,20 @@
                                     </div>
                                     <?php
                                 }
+                                if(function_exists('wp_pagenavi')) {
+                                    ?>
+                                    <div class="col-md-12">
+                                        <?php
+                                        wp_pagenavi(array('query' => $query));
+                                        ?>
+                                    </div>
+                                    <?php
+                                    $wp_query = null;
+                                    $wp_query = $query;
+                                }
+                                wp_reset_postdata();
                             }
-
-                            add_filter('navigation_markup_template', 'my_navigation_template', 10, 2 );
-                            function my_navigation_template( $template, $class ){
-                                return '<nav class="navigation %1$s" role="navigation"><div class="nav-links">%3$s</div></nav>';
-                            }
-
-                            // выводим пагинацию
-                            the_posts_pagination( array(
-                                'end_size' => 2,
-                            ) );
                             ?>
-
-
-
                         </div>
                     </section>
                 </div>
