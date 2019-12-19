@@ -140,7 +140,7 @@
                                 <div class="reviews__content">
                                     <div class="reviews__header">
                                         <div class="reviews__title"><?php the_title(); ?></div>
-                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/<?=$icon[0]?>" class="reviews__logo" alt="">
+                                        <img src="<?=$icon[0]?>" class="reviews__logo" alt="">
                                     </div>
                                     <div class="spoiler">
                                         <div class="spoiler__inner jsSpoilerInner" data-height="100">
