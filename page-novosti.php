@@ -278,7 +278,7 @@
                                     <div class="col-md-6">
                                         <div class="news">
                                             <a href="<?php the_permalink(); ?>">
-                                                <img src="<?=get_the_post_thumbnail_url()?>" class="news__img" alt="123">
+                                                <img src="<?=get_the_post_thumbnail_url()?>" class="news__img">
                                             </a>
                                             <div class="news__content">
                                                 <a href="<?php the_permalink(); ?>" class="news__title"><?php the_title(); ?></a>
