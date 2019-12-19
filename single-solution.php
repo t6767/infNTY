@@ -105,23 +105,13 @@ get_header(); // выводим хеадер
                             <?php $exceptPost=get_the_ID(); }} ?>
                         </div>
                         <div class="aside-news">
-                            <div class="aside-news__header">Последняя новость</div>
                             <?php
-                            $query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 1, 'post__not_in' => array($exceptPost), 'cat' => [17], 'orderby' => 'date', 'order' => 'DESC'));
-                            if ($query->have_posts()) { while ($query->have_posts()) {
-                                $query->the_post();
-                                $date = get_the_date( "d.m.Y");
-                                ?>
-                                <a href="<?php the_permalink(); ?>">
-                                    <img src="<?=get_the_post_thumbnail_url()?>" class="aside-news__img" alt="">
-                                </a>
-                                <div class="aside-news__content">
-                                    <a href="<?php the_permalink(); ?>" class="aside-news__title"><?php the_title(); ?></a>
-                                    <div class="aside-news__text"><?=the_excerpt_max_charlength(150)?></div>
-                                    <a href="<?php the_permalink(); ?>" class="aside-news__date"><?=$date ?> / <?php the_category(', '); ?></a>
-                                    <a href="<?php the_permalink(); ?>" class="button -bordered aside-news__button">Читать далее</a>
-                                </div>
-                                <?php $exceptPost=get_the_ID(); }} ?>
+                            $post_432 = get_post( 432 );
+//                            $PTitle = $post_432->post_title;
+                            $PContent=$post_432->post_content;
+                            $PImage = wp_get_attachment_url( get_post_thumbnail_id($post_432->ID), 'thumbnail' );
+                            ?>
+                            <a href="<?=$PContent ?>"><img src="<?=$PImage ?>" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-8">
