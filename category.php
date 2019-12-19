@@ -91,9 +91,8 @@
     url:'/ajax.php',
     data:{
     'operation':operation,
-    'name': name,
-    'company': category,
-    'phone': ids
+    'category': category,
+    'ids': ids
     },
     success:function(html){
     $('#masters').html("123");
