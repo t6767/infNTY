@@ -38,7 +38,7 @@
                                                 <input type="text" id="kontaktpagename" name="name" class="control__input" placeholder="Имя">
                                             </div>
                                             <div class="control">
-                                                <input type="text" id="kontaktpagephone" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
+                                                <input type="text" onblur="ph(document.getElementById('kontaktpagephone').value)" id="kontaktpagephone" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
                                             </div>
                                             <div class="control">
                                                 <input type="text" onblur="ff(document.getElementById('kontaktpageemail').value)" id="kontaktpageemail" name="email" class="control__input" placeholder="Email">
@@ -104,6 +104,15 @@
             else
                 alert("email корректен");
         }
+
+        function ph(value) {
+            var OK = phonepatern.exec(value);
+            if (!OK)
+                alert("Введите корректный телефон");
+            else
+                alert("телефон корректен");
+        }
         var emailpattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
+        var phonepatern = /+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2};
     </script>
 <?php get_footer(); ?>
