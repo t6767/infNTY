@@ -80,11 +80,11 @@
                                     $query->the_post();
                                     $date = get_the_date( "d.m.Y");
                                     ?>
-
+                                    <script> ids.push("<?=get_the_ID() ?>"); </script>
                                     <div class="col-md-6">
                                         <div class="news">
                                             <a href="<?php the_permalink(); ?>">
-                                                <?php the_post_thumbnail(array(533 ,200)); ?>
+                                                <img src="<?=get_the_post_thumbnail_url()?>" class="news__img" alt="123">
                                             </a>
                                             <div class="news__content">
                                                 <a href="<?php the_permalink(); ?>" class="news__title"><?php the_title(); ?></a>
@@ -139,7 +139,6 @@
                                     $query->the_post();
                                     $date = get_the_date( "d.m.Y");
                                     ?>
-                                <script> ids.push("<?=get_the_ID() ?>"); </script>
                                     <div class="col-md-6">
                                         <div class="news">
                                             <a href="<?php the_permalink(); ?>">
