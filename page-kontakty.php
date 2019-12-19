@@ -98,12 +98,11 @@
         <!--/. App Main End -->
 <script>
     function ff() {
-        alert(1);
         var OK = emailpattern.exec(document.getElementById('kontaktpageemail').value);
         if (!OK)
-            alert(" isn't a phone number with area code!");
+            alert("Введите корректный email");
         else
-            alert("Thanks, your phone number is ");
+            alert("email корректен");
     }
     var emailpattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
     /*
