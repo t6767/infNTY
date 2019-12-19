@@ -101,7 +101,7 @@
                             ?>
                         </div>
                         <div class="text-center mt-5" id="ebat1">
-                            <a href="#" onclick="getAjaxViebu(10, '17', ids, '#pizdez1', 'ebat1')">Показать еще</a>
+                            <a href="javascript:void(0);" onclick="getAjaxViebu(10, '17', ids, '#pizdez1', 'ebat1')">Показать еще</a>
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
