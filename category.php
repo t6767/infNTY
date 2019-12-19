@@ -18,13 +18,7 @@
                             <a href="/" class="breadcrumbs__link">Главная</a>
                         </li>
                         <li class="breadcrumbs__item">
-                            <a href="/novosti/" class="breadcrumbs__link">ПРЕСС-ЦЕНТР
-                            <?php
-                            $categories = get_the_category();
-                            $category_id = $categories[0]->cat_ID;
-                            echo $category_id;
-                            ?>
-                            </a>
+                            <a href="/novosti/" class="breadcrumbs__link">ПРЕСС-ЦЕНТР</a>
                         </li>
                         <li class="breadcrumbs__item">
                             <?php echo single_cat_title( '', false ); ?>
@@ -39,12 +33,14 @@
                     <section>
                         <div class="row" vertical-gutter="40" data-gutter="40">
                             <?php
+                            $categories = get_the_category();
+                            $category_id = $categories[0]->cat_ID;
                             $query = new WP_Query(
                                 array(
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
                                     'posts_per_page' => 4,
-                                    'cat' => [17],  //1 7 8
+                                    'cat' => [$category_id], 
                                     'post__not_in' => array(get_the_ID()),
                                     'orderby' => 'date',
                                     'order' => 'DESC',
