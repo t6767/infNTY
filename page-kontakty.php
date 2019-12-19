@@ -120,7 +120,7 @@
         }
 
         function checkbutton() {
-            if(email==1 && tel==1 && name!='') document.getElementById('buttonsendd').disabled = false; else document.getElementById('buttonsendd').disabled = true;
+            if(email==1 && tel==1) document.getElementById('buttonsendd').disabled = false; else document.getElementById('buttonsendd').disabled = true;
         }
         var emailpattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
         var phonepatern = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
