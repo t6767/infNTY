@@ -166,14 +166,14 @@
                 <div class="container">
                     <div class="row" vertical-gutter="30">
                         <div class="col-md-4">
-                            <a href="/about/" class="info-card">
+                            <a href="/about/#history" class="info-card">
                                 <div class="info-card__title">О Компании</div>
                                 <div class="info-card__text">InFin-IT Solution является научно-производственной компанией, занимающейся разработкой инновационных решений в области цифровых каналов для международного рынка.</div>
                                 <div class="info-card__link">Подробнее</div>
                             </a>
                         </div>
                         <div class="col-md-4">
-                            <a href="/about/#rewue" class="info-card">
+                            <a href="/about/#reviews" class="info-card">
                                 <div class="info-card__title">Отывы заказчиков и партнеров</div>
                                 <div class="info-card__text">InFin-IT Solution является научно-производственной компанией, занимающейся разработкой инновационных решений в области цифровых каналов для международного рынка.</div>
                                 <div class="info-card__link">Подробнее</div>
