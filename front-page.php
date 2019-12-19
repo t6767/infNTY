@@ -156,7 +156,7 @@
                         ?>
 
                     </div>
-                    <a href="/category/smi-o-nas/" class="button intro-news__massmedia">СМИ о нас</a>
+                    <a href="/novosti/#smionas" class="button intro-news__massmedia">СМИ о нас</a>
                 </div>
             </section>
             <!--/. Intro News End -->
