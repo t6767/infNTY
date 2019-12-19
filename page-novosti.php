@@ -103,7 +103,7 @@
                             ?>
                         </div>
                         <div class="text-center mt-5" id="ebat1">
-                            <a href="javascript:void(0);" onclick="getAjaxViebu(10, '17', ids, '#pizdez1', 'ebat1')">Показать еще</a>
+                            <a href="javascript:void(0);" onclick="getAjaxViebu(10, '17', ids, '#pizdez1', 'ebat1', end)">Показать еще</a>
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
@@ -147,7 +147,7 @@
                             ?>
                         </div>
                         <div class="text-center mt-5" id="ebat2">
-                            <a href="javascript:void(0);" onclick="getAjaxViebu(11, '7', ids2, '#pizdez2', 'ebat2')">Показать еще</a>
+                            <a href="javascript:void(0);" onclick="getAjaxViebu(11, '7', ids2, '#pizdez2', 'ebat2', end2)">Показать еще</a>
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-3" role="tabpanel">
@@ -359,7 +359,7 @@
     }
     window.onhashchange = locationHashChanged;
 
-    function getAjaxViebu(operation, category, ids, idtab, idbutton) {
+    function getAjaxViebu(operation, category, ids, idtab, idbutton, end) {
         $.ajax({
             type:'POST',
             url:'/ajax.php',
@@ -371,7 +371,7 @@
             success:function(html){
                 $(idtab).append(html);
                 if (end>0) document.getElementById(idbutton).style.display='none';
-            },
+           },
             error:function(html){
                 $('body').css('cursor','default');
                 alert('Ошибка подключения!');
