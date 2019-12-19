@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <script>
     let ids=[];
+    let end=0;
 </script>
     <!-- App Main Begin -->
     <main role="main" class="app__main">
@@ -77,7 +78,7 @@
                             }
                             ?>
                         </div>
-                        <button onclick="getAjaxXXX(10, '<?=$category_id?>', ids)">Показать еще</button>
+                        <button id="bider" onclick="getAjaxXXX(10, '<?=$category_id?>', ids)">Показать еще</button>
                     </section>
                 </div>
             </div>
@@ -98,6 +99,7 @@
     },
     success:function(html){
     $('#masters').append(html);
+    if (end>0) document.getElementById('bider').style.display='none';
     },
     error:function(html){
     $('body').css('cursor','default');
