@@ -45,12 +45,12 @@
                                     'post_status' => 'publish',
                                     'posts_per_page' => 4,
                                     'cat' => [$category_id],
-                                    'post__not_in' => array(get_the_ID()),
                                     'orderby' => 'date',
                                     'order' => 'DESC',
                                 )
                             );
 
+                            //'post__not_in' => array(get_the_ID()),
 
                             if ($query->have_posts()) {
                                 while ($query->have_posts()) {
