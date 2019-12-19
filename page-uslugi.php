@@ -28,30 +28,6 @@
             <!-- Page Content Begin -->
             <div class="page__content">
                 <div class="container">
-                    <div class="page__topbar">
-                        <!--<div class="category-select dropdown">
-                        <a href="#" class="category-select__link" data-toggle="dropdown">Все категории</a>
-                        <div class="dropdown-menu category-select__menu">
-                            <a href="#" class="category-select__sublink">Все категории</a>
-                            <a href="#" class="category-select__sublink">Корпоративный сектор</a>
-                            <a href="#" class="category-select__sublink">Государственный сектор</a>
-                        </div>
-                    </div>-->
-                        <div class="page__topbar">
-                            <ul class="nav tabs">
-                                <li class="tabs__item">
-                                    <a class="tabs__link active" data-toggle="tab" href="#tabs-1" role="tab">Решения банковской сферы</a>
-                                </li>
-                                <li class="tabs__item">
-                                    <a class="tabs__link" data-toggle="tab" href="#tabs-2" role="tab">Корпоративный сектор</a>
-                                </li>
-                                <li class="tabs__item">
-                                    <a class="tabs__link" data-toggle="tab" href="#tabs-3" role="tab">Государственный сектор</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <button type="button" class="button -bordered" data-target="#modal-1" data-toggle="modal">связаться с нами</button>
-                    </div>
                             <h1>Решения для банковской сферы</h1>
                             <h2 style="color: #1A73E8">Краткое описание решения и его преимуществ</h2>
                             <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. </p>
