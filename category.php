@@ -95,7 +95,7 @@
     'ids': ids
     },
     success:function(html){
-    $('#masters').html("123");
+    $('#masters').html(html);
     },
     error:function(html){
     $('body').css('cursor','default');
