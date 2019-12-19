@@ -93,25 +93,25 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="control">
-                                        <input type="text" name="name" class="control__input" placeholder="Имя">
+                                        <input type="text" id="resheniyaname" name="name" class="control__input" placeholder="Имя">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="control">
-                                        <input type="text" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
+                                        <input type="text" id="resheniyaphone" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="control">
-                                        <input type="text" name="email" class="control__input" placeholder="Email">
+                                        <input type="text" id="resheniyaemail" name="email" class="control__input" placeholder="Email">
                                     </div>
                                 </div>
                             </div>
                             <div class="control mt-md-3">
-                                <textarea class="control__textarea" placeholder="Сообщение"></textarea>
+                                <textarea id="resheniyamessage" class="control__textarea" placeholder="Сообщение"></textarea>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="button -bordered form__button">отправить</button>
+                                <button type="button" onclick="getAjaxContactForm('2', document.getElementById('resheniyaname').value, document.getElementById('resheniyamessage').value, document.getElementById('resheniyaphone').value, document.getElementById('resheniyaemail').value);" data-target="#modal-3" data-toggle="modal" class="button -bordered form__button">отправить</button>
                             </div>
                         </form>
                     </div>
