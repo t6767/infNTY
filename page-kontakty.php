@@ -108,12 +108,12 @@
         function ph(value) {
             var OK = phonepatern.exec(value);
             if (!OK)
-                alert("Введите корректный телефон");
+                alert("Введите44 корректный телефон");
             else
                 alert("телефон корректен");
         }
         var emailpattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
-        var phonepatern = /\(?\d{3}\)?([-\/\.])\d{3}\1\d{4}/;
+        var phonepatern = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
 
     </script>
 <?php get_footer(); ?>
