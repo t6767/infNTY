@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 <?php global $p123; ?>
+<script>
+    let ids=[];
+    let end=0;
+</script>
 <!-- App Main Begin -->
 <main role="main" class="app__main">
 
@@ -57,7 +61,7 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabs-1" role="tabpanel">
 
-                        <div class="row" vertical-gutter="40" data-gutter="40">
+                        <div class="row" vertical-gutter="40" data-gutter="40" id="pizdez1">
                             <?php
                             $query = new WP_Query(
                                 array(
@@ -96,8 +100,8 @@
                             }
                             ?>
                         </div>
-                        <div class="text-center mt-5">
-                            <a href="#">Показать еще</a>
+                        <div class="text-center mt-5" id="ebat1">
+                            <a href="#" onclick="getAjaxViebu(10, '17', ids, '#pizdez1', 'ebat1')">Показать еще</a>
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
@@ -376,5 +380,25 @@
         hashKoder(hash);
     }
     window.onhashchange = locationHashChanged;
+
+    function getAjaxViebu(operation, category, ids, idtab, idbutton) {
+        $.ajax({
+            type:'POST',
+            url:'/ajax.php',
+            data:{
+                'operation':operation,
+                'category': category,
+                'ids': ids
+            },
+            success:function(html){
+                $(idtab).append(html);
+                if (end>0) document.getElementById(idbutton).style.display='none';
+            },
+            error:function(html){
+                $('body').css('cursor','default');
+                alert('Ошибка подключения!');
+            },
+        });
+    }
 </script>
 <?php get_footer(); ?>
