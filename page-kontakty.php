@@ -41,7 +41,7 @@
                                                 <input type="text" id="kontaktpagephone" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
                                             </div>
                                             <div class="control">
-                                                <input type="text" onblur="ff()" id="kontaktpageemail" name="email" class="control__input" placeholder="Email">
+                                                <input type="text" onblur="ff(document.getElementById('kontaktpageemail').value)" id="kontaktpageemail" name="email" class="control__input" placeholder="Email">
                                             </div>
                                             <div class="control mt-md-3">
                                                 <textarea id="kontaktpagemessage" class="control__input -textarea" placeholder="Сообщение"></textarea>
@@ -96,25 +96,14 @@
 
         </main>
         <!--/. App Main End -->
-<script>
-    function ff() {
-        var OK = emailpattern.exec(this.value);
-        if (!OK)
-            alert("Введите корректный email");
-        else
-            alert("email корректен");
-    }
-    var emailpattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
-    /*
-        alert(3);
-        mail.blur(function(){
-            if(mail.val() != '') {
-                if (mail.val().search(emailpattern) == 0) {
-                    alert("ttt");
-                } else { alert("ne sootv"); }
-            } else alert('Введите email');
+    <script>
+        function ff(value) {
+            var OK = emailpattern.exec(value);
+            if (!OK)
+                alert("Введите корректный email");
+            else
+                alert("email корректен");
         }
-
-     */
-</script>
+        var emailpattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
+    </script>
 <?php get_footer(); ?>
