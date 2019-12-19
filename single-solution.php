@@ -121,7 +121,7 @@ get_header(); // выводим хеадер
                                 <?php
                                 $content = apply_filters( 'the_content', $wp_query->post->post_content );
                                 echo $content;
-                                ?>11
+                                ?>
                             </p>
                             <h2 class="mt-4">Примеры реализации</h2>
                             <div class="row" vertical-gutter="30">
