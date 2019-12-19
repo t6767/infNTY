@@ -64,18 +64,6 @@ $dpole = get_post_meta( $wp_query->post->ID, 'kontakt' );
                             </div>
                         </div>
                         <div class="aside-news">
-                            <div class="aside-news__header">Другие вакансии</div>
-                            <div class="aside-news__content">
-                                <div class="aside-news__title">Компьютерщик</div>
-                                <div class="aside-news__text">
-                                    <p>Обязанности:</p>
-                                    <p>- Обеспечение бесперебойной работы сети и устройств</p>
-                                    <p>- Сборка компьютеров, настройка сети, ремонт компьютеров, настройка ПО</p>
-                                </div>
-                                <a href="#" class="button -bordered aside-news__button">Читать далее</a>
-                            </div>
-                        </div>
-                        <div class="aside-news">
                             <div class="aside-news__header">Контактная информация:</div>
                             <div class="aside-news__content">
                                 <div class="aside-news__text">
