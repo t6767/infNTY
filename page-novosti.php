@@ -139,7 +139,7 @@
                                     $query->the_post();
                                     $date = get_the_date( "d.m.Y");
                                     ?>
-
+                                <script> ids.push("<?=get_the_ID() ?>"); </script>
                                     <div class="col-md-6">
                                         <div class="news">
                                             <a href="<?php the_permalink(); ?>">
