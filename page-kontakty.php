@@ -98,16 +98,5 @@
         <!--/. App Main End -->
 <script>
     alert(1);
-    var mail = $('#kontaktpageemail');
-    alert(2);
-    var emailpattern = "/^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i";
-    alert(3);
-    mail.blur(function(){
-        if(mail.val() != '') {
-            if (mail.val().search(emailpattern) == 0) {
-                alert("ttt");
-            } else { alert("ne sootv"); }
-        } else alert('Введите email');
-    }
 </script>
 <?php get_footer(); ?>
