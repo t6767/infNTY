@@ -38,6 +38,7 @@ $dpole = get_post_meta( $wp_query->post->ID, 'kontakt' );
                         <div class="article">
                             <?php echo $wp_query->post->post_content;
                             $content = apply_filters( 'the_content', $wp_query->post->post_content );
+                            echo $content;
                             ?>
                         </div>
                     </div>
