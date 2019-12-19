@@ -172,6 +172,10 @@
 
 <!-- Main scripts. You can replace it, but I recommend you to leave it here -->
 <script>
+
+    var emailpattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
+    var phonepatern = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+
     function getAjax1(operation, name, phone, solution) {
         $.ajax({
             type:'POST',
