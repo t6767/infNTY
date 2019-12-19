@@ -30,7 +30,7 @@
                 <div class="page__topbar">
                     <ul class="nav tabs">
                         <li class="tabs__item">
-                            <a class="tabs__link active" data-toggle="tab" id="t1" onclick="changeHash('');" href="#tabs-1" role="tab">История компании</a>
+                            <a class="tabs__link active" data-toggle="tab" id="t1" onclick="changeHash('#history');" href="#tabs-1" role="tab">История компании</a>
                         </li>
                         <li class="tabs__item">
                             <a class="tabs__link" data-toggle="tab" id="t2" href="#tabs-2" onclick="changeHash('#team');"  role="tab">Команда</a>
