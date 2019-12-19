@@ -47,7 +47,7 @@
                                                 <textarea id="kontaktpagemessage" class="control__input -textarea" placeholder="Сообщение"></textarea>
                                             </div>
                                             <div class="text-center mt-4">
-                                                <button type="button" onclick="getAjaxContactForm('2', document.getElementById('kontaktpagename').value, document.getElementById('kontaktpagemessage').value, document.getElementById('kontaktpagephone').value, document.getElementById('kontaktpageemail').value);" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal" disabled>отправить</button>
+                                                <button id="buttonsendd" type="button" onclick="getAjaxContactForm('2', document.getElementById('kontaktpagename').value, document.getElementById('kontaktpagemessage').value, document.getElementById('kontaktpagephone').value, document.getElementById('kontaktpageemail').value);" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal" disabled>отправить</button>
                                             </div>
                                         </form>
                                         <div class="contacts2__info">
@@ -99,18 +99,28 @@
     <script>
         function ff(value) {
             var OK = emailpattern.exec(value);
-            if (!OK)
+            if (!OK) {
+                email=0;
                 alert("Введите корректный email");
+            }
             else
-                alert("email корректен");
+                email=1;
+            checkbutton();
         }
 
         function ph(value) {
             var OK = phonepatern.exec(value);
-            if (!OK)
-                alert("Введите44 корректный телефон");
+            if (!OK) {
+                tel=0;
+                alert("Введите корректный телефон");
+            }
             else
-                alert("телефон корректен");
+                tel=1;
+            checkbutton();
+        }
+
+        function checkbutton() {
+            if(email==1 && tel==1) document.getElementById('buttonsendd').disabled = false; else document.getElementById('buttonsendd').disabled = true;
         }
         var emailpattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
         var phonepatern = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
