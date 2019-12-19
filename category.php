@@ -97,7 +97,7 @@
     'ids': ids
     },
     success:function(html){
-    $('#masters').html(html);
+    $('#masters').after(html);
     },
     error:function(html){
     $('body').css('cursor','default');
