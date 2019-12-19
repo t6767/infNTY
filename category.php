@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+<script>
+    let ids=[];
+</script>
     <!-- App Main Begin -->
     <main role="main" class="app__main">
 
@@ -54,7 +57,7 @@
                                     $query->the_post();
                                     $date = get_the_date( "d.m.Y");
                                     ?>
-
+                                    <script> ids.push("<?=get_the_ID() ?>"); </script>
                                     <div class="col-md-6">
                                         <div class="news">
                                             <a href="<?php the_permalink(); ?>">
@@ -73,7 +76,6 @@
                                 }
                             }
                             ?>
-                            <script>let ids="";</script>
                             <button onclick="getAjaxXXX(10, '<?=$category_id?>', ids)">Показать еще</button>
                         </div>
                     </section>
