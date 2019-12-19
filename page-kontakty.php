@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <script>
-        var emailpattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
+        var emailpattern = "/^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i";
     </script>
         <!-- App Main Begin -->
         <main role="main" class="app__main">
