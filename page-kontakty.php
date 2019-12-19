@@ -47,7 +47,7 @@
                                                 <textarea id="kontaktpagemessage" class="control__input -textarea" placeholder="Сообщение"></textarea>
                                             </div>
                                             <div class="text-center mt-4">
-                                                <button id="buttonsendd" onmouseover="checkbutton()" type="button" onclick="getAjaxContactForm('2', document.getElementById('kontaktpagename').value, document.getElementById('kontaktpagemessage').value, document.getElementById('kontaktpagephone').value, document.getElementById('kontaktpageemail').value);" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal" disabled>отправить</button>
+                                                <button id="buttonsendd" type="button" onclick="getAjaxContactForm('2', document.getElementById('kontaktpagename').value, document.getElementById('kontaktpagemessage').value, document.getElementById('kontaktpagephone').value, document.getElementById('kontaktpageemail').value);" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal" disabled>отправить</button>
                                             </div>
                                         </form>
                                         <div class="contacts2__info">
