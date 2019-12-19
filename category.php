@@ -78,9 +78,8 @@
                             }
                             ?>
                         </div>
-                        <button id="bider" onclick="getAjaxXXX(10, '<?=$category_id?>', ids)">Показать еще</button>
-                        <div class="text-center mt-5">
-                            <a href="javascript:void(0);" id="linkesho" onclick="document.getElementById('linkesho').style.display='none'; document.getElementById('showmore').style.display='flex'; ">Посмотреть ещё</a>
+                        <div class="text-center mt-5" id="bider">
+                            <a href="javascript:void(0);" onclick="getAjaxXXX(10, '<?=$category_id?>', ids)">Посмотреть ещё</a>
                         </div>
                     </section>
                 </div>
