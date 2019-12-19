@@ -88,105 +88,6 @@
                                     </div>
                                     <?php }}  ?>
                         </div>
-                    </div>
-                    <div class="tab-pane" id="tabs-2" role="tabpanel">
-                        <h1>Решения для банковской сферы</h1>
-                        <h2 style="color: #1A73E8">Краткое описание решения и его преимуществ</h2>
-                        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. </p>
-                        <h5>Продукты в рамках решения:</h5>
-                        <div class="row" vertical-gutter="20" data-gutter="20">
-                            <div class="col-md-6 col-lg-4">
-                                <a href="#" class="solution">
-                                    <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-1.svg" class="solution__icon" alt="">
-                                    <div class="solution__content">
-                                        <div class="solution__title">интернет-банкинг</div>
-                                        <div class="solution__link">Подробнее</div>
-                                    </div>
-                                    <div class="solution__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/solution-1.jpg')"></div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="#" class="solution">
-                                    <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-2.svg" class="solution__icon" alt="">
-                                    <div class="solution__content">
-                                        <div class="solution__title">МОБИЛЬНЫЙ БАНКИНГ</div>
-                                        <div class="solution__link">Подробнее</div>
-                                    </div>
-                                    <div class="solution__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/solution-2.jpg')"></div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="#" class="solution">
-                                    <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-3.svg" class="solution__icon" alt="">
-                                    <div class="solution__content">
-                                        <div class="solution__title">Портал самообслуживания</div>
-                                        <div class="solution__link">Подробнее</div>
-                                    </div>
-                                    <div class="solution__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/solution-3.jpg')"></div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="#" class="solution">
-                                    <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-4.svg" class="solution__icon" alt="">
-                                    <div class="solution__content">
-                                        <div class="solution__title">Маркетплейс</div>
-                                        <div class="solution__link">Подробнее</div>
-                                    </div>
-                                    <div class="solution__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/solution-4.jpg')"></div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="#" class="solution">
-                                    <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-5.svg" class="solution__icon" alt="">
-                                    <div class="solution__content">
-                                        <div class="solution__title">чат-боты</div>
-                                        <div class="solution__link">Подробнее</div>
-                                    </div>
-                                    <div class="solution__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/solution-5.jpg')"></div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="#" class="solution">
-                                    <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-6.svg" class="solution__icon" alt="">
-                                    <div class="solution__content">
-                                        <div class="solution__title">единый платежный шлюз</div>
-                                        <div class="solution__link">Подробнее</div>
-                                    </div>
-                                    <div class="solution__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/solution-6.jpg')"></div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="#" class="solution">
-                                    <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-7.svg" class="solution__icon" alt="">
-                                    <div class="solution__content">
-                                        <div class="solution__title">программа лояльности</div>
-                                        <div class="solution__link">Подробнее</div>
-                                    </div>
-                                    <div class="solution__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/solution-7.jpg')"></div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="#" class="solution">
-                                    <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-8.svg" class="solution__icon" alt="">
-                                    <div class="solution__content">
-                                        <div class="solution__title">тендерная площадка</div>
-                                        <div class="solution__link">Подробнее</div>
-                                    </div>
-                                    <div class="solution__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/solution-8.jpg')"></div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="#" class="solution">
-                                    <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-9.svg" class="solution__icon" alt="">
-                                    <div class="solution__content">
-                                        <div class="solution__title">qr-платежи
-                                            и переводы</div>
-                                        <div class="solution__link">Подробнее</div>
-                                    </div>
-                                    <div class="solution__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/solution-9.jpg')"></div>
-                                </a>
-                            </div>
-                        </div>
                         <form class="form contacts__form">
                             <h2 class="form__title">Написать нам</h2>
                             <div class="row">
@@ -213,6 +114,8 @@
                                 <button type="submit" class="button -bordered form__button">отправить</button>
                             </div>
                         </form>
+                    </div>
+                    <div class="tab-pane" id="tabs-2" role="tabpanel">
                     </div>
                     <div class="tab-pane" id="tabs-3" role="tabpanel">
 
