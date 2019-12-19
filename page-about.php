@@ -30,13 +30,13 @@
                 <div class="page__topbar">
                     <ul class="nav tabs">
                         <li class="tabs__item">
-                            <a class="tabs__link active" data-toggle="tab" id="t1" onclick="changeHash('');" href="#tabs-1" role="tab">История компании</a>
+                            <a class="tabs__link active" data-toggle="tab" id="t1" onclick="changeHash('#history');" href="#tabs-1" role="tab">История компании</a>
                         </li>
                         <li class="tabs__item">
                             <a class="tabs__link" data-toggle="tab" id="t2" href="#tabs-2" onclick="changeHash('#team');"  role="tab">Команда</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" id="t3" href="#tabs-3"  onclick="changeHash('#rewue');" role="tab">Отзывы</a>
+                            <a class="tabs__link" data-toggle="tab" id="t3" href="#tabs-3"  onclick="changeHash('#reviews');" role="tab">Отзывы</a>
                         </li>
                         <li class="tabs__item">
                             <a class="tabs__link" data-toggle="tab" id="t4" href="#tabs-4" onclick="changeHash('#vacancy');" role="tab">Вакансии</a>
@@ -140,7 +140,7 @@
                                 <div class="reviews__content">
                                     <div class="reviews__header">
                                         <div class="reviews__title"><?php the_title(); ?></div>
-                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/<?=$icon[0]?>" class="reviews__logo" alt="">
+                                        <img src="<?=$icon[0]?>" class="reviews__logo" alt="">
                                     </div>
                                     <div class="spoiler">
                                         <div class="spoiler__inner jsSpoilerInner" data-height="100">
@@ -172,7 +172,6 @@
                                 array(
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
-                                    'posts_per_page' => 4,
                                     'cat' => [20],  //1 7 8
                                     'post__not_in' => array(get_the_ID()),
                                     'orderby' => 'date',
@@ -241,7 +240,7 @@
                 document.getElementById('t4').className='tabs__link';
                 document.getElementById('tabs-4').style.display="none";
                 break;
-            case "#rewue":
+            case "#reviews":
                 document.getElementById('t3').className='tabs__link active';
                 document.getElementById('tabs-3').style.display="block";
                 document.getElementById('t1').className='tabs__link';

@@ -20,6 +20,9 @@ get_header();
                         <a href="/" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
+                        <a href="/novosti/" class="breadcrumbs__link">Новости</a>
+                    </li>
+                    <li class="breadcrumbs__item">
                         <?=$wp_query->post->post_title ?>
                     </li>
                 </ul>
@@ -34,7 +37,10 @@ get_header();
                     <div class="article__img">
                         <img src="<?=get_the_post_thumbnail_url()?>" alt="">
                     </div>
-                    <p><?php echo $wp_query->post->post_content; ?></p>
+                    <p><?php
+                        $content = apply_filters( 'the_content', $wp_query->post->post_content );
+                        echo $content;
+                        ?></p>
                 </div>
             </div>
         </div>

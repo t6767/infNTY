@@ -1,11 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2504e9bb-1d3f-497a-8647-f16f282eb8dc" name="Default Changelist" comment="Добавил новый дизайн в single-vakansii.php&#10;Добавил новый дизайн решении во втором табе">
+    <list default="true" id="2504e9bb-1d3f-497a-8647-f16f282eb8dc" name="Default Changelist" comment="Поменял телефон в менюшке">
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/content/solution-1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/content/solution-2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/content/solution-3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/content/solution-4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/content/solution-5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/content/solution-6.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/content/solution-7.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/content/solution-8.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/content/solution-9.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/general/ic-long-arrow_right.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/general/ic-long-arrow_right_blue.svg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/page-novosti.php" afterPath="$PROJECT_DIR$/page-novosti.php" />
+      <change beforePath="$PROJECT_DIR$/page-resheniya.php" afterPath="$PROJECT_DIR$/page-resheniya.php" />
+      <change beforePath="$PROJECT_DIR$/single-vakansii.php" afterPath="$PROJECT_DIR$/single-vakansii.php" />
       <change beforePath="$PROJECT_DIR$/static/css/main.css" afterPath="$PROJECT_DIR$/static/css/main.css" />
       <change beforePath="$PROJECT_DIR$/static/css/main.min.css" afterPath="$PROJECT_DIR$/static/css/main.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/bot.svg" afterPath="$PROJECT_DIR$/static/img/content/bot.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/entry-1.jpg" afterPath="$PROJECT_DIR$/static/img/content/entry-1.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/entry-2.jpg" afterPath="$PROJECT_DIR$/static/img/content/entry-2.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/entry-bg.jpg" afterPath="$PROJECT_DIR$/static/img/content/entry-bg.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/features-1.jpg" afterPath="$PROJECT_DIR$/static/img/content/features-1.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/features-2.jpg" afterPath="$PROJECT_DIR$/static/img/content/features-2.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/features-3.jpg" afterPath="$PROJECT_DIR$/static/img/content/features-3.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/features-4.jpg" afterPath="$PROJECT_DIR$/static/img/content/features-4.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/features-5.jpg" afterPath="$PROJECT_DIR$/static/img/content/features-5.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/features-6.jpg" afterPath="$PROJECT_DIR$/static/img/content/features-6.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/features-7.jpg" afterPath="$PROJECT_DIR$/static/img/content/features-7.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/features-8.jpg" afterPath="$PROJECT_DIR$/static/img/content/features-8.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/features-9.jpg" afterPath="$PROJECT_DIR$/static/img/content/features-9.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/forbes-logo.png" afterPath="$PROJECT_DIR$/static/img/content/forbes-logo.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/header-bg.jpg" afterPath="$PROJECT_DIR$/static/img/content/header-bg.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/heart.svg" afterPath="$PROJECT_DIR$/static/img/content/heart.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/info-bg.jpg" afterPath="$PROJECT_DIR$/static/img/content/info-bg.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/notes.png" afterPath="$PROJECT_DIR$/static/img/content/notes.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/p1.jpg" afterPath="$PROJECT_DIR$/static/img/content/p1.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/p2.jpg" afterPath="$PROJECT_DIR$/static/img/content/p2.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/p3.jpg" afterPath="$PROJECT_DIR$/static/img/content/p3.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/p4.jpg" afterPath="$PROJECT_DIR$/static/img/content/p4.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/p5.jpg" afterPath="$PROJECT_DIR$/static/img/content/p5.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/p5.png" afterPath="$PROJECT_DIR$/static/img/content/p5.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/p7.jpg" afterPath="$PROJECT_DIR$/static/img/content/p7.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/prime_source.png" afterPath="$PROJECT_DIR$/static/img/content/prime_source.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/review.jpg" afterPath="$PROJECT_DIR$/static/img/content/review.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/reviews.png" afterPath="$PROJECT_DIR$/static/img/content/reviews.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/sberbank.png" afterPath="$PROJECT_DIR$/static/img/content/sberbank.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/content/touch.svg" afterPath="$PROJECT_DIR$/static/img/content/touch.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/briefing.png" afterPath="$PROJECT_DIR$/static/img/general/briefing.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/features-icon-1.svg" afterPath="$PROJECT_DIR$/static/img/general/features-icon-1.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/features-icon-2.svg" afterPath="$PROJECT_DIR$/static/img/general/features-icon-2.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/features-icon-3.svg" afterPath="$PROJECT_DIR$/static/img/general/features-icon-3.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/features-icon-4.svg" afterPath="$PROJECT_DIR$/static/img/general/features-icon-4.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/features-icon-5.svg" afterPath="$PROJECT_DIR$/static/img/general/features-icon-5.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/features-icon-6.svg" afterPath="$PROJECT_DIR$/static/img/general/features-icon-6.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/features-icon-7.svg" afterPath="$PROJECT_DIR$/static/img/general/features-icon-7.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/features-icon-8.svg" afterPath="$PROJECT_DIR$/static/img/general/features-icon-8.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/features-icon-9.svg" afterPath="$PROJECT_DIR$/static/img/general/features-icon-9.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/ic-angle_down.svg" afterPath="$PROJECT_DIR$/static/img/general/ic-angle_down.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/ic-angle_up.svg" afterPath="$PROJECT_DIR$/static/img/general/ic-angle_up.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/ic-arrow_down.png" afterPath="$PROJECT_DIR$/static/img/general/ic-arrow_down.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/ic-arrow_right.svg" afterPath="$PROJECT_DIR$/static/img/general/ic-arrow_right.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/ic-close.svg" afterPath="$PROJECT_DIR$/static/img/general/ic-close.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/ic-facebook.svg" afterPath="$PROJECT_DIR$/static/img/general/ic-facebook.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/ic-linkedin.svg" afterPath="$PROJECT_DIR$/static/img/general/ic-linkedin.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/ic-search.svg" afterPath="$PROJECT_DIR$/static/img/general/ic-search.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/ic-twitter.svg" afterPath="$PROJECT_DIR$/static/img/general/ic-twitter.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/ic-youtube.svg" afterPath="$PROJECT_DIR$/static/img/general/ic-youtube.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/lightgallery/video-play.png" afterPath="$PROJECT_DIR$/static/img/general/lightgallery/video-play.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/lightgallery/vimeo-play.png" afterPath="$PROJECT_DIR$/static/img/general/lightgallery/vimeo-play.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/lightgallery/youtube-play.png" afterPath="$PROJECT_DIR$/static/img/general/lightgallery/youtube-play.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/logo.svg" afterPath="$PROJECT_DIR$/static/img/general/logo.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/logo2.svg" afterPath="$PROJECT_DIR$/static/img/general/logo2.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/not-found.svg" afterPath="$PROJECT_DIR$/static/img/general/not-found.svg" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/success.svg" afterPath="$PROJECT_DIR$/static/img/general/success.svg" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,18 +103,8 @@
       <file leaf-file-name="page-about.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page-about.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
+            <state relative-caret-position="1530">
               <caret line="90" column="34" lean-forward="false" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page-novosti.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/page-novosti.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="126" column="28" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -64,7 +123,7 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2159">
+            <state relative-caret-position="264">
               <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
               <folding />
             </state>
@@ -74,18 +133,18 @@
       <file leaf-file-name="page-resheniya.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page-resheniya.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3774">
-              <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="222" column="0" lean-forward="true" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="single-vakansii.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="single-vakansii.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/single-vakansii.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+            <state relative-caret-position="525">
+              <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -118,7 +177,6 @@
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/page-resheniya.php" />
         <option value="$PROJECT_DIR$/single-vakansii.php" />
-        <option value="$PROJECT_DIR$/page-novosti.php" />
       </list>
     </option>
   </component>
@@ -153,7 +211,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,6 +222,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -173,7 +231,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../infinIT-" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
@@ -218,8 +276,7 @@
       <workItem from="1576609408118" duration="2384000" />
       <workItem from="1576643153188" duration="5489000" />
       <workItem from="1576670682763" duration="2463000" />
-      <workItem from="1576710792545" duration="581000" />
-      <workItem from="1576745847474" duration="645000" />
+      <workItem from="1576710792545" duration="139000" />
     </task>
     <task id="LOCAL-00001" summary="Заменил лого в футере, переделал классы на странице РЕШЕНИЯ">
       <created>1576612224584</created>
@@ -263,18 +320,11 @@
       <option name="project" value="LOCAL" />
       <updated>1576676336493</updated>
     </task>
-    <task id="LOCAL-00007" summary="Добавил новый дизайн в single-vakansii.php&#10;Добавил новый дизайн решении во втором табе">
-      <created>1576711022138</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1576711022139</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3689000" />
+    <option name="totallyTimeSpent" value="2602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -282,13 +332,13 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.50421494" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.49578503" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -329,70 +379,13 @@
     <MESSAGE value="Правки заголовка фона" />
     <MESSAGE value="Стилизовал заголовки и обновил css" />
     <MESSAGE value="Поменял телефон в менюшке" />
-    <MESSAGE value="Добавил новый дизайн в single-vakansii.php&#10;Добавил новый дизайн решении во втором табе" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил новый дизайн в single-vakansii.php&#10;Добавил новый дизайн решении во втором табе" />
+    <option name="LAST_COMMIT_MESSAGE" value="Поменял телефон в менюшке" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="77" lean-forward="false" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
-          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page-resheniya.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3774">
-          <caret line="222" column="0" lean-forward="true" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/single-vakansii.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="43" lean-forward="true" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page-about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="90" column="34" lean-forward="false" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -441,6 +434,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/page-about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="90" column="34" lean-forward="false" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -459,7 +460,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
+        <state relative-caret-position="264">
           <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding />
         </state>
@@ -467,32 +468,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page-resheniya.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3774">
-          <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+        <state relative-caret-position="378">
+          <caret line="222" column="0" lean-forward="true" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/single-vakansii.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page-about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="90" column="34" lean-forward="false" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page-novosti.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="126" column="28" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
+        <state relative-caret-position="525">
+          <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
           <folding />
         </state>
       </provider>

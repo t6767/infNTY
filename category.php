@@ -1,4 +1,8 @@
 <?php get_header(); ?>
+<script>
+    let ids=[];
+    let end=0;
+</script>
     <!-- App Main Begin -->
     <main role="main" class="app__main">
 
@@ -18,7 +22,7 @@
                             <a href="/" class="breadcrumbs__link">Главная</a>
                         </li>
                         <li class="breadcrumbs__item">
-                            <a href="/ru/novosti/" class="breadcrumbs__link">Новости</a>
+                            <a href="/novosti/" class="breadcrumbs__link">ПРЕСС-ЦЕНТР</a>
                         </li>
                         <li class="breadcrumbs__item">
                             <?php echo single_cat_title( '', false ); ?>
@@ -31,16 +35,30 @@
             <div class="page__content">
                 <div class="container">
                     <section>
-                        <div class="row" id="ajax" vertical-gutter="40" data-gutter="40">
-
-
-
+                        <div class="row" vertical-gutter="40" data-gutter="40" id="masters">
                             <?php
-                            if ( have_posts() ) {
-                                while ( have_posts() ) {
-                                    the_post();
+                            $categories = get_the_category();
+                            $category_id = $categories[0]->cat_ID;
+                            $query = new WP_Query(
+                                array(
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'posts_per_page' => 4,
+                                    'cat' => [$category_id],
+                                    'orderby' => 'date',
+                                    'order' => 'DESC',
+                                )
+                            );
+
+                            //'post__not_in' => array(get_the_ID()),
+                            //'post__not_in' => [ 2, 5, 12, 14, 20 ]
+
+                            if ($query->have_posts()) {
+                                while ($query->have_posts()) {
+                                    $query->the_post();
                                     $date = get_the_date( "d.m.Y");
                                     ?>
+                                    <script> ids.push("<?=get_the_ID() ?>"); </script>
                                     <div class="col-md-6">
                                         <div class="news">
                                             <a href="<?php the_permalink(); ?>">
@@ -58,20 +76,10 @@
                                     <?php
                                 }
                             }
-
-                            add_filter('navigation_markup_template', 'my_navigation_template', 10, 2 );
-                            function my_navigation_template( $template, $class ){
-                                return '<nav class="navigation %1$s" role="navigation"><div class="nav-links">%3$s</div></nav>';
-                            }
-
-                            // выводим пагинацию
-                            the_posts_pagination( array(
-                                'end_size' => 2,
-                            ) );
                             ?>
-
-
-
+                        </div>
+                        <div class="text-center mt-5" id="bider">
+                            <a href="javascript:void(0);" onclick="getAjaxXXX(10, '<?=$category_id?>', ids)">Посмотреть ещё</a>
                         </div>
                     </section>
                 </div>
@@ -81,5 +89,26 @@
         <!--/. Page End -->
     </main>
     <!--/. App Main End -->
+<script>
+    function getAjaxXXX(operation, category, ids) {
+    $.ajax({
+    type:'POST',
+    url:'/ajax.php',
+    data:{
+    'operation':operation,
+    'category': category,
+    'ids': ids
+    },
+    success:function(html){
+    $('#masters').append(html);
+    if (end>0) document.getElementById('bider').style.display='none';
+    },
+    error:function(html){
+    $('body').css('cursor','default');
+    alert('Ошибка подключения!');
+    },
+    });
+    }
+</script>
 <?php get_footer(); ?>
 <?php get_footer(); ?>
