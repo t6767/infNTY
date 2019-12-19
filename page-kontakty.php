@@ -100,7 +100,9 @@
         </main>
         <!--/. App Main End -->
 <script>
+    alert(1);
     var mail = $('#kontaktpageemail');
+    alert(2);
     mail.blur(function(){
         if(mail.val() != '') {
             if (mail.val().search(pattern) == 0) {
