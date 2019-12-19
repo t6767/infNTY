@@ -10,15 +10,15 @@
                 <div class="container">
                     <div class="page__header-title typed-effect">
                         <div id="js-typed-strings">
-                            <p>Решения</p>
+                            <p>Услуги</p>
                         </div>
                     </div>
                     <ul class="breadcrumbs">
                         <li class="breadcrumbs__item">
-                            <a href="#" class="breadcrumbs__link">Главная</a>
+                            <a href="/" class="breadcrumbs__link">Главная</a>
                         </li>
                         <li class="breadcrumbs__item">
-                            Решения
+                            Услуги
                         </li>
                     </ul>
                 </div>

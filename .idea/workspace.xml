@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2504e9bb-1d3f-497a-8647-f16f282eb8dc" name="Default Changelist" comment="Поменял телефон в менюшке">
-      <change afterPath="$PROJECT_DIR$/single-uslugi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-resheniya.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-resheniya.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-uslugi.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-uslugi.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +77,7 @@
       <workItem from="1576643153188" duration="5489000" />
       <workItem from="1576670682763" duration="2463000" />
       <workItem from="1576710792545" duration="139000" />
-      <workItem from="1576746870014" duration="5870000" />
+      <workItem from="1576746870014" duration="6516000" />
     </task>
     <task id="LOCAL-00001" summary="Заменил лого в футере, переделал классы на странице РЕШЕНИЯ">
       <created>1576612224584</created>
