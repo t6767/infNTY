@@ -36,7 +36,7 @@
                                 <div class="col-lg-4">
                                     <div class="contacts2__left">
                                         <form class="form">
-                                            <h2 class="form__title">Написать нам</h2>
+                                            <h2 class="form__title">Написать нам1</h2>
                                             <div class="control">
                                                 <input type="text" id="kontaktpagename" name="name" class="control__input" placeholder="Имя">
                                             </div>
