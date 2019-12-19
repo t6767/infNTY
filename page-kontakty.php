@@ -98,7 +98,7 @@
         <!--/. App Main End -->
 <script>
     function ff() {
-        var OK = emailpattern.exec(document.getElementById('kontaktpageemail').value);
+        var OK = emailpattern.exec(this.value);
         if (!OK)
             alert("Введите корректный email");
         else
