@@ -1,7 +1,4 @@
 <?php get_header(); ?>
-    <script>
-        var emailpattern = "/^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i";
-    </script>
         <!-- App Main Begin -->
         <main role="main" class="app__main">
 
@@ -103,9 +100,11 @@
     alert(1);
     var mail = $('#kontaktpageemail');
     alert(2);
+    var emailpattern = "/^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i";
+    alert(3);
     mail.blur(function(){
         if(mail.val() != '') {
-            if (mail.val().search(pattern) == 0) {
+            if (mail.val().search(emailpattern) == 0) {
                 alert("ttt");
             } else { alert("ne sootv"); }
         } else alert('Введите email');
