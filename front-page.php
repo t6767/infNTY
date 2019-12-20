@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php get_header();
+$post_566 = get_post( 566 );
+$PTitle566 = $post_566->post_title;
+$PContent566=apply_filters( 'the_content', $post_566->post_content );
+$dpolezapolnitebrif = get_post_meta( $post_566->ID, 'zapolnitebrif' );
+//$dpoleProekti566 = get_post_meta( $post_566->ID, 'proekti' );
+?>
         <!-- App Main Begin -->
         <main role="main" class="app__main">
 
@@ -61,7 +67,6 @@
             $dpolePartneri = get_post_meta( $post_388->ID, 'partneri' );
             $dpoletext10let = get_post_meta( $post_388->ID, 'text10let' );
             $dpolecifra10let = get_post_meta( $post_388->ID, 'cifra10let' );
-            $dpolefooteraboutus = get_post_meta( $post_388->ID, 'footeraboutus' );
             ?>
             <section id="intro-about" class="intro-about section">
                 <div class="container section__container">
@@ -113,7 +118,7 @@
                 <div class="container">
                     <div class="cta__card" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/info-bg.jpg')">
                         <div class="cta__left">
-                            <div class="cta__title">Заполните бриф и получите план реализации Вашего проекта</div>
+                            <div class="cta__title"><?=$dpolezapolnitebrif[0]?></div>
                             <div class="cta__subtitle">По результатам анализа заполненного брифа мы предоставим вам оценку стоимости и сроков реализации вашего проекта.</div>
                             <a href="/Бриф.docx" class="button cta__button">Заполнить бриф</a>
                         </div>
