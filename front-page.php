@@ -55,7 +55,7 @@
             <?php
             $post_388 = get_post( 388 );
             $PTitle = $post_388->post_title;
-            $PContent=$post_388->post_content;
+            $PContent=apply_filters( 'the_content', $post_388->post_content );
             ?>
             <section id="intro-about" class="intro-about section">
                 <div class="container section__container">
@@ -68,19 +68,19 @@
                             <div class="intro-about__stats wow">
                                 <div class="intro-about__stats-item">
                                     <div>
-                                        <span class="jsCountStats">200</span>+
+                                        <span class="jsCountStats">80</span>+
                                     </div>
                                     <span class="intro-about__subtext">сотрудников</span>
                                 </div>
                                 <div class="intro-about__stats-item">
                                     <div>
-                                        <span class="jsCountStats">70</span>+
+                                        <span class="jsCountStats">20</span>+
                                     </div>
                                     <span class="intro-about__subtext">проектов</span>
                                 </div>
                                 <div class="intro-about__stats-item">
                                     <div>
-                                        <span class="jsCountStats">45</span>+
+                                        <span class="jsCountStats">20</span>+
                                     </div>
                                     <span class="intro-about__subtext">партнеров</span>
                                 </div>
