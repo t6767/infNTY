@@ -89,45 +89,6 @@
                                     </div>
                                     <?php }}  ?>
                         </div>
-                        <form class="form contacts__form">
-                            <h2 class="form__title">Написать нам</h2>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="control">
-                                        <input type="text" id="resheniyaname" onblur="proverkaResheniya()" oninput="proverkaResheniya()"  name="name" class="control__input" placeholder="Имя">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="control">
-                                        <input type="text" id="resheniyaphone"  onblur="proverkaResheniya()" oninput="proverkaResheniya()" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="control">
-                                        <input type="text" id="resheniyaemail"  onblur="proverkaResheniya()" oninput="proverkaResheniya()"  name="email" class="control__input" placeholder="Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="control mt-md-3">
-                                <textarea onblur="proverkaResheniya()" oninput="proverkaResheniya()" id="resheniyamessage" class="control__textarea" placeholder="Сообщение"></textarea>
-                            </div>
-                            <div class="text-center">
-                                <button id="buttonsendreshen" type="button" onclick="getAjaxContactForm('2', document.getElementById('resheniyaname').value, document.getElementById('resheniyamessage').value, document.getElementById('resheniyaphone').value, document.getElementById('resheniyaemail').value);" data-target="#modal-3" data-toggle="modal" class="button -bordered form__button" disabled>отправить</button>
-                            </div>
-                        </form>
-                        <script>
-                            function proverkaResheniya() {
-                                nameResh=nm(document.getElementById('resheniyaname').value);
-                                messResh=nm(document.getElementById('resheniyamessage').value);
-                                telResh=ph(document.getElementById('resheniyaphone').value);
-                                emailResh=ff(document.getElementById('resheniyaemail').value);
-                                if(emailResh==1 && telResh==1 && nameResh==1 && messResh==1) document.getElementById('buttonsendreshen').disabled = false; else document.getElementById('buttonsendreshen').disabled = true;
-                            }
-                            var emailResh=0;
-                            var telResh=0;
-                            var nameResh=0;
-                            var messResh=0;
-                        </script>
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
                         <?=$PContent590 ?>
@@ -135,6 +96,45 @@
                     <div class="tab-pane" id="tabs-3" role="tabpanel">
                         <?=$PContent592 ?>
                     </div>
+                    <form class="form contacts__form">
+                        <h2 class="form__title">Написать нам</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="control">
+                                    <input type="text" id="resheniyaname" onblur="proverkaResheniya()" oninput="proverkaResheniya()"  name="name" class="control__input" placeholder="Имя">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="control">
+                                    <input type="text" id="resheniyaphone"  onblur="proverkaResheniya()" oninput="proverkaResheniya()" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="control">
+                                    <input type="text" id="resheniyaemail"  onblur="proverkaResheniya()" oninput="proverkaResheniya()"  name="email" class="control__input" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control mt-md-3">
+                            <textarea onblur="proverkaResheniya()" oninput="proverkaResheniya()" id="resheniyamessage" class="control__textarea" placeholder="Сообщение"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button id="buttonsendreshen" type="button" onclick="getAjaxContactForm('2', document.getElementById('resheniyaname').value, document.getElementById('resheniyamessage').value, document.getElementById('resheniyaphone').value, document.getElementById('resheniyaemail').value);" data-target="#modal-3" data-toggle="modal" class="button -bordered form__button" disabled>отправить</button>
+                        </div>
+                    </form>
+                    <script>
+                        function proverkaResheniya() {
+                            nameResh=nm(document.getElementById('resheniyaname').value);
+                            messResh=nm(document.getElementById('resheniyamessage').value);
+                            telResh=ph(document.getElementById('resheniyaphone').value);
+                            emailResh=ff(document.getElementById('resheniyaemail').value);
+                            if(emailResh==1 && telResh==1 && nameResh==1 && messResh==1) document.getElementById('buttonsendreshen').disabled = false; else document.getElementById('buttonsendreshen').disabled = true;
+                        }
+                        var emailResh=0;
+                        var telResh=0;
+                        var nameResh=0;
+                        var messResh=0;
+                    </script>
                 </div>
             </div>
         </div>
