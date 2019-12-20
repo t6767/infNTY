@@ -38,10 +38,10 @@
                                                 <input type="text" id="kontaktpagename" name="name" class="control__input" placeholder="Имя">
                                             </div>
                                             <div class="control">
-                                                <input type="text" onblur="ph(document.getElementById('kontaktpagephone').value)" id="kontaktpagephone" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
+                                                <input type="text" onblur="ph(document.getElementById('kontaktpagephone').value)" oninput="checkbutton()" id="kontaktpagephone" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
                                             </div>
                                             <div class="control">
-                                                <input type="text" onblur="ff(document.getElementById('kontaktpageemail').value)" id="kontaktpageemail" name="email" class="control__input" placeholder="Email">
+                                                <input type="text" onblur="ff(document.getElementById('kontaktpageemail').value)" id="kontaktpageemail" oninput="checkbutton()" name="email" class="control__input" placeholder="Email">
                                             </div>
                                             <div class="control mt-md-3">
                                                 <textarea id="kontaktpagemessage" class="control__input -textarea" placeholder="Сообщение"></textarea>
