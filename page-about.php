@@ -56,6 +56,7 @@
                             $dpolePartneri = get_post_meta( $post_388->ID, 'partneri' );
                             $dpoletext10let = get_post_meta( $post_388->ID, 'text10let' );
                             $dpolecifra10let = get_post_meta( $post_388->ID, 'cifra10let' );
+                            $dpolefooteraboutus = get_post_meta( $post_388->ID, 'footeraboutus' );
                             ?>
                             <div class="about__left">
                                 <img src="<?php bloginfo('template_url'); ?>/static/img/content/p5.png" class="about__img" alt="">
@@ -94,12 +95,7 @@
                                 </div>
                             </div>
                             <img src="<?=$PImage?>" class="my-3" alt="">
-                           <div class="row" vertical-gutter="20">
-                                <div class="col-sm-4"><div style="text-align: center; font-weight: 700; background: #eacace; color: #000; padding: 5px 0;">Масштабируемость Экспертизы</div></div>
-                                <div class="col-sm-4"><div style="text-align: center; font-weight: 700; background: #fad4a0; color: #000; padding: 5px 0;">Центр Компетенции</div></div>
-                                <div class="col-sm-4"><div style="text-align: center; font-weight: 700; background: #91eeb7; color: #000; padding: 5px 0;">Масштабируемость Ресурсов</div></div>
-                            </div>
-                           <p class="mt-3">Digital Community – наш бренд, который позволяет эффективно масштабировать экспертизу и ресурсы сохраняя и приумножая компетенцию в рамках динамично меняющегося рынка.</p>
+                            <?=$dpolefooteraboutus[0] ?>
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
