@@ -108,7 +108,7 @@
                     <div class="cta__card" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/info-bg.jpg')">
                         <div class="cta__left">
                             <div class="cta__title">Заполните бриф и получите план реализации Вашего проекта</div>
-                            <div class="cta__subtitle">С расчетом стоимости и сроков реализации</div>
+                            <div class="cta__subtitle">По результатам анализа заполненного брифа мы предоставим вам оценку стоимости и сроков реализации вашего проекта.</div>
                             <a href="/Бриф.docx" class="button cta__button">Заполнить бриф</a>
                         </div>
                         <img src="<?php bloginfo('template_url'); ?>/static/img/general/briefing.png" class="cta__icon" alt="">
