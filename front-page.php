@@ -56,6 +56,12 @@
             $post_388 = get_post( 388 );
             $PTitle = $post_388->post_title;
             $PContent=apply_filters( 'the_content', $post_388->post_content );
+            $dpoleSotrudniki = get_post_meta( $post_388->ID, 'sotrudniki' );
+            $dpoleProekti = get_post_meta( $post_388->ID, 'proekti' );
+            $dpolePartneri = get_post_meta( $post_388->ID, 'partneri' );
+            $dpoletext10let = get_post_meta( $post_388->ID, 'text10let' );
+            $dpolecifra10let = get_post_meta( $post_388->ID, 'cifra10let' );
+            $dpolefooteraboutus = get_post_meta( $post_388->ID, 'footeraboutus' );
             ?>
             <section id="intro-about" class="intro-about section">
                 <div class="container section__container">
@@ -68,19 +74,19 @@
                             <div class="intro-about__stats wow">
                                 <div class="intro-about__stats-item">
                                     <div>
-                                        <span class="jsCountStats">80</span>+
+                                        <span class="jsCountStats"><?=$dpoleSotrudniki[0]?></span>+
                                     </div>
                                     <span class="intro-about__subtext">сотрудников</span>
                                 </div>
                                 <div class="intro-about__stats-item">
                                     <div>
-                                        <span class="jsCountStats">20</span>+
+                                        <span class="jsCountStats"><?=$dpoleProekti[0] ?></span>+
                                     </div>
                                     <span class="intro-about__subtext">проектов</span>
                                 </div>
                                 <div class="intro-about__stats-item">
                                     <div>
-                                        <span class="jsCountStats">20</span>+
+                                        <span class="jsCountStats"><?=$dpolePartneri[0] ?></span>+
                                     </div>
                                     <span class="intro-about__subtext">партнеров</span>
                                 </div>
@@ -91,9 +97,9 @@
                                 <img src="<?php bloginfo('template_url'); ?>/static/img/content/infin.png" alt="">
                                 <div class="intro-about__top-stats">
                                     <div>
-                                        <span class="jsCountStats">10</span>+
+                                        <span class="jsCountStats"><?=$dpolecifra10let[0] ?></span>+
                                     </div>
-                                    <span class="intro-about__top-stats-text">лет развития<br>и создания нового</span>
+                                    <span class="intro-about__top-stats-text"><?=$dpoletext10let[0] ?></span>
                                 </div>
                             </div>
                         </div>
