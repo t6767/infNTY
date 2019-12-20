@@ -3,7 +3,7 @@ $post_566 = get_post( 566 );
 $PTitle566 = $post_566->post_title;
 $PContent566=apply_filters( 'the_content', $post_566->post_content );
 $dpolezapolnitebrif = get_post_meta( $post_566->ID, 'zapolnitebrif' );
-//$dpoleProekti566 = get_post_meta( $post_566->ID, 'proekti' );
+$dpolebriftext2566 = get_post_meta( $post_566->ID, 'briftext2' );
 ?>
         <!-- App Main Begin -->
         <main role="main" class="app__main">
@@ -119,7 +119,7 @@ $dpolezapolnitebrif = get_post_meta( $post_566->ID, 'zapolnitebrif' );
                     <div class="cta__card" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/info-bg.jpg')">
                         <div class="cta__left">
                             <div class="cta__title"><?=$dpolezapolnitebrif[0]?></div>
-                            <div class="cta__subtitle">По результатам анализа заполненного брифа мы предоставим вам оценку стоимости и сроков реализации вашего проекта.</div>
+                            <div class="cta__subtitle"><?=$dpolebriftext2566[0] ?></div>
                             <a href="/Бриф.docx" class="button cta__button">Заполнить бриф</a>
                         </div>
                         <img src="<?php bloginfo('template_url'); ?>/static/img/general/briefing.png" class="cta__icon" alt="">
