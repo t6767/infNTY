@@ -67,7 +67,9 @@
                                     $PTitle = $post_388->post_title;
                                     $PContent=apply_filters( 'the_content', $post_388->post_content );
                                     $PImage = wp_get_attachment_url( get_post_thumbnail_id($post_388->ID), 'thumbnail' );
-                                    $dpoleSotrudniki = get_post_meta( $post_388->ID, 'sotrudniki' ); //$icon[0]
+                                    $dpoleSotrudniki = get_post_meta( $post_388->ID, 'sotrudniki' );
+                                    $dpoleProekti = get_post_meta( $post_388->ID, 'proekti' );
+                                    $dpolePartneri = get_post_meta( $post_388->ID, 'partneri' );
                                     ?>
                                     <?=$PContent?>
                                 </div>
@@ -78,18 +80,18 @@
                                         <span>сотрудников</span>
                                     </div>
                                     <div class="about__stats-item">
-                                        20 +
+                                        <?=$dpoleProekti[0] ?> +
                                         <br>
                                         <span>проектов</span>
                                     </div>
                                     <div class="about__stats-item">
-                                        20 +
+                                        <?=$dpolePartneri[0] ?> +
                                         <br>
                                         <span>партнеров</span>
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?=$PImage?>" class="my-3" alt="777777">
+                            <img src="<?=$PImage?>" class="my-3" alt="">
                            <div class="row" vertical-gutter="20">
                                 <div class="col-sm-4"><div style="text-align: center; font-weight: 700; background: #eacace; color: #000; padding: 5px 0;">Масштабируемость Экспертизы</div></div>
                                 <div class="col-sm-4"><div style="text-align: center; font-weight: 700; background: #fad4a0; color: #000; padding: 5px 0;">Центр Компетенции</div></div>
