@@ -57,7 +57,7 @@ get_header(); ?>
                                 </p>
                             </div>
                             <div class="col-md-6 text-center">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/not-found.svg" alt="">
+                                <img src="/wp-content/themes/infinit/static/img/general/not-found.svg" alt="">
                             </div>
                         </div>
                     </div>
