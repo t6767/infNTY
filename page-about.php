@@ -55,6 +55,7 @@
                             $dpoleProekti = get_post_meta( $post_388->ID, 'proekti' );
                             $dpolePartneri = get_post_meta( $post_388->ID, 'partneri' );
                             $dpoletext10let = get_post_meta( $post_388->ID, 'text10let' );
+                            $dpolecifra10let = get_post_meta( $post_388->ID, 'cifra10let' );
                             ?>
                             <div class="about__left">
                                 <img src="<?php bloginfo('template_url'); ?>/static/img/content/p5.png" class="about__img" alt="">
@@ -66,7 +67,7 @@
                                 <div class="about__top-content">
                                     <img src="<?php bloginfo('template_url'); ?>/static/img/content/infin.png" alt="">
                                     <div class="about__top-stats">
-                                        10 +
+                                        <?=$dpolecifra10let[0] ?> +
                                         <br>
                                         <span><?=$dpoletext10let[0] ?></span>
                                     </div>
