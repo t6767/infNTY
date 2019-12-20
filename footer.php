@@ -73,24 +73,38 @@
                 <form class="form">
                     <h2 class="form__title">Связаться с нами test</h2>
                     <div class="control">
-                        <input type="text" id="namenodal1" name="name" class="control__input" placeholder="Имя">
+                        <input onblur="proverkaPress()" oninput="proverkaPress()" type="text" id="namenodal1" name="name" class="control__input" placeholder="Имя">
                     </div>
                     <div class="control">
-                        <input type="text" id="companymodal1" name="company" class="control__input" placeholder="Компания">
+                        <input onblur="proverkaPress()" oninput="proverkaPress()" type="text" id="companymodal1" name="company" class="control__input" placeholder="Компания">
                     </div>
                     <div class="control">
-                        <input type="text" id="phonemodal1" name="phone" class="control__input" placeholder="+78 (***) ***-**-**">
+                        <input onblur="proverkaPress()" oninput="proverkaPress()" type="text" id="phonemodal1" name="phone" class="control__input" placeholder="+78 (***) ***-**-**">
                     </div>
                     <div class="control">
-                        <input type="text" name="email" id="emailmodal1" class="control__input" placeholder="Email">
+                        <input onblur="proverkaPress()" oninput="proverkaPress()" type="text" name="email" id="emailmodal1" class="control__input" placeholder="Email">
                     </div>
                     <div class="text-right">
-                        <button type="button" onclick="getAjaxModal1('1', document.getElementById('namenodal1').value, document.getElementById('companymodal1').value, document.getElementById('phonemodal1').value, document.getElementById('emailmodal1').value)" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal" data-dismiss="modal">отправить</button>
+                        <button id="buttonsenddpress" type="button" onclick="getAjaxModal1('1', document.getElementById('namenodal1').value, document.getElementById('companymodal1').value, document.getElementById('phonemodal1').value, document.getElementById('emailmodal1').value)" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal" data-dismiss="modal" disabled>отправить</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <script>
+        function proverkaPress() {
+            namePress=nm(document.getElementById('namenodal1').value);
+            messPress=nm(document.getElementById('companymodal1').value);
+            telPress=ph(document.getElementById('phonemodal1').value);
+            emailPress=ff(document.getElementById('emailmodal1').value);
+            if(emailPress==1 && telPress==1 && namePress==1 && messPress==1) document.getElementById('buttonsenddpress').disabled = false; else document.getElementById('buttonsenddpress').disabled = true;
+        }
+        var emailPress=0;
+        var telPress=0;
+        var namePress=0;
+        var messPress=0;
+
+    </script>
     <!--/. Modal Cta End -->
 
     <!-- Modal Cta Begin -->
