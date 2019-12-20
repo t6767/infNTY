@@ -58,12 +58,12 @@
                                         </div>
                                         <ul class="social contacts2__social">
                                             <li class="social__item">
-                                                <a href="#" class="social__link">
+                                                <a href="<?=$fblnk?>" class="social__link">
                                                     <i class="fa fa-facebook"></i>
                                                 </a>
                                             </li>
                                             <li class="social__item">
-                                                <a href="#" class="social__link">
+                                                <a href="<?=$lklnk?>" class="social__link">
                                                     <i class="fa fa-linkedin"></i>
                                                 </a>
                                             </li>
