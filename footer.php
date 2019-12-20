@@ -42,16 +42,6 @@
                             <i class="fa fa-linkedin"></i>
                         </a>
                     </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link">
-                            <i class="fa fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
                 </ul>
                 <img src="<?php bloginfo('template_url'); ?>/static/img/general/logo.svg" class="footer__logo" alt="">
                 <p>Все права защищены
