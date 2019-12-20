@@ -38,31 +38,13 @@ get_header(); ?>
             <!--/. Page Header End -->
 
             <!-- Page Content Begin -->
-            <div class="page__content">
-                <div class="container">
-                    <div class="not-found">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="not-found__title">Ой!</div>
-                                <h3>Похоже, мы не можем найти<br>нужную вам страницу</h3>
-                                <h5>Код Ошибки: 404</h5>
-                                <p>
-                                    Вот несколько полезных ссылок:
-                                    <br>
-                                    <a href="/">Главная</a>
-                                    <br>
-                                    <a href="/?s=123321">Поиск по сайту</a>
-                                    <br>
-                                    <a href="/novosti/">Новости</a>
-                                </p>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <img src="/wp-content/themes/infinit/static/img/general/not-found.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php
+            $post_614 = get_post( 614 );
+            $PTitle = $post_614->post_title;
+            $PContent=apply_filters( 'the_content', $post_614->post_content );
+            //$dpoleSotrudniki = get_post_meta( $post_614->ID, 'sotrudniki' );
+            echo $PContent;
+            ?>
             <!--/. Page Content End -->
 
         </div>
