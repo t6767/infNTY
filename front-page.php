@@ -109,7 +109,7 @@
                         <div class="cta__left">
                             <div class="cta__title">Заполните бриф и получите план реализации Вашего проекта</div>
                             <div class="cta__subtitle">С расчетом стоимости и сроков реализации</div>
-                            <a href="/brif.docx" class="button cta__button">Заполнить бриф</a>
+                            <a href="/Бриф.docx" class="button cta__button">Заполнить бриф</a>
                         </div>
                         <img src="<?php bloginfo('template_url'); ?>/static/img/general/briefing.png" class="cta__icon" alt="">
                     </div>
