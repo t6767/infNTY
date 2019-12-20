@@ -126,8 +126,8 @@ function the_excerpt_max_charlength( $charlength ){
 
 <body style="background: #f9f9f9">
 <?php
-$fblnk = get_post_meta( 566, 'fblink' );
-$lklnk = get_post_meta( 566, 'linkedinlink' );
+$fblnk = get_post_meta( 566, 'fblink' )[0];
+$lklnk = get_post_meta( 566, 'linkedinlink' )[0];
 ?>
 <div class="menu">
     <div class="menu__col">
