@@ -33,7 +33,7 @@
                             <a class="tabs__link active" data-toggle="tab" id="t1" onclick="changeHash('#history');" href="#tabs-1" role="tab">Компания</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" id="t2" href="#tabs-2" onclick="changeHash('#team');"  role="tab">Команда</a>
+                            <a class="tabs__link" data-toggle="tab" id="t2" href="#tabs-2" onclick="changeHash('#team');"  role="tab">Руководство</a>
                         </li>
                         <li class="tabs__item">
                             <a class="tabs__link" data-toggle="tab" id="t3" href="#tabs-3"  onclick="changeHash('#reviews');" role="tab">Отзывы</a>
