@@ -89,31 +89,30 @@
     <script>
         function ff(value) {
             var OK = emailpattern.exec(value);
-            if (!OK) { email=0; } else { email=1; }
+            if (!OK) { return 0; } else { return 1; }
         }
 
         function ph(value) {
             var OK = phonepatern.exec(value);
-            if (!OK) { tel=0; }
-            else { tel=1; }
+            if (!OK) { return 0; }
+            else { return 1; }
         }
 
         function nm(value) {
-            if (value != '') name=1; else name=0;
+            if (value != '') return 1; else return 0;
         }
 
-        function checkbutton() { if(email==1 && tel==1 && name==1) document.getElementById('buttonsendd').disabled = false; else document.getElementById('buttonsendd').disabled = true; }
-
         function proverka() {
-            nm(document.getElementById('kontaktpagename').value);
-            nm(document.getElementById('kontaktpagemessage').value);
-            ph(document.getElementById('kontaktpagephone').value);
-            ff(document.getElementById('kontaktpageemail').value);
-            checkbutton();
+            nameCF=nm(document.getElementById('kontaktpagename').value);
+            messCF=nm(document.getElementById('kontaktpagemessage').value);
+            tel=ph(document.getElementById('kontaktpagephone').value);
+            email=ff(document.getElementById('kontaktpageemail').value);
+            if(email==1 && tel==1 && nameCF==1 && messCF==1) document.getElementById('buttonsendd').disabled = false; else document.getElementById('buttonsendd').disabled = true;
         }
         var email=0;
         var tel=0;
-        var name=0;
+        var nameCF=0;
+        var messCF=0;
 
     </script>
 <?php get_footer(); ?>
