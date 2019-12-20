@@ -7,6 +7,7 @@ $dpolebriftext2566 = get_post_meta( $post_566->ID, 'briftext2' );
 $dpolebriflink566 = get_post_meta( $post_566->ID, 'briflink' );
 $dpoleblok3about566 = get_post_meta( $post_566->ID, 'blok3about' );
 $dpoleblok3otzivi566 = get_post_meta( $post_566->ID, 'blok3otzivi' );
+$dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
 ?>
         <!-- App Main Begin -->
         <main role="main" class="app__main">
@@ -196,7 +197,7 @@ $dpoleblok3otzivi566 = get_post_meta( $post_566->ID, 'blok3otzivi' );
                         <div class="col-md-4">
                             <a href="/novosti/" class="info-card">
                                 <div class="info-card__title">Пресс-центр</div>
-                                <div class="info-card__text">Узнайте больше о наших новых продуктах и сервисах. В данном разделе мы публикуем актуальную и свежую информацию о предстоящих событиях и мероприятиях.</div>
+                                <div class="info-card__text"><?=$dpoleblok3presscenter566[0] ?></div>
                                 <div class="info-card__link">Подробнее</div>
                             </a>
                         </div>
