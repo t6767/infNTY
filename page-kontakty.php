@@ -101,7 +101,7 @@
             var OK = emailpattern.exec(value);
             if (!OK) {
                 email=0;
-                alert("Введите корректный email");
+                //alert("Введите корректный email");
             }
             else
                 email=1;
@@ -112,7 +112,7 @@
             var OK = phonepatern.exec(value);
             if (!OK) {
                 tel=0;
-                alert("Введите корректный телефон");
+                //alert("Введите корректный телефон");
             }
             else
                 tel=1;

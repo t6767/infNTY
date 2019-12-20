@@ -67,13 +67,13 @@
                                     $PTitle = $post_388->post_title;
                                     $PContent=apply_filters( 'the_content', $post_388->post_content );
                                     $PImage = wp_get_attachment_url( get_post_thumbnail_id($post_388->ID), 'thumbnail' );
-                                    // html код редактируется теперь внутри поста
+                                    $dpoleSotrudniki = get_post_meta( get_the_ID(), 'sotrudniki' ); //$icon[0]
                                     ?>
                                     <?=$PContent?>
                                 </div>
                                 <div class="about__stats">
                                     <div class="about__stats-item">
-                                        80 +
+                                        <?=$dpoleSotrudniki[0] ?> +
                                         <br>
                                         <span>сотрудников</span>
                                     </div>
