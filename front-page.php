@@ -174,7 +174,7 @@
                         </div>
                         <div class="col-md-4">
                             <a href="/about/#reviews" class="info-card">
-                                <div class="info-card__title">Отывы заказчиков и партнеров</div>
+                                <div class="info-card__title">Отывы</div>
                                 <div class="info-card__text">InFin-IT Solution является научно-производственной компанией, занимающейся разработкой инновационных решений в области цифровых каналов для международного рынка.</div>
                                 <div class="info-card__link">Подробнее</div>
                             </a>
