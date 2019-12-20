@@ -71,7 +71,7 @@
                     <span aria-hidden="true">&#10005;</span>
                 </button>
                 <form class="form">
-                    <h2 class="form__title">Связаться с нами</h2>
+                    <h2 class="form__title">Связаться с нами test</h2>
                     <div class="control">
                         <input type="text" id="namenodal1" name="name" class="control__input" placeholder="Имя">
                     </div>
