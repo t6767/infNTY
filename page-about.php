@@ -219,32 +219,6 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="tabs-5" role="tabpanel">
-                        <!-- App Main Begin -->
-                        <main role="main" class="app__main">
-
-                            <!-- Page Begin -->
-                            <div class="page">
-
-                                <!-- Page Header Begin -->
-                                <div class="page__header" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/header-bg.jpg')">
-                                    <div class="container">
-                                        <div class="page__header-title typed-effect">
-                                            <div id="js-typed-strings">
-                                                <p>Контакты</p>
-                                            </div>
-                                        </div>
-                                        <ul class="breadcrumbs">
-                                            <li class="breadcrumbs__item">
-                                                <a href="/" class="breadcrumbs__link">Главная</a>
-                                            </li>
-                                            <li class="breadcrumbs__item">
-                                                Контакты
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!--/. Page Header End -->
-
                                 <!-- Page Content Begin -->
                                 <div class="page__content">
                                     <div class="container">
@@ -300,12 +274,6 @@
                                     </div>
                                 </div>
                                 <!--/. Page Content End -->
-
-                            </div>
-                            <!--/. Page End -->
-
-                        </main>
-                        <!--/. App Main End -->
                         <script>
                             function proverka() {
                                 nameCF=nm(document.getElementById('kontaktpagename').value);
