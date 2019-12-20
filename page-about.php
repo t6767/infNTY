@@ -65,7 +65,7 @@
                                     <?php
                                     $post_388 = get_post( 388 );
                                     $PTitle = $post_388->post_title;
-                                    $PContent=$post_388->post_content;
+                                    $PContent=apply_filters( 'the_content', $post_388->post_content );
                                     $PImage = wp_get_attachment_url( get_post_thumbnail_id($post_388->ID), 'thumbnail' );
                                     // html код редактируется теперь внутри поста
                                     ?>
@@ -73,17 +73,17 @@
                                 </div>
                                 <div class="about__stats">
                                     <div class="about__stats-item">
-                                        200 +
+                                        80 +
                                         <br>
                                         <span>сотрудников</span>
                                     </div>
                                     <div class="about__stats-item">
-                                        70 +
+                                        20 +
                                         <br>
                                         <span>проектов</span>
                                     </div>
                                     <div class="about__stats-item">
-                                        45 +
+                                        20 +
                                         <br>
                                         <span>партнеров</span>
                                     </div>
