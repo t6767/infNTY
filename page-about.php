@@ -67,7 +67,7 @@
                                     $PTitle = $post_388->post_title;
                                     $PContent=apply_filters( 'the_content', $post_388->post_content );
                                     $PImage = wp_get_attachment_url( get_post_thumbnail_id($post_388->ID), 'thumbnail' );
-                                    $dpoleSotrudniki = get_post_meta( get_the_ID(), 'sotrudniki' ); //$icon[0]
+                                    $dpoleSotrudniki = get_post_meta( $post_388->ID, 'sotrudniki' ); //$icon[0]
                                     ?>
                                     <?=$PContent?>
                                 </div>
