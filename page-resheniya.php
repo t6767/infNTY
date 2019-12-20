@@ -29,24 +29,29 @@
         <div class="page__content">
             <div class="container">
                 <div class="page__topbar">
-                    <!--<div class="category-select dropdown">
-                    <a href="#" class="category-select__link" data-toggle="dropdown">Все категории</a>
-                    <div class="dropdown-menu category-select__menu">
-                        <a href="#" class="category-select__sublink">Все категории</a>
-                        <a href="#" class="category-select__sublink">Корпоративный сектор</a>
-                        <a href="#" class="category-select__sublink">Государственный сектор</a>
-                    </div>
-                </div>-->
+                    <?php
+                    $post_588 = get_post( 588 );
+                    $PTitle588 = $post_588->post_title;
+                    $PContent588=apply_filters( 'the_content', $post_588->post_content );
+
+                    $post_590 = get_post( 590 );
+                    $PTitle590 = $post_590->post_title;
+                    $PContent590=apply_filters( 'the_content', $post_590->post_content );
+
+                    $post_592 = get_post( 592 );
+                    $PTitle592 = $post_592->post_title;
+                    $PContent592=apply_filters( 'the_content', $post_592->post_content );
+                    ?>
                     <div class="page__topbar">
                         <ul class="nav tabs">
                             <li class="tabs__item">
-                                <a class="tabs__link active" data-toggle="tab" href="#tabs-1" role="tab">Решения банковской сферы</a>
+                                <a class="tabs__link active" data-toggle="tab" href="#tabs-1" role="tab"><?=$PTitle588?></a>
                             </li>
                             <li class="tabs__item">
-                                <a class="tabs__link" data-toggle="tab" href="#tabs-2" role="tab">Корпоративный сектор</a>
+                                <a class="tabs__link" data-toggle="tab" href="#tabs-2" role="tab"><?=$PTitle590?></a>
                             </li>
                             <li class="tabs__item">
-                                <a class="tabs__link" data-toggle="tab" href="#tabs-3" role="tab">Государственный сектор</a>
+                                <a class="tabs__link" data-toggle="tab" href="#tabs-3" role="tab"><?=$PTitle592?></a>
                             </li>
                         </ul>
                     </div>
@@ -54,23 +59,6 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                        <?php
-                        $post_588 = get_post( 588 );
-                        $PContent588=apply_filters( 'the_content', $post_588->post_content );
-
-                        $post_590 = get_post( 590 );
-                        $PContent590=apply_filters( 'the_content', $post_590->post_content );
-
-                        $post_592 = get_post( 592 );
-                        $PContent592=apply_filters( 'the_content', $post_592->post_content );
-/*
-                        $post_16 = get_post( 16 );
-                        $PContent=apply_filters( 'the_content', $post_16->post_content );
-                        $dpolebank_sfera = get_post_meta( $post_16->ID, 'bank_sfera' );
-                        $dpolekorp_sfera = get_post_meta( $post_16->ID, 'korp_sfera' );
-                        $dpolegos_sfera = get_post_meta( $post_16->ID, 'gos_sfera' );
-*/
-                        ?>
                         <?=$PContent588 ?>
                         <div class="row" vertical-gutter="20" data-gutter="20">
                             <?php
