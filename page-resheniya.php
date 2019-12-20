@@ -54,10 +54,12 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                        <h1>Решения для банковской сферы</h1>
-                        <h2 style="color: #1A73E8">Краткое описание решения и его преимуществ</h2>
-                        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. </p>
-                        <h5>Продукты в рамках решения:</h5>
+                        <?php
+                        $post_16 = get_post( 16 );
+                        $PContent=apply_filters( 'the_content', $post_16->post_content );
+                        $dpolebank_sfera = get_post_meta( $post_16->ID, 'bank_sfera' );
+                        ?>
+                        <?=$dpolebank_sfera[0] ?>
                         <div class="row" vertical-gutter="20" data-gutter="20">
                             <?php
                             $query = new WP_Query(
