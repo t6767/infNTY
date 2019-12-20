@@ -182,7 +182,7 @@
                         <div class="col-md-4">
                             <a href="/novosti/" class="info-card">
                                 <div class="info-card__title">Пресс-центр</div>
-                                <div class="info-card__text">Узнайте больше о наших новых продуктах, сервисах, предстоящих событиях и мероприятиях.</div>
+                                <div class="info-card__text">Узнайте больше о наших новых продуктах и сервисах. Размещаем актуальную и свежую информацию о предстоящих событиях и мероприятиях In-Fin IT.</div>
                                 <div class="info-card__link">Подробнее</div>
                             </a>
                         </div>
