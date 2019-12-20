@@ -89,7 +89,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <img src="<?=$PImage?>" class="my-3" alt="">
+                            <img src="<?=$PImage?>" class="my-3" alt="777777">
                            <div class="row" vertical-gutter="20">
                                 <div class="col-sm-4"><div style="text-align: center; font-weight: 700; background: #eacace; color: #000; padding: 5px 0;">Масштабируемость Экспертизы</div></div>
                                 <div class="col-sm-4"><div style="text-align: center; font-weight: 700; background: #fad4a0; color: #000; padding: 5px 0;">Центр Компетенции</div></div>
