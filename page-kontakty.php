@@ -35,7 +35,7 @@
                                         <form class="form">
                                             <h2 class="form__title">Написать нам</h2>
                                             <div class="control">
-                                                <input type="text" id="kontaktpagename" name="name" class="control__input" placeholder="Имя">
+                                                <input type="text" onblur="proverka()" oninput="proverka()" id="kontaktpagename" name="name" class="control__input" placeholder="Имя">
                                             </div>
                                             <div class="control">
                                                 <input type="text" onblur="proverka()" oninput="proverka()" id="kontaktpagephone" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
@@ -44,7 +44,7 @@
                                                 <input type="text" onblur="proverka()" id="kontaktpageemail" oninput="proverka()" name="email" class="control__input" placeholder="Email">
                                             </div>
                                             <div class="control mt-md-3">
-                                                <textarea id="kontaktpagemessage" class="control__input -textarea" placeholder="Сообщение"></textarea>
+                                                <textarea onblur="proverka()" oninput="proverka()" id="kontaktpagemessage" class="control__input -textarea" placeholder="Сообщение"></textarea>
                                             </div>
                                             <div class="text-center mt-4">
                                                 <button id="buttonsendd" type="button" onclick="getAjaxContactForm('2', document.getElementById('kontaktpagename').value, document.getElementById('kontaktpagemessage').value, document.getElementById('kontaktpagephone').value, document.getElementById('kontaktpageemail').value);" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal" disabled>отправить</button>
@@ -106,6 +106,7 @@
 
         function proverka() {
             nm(document.getElementById('kontaktpagename').value);
+            nm(document.getElementById('kontaktpagemessage').value);
             ph(document.getElementById('kontaktpagephone').value);
             ff(document.getElementById('kontaktpageemail').value);
             checkbutton();
