@@ -61,9 +61,7 @@
                             <div class="about__left">
                                 <img src="<?php bloginfo('template_url'); ?>/static/img/content/p5.png" class="about__img" alt="">
                             </div>
-                            <div class="text-center">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/notes.png" class="about__notes" alt="">
-                            </div>
+                            <!-- <div class="text-center"><img src="<?php bloginfo('template_url'); ?>/static/img/content/notes.png" class="about__notes" alt=""></div> -->
                             <div class="about__content">
                                 <div class="about__top-content">
                                     <img src="<?php bloginfo('template_url'); ?>/static/img/content/infin.png" alt="">

@@ -4,6 +4,9 @@ $PTitle566 = $post_566->post_title;
 $PContent566=apply_filters( 'the_content', $post_566->post_content );
 $dpolezapolnitebrif = get_post_meta( $post_566->ID, 'zapolnitebrif' );
 $dpolebriftext2566 = get_post_meta( $post_566->ID, 'briftext2' );
+$dpolebriflink566 = get_post_meta( $post_566->ID, 'briflink' );
+$dpoleblok3about566 = get_post_meta( $post_566->ID, 'blok3about' );
+$dpoleblok3otzivi566 = get_post_meta( $post_566->ID, 'blok3otzivi' );
 ?>
         <!-- App Main Begin -->
         <main role="main" class="app__main">
@@ -120,7 +123,7 @@ $dpolebriftext2566 = get_post_meta( $post_566->ID, 'briftext2' );
                         <div class="cta__left">
                             <div class="cta__title"><?=$dpolezapolnitebrif[0]?></div>
                             <div class="cta__subtitle"><?=$dpolebriftext2566[0] ?></div>
-                            <a href="/Бриф.docx" class="button cta__button">Заполнить бриф</a>
+                            <a href="<?=$dpolebriflink566[0] ?>" class="button cta__button">Заполнить бриф</a>
                         </div>
                         <img src="<?php bloginfo('template_url'); ?>/static/img/general/briefing.png" class="cta__icon" alt="">
                     </div>
@@ -179,14 +182,14 @@ $dpolebriftext2566 = get_post_meta( $post_566->ID, 'briftext2' );
                         <div class="col-md-4">
                             <a href="/about/#history" class="info-card">
                                 <div class="info-card__title"><?=$PTitle ?></div>
-                                <div class="info-card__text">InFin-IT Solution является научно-производственной компанией, занимающейся разработкой инновационных решений в области цифровых каналов для международного рынка.</div>
+                                <div class="info-card__text"><?=$dpoleblok3about566[0] ?></div>
                                 <div class="info-card__link">Подробнее</div>
                             </a>
                         </div>
                         <div class="col-md-4">
                             <a href="/about/#reviews" class="info-card">
                                 <div class="info-card__title">Отзывы</div>
-                                <div class="info-card__text">В данном блоке Вы можите ознакомиться с официальными отзывами о реализованных проектах и рекомендательными письмами от наших партнеров.</div>
+                                <div class="info-card__text"><?=$dpoleblok3otzivi566[0] ?></div>
                                 <div class="info-card__link">Подробнее</div>
                             </a>
                         </div>
