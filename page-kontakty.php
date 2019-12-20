@@ -38,10 +38,10 @@
                                                 <input type="text" id="kontaktpagename" name="name" class="control__input" placeholder="Имя">
                                             </div>
                                             <div class="control">
-                                                <input type="text" oninput="checkbutton()" id="kontaktpagephone" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
+                                                <input type="text" onblur="proverka()" oninput="proverka()" id="kontaktpagephone" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
                                             </div>
                                             <div class="control">
-                                                <input type="text" id="kontaktpageemail" oninput="checkbutton()" name="email" class="control__input" placeholder="Email">
+                                                <input type="text" onblur="proverka()" id="kontaktpageemail" oninput="proverka()" name="email" class="control__input" placeholder="Email">
                                             </div>
                                             <div class="control mt-md-3">
                                                 <textarea id="kontaktpagemessage" class="control__input -textarea" placeholder="Сообщение"></textarea>
@@ -105,7 +105,6 @@
             }
             else
                 email=1;
-            checkbutton();
         }
 
         function ph(value) {
@@ -116,13 +115,16 @@
             }
             else
                 tel=1;
-            checkbutton();
         }
 
         function checkbutton() {
+            if(email==1 && tel==1) document.getElementById('buttonsendd').disabled = false; else document.getElementById('buttonsendd').disabled = true;
+        }
+
+        function proverka() {
             ph(document.getElementById('kontaktpagephone').value);
             ff(document.getElementById('kontaktpageemail').value);
-            if(email==1 && tel==1) document.getElementById('buttonsendd').disabled = false; else document.getElementById('buttonsendd').disabled = true;
+            checkbutton();
         }
         var email=0;
         var tel=0;
