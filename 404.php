@@ -39,11 +39,16 @@ get_header(); ?>
 
             <!-- Page Content Begin -->
             <?php
+            $post_616 = get_post( 616 );
+            $PTitle616 = $post_616->post_title;
+            $PContent616=apply_filters( 'the_content', $post_616->post_content );
+            $dpole616 = get_post_meta( $post_616->ID, 'active' );
+
             $post_614 = get_post( 614 );
-            $PTitle = $post_614->post_title;
-            $PContent=apply_filters( 'the_content', $post_614->post_content );
-            //$dpoleSotrudniki = get_post_meta( $post_614->ID, 'sotrudniki' );
-            echo $PContent;
+            $PTitle614 = $post_614->post_title;
+            $PContent614=apply_filters( 'the_content', $post_614->post_content );
+
+            if ((int)$dpole616[0]>0) echo $PContent616; else echo $PContent614;
             ?>
             <!--/. Page Content End -->
 
