@@ -87,21 +87,6 @@
         </main>
         <!--/. App Main End -->
     <script>
-        function ff(value) {
-            var OK = emailpattern.exec(value);
-            if (!OK) { return 0; } else { return 1; }
-        }
-
-        function ph(value) {
-            var OK = phonepatern.exec(value);
-            if (!OK) { return 0; }
-            else { return 1; }
-        }
-
-        function nm(value) {
-            if (value != '') return 1; else return 0;
-        }
-
         function proverka() {
             nameCF=nm(document.getElementById('kontaktpagename').value);
             messCF=nm(document.getElementById('kontaktpagemessage').value);

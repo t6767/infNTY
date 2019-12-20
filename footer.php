@@ -162,9 +162,25 @@
 
 <!-- Main scripts. You can replace it, but I recommend you to leave it here -->
 <script>
-
+/** Использование патернов для контактных форм**/
     var emailpattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
     var phonepatern = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+
+    function ff(value) {
+        var OK = emailpattern.exec(value);
+        if (!OK) { return 0; } else { return 1; }
+    }
+
+    function ph(value) {
+        var OK = phonepatern.exec(value);
+        if (!OK) { return 0; }
+        else { return 1; }
+    }
+
+    function nm(value) {
+        if (value != '') return 1; else return 0;
+    }
+/** конец Использование патернов для контактных форм**/
 
     function getAjax1(operation, name, phone, solution) {
         $.ajax({
