@@ -92,9 +92,67 @@
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
                         <?=$PContent590 ?>
+                        <div class="row" vertical-gutter="20" data-gutter="20">
+                            <?php
+                            $query = new WP_Query(
+                                array(
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'cat' => [24],
+                                    'orderby' => 'date',
+                                    'order' => 'DESC',
+                                )
+                            );
+                            if ($query->have_posts()) {
+                                while ($query->have_posts()) {
+                                    $query->the_post();
+                                    $icon = get_post_meta( get_the_ID(), 'icon' );
+                                    if ($icon[0]!='') $ic=$icon[0]; else $ic="features-icon-1.svg";
+                                    ?>
+                                    <div class="col-md-6 col-lg-4">
+                                        <a href="<?=get_permalink()?>" class="solution">
+                                            <img src="<?php bloginfo('template_url'); ?>/static/img/general/<?=$ic?>" class="solution__icon" alt="">
+                                            <div class="solution__content">
+                                                <div class="solution__title"><?php the_title(); ?></div>
+                                                <div class="solution__link">Подробнее</div>
+                                            </div>
+                                            <div class="solution__background" style="background-image: url('<?=get_the_post_thumbnail_url()?>')"></div>
+                                        </a>
+                                    </div>
+                                <?php }}  ?>
+                        </div>
                     </div>
                     <div class="tab-pane" id="tabs-3" role="tabpanel">
                         <?=$PContent592 ?>
+                        <div class="row" vertical-gutter="20" data-gutter="20">
+                            <?php
+                            $query = new WP_Query(
+                                array(
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'cat' => [25],
+                                    'orderby' => 'date',
+                                    'order' => 'DESC',
+                                )
+                            );
+                            if ($query->have_posts()) {
+                                while ($query->have_posts()) {
+                                    $query->the_post();
+                                    $icon = get_post_meta( get_the_ID(), 'icon' );
+                                    if ($icon[0]!='') $ic=$icon[0]; else $ic="features-icon-1.svg";
+                                    ?>
+                                    <div class="col-md-6 col-lg-4">
+                                        <a href="<?=get_permalink()?>" class="solution">
+                                            <img src="<?php bloginfo('template_url'); ?>/static/img/general/<?=$ic?>" class="solution__icon" alt="">
+                                            <div class="solution__content">
+                                                <div class="solution__title"><?php the_title(); ?></div>
+                                                <div class="solution__link">Подробнее</div>
+                                            </div>
+                                            <div class="solution__background" style="background-image: url('<?=get_the_post_thumbnail_url()?>')"></div>
+                                        </a>
+                                    </div>
+                                <?php }}  ?>
+                        </div>
                     </div>
                     <form class="form contacts__form">
                         <h2 class="form__title">Написать нам</h2>
