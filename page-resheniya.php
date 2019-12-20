@@ -55,13 +55,23 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabs-1" role="tabpanel">
                         <?php
+                        $post_588 = get_post( 588 );
+                        $PContent588=apply_filters( 'the_content', $post_588->post_content );
+
+                        $post_590 = get_post( 590 );
+                        $PContent590=apply_filters( 'the_content', $post_590->post_content );
+
+                        $post_592 = get_post( 592 );
+                        $PContent592=apply_filters( 'the_content', $post_592->post_content );
+/*
                         $post_16 = get_post( 16 );
                         $PContent=apply_filters( 'the_content', $post_16->post_content );
                         $dpolebank_sfera = get_post_meta( $post_16->ID, 'bank_sfera' );
                         $dpolekorp_sfera = get_post_meta( $post_16->ID, 'korp_sfera' );
                         $dpolegos_sfera = get_post_meta( $post_16->ID, 'gos_sfera' );
+*/
                         ?>
-                        <?=$dpolebank_sfera[0] ?>
+                        <?=$PContent588 ?>
                         <div class="row" vertical-gutter="20" data-gutter="20">
                             <?php
                             $query = new WP_Query(
@@ -132,10 +142,10 @@
                         </script>
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
-                        <?=$dpolekorp_sfera[0] ?>
+                        <?=$PContent590 ?>
                     </div>
                     <div class="tab-pane" id="tabs-3" role="tabpanel">
-                        <?=$dpolegos_sfera[0] ?>
+                        <?=$PContent592 ?>
                     </div>
                 </div>
             </div>
