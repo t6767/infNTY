@@ -89,36 +89,31 @@
     <script>
         function ff(value) {
             var OK = emailpattern.exec(value);
-            if (!OK) {
-                email=0;
-                //alert("Введите корректный email");
-            }
-            else
-                email=1;
+            if (!OK) { email=0; } else { email=1; }
         }
 
         function ph(value) {
             var OK = phonepatern.exec(value);
-            if (!OK) {
-                tel=0;
-                //alert("Введите корректный телефон");
-            }
-            else
-                tel=1;
+            if (!OK) { tel=0; }
+            else { tel=1; }
         }
 
-        function checkbutton() {
-            if(email==1 && tel==1) document.getElementById('buttonsendd').disabled = false; else document.getElementById('buttonsendd').disabled = true;
+        function nm(value) {
+            alert(value);
+            if (value != '') name=1; else name=0;
         }
+
+        function checkbutton() { if(email==1 && tel==1 && name==1) document.getElementById('buttonsendd').disabled = false; else document.getElementById('buttonsendd').disabled = true; }
 
         function proverka() {
+            nm(document.getElementById('kontaktpagename').value);
             ph(document.getElementById('kontaktpagephone').value);
             ff(document.getElementById('kontaktpageemail').value);
             checkbutton();
         }
         var email=0;
         var tel=0;
-        var name=document.getElementById('kontaktpagename').value;
+        var name=0;
 
     </script>
 <?php get_footer(); ?>
