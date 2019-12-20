@@ -46,6 +46,16 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabs-1" role="tabpanel">
                         <div class="about">
+                            <?php
+                            $post_388 = get_post( 388 );
+                            $PTitle = $post_388->post_title;
+                            $PContent=apply_filters( 'the_content', $post_388->post_content );
+                            $PImage = wp_get_attachment_url( get_post_thumbnail_id($post_388->ID), 'thumbnail' );
+                            $dpoleSotrudniki = get_post_meta( $post_388->ID, 'sotrudniki' );
+                            $dpoleProekti = get_post_meta( $post_388->ID, 'proekti' );
+                            $dpolePartneri = get_post_meta( $post_388->ID, 'partneri' );
+                            $dpoletext10let = get_post_meta( $post_388->ID, 'text10let' );
+                            ?>
                             <div class="about__left">
                                 <img src="<?php bloginfo('template_url'); ?>/static/img/content/p5.png" class="about__img" alt="">
                             </div>
@@ -58,19 +68,10 @@
                                     <div class="about__top-stats">
                                         10 +
                                         <br>
-                                        <span>лет развития<br>и создания нового</span>
+                                        <span><?=$dpoletext10let[0] ?></span>
                                     </div>
                                 </div>
                                 <div class="about__text">
-                                    <?php
-                                    $post_388 = get_post( 388 );
-                                    $PTitle = $post_388->post_title;
-                                    $PContent=apply_filters( 'the_content', $post_388->post_content );
-                                    $PImage = wp_get_attachment_url( get_post_thumbnail_id($post_388->ID), 'thumbnail' );
-                                    $dpoleSotrudniki = get_post_meta( $post_388->ID, 'sotrudniki' );
-                                    $dpoleProekti = get_post_meta( $post_388->ID, 'proekti' );
-                                    $dpolePartneri = get_post_meta( $post_388->ID, 'partneri' );
-                                    ?>
                                     <?=$PContent?>
                                 </div>
                                 <div class="about__stats">
