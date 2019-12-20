@@ -1,4 +1,8 @@
 <!-- Footer Begin -->
+<?php
+$fblnk = get_post_meta( 566, 'fblink' )[0];
+$lklnk = get_post_meta( 566, 'linkedinlink' )[0];
+?>
 <footer class="footer">
     <div class="container">
         <div class="row" vertical-gutter="40">

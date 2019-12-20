@@ -1,4 +1,8 @@
 <?php get_header(); ?>
+<?php
+$fblnk = get_post_meta( 566, 'fblink' )[0];
+$lklnk = get_post_meta( 566, 'linkedinlink' )[0];
+?>
         <!-- App Main Begin -->
         <main role="main" class="app__main">
 
