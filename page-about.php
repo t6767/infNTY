@@ -41,6 +41,9 @@
                         <li class="tabs__item">
                             <a class="tabs__link" data-toggle="tab" id="t4" href="#tabs-4" onclick="changeHash('#vacancy');" role="tab">Вакансии</a>
                         </li>
+                        <li class="tabs__item">
+                            <a class="tabs__link" data-toggle="tab" id="t5" href="#tabs-5" onclick="changeHash('#contacts');" role="tab">Контакты</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="tab-content">
@@ -215,6 +218,8 @@
                             ?>
                         </div>
                     </div>
+                    <div class="tab-pane" id="tabs-5" role="tabpanel">123321
+                    </div>
                 </div>
             </div>
         </div>
@@ -237,6 +242,8 @@
                 document.getElementById('tabs-3').style.display="none";
                 document.getElementById('t4').className='tabs__link';
                 document.getElementById('tabs-4').style.display="none";
+                document.getElementById('t5').className='tabs__link';
+                document.getElementById('tabs-5').style.display="none";
                 break;
             case "#reviews":
                 document.getElementById('t3').className='tabs__link active';
@@ -247,6 +254,8 @@
                 document.getElementById('tabs-2').style.display="none";
                 document.getElementById('t4').className='tabs__link';
                 document.getElementById('tabs-4').style.display="none";
+                document.getElementById('t5').className='tabs__link';
+                document.getElementById('tabs-5').style.display="none";
                 break;
             case "#vacancy":
                 document.getElementById('t2').className='tabs__link';
@@ -257,6 +266,20 @@
                 document.getElementById('tabs-1').style.display="none";
                 document.getElementById('t4').className='tabs__link active';
                 document.getElementById('tabs-4').style.display="block";
+                document.getElementById('t5').className='tabs__link';
+                document.getElementById('tabs-5').style.display="none";
+                break;
+            case "#contacts":
+                document.getElementById('t2').className='tabs__link';
+                document.getElementById('tabs-2').style.display="none";
+                document.getElementById('t3').className='tabs__link';
+                document.getElementById('tabs-3').style.display="none";
+                document.getElementById('t1').className='tabs__link';
+                document.getElementById('tabs-1').style.display="none";
+                document.getElementById('t4').className='tabs__link';
+                document.getElementById('tabs-4').style.display="none";
+                document.getElementById('t5').className='tabs__link active';
+                document.getElementById('tabs-5').style.display="block";
                 break;
             default:
                 document.getElementById('tabs-1').style.display="block";
@@ -267,6 +290,8 @@
                 document.getElementById('tabs-3').style.display="none";
                 document.getElementById('t4').className='tabs__link';
                 document.getElementById('tabs-4').style.display="none";
+                document.getElementById('t5').className='tabs__link';
+                document.getElementById('tabs-5').style.display="none";
                 break;
         }
     }
