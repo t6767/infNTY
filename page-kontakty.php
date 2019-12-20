@@ -99,7 +99,6 @@
         }
 
         function nm(value) {
-            alert(value);
             if (value != '') name=1; else name=0;
         }
 
