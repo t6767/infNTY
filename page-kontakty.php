@@ -67,16 +67,6 @@
                                                     <i class="fa fa-linkedin"></i>
                                                 </a>
                                             </li>
-                                            <li class="social__item">
-                                                <a href="#" class="social__link">
-                                                    <i class="fa fa-youtube"></i>
-                                                </a>
-                                            </li>
-                                            <li class="social__item">
-                                                <a href="#" class="social__link">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
                                         </ul>
                                     </div>
                                 </div>

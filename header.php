@@ -150,8 +150,6 @@ function the_excerpt_max_charlength( $charlength ){
                 <div class="menu__social">
                     <a href="#" class="menu__footer-link -facebook"></a>
                     <a href="#" class="menu__footer-link -linkedin"></a>
-                    <a href="#" class="menu__footer-link -youtube"></a>
-                    <a href="#" class="menu__footer-link -twitter"></a>
                 </div>
             </div>
         </div>
