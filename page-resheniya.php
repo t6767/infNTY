@@ -58,6 +58,8 @@
                         $post_16 = get_post( 16 );
                         $PContent=apply_filters( 'the_content', $post_16->post_content );
                         $dpolebank_sfera = get_post_meta( $post_16->ID, 'bank_sfera' );
+                        $dpolekorp_sfera = get_post_meta( $post_16->ID, 'korp_sfera' );
+                        $dpolegos_sfera = get_post_meta( $post_16->ID, 'gos_sfera' );
                         ?>
                         <?=$dpolebank_sfera[0] ?>
                         <div class="row" vertical-gutter="20" data-gutter="20">
@@ -118,9 +120,10 @@
                         </form>
                     </div>
                     <div class="tab-pane" id="tabs-2" role="tabpanel">
+                        <?=$dpolekorp_sfera[0] ?>
                     </div>
                     <div class="tab-pane" id="tabs-3" role="tabpanel">
-
+                        <?=$dpolegos_sfera[0] ?>
                     </div>
                 </div>
             </div>
