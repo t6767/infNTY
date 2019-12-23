@@ -30,6 +30,9 @@
                     $PContent588=apply_filters( 'the_content', $post_588->post_content );
 ?>
         <div class="container">
+            <div class="page__topbar">
+                <button type="button" class="button -bordered" data-target="#modal-1" data-toggle="modal">связаться с нами</button>
+            </div>
             <div class="row">
                 <div class="col">
         <?=$PContent588 ?>
