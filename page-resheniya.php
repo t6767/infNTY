@@ -197,6 +197,149 @@
             </div>
         </div>
         <!--/. Page Content End -->
+        <!-- Page Content Begin -->
+        <div class="page__content">
+            <div class="container">
+                <div class="solution-b">
+                    <div class="solution-b__item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center">
+                                <img src="static/img/content/1.svg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="solution-b__subtitle">Решения</div>
+                                <div class="solution-b__title">Интернет-банкинг</div>
+                                <div class="solution-b__text">
+                                    We help SME banks transform their outdated online banking applications into modern digital experiences removing the need for different websites, apps, and software. Our omni-channel platform aims to simplify small business financials, granting their managers
+                                    full control and a better understanding of their cash flow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-b__item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center order-md-last">
+                                <img src="static/img/content/2.svg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="solution-b__subtitle">Решения</div>
+                                <div class="solution-b__title">Мобильный банкинг</div>
+                                <div class="solution-b__text">
+                                    We help SME banks transform their outdated online banking applications into modern digital experiences removing the need for different websites, apps, and software. Our omni-channel platform aims to simplify small business financials, granting their managers
+                                    full control and a better understanding of their cash flow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-b__item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center">
+                                <img src="static/img/content/3.svg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="solution-b__subtitle">Решения</div>
+                                <div class="solution-b__title">Портал самообслуживания</div>
+                                <div class="solution-b__text">
+                                    We help SME banks transform their outdated online banking applications into modern digital experiences removing the need for different websites, apps, and software. Our omni-channel platform aims to simplify small business financials, granting their managers
+                                    full control and a better understanding of their cash flow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-b__item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center order-md-last">
+                                <img src="static/img/content/4.svg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="solution-b__subtitle">Решения</div>
+                                <div class="solution-b__title">маркетплейс</div>
+                                <div class="solution-b__text">
+                                    We help SME banks transform their outdated online banking applications into modern digital experiences removing the need for different websites, apps, and software. Our omni-channel platform aims to simplify small business financials, granting their managers
+                                    full control and a better understanding of their cash flow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-b__item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center">
+                                <img src="static/img/content/5.svg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="solution-b__subtitle">Решения</div>
+                                <div class="solution-b__title">чат-боты</div>
+                                <div class="solution-b__text">
+                                    We help SME banks transform their outdated online banking applications into modern digital experiences removing the need for different websites, apps, and software. Our omni-channel platform aims to simplify small business financials, granting their managers
+                                    full control and a better understanding of their cash flow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-b__item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center order-md-last">
+                                <img src="static/img/content/6.svg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="solution-b__subtitle">Решения</div>
+                                <div class="solution-b__title">Единый платежный шлюз</div>
+                                <div class="solution-b__text">
+                                    We help SME banks transform their outdated online banking applications into modern digital experiences removing the need for different websites, apps, and software. Our omni-channel platform aims to simplify small business financials, granting their managers
+                                    full control and a better understanding of their cash flow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-b__item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center">
+                                <img src="static/img/content/7.svg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="solution-b__subtitle">Решения</div>
+                                <div class="solution-b__title">программа лояльности</div>
+                                <div class="solution-b__text">
+                                    We help SME banks transform their outdated online banking applications into modern digital experiences removing the need for different websites, apps, and software. Our omni-channel platform aims to simplify small business financials, granting their managers
+                                    full control and a better understanding of their cash flow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-b__item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center order-md-last">
+                                <img src="static/img/content/8.svg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="solution-b__subtitle">Решения</div>
+                                <div class="solution-b__title">тендерная площадка</div>
+                                <div class="solution-b__text">
+                                    We help SME banks transform their outdated online banking applications into modern digital experiences removing the need for different websites, apps, and software. Our omni-channel platform aims to simplify small business financials, granting their managers
+                                    full control and a better understanding of their cash flow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-b__item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-center">
+                                <img src="static/img/content/9.svg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="solution-b__subtitle">Решения</div>
+                                <div class="solution-b__title">qr-платежи и переводы</div>
+                                <div class="solution-b__text">
+                                    We help SME banks transform their outdated online banking applications into modern digital experiences removing the need for different websites, apps, and software. Our omni-channel platform aims to simplify small business financials, granting their managers
+                                    full control and a better understanding of their cash flow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/. Page Content End -->
 
     </div>
     <!--/. Page End -->
