@@ -22,7 +22,7 @@ get_header(); ?>
                 <div class="container">
                     <div class="page__header-title typed-effect">
                         <div id="js-typed-strings">
-                            <p>Новости</p>
+                            <p>Ошибка 404</p>
                         </div>
                     </div>
                     <ul class="breadcrumbs">
