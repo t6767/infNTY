@@ -218,7 +218,7 @@
                         while ($query->have_posts()) {
                             $query->the_post();
                             if ($i>0) { $st=" order-md-last"; $i=0; } else { $st=""; $i=1; }
-                            $pic = get_post_meta( get_the_ID(), 'icon' );
+                            $pic = get_post_meta( get_the_ID(), 'new' );
                             if ($pic[0]!='') $pcic=$pic[0]; else $pcic="1.svg";
                             ?>
                             <div class="solution-b__item">
