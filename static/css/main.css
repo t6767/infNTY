@@ -21797,6 +21797,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 
 .about__left {
   max-width: 750px;
+  margin-bottom: 7%;
 }
 
 .about__img {
