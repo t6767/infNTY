@@ -228,7 +228,7 @@
                                         <div class="solution-b__subtitle">Решения</div>
                                         <div class="solution-b__title"><?php the_title(); ?></div>
                                         <div class="solution-b__text">
-                                            <?=new_excerpt_more(the_excerpt_max_charlength(300))?>
+                                            <?=new_excerpt_more(the_excerpt_max_charlength(500))?>
                                         </div>
                                     </div>
                                 </div>
