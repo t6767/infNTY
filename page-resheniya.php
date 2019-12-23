@@ -213,13 +213,15 @@
                             'order' => 'DESC',
                         )
                     );
+                    $i=0;
                     if ($query->have_posts()) {
                         while ($query->have_posts()) {
                             $query->the_post();
+                            if ($i>0) { $st=" order-md-last"; $i=0; } else { $st=""; $i=1; }
                             ?>
                             <div class="solution-b__item">
                                 <div class="row align-items-center">
-                                    <div class="col-md-6 text-center">
+                                    <div class="col-md-6 text-center<?=$st?>">
                                         <a href="<?=get_permalink()?>"><img src="<?php bloginfo('template_url'); ?>/static/img/content/1.svg" alt=""></a>
                                     </div>
                                     <div class="col-md-6">
