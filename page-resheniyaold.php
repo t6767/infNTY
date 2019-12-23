@@ -197,50 +197,6 @@
                 </div>
             </div>
             <!--/. Page Content End -->
-            <!-- Page Content Begin -->
-            <div class="page__content">
-                <div class="container">
-                    <div class="solution-b">
-
-
-                        <?php
-                        $query = new WP_Query(
-                            array(
-                                'post_type' => 'post',
-                                'post_status' => 'publish',
-                                'cat' => [23],
-                                'orderby' => 'date',
-                                'order' => 'DESC',
-                            )
-                        );
-                        $i=0;
-                        if ($query->have_posts()) {
-                            while ($query->have_posts()) {
-                                $query->the_post();
-                                if ($i>0) { $st=" order-md-last"; $i=0; } else { $st=""; $i=1; }
-                                $pic = get_post_meta( get_the_ID(), 'new' );
-                                if ($pic[0]!='') $pcic=$pic[0]; else $pcic="1.svg";
-                                ?>
-                                <div class="solution-b__item">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-6 text-center<?=$st?>">
-                                            <a href="<?=get_permalink()?>"><img src="<?php bloginfo('template_url'); ?>/static/img/content/<?=$pcic ?>" alt=""></a>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="solution-b__subtitle">Решения</div>
-                                            <div class="solution-b__title"><?php the_title(); ?></div>
-                                            <div class="solution-b__text">
-                                                <?=new_excerpt_more(the_excerpt_max_charlength(500))?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php }}  ?>
-                    </div>
-                </div>
-            </div>
-            <!--/. Page Content End -->
-
         </div>
         <!--/. Page End -->
 
