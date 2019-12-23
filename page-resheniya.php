@@ -29,7 +29,11 @@
                     $PTitle588 = $post_588->post_title;
                     $PContent588=apply_filters( 'the_content', $post_588->post_content );
 ?>
+        <div class="container">
+            <div class="row">
+                <div class="col">
         <?=$PContent588 ?>
+        </div></div></div>
         <!-- Page Content Begin -->
         <div class="page__content">
             <div class="container">
@@ -73,6 +77,9 @@
             </div>
         </div>
         <!--/. Page Content End -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
         <form class="form contacts__form">
             <h2 class="form__title">Написать нам</h2>
             <div class="row">
@@ -112,6 +119,7 @@
             var nameResh=0;
             var messResh=0;
         </script>
+                </div></div></div>
     </div>
     <!--/. Page End -->
 
