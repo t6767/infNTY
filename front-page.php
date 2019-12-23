@@ -211,43 +211,75 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                 <div class="container section__container">
                     <div class="section__background-title -red" data-parallax='{"y": 80, "smoothness": 65}'>DIGITAL BANK</div>
                     <div class="features row">
-                        <?php
-                        $query = new WP_Query(
-                            array(
-                                'post_type' => 'post',
-                                'post_status' => 'publish',
-                                'posts_per_page' => 9,
-                                'cat' => [23],
-                                'post__not_in' => array(get_the_ID()),
-                                'orderby' => 'date',
-                                'order' => 'DESC',
-                                'paged' => $my_page
-                            )
-                        );
-                        $i=0;
-                        if ($query->have_posts()) {
-                            while ($query->have_posts()) {
-                                if ($i==0) {echo '<div class="features__col">';}
-                                $query->the_post();
-                                $dpole = get_post_meta( get_the_ID(), 'vid' );
-                                $icon = get_post_meta( get_the_ID(), 'icon' );
-                                if ((int)$dpole[0] > 0) $style=" -inverted"; else $style="";
-                                if ($icon[0]!='') $ic=$icon[0]; else $ic="features-icon-1.svg";
-                                ?>
-                                <a href="<?=get_permalink()?>" class="features__item<?=$style?>">
-                                    <img src="<?php bloginfo('template_url'); ?>/static/img/general/<?=$ic?>" class="features__icon" alt="">
-                                    <div class="features__title"><?php the_title(); ?></div>
-                                    <div class="features__text"><?=the_excerpt_max_charlength(150)?></div>
-                                    <div class="features__link">Подробнее</div>
-                                    <div class="features__background" style="background-image: url('<?=get_the_post_thumbnail_url()?>')"></div>
-                                </a>
-                                <?php
-                                $i++;
-                                if ($i==3) {echo '</div>'; $i=0;}
-                            }
-                            if (($i>0) && ($i<3)) {echo '</div>';}
-                        }
-                        ?>
+                        <div class="features__col">
+                            <a href="#" class="features__item">
+                                <img src="static/img/general/features-icon-1.svg" class="features__icon" alt="">
+                                <div class="features__title">Интернет-банкинг</div>
+                                <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
+                                <div class="features__link">Подробнее</div>
+                                <div class="features__background" style="background-image: url('static/img/content/features-1.jpg')"></div>
+                            </a>
+                            <a href="#" class="features__item">
+                                <img src="static/img/general/features-icon-4.svg" class="features__icon" alt="">
+                                <div class="features__title">маркетплейс</div>
+                                <div class="features__text">Коммуникация без участия или с минимальным участием менеджеров Банка</div>
+                                <div class="features__link">Подробнее</div>
+                                <div class="features__background" style="background-image: url('static/img/content/features-4.jpg')"></div>
+                            </a>
+                            <a href="#" class="features__item -inverted">
+                                <img src="static/img/general/features-icon-7.svg" class="features__icon" alt="">
+                                <div class="features__title">программа лояльности</div>
+                                <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
+                                <div class="features__link">Подробнее</div>
+                                <div class="features__background" style="background-image: url('static/img/content/features-7.jpg')"></div>
+                            </a>
+                        </div>
+                        <div class="features__col">
+                            <a href="#" class="features__item">
+                                <img src="static/img/general/features-icon-2.svg" class="features__icon" alt="">
+                                <div class="features__title">Мобильный банкинг</div>
+                                <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
+                                <div class="features__link">Подробнее</div>
+                                <div class="features__background" style="background-image: url('static/img/content/features-2.jpg')"></div>
+                            </a>
+                            <a href="#" class="features__item -inverted">
+                                <img src="static/img/general/features-icon-5.svg" class="features__icon" alt="">
+                                <div class="features__title">чат-боты</div>
+                                <div class="features__text">Коммуникация без участия или с минимальным участием менеджеров Банка</div>
+                                <div class="features__link">Подробнее</div>
+                                <div class="features__background" style="background-image: url('static/img/content/features-5.jpg')"></div>
+                            </a>
+                            <a href="#" class="features__item">
+                                <img src="static/img/general/features-icon-8.svg" class="features__icon" alt="">
+                                <div class="features__title">тендерная площадка</div>
+                                <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
+                                <div class="features__link">Подробнее</div>
+                                <div class="features__background" style="background-image: url('static/img/content/features-8.jpg')"></div>
+                            </a>
+                        </div>
+                        <div class="features__col">
+                            <a href="#" class="features__item -inverted">
+                                <img src="static/img/general/features-icon-3.svg" class="features__icon" alt="">
+                                <div class="features__title">Портал самообслуживания</div>
+                                <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
+                                <div class="features__link">Подробнее</div>
+                                <div class="features__background" style="background-image: url('static/img/content/features-3.jpg')"></div>
+                            </a>
+                            <a href="#" class="features__item">
+                                <img src="static/img/general/features-icon-6.svg" class="features__icon" alt="">
+                                <div class="features__title">Единый платежный шлюз</div>
+                                <div class="features__text">Коммуникация без участия или с минимальным участием менеджеров Банка</div>
+                                <div class="features__link">Подробнее</div>
+                                <div class="features__background" style="background-image: url('static/img/content/features-6.jpg')"></div>
+                            </a>
+                            <a href="#" class="features__item">
+                                <img src="static/img/general/features-icon-9.svg" class="features__icon" alt="">
+                                <div class="features__title">qr-платежи и переводы</div>
+                                <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
+                                <div class="features__link">Подробнее</div>
+                                <div class="features__background" style="background-image: url('static/img/content/features-9.jpg')"></div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
