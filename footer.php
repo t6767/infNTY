@@ -1,4 +1,8 @@
 <!-- Footer Begin -->
+<?php
+$fblnk = get_post_meta( 566, 'fblink' )[0];
+$lklnk = get_post_meta( 566, 'linkedinlink' )[0];
+?>
 <footer class="footer">
     <div class="container">
         <div class="row" vertical-gutter="40">
@@ -33,23 +37,13 @@
                     <br>Алматы</p>
                 <ul class="social footer__social">
                     <li class="social__item">
-                        <a href="#" class="social__link">
+                        <a href="<?=$fblnk?>" class="social__link">
                             <i class="fa fa-facebook"></i>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="#" class="social__link">
+                        <a href="<?=$lklnk?>" class="social__link">
                             <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link">
-                            <i class="fa fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link">
-                            <i class="fa fa-twitter"></i>
                         </a>
                     </li>
                 </ul>
@@ -83,24 +77,38 @@
                 <form class="form">
                     <h2 class="form__title">Связаться с нами</h2>
                     <div class="control">
-                        <input type="text" id="namenodal1" name="name" class="control__input" placeholder="Имя">
+                        <input onblur="proverkaPress()" oninput="proverkaPress()" type="text" id="namenodal1" name="name" class="control__input" placeholder="Имя">
                     </div>
                     <div class="control">
-                        <input type="text" id="companymodal1" name="company" class="control__input" placeholder="Компания">
+                        <input onblur="proverkaPress()" oninput="proverkaPress()" type="text" id="companymodal1" name="company" class="control__input" placeholder="Компания">
                     </div>
                     <div class="control">
-                        <input type="text" id="phonemodal1" name="phone" class="control__input" placeholder="+78 (***) ***-**-**">
+                        <input onblur="proverkaPress()" oninput="proverkaPress()" type="text" id="phonemodal1" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
                     </div>
                     <div class="control">
-                        <input type="text" name="email" id="emailmodal1" class="control__input" placeholder="Email">
+                        <input onblur="proverkaPress()" oninput="proverkaPress()" type="text" name="email" id="emailmodal1" class="control__input" placeholder="Email">
                     </div>
                     <div class="text-right">
-                        <button type="button" onclick="getAjaxModal1('1', document.getElementById('namenodal1').value, document.getElementById('companymodal1').value, document.getElementById('phonemodal1').value, document.getElementById('emailmodal1').value)" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal" data-dismiss="modal">отправить</button>
+                        <button id="buttonsenddpress" type="button" onclick="getAjaxModal1('1', document.getElementById('namenodal1').value, document.getElementById('companymodal1').value, document.getElementById('phonemodal1').value, document.getElementById('emailmodal1').value)" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal" data-dismiss="modal" disabled>отправить</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <script>
+        function proverkaPress() {
+            namePress=nm(document.getElementById('namenodal1').value);
+            messPress=nm(document.getElementById('companymodal1').value);
+            telPress=ph(document.getElementById('phonemodal1').value);
+            emailPress=ff(document.getElementById('emailmodal1').value);
+            if(emailPress==1 && telPress==1 && namePress==1 && messPress==1) document.getElementById('buttonsenddpress').disabled = false; else document.getElementById('buttonsenddpress').disabled = true;
+        }
+        var emailPress=0;
+        var telPress=0;
+        var namePress=0;
+        var messPress=0;
+
+    </script>
     <!--/. Modal Cta End -->
 
     <!-- Modal Cta Begin -->
@@ -172,6 +180,26 @@
 
 <!-- Main scripts. You can replace it, but I recommend you to leave it here -->
 <script>
+/** Использование патернов для контактных форм**/
+    var emailpattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
+    var phonepatern = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+
+    function ff(value) {
+        var OK = emailpattern.exec(value);
+        if (!OK) { return 0; } else { return 1; }
+    }
+
+    function ph(value) {
+        var OK = phonepatern.exec(value);
+        if (!OK) { return 0; }
+        else { return 1; }
+    }
+
+    function nm(value) {
+        if (value != '') return 1; else return 0;
+    }
+/** конец Использование патернов для контактных форм**/
+
     function getAjax1(operation, name, phone, solution) {
         $.ajax({
             type:'POST',

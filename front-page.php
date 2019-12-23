@@ -1,4 +1,14 @@
-<?php get_header(); ?>
+<?php get_header();
+$post_566 = get_post( 566 );
+$PTitle566 = $post_566->post_title;
+$PContent566=apply_filters( 'the_content', $post_566->post_content );
+$dpolezapolnitebrif = get_post_meta( $post_566->ID, 'zapolnitebrif' );
+$dpolebriftext2566 = get_post_meta( $post_566->ID, 'briftext2' );
+$dpolebriflink566 = get_post_meta( $post_566->ID, 'briflink' );
+$dpoleblok3about566 = get_post_meta( $post_566->ID, 'blok3about' );
+$dpoleblok3otzivi566 = get_post_meta( $post_566->ID, 'blok3otzivi' );
+$dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
+?>
         <!-- App Main Begin -->
         <main role="main" class="app__main">
 
@@ -55,7 +65,12 @@
             <?php
             $post_388 = get_post( 388 );
             $PTitle = $post_388->post_title;
-            $PContent=$post_388->post_content;
+            $PContent=apply_filters( 'the_content', $post_388->post_content );
+            $dpoleSotrudniki = get_post_meta( $post_388->ID, 'sotrudniki' );
+            $dpoleProekti = get_post_meta( $post_388->ID, 'proekti' );
+            $dpolePartneri = get_post_meta( $post_388->ID, 'partneri' );
+            $dpoletext10let = get_post_meta( $post_388->ID, 'text10let' );
+            $dpolecifra10let = get_post_meta( $post_388->ID, 'cifra10let' );
             ?>
             <section id="intro-about" class="intro-about section">
                 <div class="container section__container">
@@ -68,19 +83,19 @@
                             <div class="intro-about__stats wow">
                                 <div class="intro-about__stats-item">
                                     <div>
-                                        <span class="jsCountStats">200</span>+
+                                        <span class="jsCountStats"><?=$dpoleSotrudniki[0]?></span>+
                                     </div>
                                     <span class="intro-about__subtext">сотрудников</span>
                                 </div>
                                 <div class="intro-about__stats-item">
                                     <div>
-                                        <span class="jsCountStats">70</span>+
+                                        <span class="jsCountStats"><?=$dpoleProekti[0] ?></span>+
                                     </div>
                                     <span class="intro-about__subtext">проектов</span>
                                 </div>
                                 <div class="intro-about__stats-item">
                                     <div>
-                                        <span class="jsCountStats">45</span>+
+                                        <span class="jsCountStats"><?=$dpolePartneri[0] ?></span>+
                                     </div>
                                     <span class="intro-about__subtext">партнеров</span>
                                 </div>
@@ -91,9 +106,9 @@
                                 <img src="<?php bloginfo('template_url'); ?>/static/img/content/infin.png" alt="">
                                 <div class="intro-about__top-stats">
                                     <div>
-                                        <span class="jsCountStats">10</span>+
+                                        <span class="jsCountStats"><?=$dpolecifra10let[0] ?></span>+
                                     </div>
-                                    <span class="intro-about__top-stats-text">лет развития<br>и создания нового</span>
+                                    <span class="intro-about__top-stats-text"><?=$dpoletext10let[0] ?></span>
                                 </div>
                             </div>
                         </div>
@@ -107,9 +122,9 @@
                 <div class="container">
                     <div class="cta__card" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/info-bg.jpg')">
                         <div class="cta__left">
-                            <div class="cta__title">Заполните бриф и получите план реализации Вашего проекта</div>
-                            <div class="cta__subtitle">С расчетом стоимости и сроков реализации</div>
-                            <a href="/brif.docx" class="button cta__button">Заполнить бриф</a>
+                            <div class="cta__title"><?=$dpolezapolnitebrif[0]?></div>
+                            <div class="cta__subtitle"><?=$dpolebriftext2566[0] ?></div>
+                            <a href="<?=$dpolebriflink566[0] ?>" class="button cta__button">Заполнить бриф</a>
                         </div>
                         <img src="<?php bloginfo('template_url'); ?>/static/img/general/briefing.png" class="cta__icon" alt="">
                     </div>
@@ -167,22 +182,22 @@
                     <div class="row" vertical-gutter="30">
                         <div class="col-md-4">
                             <a href="/about/#history" class="info-card">
-                                <div class="info-card__title">О Компании</div>
-                                <div class="info-card__text">InFin-IT Solution является научно-производственной компанией, занимающейся разработкой инновационных решений в области цифровых каналов для международного рынка.</div>
+                                <div class="info-card__title"><?=$PTitle ?></div>
+                                <div class="info-card__text"><?=$dpoleblok3about566[0] ?></div>
                                 <div class="info-card__link">Подробнее</div>
                             </a>
                         </div>
                         <div class="col-md-4">
                             <a href="/about/#reviews" class="info-card">
-                                <div class="info-card__title">Отывы заказчиков и партнеров</div>
-                                <div class="info-card__text">InFin-IT Solution является научно-производственной компанией, занимающейся разработкой инновационных решений в области цифровых каналов для международного рынка.</div>
+                                <div class="info-card__title">Отзывы</div>
+                                <div class="info-card__text"><?=$dpoleblok3otzivi566[0] ?></div>
                                 <div class="info-card__link">Подробнее</div>
                             </a>
                         </div>
                         <div class="col-md-4">
                             <a href="/novosti/" class="info-card">
                                 <div class="info-card__title">Пресс-центр</div>
-                                <div class="info-card__text">InFin-IT Solution является научно-производственной компанией, занимающейся разработкой инновационных решений в области цифровых каналов для международного рынка.</div>
+                                <div class="info-card__text"><?=$dpoleblok3presscenter566[0] ?></div>
                                 <div class="info-card__link">Подробнее</div>
                             </a>
                         </div>

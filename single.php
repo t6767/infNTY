@@ -8,9 +8,12 @@ if (in_category('20')) { //ID категории
     if (in_category('22')) { //ID категории
         include(TEMPLATEPATH.'/single-solution.php');
     }
-    else
-    {
-    include(TEMPLATEPATH.'/single-default.php');
+    else {
+        if (in_category('8')) { //ID категории
+            include(TEMPLATEPATH . '/single-uslugi.php');
+        } else {
+            include(TEMPLATEPATH . '/single-default.php');
+        }
     }
 }
 ?>

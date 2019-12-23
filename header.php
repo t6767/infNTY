@@ -24,7 +24,7 @@ function the_excerpt_max_charlength( $charlength ){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php bloginfo('name'); ?></title>
+    <title><?php wp_title(''); ?></title>
     <meta content="<?php bloginfo('description'); ?>" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -125,7 +125,10 @@ function the_excerpt_max_charlength( $charlength ){
 </head>
 
 <body style="background: #f9f9f9">
-
+<?php
+$fblnk = get_post_meta( 566, 'fblink' )[0];
+$lklnk = get_post_meta( 566, 'linkedinlink' )[0];
+?>
 <div class="menu">
     <div class="menu__col">
         <button type="button" class="menu__close">Закрыть</button>
@@ -148,10 +151,8 @@ function the_excerpt_max_charlength( $charlength ){
                     <a href="tel:+77272620826" class="menu__phone">+7 (727) 262 08 26</a>
                 </div>
                 <div class="menu__social">
-                    <a href="#" class="menu__footer-link -facebook"></a>
-                    <a href="#" class="menu__footer-link -linkedin"></a>
-                    <a href="#" class="menu__footer-link -youtube"></a>
-                    <a href="#" class="menu__footer-link -twitter"></a>
+                    <a href="<?=$fblnk?>" class="menu__footer-link -facebook"></a>
+                    <a href="<?=$lklnk?>" class="menu__footer-link -linkedin"></a>
                 </div>
             </div>
         </div>

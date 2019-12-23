@@ -22,7 +22,7 @@ get_header(); ?>
                 <div class="container">
                     <div class="page__header-title typed-effect">
                         <div id="js-typed-strings">
-                            <p>Новости</p>
+                            <p>Ошибка 404</p>
                         </div>
                     </div>
                     <ul class="breadcrumbs">
@@ -38,31 +38,18 @@ get_header(); ?>
             <!--/. Page Header End -->
 
             <!-- Page Content Begin -->
-            <div class="page__content">
-                <div class="container">
-                    <div class="not-found">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="not-found__title">Ой!</div>
-                                <h3>Похоже, мы не можем найти<br>нужную вам страницу</h3>
-                                <h5>Код Ошибки: 404</h5>
-                                <p>
-                                    Вот несколько полезных ссылок:
-                                    <br>
-                                    <a href="/">Главная</a>
-                                    <br>
-                                    <a href="/?s=123321">Поиск по сайту</a>
-                                    <br>
-                                    <a href="/novosti/">Новости</a>
-                                </p>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/not-found.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php
+            $post_616 = get_post( 616 );
+            $PTitle616 = $post_616->post_title;
+            $PContent616=apply_filters( 'the_content', $post_616->post_content );
+            $dpole616 = get_post_meta( $post_616->ID, 'active' );
+
+            $post_614 = get_post( 614 );
+            $PTitle614 = $post_614->post_title;
+            $PContent614=apply_filters( 'the_content', $post_614->post_content );
+
+            if ((int)$dpole616[0]>0) echo $PContent616; else echo $PContent614;
+            ?>
             <!--/. Page Content End -->
 
         </div>

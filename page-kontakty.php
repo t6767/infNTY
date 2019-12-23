@@ -1,4 +1,8 @@
 <?php get_header(); ?>
+<?php
+$fblnk = get_post_meta( 566, 'fblink' )[0];
+$lklnk = get_post_meta( 566, 'linkedinlink' )[0];
+?>
         <!-- App Main Begin -->
         <main role="main" class="app__main">
 
@@ -35,19 +39,19 @@
                                         <form class="form">
                                             <h2 class="form__title">Написать нам</h2>
                                             <div class="control">
-                                                <input type="text" id="kontaktpagename" name="name" class="control__input" placeholder="Имя">
+                                                <input type="text" onblur="proverka()" oninput="proverka()" id="kontaktpagename" name="name" class="control__input" placeholder="Имя">
                                             </div>
                                             <div class="control">
-                                                <input type="text" id="kontaktpagephone" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
+                                                <input type="text" onblur="proverka()" oninput="proverka()" id="kontaktpagephone" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
                                             </div>
                                             <div class="control">
-                                                <input type="text" id="kontaktpageemail" name="email" class="control__input" placeholder="Email">
+                                                <input type="text" onblur="proverka()" id="kontaktpageemail" oninput="proverka()" name="email" class="control__input" placeholder="Email">
                                             </div>
                                             <div class="control mt-md-3">
-                                                <textarea id="kontaktpagemessage" class="control__input -textarea" placeholder="Сообщение"></textarea>
+                                                <textarea onblur="proverka()" oninput="proverka()" id="kontaktpagemessage" class="control__input -textarea" placeholder="Сообщение"></textarea>
                                             </div>
                                             <div class="text-center mt-4">
-                                                <button type="button" onclick="getAjaxContactForm('2', document.getElementById('kontaktpagename').value, document.getElementById('kontaktpagemessage').value, document.getElementById('kontaktpagephone').value, document.getElementById('kontaktpageemail').value);" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal">отправить</button>
+                                                <button id="buttonsendd" type="button" onclick="getAjaxContactForm('2', document.getElementById('kontaktpagename').value, document.getElementById('kontaktpagemessage').value, document.getElementById('kontaktpagephone').value, document.getElementById('kontaktpageemail').value);" class="button -bordered form__button" data-target="#modal-3" data-toggle="modal" disabled>отправить</button>
                                             </div>
                                         </form>
                                         <div class="contacts2__info">
@@ -58,23 +62,13 @@
                                         </div>
                                         <ul class="social contacts2__social">
                                             <li class="social__item">
-                                                <a href="#" class="social__link">
+                                                <a href="<?=$fblnk?>" class="social__link">
                                                     <i class="fa fa-facebook"></i>
                                                 </a>
                                             </li>
                                             <li class="social__item">
-                                                <a href="#" class="social__link">
+                                                <a href="<?=$lklnk?>" class="social__link">
                                                     <i class="fa fa-linkedin"></i>
-                                                </a>
-                                            </li>
-                                            <li class="social__item">
-                                                <a href="#" class="social__link">
-                                                    <i class="fa fa-youtube"></i>
-                                                </a>
-                                            </li>
-                                            <li class="social__item">
-                                                <a href="#" class="social__link">
-                                                    <i class="fa fa-twitter"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -96,4 +90,18 @@
 
         </main>
         <!--/. App Main End -->
+    <script>
+        function proverka() {
+            nameCF=nm(document.getElementById('kontaktpagename').value);
+            messCF=nm(document.getElementById('kontaktpagemessage').value);
+            tel=ph(document.getElementById('kontaktpagephone').value);
+            email=ff(document.getElementById('kontaktpageemail').value);
+            if(email==1 && tel==1 && nameCF==1 && messCF==1) document.getElementById('buttonsendd').disabled = false; else document.getElementById('buttonsendd').disabled = true;
+        }
+        var email=0;
+        var tel=0;
+        var nameCF=0;
+        var messCF=0;
+
+    </script>
 <?php get_footer(); ?>
