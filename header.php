@@ -38,9 +38,8 @@ function the_excerpt_max_charlength( $charlength ){
     <link href="<?php bloginfo('template_url'); ?>/static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
 
     <!--  Open Graph Tags -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="123" />
     <meta property="og:url" content="" />
-    <meta property="og:description" content="" />
     <meta property="og:image" content="" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="500" />
@@ -48,6 +47,8 @@ function the_excerpt_max_charlength( $charlength ){
     <meta property="twitter:description" content="" />
     <link rel="image_src" href="" />
 
+    <meta property="og:description" content="Разработка командообразующих мероприятий">
+    <meta name="description" content="Разработка командообразующих мероприятий" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
