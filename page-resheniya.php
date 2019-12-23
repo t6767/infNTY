@@ -29,6 +29,7 @@
                     $PTitle588 = $post_588->post_title;
                     $PContent588=apply_filters( 'the_content', $post_588->post_content );
 ?>
+        <div class="page__content">
         <div class="container">
             <div class="page__topbar">
                 <button type="button" class="button -bordered" data-target="#modal-1" data-toggle="modal">связаться с нами</button>
@@ -36,7 +37,7 @@
             <div class="row">
                 <div class="col">
         <?=$PContent588 ?>
-        </div></div></div>
+        </div></div></div></div>
         <!-- Page Content Begin -->
         <div class="page__content">
             <div class="container">
