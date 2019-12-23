@@ -83,7 +83,7 @@ $lklnk = get_post_meta( 566, 'linkedinlink' )[0];
                         <input onblur="proverkaPress()" oninput="proverkaPress()" type="text" id="companymodal1" name="company" class="control__input" placeholder="Компания">
                     </div>
                     <div class="control">
-                        <input onblur="proverkaPress()" oninput="proverkaPress()" type="text" id="phonemodal1" name="phone" class="control__input" placeholder="+78 (***) ***-**-**">
+                        <input onblur="proverkaPress()" oninput="proverkaPress()" type="text" id="phonemodal1" name="phone" class="control__input" placeholder="+7 (***) ***-**-**">
                     </div>
                     <div class="control">
                         <input onblur="proverkaPress()" oninput="proverkaPress()" type="text" name="email" id="emailmodal1" class="control__input" placeholder="Email">
