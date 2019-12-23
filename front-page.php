@@ -253,6 +253,14 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
             </section>
             <!--/. Features End -->
 
+            <?php
+            $post_166 = get_post( 166 );
+            $PTitle166 = $post_166->post_title;
+            $PContent166=apply_filters( 'the_content', $post_166->post_content );
+            //$link166=get_permalink(166);
+            //$dpoleSotrudniki = get_post_meta( $post_388->ID, 'sotrudniki' );
+            ?>
+
                 <!-- Services Begin -->
                 <section class="section pt-0">
                     <div class="container section__container">
@@ -261,8 +269,8 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                             <div class="row" vertical-gutter="60">
                                 <div class="col-md-4">
                                     <div class="info-card">
-                                        <div class="info-card__title">Консалтинг</div>
-                                        <div class="info-card__text">Добиваемся эффекта синергии, объединяя опыт в информационных технологиях и управленческие компетенции</div>
+                                        <div class="info-card__title"><?=$PTitle166 ?></div>
+                                        <div class="info-card__text"><?=$PContent166 ?></div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
