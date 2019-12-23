@@ -204,7 +204,7 @@
                     <div class="solution-b__item">
                         <div class="row align-items-center">
                             <div class="col-md-6 text-center">
-                                <img src="static/img/content/1.svg" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/1.svg" alt="">
                             </div>
                             <div class="col-md-6">
                                 <div class="solution-b__subtitle">Решения</div>
@@ -219,7 +219,7 @@
                     <div class="solution-b__item">
                         <div class="row align-items-center">
                             <div class="col-md-6 text-center order-md-last">
-                                <img src="static/img/content/2.svg" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/2.svg" alt="">
                             </div>
                             <div class="col-md-6">
                                 <div class="solution-b__subtitle">Решения</div>
@@ -234,7 +234,7 @@
                     <div class="solution-b__item">
                         <div class="row align-items-center">
                             <div class="col-md-6 text-center">
-                                <img src="static/img/content/3.svg" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/3.svg" alt="">
                             </div>
                             <div class="col-md-6">
                                 <div class="solution-b__subtitle">Решения</div>
@@ -249,7 +249,7 @@
                     <div class="solution-b__item">
                         <div class="row align-items-center">
                             <div class="col-md-6 text-center order-md-last">
-                                <img src="static/img/content/4.svg" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/4.svg" alt="">
                             </div>
                             <div class="col-md-6">
                                 <div class="solution-b__subtitle">Решения</div>
@@ -264,7 +264,7 @@
                     <div class="solution-b__item">
                         <div class="row align-items-center">
                             <div class="col-md-6 text-center">
-                                <img src="static/img/content/5.svg" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/5.svg" alt="">
                             </div>
                             <div class="col-md-6">
                                 <div class="solution-b__subtitle">Решения</div>
@@ -279,7 +279,7 @@
                     <div class="solution-b__item">
                         <div class="row align-items-center">
                             <div class="col-md-6 text-center order-md-last">
-                                <img src="static/img/content/6.svg" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/6.svg" alt="">
                             </div>
                             <div class="col-md-6">
                                 <div class="solution-b__subtitle">Решения</div>
@@ -294,7 +294,7 @@
                     <div class="solution-b__item">
                         <div class="row align-items-center">
                             <div class="col-md-6 text-center">
-                                <img src="static/img/content/7.svg" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/7.svg" alt="">
                             </div>
                             <div class="col-md-6">
                                 <div class="solution-b__subtitle">Решения</div>
@@ -309,7 +309,7 @@
                     <div class="solution-b__item">
                         <div class="row align-items-center">
                             <div class="col-md-6 text-center order-md-last">
-                                <img src="static/img/content/8.svg" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/8.svg" alt="">
                             </div>
                             <div class="col-md-6">
                                 <div class="solution-b__subtitle">Решения</div>
@@ -324,7 +324,7 @@
                     <div class="solution-b__item">
                         <div class="row align-items-center">
                             <div class="col-md-6 text-center">
-                                <img src="static/img/content/9.svg" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/content/9.svg" alt="">
                             </div>
                             <div class="col-md-6">
                                 <div class="solution-b__subtitle">Решения</div>
