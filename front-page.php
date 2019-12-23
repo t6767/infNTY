@@ -270,7 +270,7 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                 <!-- Services Begin -->
                 <section class="section pt-0">
                     <div class="container section__container">
-                        <div class="section__background-title -red" data-parallax='{"y": 20, "smoothness": 65}'>Услуги</div>
+                        <div class="section__background-title" data-parallax='{"y": 20, "smoothness": 65}'>Услуги</div>
                         <div class="container">
                             <div class="row" vertical-gutter="60">
                                 <div class="col-md-4">
@@ -299,7 +299,7 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
             <!-- Partners Begin -->
             <section class="section pt-0">
                 <div class="container section__container">
-                    <div class="section__background-title" data-parallax='{"y": 80, "smoothness": 65}'>НАМ ДОВЕРЯЮТ</div>
+                    <div class="section__background-title -red" data-parallax='{"y": 80, "smoothness": 65}'>НАМ ДОВЕРЯЮТ</div>
                     <div class="row align-items-center" vertical-gutter="40">
                         <?php
                         $query = new WP_Query(
