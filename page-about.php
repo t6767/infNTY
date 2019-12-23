@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 <!-- App Main Begin -->
+<?php
+$fblnk = get_post_meta( 566, 'fblink' )[0];
+$lklnk = get_post_meta( 566, 'linkedinlink' )[0];
+?>
 <main role="main" class="app__main">
 <!-- Page Begin -->
     <div class="page">
@@ -252,12 +256,12 @@
                                                         </div>
                                                         <ul class="social contacts2__social">
                                                             <li class="social__item">
-                                                                <a href="#" class="social__link">
+                                                                <a href="<?=$fblnk?>" class="social__link">
                                                                     <i class="fa fa-facebook"></i>
                                                                 </a>
                                                             </li>
                                                             <li class="social__item">
-                                                                <a href="#" class="social__link">
+                                                                <a href="<?=$lklnk?>" class="social__link">
                                                                     <i class="fa fa-linkedin"></i>
                                                                 </a>
                                                             </li>
