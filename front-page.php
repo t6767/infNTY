@@ -262,6 +262,9 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
             $post_425 = get_post( 425 );
             $PTitle425 = $post_425->post_title;
             $PContent425=apply_filters( 'the_content', $post_425->post_content );
+            $post_423 = get_post( 423 );
+            $PTitle423 = $post_423->post_title;
+            $PContent423=apply_filters( 'the_content', $post_423->post_content );
             ?>
 
                 <!-- Services Begin -->
@@ -284,8 +287,8 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                                 </div>
                                 <div class="col-md-4">
                                     <div class="info-card">
-                                        <div class="info-card__title">Аутсорсинг и аутстаффинг</div>
-                                        <div class="info-card__text">Аутсорсинг и аутстаффинг 200 локальных специалистов и зарубежных экспертов в любой предметной области</div>
+                                        <div class="info-card__title"><?=$PTitle423 ?></div>
+                                        <div class="info-card__text"><?=$PContent423?></div>
                                     </div>
                                 </div>
                             </div>
