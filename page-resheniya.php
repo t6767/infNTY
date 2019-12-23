@@ -218,11 +218,13 @@
                         while ($query->have_posts()) {
                             $query->the_post();
                             if ($i>0) { $st=" order-md-last"; $i=0; } else { $st=""; $i=1; }
+                            $pic = get_post_meta( get_the_ID(), 'icon' );
+                            if ($pic[0]!='') $pcic=$pic[0]; else $pcic="1.svg";
                             ?>
                             <div class="solution-b__item">
                                 <div class="row align-items-center">
                                     <div class="col-md-6 text-center<?=$st?>">
-                                        <a href="<?=get_permalink()?>"><img src="<?php bloginfo('template_url'); ?>/static/img/content/1.svg" alt=""></a>
+                                        <a href="<?=get_permalink()?>"><img src="<?php bloginfo('template_url'); ?>/static/img/content/<?=$pcic ?>" alt=""></a>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="solution-b__subtitle">Решения</div>
