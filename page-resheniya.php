@@ -201,6 +201,38 @@
         <div class="page__content">
             <div class="container">
                 <div class="solution-b">
+
+
+                    <?php
+                    $query = new WP_Query(
+                        array(
+                            'post_type' => 'post',
+                            'post_status' => 'publish',
+                            'cat' => [23],
+                            'orderby' => 'date',
+                            'order' => 'DESC',
+                        )
+                    );
+                    if ($query->have_posts()) {
+                        while ($query->have_posts()) {
+                            $query->the_post();
+                            ?>
+                            <div class="solution-b__item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 text-center">
+                                        <a href="<?=get_permalink()?>"><img src="<?php bloginfo('template_url'); ?>/static/img/content/1.svg" alt=""></a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="solution-b__subtitle">Решения</div>
+                                        <div class="solution-b__title"><?php the_title(); ?></div>
+                                        <div class="solution-b__text">
+                                            <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php }}  ?>
+
                     <div class="solution-b__item">
                         <div class="row align-items-center">
                             <div class="col-md-6 text-center">
@@ -216,6 +248,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="solution-b__item">
                         <div class="row align-items-center">
                             <div class="col-md-6 text-center order-md-last">
