@@ -181,7 +181,7 @@ $lklnk = get_post_meta( 566, 'linkedinlink' )[0];
 <!-- Main scripts. You can replace it, but I recommend you to leave it here -->
 <script>
 /** Использование патернов для контактных форм**/
-    var emailpattern = /^[a-z0-9._-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
+    var emailpattern = /^[a-z0-9_-.]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
     var phonepatern = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
 
     function ff(value) {
