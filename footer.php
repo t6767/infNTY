@@ -267,5 +267,4 @@ $lklnk = get_post_meta( 566, 'linkedinlink' )[0];
 <script src="<?php bloginfo('template_url'); ?>/static/js/separate-js/scripts.js"></script>
 <?php wp_footer(); ?>
 </body>
-<?php bloginfo('description'); ?>
 </html>
