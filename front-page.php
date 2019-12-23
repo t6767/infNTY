@@ -259,6 +259,9 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
             $PContent166=apply_filters( 'the_content', $post_166->post_content );
             //$link166=get_permalink(166);
             //$dpoleSotrudniki = get_post_meta( $post_388->ID, 'sotrudniki' );
+            $post_425 = get_post( 425 );
+            $PTitle425 = $post_425->post_title;
+            $PContent425=apply_filters( 'the_content', $post_425->post_content );
             ?>
 
                 <!-- Services Begin -->
@@ -270,13 +273,13 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                                 <div class="col-md-4">
                                     <div class="info-card">
                                         <div class="info-card__title"><?=$PTitle166 ?></div>
-                                        <div class="info-card__text"><?=$PContent166 ?></div>
+                                        <div class="info-card__text"><?=$PContent166?></div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="info-card">
-                                        <div class="info-card__title">Внедрение и сопровождение</div>
-                                        <div class="info-card__text">Современные методологии внедрения и инструменты управления проектами на основе PMBoK, Agile, Scrum</div>
+                                        <div class="info-card__title"><?=$PTitle425 ?></div>
+                                        <div class="info-card__text"><?=$PContent425?></div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
