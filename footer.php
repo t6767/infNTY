@@ -48,7 +48,7 @@ $lklnk = get_post_meta( 566, 'linkedinlink' )[0];
                     </li>
                 </ul>
                 <img src="<?php bloginfo('template_url'); ?>/static/img/general/logo.svg" class="footer__logo" alt="">
-                <p>Все права защищены<?=get_bloginfo( 'name' )?>
+                <p>Все права защищены
                     <br>2019 год</p>
             </div>
         </div>
