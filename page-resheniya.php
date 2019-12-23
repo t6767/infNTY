@@ -65,13 +65,13 @@
                             <div class="solution-b__item">
                                 <div class="row align-items-center">
                                     <div class="col-md-6 text-center<?=$st?>">
-                                        <a href="<?=get_permalink()?>"><img src="<?php bloginfo('template_url'); ?>/static/img/content/<?=$pcic ?>" alt=""></a>
+                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/<?=$pcic ?>" alt="">
                                     </div>
                                     <div class="col-md-6">
                                         <div class="solution-b__subtitle">Решения</div>
                                         <div class="solution-b__title"><?php the_title(); ?></div>
                                         <div class="solution-b__text">
-                                            <?=new_excerpt_more(the_excerpt_max_charlength(500))?>
+                                            <?=the_excerpt_max_charlength(500)?>
                                         </div>
                                     </div>
                                 </div>
