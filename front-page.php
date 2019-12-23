@@ -162,7 +162,7 @@
             <!--/. Intro News End -->
 
             <!-- Intro Card Begin -->
-            <section>
+            <!--<section>
                 <div class="container">
                     <div class="row" vertical-gutter="30">
                         <div class="col-md-4">
@@ -188,11 +188,11 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
             <!--/. Intro Card End -->
 
             <!-- Features Begin -->
-            <section class="section">
+            <section class="section pt-0">
                 <div class="container section__container">
                     <div class="section__background-title -red" data-parallax='{"y": 80, "smoothness": 65}'>DIGITAL BANK</div>
                     <div class="features row">
@@ -237,6 +237,35 @@
                 </div>
             </section>
             <!--/. Features End -->
+
+                <!-- Services Begin -->
+                <section class="section pt-0">
+                    <div class="container section__container">
+                        <div class="section__background-title -red" data-parallax='{"y": 20, "smoothness": 65}'>Услуги</div>
+                        <div class="container">
+                            <div class="row" vertical-gutter="60">
+                                <div class="col-md-4">
+                                    <div class="info-card">
+                                        <div class="info-card__title">Консалтинг</div>
+                                        <div class="info-card__text">Добиваемся эффекта синергии, объединяя опыт в информационных технологиях и управленческие компетенции</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="info-card">
+                                        <div class="info-card__title">Внедрение и сопровождение</div>
+                                        <div class="info-card__text">Современные методологии внедрения и инструменты управления проектами на основе PMBoK, Agile, Scrum</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="info-card">
+                                        <div class="info-card__title">Аутсорсинг и аутстаффинг</div>
+                                        <div class="info-card__text">Аутсорсинг и аутстаффинг 200 локальных специалистов и зарубежных экспертов в любой предметной области</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--/. Services End -->
 
             <!-- Partners Begin -->
             <section class="section pt-0">
