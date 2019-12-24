@@ -268,11 +268,21 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                         </div>
                         <div class="features__col">
                             <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-2.svg" class="features__icon" alt="">
-                                <div class="features__title">Мобильный банкинг</div>
-                                <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
+                                <?php
+                                $post_187 = get_post( 187 );
+                                $PTitle187 = $post_187->post_title;
+                                $PContent187=apply_filters( 'the_content', $post_187->post_content );
+                                $dpoleIcon187 = get_post_meta( $post_187->ID, 'icon' );
+                                $output187 = $post_187->post_excerpt;
+                                $urlIMG187=get_the_post_thumbnail_url(187);
+                                $dpoleVid187 = get_post_meta( $post_187->ID, 'vid' );
+                                if ((int)$dpoleVid187[0] > 0) $style=" -inverted"; else $style="";
+                                ?>
+                                <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon187[0] ?>" class="features__icon" alt="<?=$PTitle187?>">
+                                <div class="features__title"><?=$PTitle187?></div>
+                                <div class="features__text"><?=$output187?></div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-2.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?=$urlIMG187?>')"></div>
                             </a>
                             <a href="#" class="features__item -inverted">
                                 <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-5.svg" class="features__icon" alt="">
