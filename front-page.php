@@ -369,7 +369,7 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                             $dpoleVid293 = get_post_meta( $post_293->ID, 'vid' );
                             if ((int)$dpoleVid293[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="#" class="features__item<?=$style?>">
+                            <a href="/resheniya/#shluz" class="features__item<?=$style?>">
                                 <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon293[0] ?>" class="features__icon" alt="<?=$PTitle293?>">
                                 <div class="features__title"><?=$PTitle293?></div>
                                 <div class="features__text"><?=$output293?></div>
