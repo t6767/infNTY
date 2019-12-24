@@ -304,12 +304,22 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                                 <div class="features__background" style="background-image: url('<?=$urlIMG291?>')"></div>
                             </a>
 
-                            <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-8.svg" class="features__icon" alt="">
-                                <div class="features__title">тендерная площадка</div>
-                                <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
+                            <?php
+                            $post_298 = get_post( 298 );
+                            $PTitle298 = $post_298->post_title;
+                            $PContent298=apply_filters( 'the_content', $post_298->post_content );
+                            $dpoleIcon298 = get_post_meta( $post_298->ID, 'icon' );
+                            $output298 = $post_298->post_excerpt;
+                            $urlIMG298=get_the_post_thumbnail_url(298);
+                            $dpoleVid298 = get_post_meta( $post_298->ID, 'vid' );
+                            if ((int)$dpoleVid298[0] > 0) $style=" -inverted"; else $style="";
+                            ?>
+                            <a href="#" class="features__item<?=$style?>">
+                                <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon298[0] ?>" class="features__icon" alt="<?=$PTitle298?>">
+                                <div class="features__title"><?=$PTitle298?></div>
+                                <div class="features__text"><?=$output298?></div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-8.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?=$urlIMG298?>')"></div>
                             </a>
                         </div>
                         <div class="features__col">
