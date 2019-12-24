@@ -359,13 +359,24 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                                 <div class="features__background" style="background-image: url('<?=$urlIMG300?>')"></div>
                             </a>
 
-                            <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-9.svg" class="features__icon" alt="">
-                                <div class="features__title">qr-платежи и переводы</div>
-                                <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
+                            <?php
+                            $post_293 = get_post( 293 );
+                            $PTitle293 = $post_293->post_title;
+                            $PContent293=apply_filters( 'the_content', $post_293->post_content );
+                            $dpoleIcon293 = get_post_meta( $post_293->ID, 'icon' );
+                            $output293 = $post_293->post_excerpt;
+                            $urlIMG293=get_the_post_thumbnail_url(293);
+                            $dpoleVid293 = get_post_meta( $post_293->ID, 'vid' );
+                            if ((int)$dpoleVid293[0] > 0) $style=" -inverted"; else $style="";
+                            ?>
+                            <a href="#" class="features__item<?=$style?>">
+                                <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon293[0] ?>" class="features__icon" alt="<?=$PTitle293?>">
+                                <div class="features__title"><?=$PTitle293?></div>
+                                <div class="features__text"><?=$output293?></div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-9.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?=$urlIMG293?>')"></div>
                             </a>
+
                         </div>
                     </div>
                 </div>
