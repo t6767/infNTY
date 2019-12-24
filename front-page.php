@@ -323,13 +323,24 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                             </a>
                         </div>
                         <div class="features__col">
-                            <a href="#" class="features__item -inverted">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-3.svg" class="features__icon" alt="">
-                                <div class="features__title">Портал самообслуживания</div>
-                                <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
+                            <?php
+                            $post_287 = get_post( 287 );
+                            $PTitle287 = $post_287->post_title;
+                            $PContent287=apply_filters( 'the_content', $post_287->post_content );
+                            $dpoleIcon287 = get_post_meta( $post_287->ID, 'icon' );
+                            $output287 = $post_287->post_excerpt;
+                            $urlIMG287=get_the_post_thumbnail_url(287);
+                            $dpoleVid287 = get_post_meta( $post_287->ID, 'vid' );
+                            if ((int)$dpoleVid287[0] > 0) $style=" -inverted"; else $style="";
+                            ?>
+                            <a href="#" class="features__item<?=$style?>">
+                                <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon287[0] ?>" class="features__icon" alt="<?=$PTitle287?>">
+                                <div class="features__title"><?=$PTitle287?></div>
+                                <div class="features__text"><?=$output287?></div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-3.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?=$urlIMG287?>')"></div>
                             </a>
+
                             <a href="#" class="features__item">
                                 <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-6.svg" class="features__icon" alt="">
                                 <div class="features__title">Единый платежный шлюз</div>
