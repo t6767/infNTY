@@ -248,13 +248,22 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                                 <div class="features__background" style="background-image: url('<?=$urlIMG289?>')"></div>
                             </a>
 
-                            
-                            <a href="#" class="features__item -inverted">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-7.svg" class="features__icon" alt="">
-                                <div class="features__title">программа лояльности</div>
-                                <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
+                            <?php
+                            $post_296 = get_post( 296 );
+                            $PTitle296 = $post_296->post_title;
+                            $PContent296=apply_filters( 'the_content', $post_296->post_content );
+                            $dpoleIcon296 = get_post_meta( $post_296->ID, 'icon' );
+                            $output296 = $post_296->post_excerpt;
+                            $urlIMG296=get_the_post_thumbnail_url(296);
+                            $dpoleVid296 = get_post_meta( $post_296->ID, 'vid' );
+                            if ((int)$dpoleVid296[0] > 0) $style=" -inverted"; else $style="";
+                            ?>
+                            <a href="#" class="features__item<?=$style?>">
+                                <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon296[0] ?>" class="features__icon" alt="<?=$PTitle296?>">
+                                <div class="features__title"><?=$PTitle296?></div>
+                                <div class="features__text"><?=$output296?></div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-7.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?=$urlIMG296?>')"></div>
                             </a>
                         </div>
                         <div class="features__col">
