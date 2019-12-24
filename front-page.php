@@ -220,9 +220,10 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                             $output180 = $post_180->post_excerpt;
                             $urlIMG180=get_the_post_thumbnail_url(180);
                             $dpoleVid180 = get_post_meta( $post_180->ID, 'vid' );
+                            $dpoleAnkor180 = get_post_meta( $post_180->ID, 'ankor' )[0];
                             if ((int)$dpoleVid180[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="#" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor180?>" class="features__item<?=$style?>">
                                 <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon180[0] ?>" class="features__icon" alt="<?=$PTitle180?>">
                                 <div class="features__title"><?=$PTitle180?></div>
                                 <div class="features__text"><?=$output180?></div>
@@ -238,9 +239,10 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                             $output289 = $post_289->post_excerpt;
                             $urlIMG289=get_the_post_thumbnail_url(289);
                             $dpoleVid289 = get_post_meta( $post_289->ID, 'vid' );
+                            $dpoleAnkor289 = get_post_meta( $post_289->ID, 'ankor' )[0];
                             if ((int)$dpoleVid289[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="#" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor289?>" class="features__item<?=$style?>">
                                 <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon289[0] ?>" class="features__icon" alt="<?=$PTitle289?>">
                                 <div class="features__title"><?=$PTitle289?></div>
                                 <div class="features__text"><?=$output289?></div>
@@ -256,9 +258,10 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                             $output296 = $post_296->post_excerpt;
                             $urlIMG296=get_the_post_thumbnail_url(296);
                             $dpoleVid296 = get_post_meta( $post_296->ID, 'vid' );
+                            $dpoleAnkor296 = get_post_meta( $post_296->ID, 'ankor' )[0];
                             if ((int)$dpoleVid296[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="#" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor296?>" class="features__item<?=$style?>">
                                 <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon296[0] ?>" class="features__icon" alt="<?=$PTitle296?>">
                                 <div class="features__title"><?=$PTitle296?></div>
                                 <div class="features__text"><?=$output296?></div>
@@ -275,9 +278,10 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                             $output187 = $post_187->post_excerpt;
                             $urlIMG187=get_the_post_thumbnail_url(187);
                             $dpoleVid187 = get_post_meta( $post_187->ID, 'vid' );
+                            $dpoleAnkor187 = get_post_meta( $post_187->ID, 'ankor' )[0];
                             if ((int)$dpoleVid187[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="#" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor187?>" class="features__item<?=$style?>">
                                 <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon187[0] ?>" class="features__icon" alt="<?=$PTitle187?>">
                                 <div class="features__title"><?=$PTitle187?></div>
                                 <div class="features__text"><?=$output187?></div>
@@ -294,9 +298,10 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                             $output291 = $post_291->post_excerpt;
                             $urlIMG291=get_the_post_thumbnail_url(291);
                             $dpoleVid291 = get_post_meta( $post_291->ID, 'vid' );
+                            $dpoleAnkor291 = get_post_meta( $post_291->ID, 'ankor' )[0];
                             if ((int)$dpoleVid291[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="#" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor291?>" class="features__item<?=$style?>">
                                 <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon291[0] ?>" class="features__icon" alt="<?=$PTitle291?>">
                                 <div class="features__title"><?=$PTitle291?></div>
                                 <div class="features__text"><?=$output291?></div>
@@ -312,9 +317,10 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                             $output298 = $post_298->post_excerpt;
                             $urlIMG298=get_the_post_thumbnail_url(298);
                             $dpoleVid298 = get_post_meta( $post_298->ID, 'vid' );
+                            $dpoleAnkor298 = get_post_meta( $post_298->ID, 'ankor' )[0];
                             if ((int)$dpoleVid298[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="#" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor298?>" class="features__item<?=$style?>">
                                 <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon298[0] ?>" class="features__icon" alt="<?=$PTitle298?>">
                                 <div class="features__title"><?=$PTitle298?></div>
                                 <div class="features__text"><?=$output298?></div>
@@ -331,9 +337,10 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                             $output287 = $post_287->post_excerpt;
                             $urlIMG287=get_the_post_thumbnail_url(287);
                             $dpoleVid287 = get_post_meta( $post_287->ID, 'vid' );
+                            $dpoleAnkor287 = get_post_meta( $post_287->ID, 'ankor' )[0];
                             if ((int)$dpoleVid287[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="#" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor287?>" class="features__item<?=$style?>">
                                 <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon287[0] ?>" class="features__icon" alt="<?=$PTitle287?>">
                                 <div class="features__title"><?=$PTitle287?></div>
                                 <div class="features__text"><?=$output287?></div>
@@ -349,9 +356,10 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                             $output300 = $post_300->post_excerpt;
                             $urlIMG300=get_the_post_thumbnail_url(300);
                             $dpoleVid300 = get_post_meta( $post_300->ID, 'vid' );
+                            $dpoleAnkor300 = get_post_meta( $post_300->ID, 'ankor' )[0];
                             if ((int)$dpoleVid300[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="#" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor300?>" class="features__item<?=$style?>">
                                 <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon300[0] ?>" class="features__icon" alt="<?=$PTitle300?>">
                                 <div class="features__title"><?=$PTitle300?></div>
                                 <div class="features__text"><?=$output300?></div>
@@ -367,9 +375,10 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                             $output293 = $post_293->post_excerpt;
                             $urlIMG293=get_the_post_thumbnail_url(293);
                             $dpoleVid293 = get_post_meta( $post_293->ID, 'vid' );
+                            $dpoleAnkor293 = get_post_meta( $post_293->ID, 'ankor' )[0];
                             if ((int)$dpoleVid293[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="/resheniya/#shluz" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor293?>" class="features__item<?=$style?>">
                                 <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon293[0] ?>" class="features__icon" alt="<?=$PTitle293?>">
                                 <div class="features__title"><?=$PTitle293?></div>
                                 <div class="features__text"><?=$output293?></div>
