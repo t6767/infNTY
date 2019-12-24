@@ -212,15 +212,17 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                     <div class="section__background-title -red" data-parallax='{"y": 80, "smoothness": 65}'>DIGITAL BANK</div>
                     <div class="features row">
                         <div class="features__col">
-                            <a href="#" class="features__item">
-                                <?php
-                                $post_180 = get_post( 180 );
-                                $PTitle180 = $post_180->post_title;
-                                $PContent180=apply_filters( 'the_content', $post_180->post_content );
-                                $dpoleIcon180 = get_post_meta( $post_180->ID, 'icon' );
-                                $output180 = $post_180->post_excerpt;
-                                $urlIMG180=get_the_post_thumbnail_url(180);
-                                ?>
+                            <?php
+                            $post_180 = get_post( 180 );
+                            $PTitle180 = $post_180->post_title;
+                            $PContent180=apply_filters( 'the_content', $post_180->post_content );
+                            $dpoleIcon180 = get_post_meta( $post_180->ID, 'icon' );
+                            $output180 = $post_180->post_excerpt;
+                            $urlIMG180=get_the_post_thumbnail_url(180);
+                            $dpoleVid180 = get_post_meta( $post_180->ID, 'vid' );
+                            if ((int)$dpoleVid180[0] > 0) $style=" -inverted"; else $style="";
+                            ?>
+                            <a href="#" class="features__item<?=$style?>">
                                 <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon180[0] ?>" class="features__icon" alt="<?=$PTitle180?>">
                                 <div class="features__title"><?=$PTitle180?></div>
                                 <div class="features__text"><?=$output180?></div>
