@@ -213,11 +213,17 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                     <div class="features row">
                         <div class="features__col">
                             <a href="#" class="features__item">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-1.svg" class="features__icon" alt="">
-                                <div class="features__title">Интернет-банкинг</div>
-                                <div class="features__text">Для малого и среднего бизнеса, крупных корпораций, индивидуальных предпринимателей, частных клиентов</div>
+                                <?php
+                                $post_180 = get_post( 180 );
+                                $PTitle180 = $post_180->post_title;
+                                $PContent180=apply_filters( 'the_content', $post_180->post_content );
+                                $dpoleIcon180 = get_post_meta( $post_180->ID, 'icon' );
+                                ?>
+                                <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon180[0] ?>" class="features__icon" alt="<?=$PTitle180?>">
+                                <div class="features__title"><?=$PTitle180?></div>
+                                <div class="features__text"><?=the_excerpt_max_charlength(150)?></div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/features-1.jpg')"></div>
+                                <div class="features__background" style="background-image: url('<?=get_the_post_thumbnail_url()?>')"></div>
                             </a>
                             <a href="#" class="features__item">
                                 <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-4.svg" class="features__icon" alt="">
