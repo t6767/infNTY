@@ -219,12 +219,13 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                                 $PContent180=apply_filters( 'the_content', $post_180->post_content );
                                 $dpoleIcon180 = get_post_meta( $post_180->ID, 'icon' );
                                 $output180 = $post_180->post_excerpt;
+                                $urlIMG180=get_the_post_thumbnail_url(180);
                                 ?>
                                 <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon180[0] ?>" class="features__icon" alt="<?=$PTitle180?>">
                                 <div class="features__title"><?=$PTitle180?></div>
                                 <div class="features__text"><?=$output180?></div>
                                 <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?=get_the_post_thumbnail_url()?>')"></div>
+                                <div class="features__background" style="background-image: url('<?=$urlIMG180?>')"></div>
                             </a>
                             <a href="#" class="features__item">
                                 <img src="<?php bloginfo('template_url'); ?>/static/img/general/features-icon-4.svg" class="features__icon" alt="">
