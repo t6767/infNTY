@@ -69,7 +69,6 @@
                                         <a name="<?=$ankor?>"><img src="<?=$pcic ?>" alt=""></a>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="solution-b__subtitle">Решения</div>
                                         <div class="solution-b__title"><?php the_title(); ?></div>
                                         <div class="solution-b__text">
                                             <?=the_excerpt_max_charlength(500)?>
