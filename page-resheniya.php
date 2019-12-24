@@ -65,7 +65,7 @@
                             <div class="solution-b__item">
                                 <div class="row align-items-center">
                                     <div class="col-md-6 text-center<?=$st?>">
-                                        <img src="<?php bloginfo('template_url'); ?>/static/img/content/<?=$pcic ?>" alt="">
+                                        <a name="ankor"><img src="<?php bloginfo('template_url'); ?>/static/img/content/<?=$pcic ?>" alt=""></a>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="solution-b__subtitle">Решения</div>
