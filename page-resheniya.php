@@ -61,12 +61,12 @@
                             if ($i>0) { $st=" order-md-last"; $i=0; } else { $st=""; $i=1; }
                             $pic = get_post_meta( get_the_ID(), 'new' );
                             $ankor = get_post_meta( get_the_ID(), 'ankor' )[0];
-                            if ($pic[0]!='') $pcic=$pic[0]; else $pcic="1.svg";
+                            if ($pic[0]!='') $pcic=$pic[0]; else $pcic="";
                             ?>
                             <div class="solution-b__item">
                                 <div class="row align-items-center">
                                     <div class="col-md-6 text-center<?=$st?>">
-                                        <a name="<?=$ankor?>"><img src="<?php bloginfo('template_url'); ?>/static/img/content/<?=$pcic ?>" alt=""></a>
+                                        <a name="<?=$ankor?>"><img src="<?=$pcic ?>" alt=""></a>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="solution-b__subtitle">Решения</div>
