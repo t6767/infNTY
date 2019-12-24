@@ -218,8 +218,7 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                                 $PTitle180 = $post_180->post_title;
                                 $PContent180=apply_filters( 'the_content', $post_180->post_content );
                                 $dpoleIcon180 = get_post_meta( $post_180->ID, 'icon' );
-                                $post180 = get_post($post_180->ID);
-                                $output180 = the_excerpt_max_charlength(150);
+                                $output180 = $post_180->post_excerpt;
                                 ?>
                                 <img src="<?php bloginfo('template_url'); ?><?=$dpoleIcon180[0] ?>" class="features__icon" alt="<?=$PTitle180?>">
                                 <div class="features__title"><?=$PTitle180?></div>
