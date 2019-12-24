@@ -79,7 +79,7 @@
                         <?php }}  ?>
                 </div>
                         <form class="form contacts__form mb-5">
-                            <h2 class="form__title">Написать нам</h2>
+                            <h2 class="form__title">Заказать презентацию</h2>
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="control">
