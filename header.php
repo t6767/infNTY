@@ -24,7 +24,7 @@ function the_excerpt_max_charlength( $charlength ){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php wp_title(''); ?></title>
+    <title><?php wp_title(''); ?> <?php if ($_SERVER['REQUEST_URI']=="/") bloginfo('name'); ?></title>
     <meta content="<?php bloginfo('description'); ?>" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,9 +38,8 @@ function the_excerpt_max_charlength( $charlength ){
     <link href="<?php bloginfo('template_url'); ?>/static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
 
     <!--  Open Graph Tags -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="<?php wp_title(''); ?> <?php if ($_SERVER['REQUEST_URI']=="/") bloginfo('name'); ?>" />
     <meta property="og:url" content="" />
-    <meta property="og:description" content="" />
     <meta property="og:image" content="" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="500" />
@@ -48,6 +47,8 @@ function the_excerpt_max_charlength( $charlength ){
     <meta property="twitter:description" content="" />
     <link rel="image_src" href="" />
 
+    <meta property="og:description" content="<?php bloginfo('description'); ?>">
+    <meta name="description" content="<?php bloginfo('description'); ?>" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
