@@ -40,46 +40,55 @@
 						<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-1.svg" class="solution-c__icon" alt="">
 						<div class="solution-c__title">Омниканальность</div>
 						<div class="solution-c__text">Доступность продуктов и услуг через различные устройства и интерфейсы с обеспечения бесшовной и непрерывной коммуникации с клиентом</div>
+						<img src="<?php bloginfo('template_url'); ?>/static/img/general/features-1.jpg" class="solution-c__background" alt="">
 					</div>
 					<div class="solution-c__item">
 							<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-2.svg" class="solution-c__icon" alt="">
 						<div class="solution-c__title">Обслуживание всех типов клиентов</div>
 						<div class="solution-c__text">Единый интерфейс для малого и среднего бизнеса, корпораций, индивидуальных предпринимателей и частных клиентов</div>
+						<img src="<?php bloginfo('template_url'); ?>/static/img/general/features-2.jpg" class="solution-c__background" alt="">					
 					</div>
 					<div class="solution-c__item">
 							<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-3.svg" class="solution-c__icon" alt="">
 						<div class="solution-c__title">Интегрированный контент менеджмент</div>
 						<div class="solution-c__text">Встроенные инструменты для управления содержимым без привлечения разработчиков</div>
+						<img src="<?php bloginfo('template_url'); ?>/static/img/general/features-3.jpg" class="solution-c__background" alt="">				
 					</div>
 					<div class="solution-c__item">
 					<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-4.svg" class="solution-c__icon" alt="">
 						<div class="solution-c__title">Управление опытом клиента</div>
 						<div class="solution-c__text">Понимание профиля и основных потребностей клиента позволяет увеличить силу бренда и повысить уровень его лояльности</div>
+						<img src="<?php bloginfo('template_url'); ?>/static/img/general/features-4.jpg" class="solution-c__background" alt="">
 					</div>
 					<div class="solution-c__item">
 					<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-5.svg" class="solution-c__icon" alt="">
 						<div class="solution-c__title">Удобный интерфейс</div>
 						<div class="solution-c__text">Удобный, отвечающий всем современным трендам, интерфейс с возможностью кастомизации «под себя»</div>
+						<img src="<?php bloginfo('template_url'); ?>/static/img/general/features-5.jpg" class="solution-c__background" alt="">
 					</div>
 					<div class="solution-c__item">
 						<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-6.svg" class="solution-c__icon" alt="">
 						<div class="solution-c__title">Гибкость и совместимость</div>
 						<div class="solution-c__text">Комфортная и безотказная работа платформы на любом программном и аппаратном обеспечении</div>
+						<img src="<?php bloginfo('template_url'); ?>/static/img/general/features-6.jpg" class="solution-c__background" alt="">
 					</div>
 					<div class="solution-c__item">
 					<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-7.svg" class="solution-c__icon" alt="">
 						<div class="solution-c__title">Модульная архитектура</div>
 						<div class="solution-c__text">Возможность по-модульного вывода на рынок инновационных продуктов, услуг и сервисов позволит обеспечить эффективный TimeToMarket</div>
+						<img src="<?php bloginfo('template_url'); ?>/static/img/general/features-7.jpg" class="solution-c__background" alt="">
 					</div>
 					<div class="solution-c__item">
 					<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-8.svg" class="solution-c__icon" alt="">
 						<div class="solution-c__title">Технологичность</div>
 						<div class="solution-c__text">Использование современных технологий и лучших мировых практик обеспечивает высокую скорость работы при незначительной нагрузке на оборудование.</div>
+						<img src="<?php bloginfo('template_url'); ?>/static/img/general/features-8.jpg" class="solution-c__background" alt="">
 					</div>
 					<div class="solution-c__item">
 					<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-9.svg" class="solution-c__icon" alt="">
 						<div class="solution-c__title">Масштабируемость и отказоустойчивость</div>
 						<div class="solution-c__text">Стабильная работа платформы при увеличении нагрузки и росте количества клиентов</div>
+						<img src="<?php bloginfo('template_url'); ?>/static/img/general/features-9.jpg" class="solution-c__background" alt="">
 					</div>
 				</div>
 
