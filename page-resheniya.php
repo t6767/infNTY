@@ -39,23 +39,12 @@
         <?=$PContent588 ?>
                     <div class="features row">
                         <div class="features__col">
-                            <?php
-                            $post_180 = get_post( 180 );
-                            $PTitle180 = $post_180->post_title;
-                            $PContent180=apply_filters( 'the_content', $post_180->post_content );
-                            $dpoleIcon180 = get_post_meta( $post_180->ID, 'icon' );
-                            $output180 = $post_180->post_excerpt;
-                            $urlIMG180=get_the_post_thumbnail_url(180);
-                            $dpoleVid180 = get_post_meta( $post_180->ID, 'vid' );
-                            $dpoleAnkor180 = get_post_meta( $post_180->ID, 'ankor' )[0];
-                            if ((int)$dpoleVid180[0] > 0) $style=" -inverted"; else $style="";
-                            ?>
-                            <a href="/resheniya/#<?=$dpoleAnkor180?>" class="features__item -inverted">
-                                <img src="<?=$dpoleIcon180[0] ?>" class="features__icon" alt="<?=$PTitle180?>">
-                                <div class="features__title"><?=$PTitle180?></div>
-                                <div class="features__text"><?=$output180?></div>
-                                <div class="features__link">Подробнее</div>
-                                <div class="features__background" style="background-image: url('<?=$urlIMG180?>')"></div>
+                            <a class="features__item -inverted">
+                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/Group 56.svg" class="features__icon" alt="">
+                                <div class="features__title">Омниканальность</div>
+                                <div class="features__text">Доступность продуктов и услуг через различные устройства и интерфейсы с обеспечения бесшовной и непрерывной коммуникации с клиентом</div>
+                                <div class="features__link"></div>
+                                <div class="features__background" style="background-image: url('')"></div>
                             </a>
 
                             <?php
