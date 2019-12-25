@@ -30,90 +30,66 @@
                     $PContent588=apply_filters( 'the_content', $post_588->post_content );
 ?>
         <div class="page__content">
-        <div class="container">
-            <div class="page__topbar">
-                <button type="button" class="button -bordered ml-auto" data-target="#modal-1" data-toggle="modal">связаться с нами</button>
-            </div>
-            <div class="row">
-                <div class="col">
-        <?=$PContent588 ?>
-                    <div class="features row">
-                        <div class="features__col">
-                            <a class="features__item -inverted">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/Group 56.svg" class="features__icon" alt="">
-                                <div class="features__title">Омниканальность</div>
-                                <div class="features__text">Доступность продуктов и услуг через различные устройства и интерфейсы с обеспечения бесшовной и непрерывной коммуникации с клиентом</div>
-                                <div class="features__link"></div>
-                                <div class="features__background" style="background-image: url('')"></div>
-                            </a>
+			<div class="container">
+				<div class="page__topbar">
+					<button type="button" class="button -bordered ml-auto" data-target="#modal-1" data-toggle="modal">связаться с нами</button>
+				</div>
+				<?=$PContent588 ?>
+				<div class="solution-c">
+					<div class="solution-c__item">
+						<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-1.svg" class="solution-c__icon" alt="">
+						<div class="solution-c__title">Омниканальность</div>
+						<div class="solution-c__text">Доступность продуктов и услуг через различные устройства и интерфейсы с обеспечения бесшовной и непрерывной коммуникации с клиентом</div>
+					</div>
+					<div class="solution-c__item">
+							<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-2.svg" class="solution-c__icon" alt="">
+						<div class="solution-c__title">Обслуживание всех типов клиентов</div>
+						<div class="solution-c__text">Единый интерфейс для малого и среднего бизнеса, корпораций, индивидуальных предпринимателей и частных клиентов</div>
+					</div>
+					<div class="solution-c__item">
+							<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-3.svg" class="solution-c__icon" alt="">
+						<div class="solution-c__title">Интегрированный контент менеджмент</div>
+						<div class="solution-c__text">Встроенные инструменты для управления содержимым без привлечения разработчиков</div>
+					</div>
+					<div class="solution-c__item">
+					<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-4.svg" class="solution-c__icon" alt="">
+						<div class="solution-c__title">Управление опытом клиента</div>
+						<div class="solution-c__text">Понимание профиля и основных потребностей клиента позволяет увеличить силу бренда и повысить уровень его лояльности</div>
+					</div>
+					<div class="solution-c__item">
+					<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-5.svg" class="solution-c__icon" alt="">
+						<div class="solution-c__title">Удобный интерфейс</div>
+						<div class="solution-c__text">Удобный, отвечающий всем современным трендам, интерфейс с возможностью кастомизации «под себя»</div>
+					</div>
+					<div class="solution-c__item">
+						<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-6.svg" class="solution-c__icon" alt="">
+						<div class="solution-c__title">Гибкость и совместимость</div>
+						<div class="solution-c__text">Комфортная и безотказная работа платформы на любом программном и аппаратном обеспечении</div>
+					</div>
+					<div class="solution-c__item">
+					<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-7.svg" class="solution-c__icon" alt="">
+						<div class="solution-c__title">Модульная архитектура</div>
+						<div class="solution-c__text">Возможность по-модульного вывода на рынок инновационных продуктов, услуг и сервисов позволит обеспечить эффективный TimeToMarket</div>
+					</div>
+					<div class="solution-c__item">
+					<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-8.svg" class="solution-c__icon" alt="">
+						<div class="solution-c__title">Технологичность</div>
+						<div class="solution-c__text">Использование современных технологий и лучших мировых практик обеспечивает высокую скорость работы при незначительной нагрузке на оборудование.</div>
+					</div>
+					<div class="solution-c__item">
+					<img src="<?php bloginfo('template_url'); ?>/static/img/content/icon-9.svg" class="solution-c__icon" alt="">
+						<div class="solution-c__title">Масштабируемость и отказоустойчивость</div>
+						<div class="solution-c__text">Стабильная работа платформы при увеличении нагрузки и росте количества клиентов</div>
+					</div>
+				</div>
 
-                            <a class="features__item -inverted">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/Group 56.svg" class="features__icon" alt="">
-                                <div class="features__title">Омниканальность</div>
-                                <div class="features__text">Доступность продуктов и услуг через различные устройства и интерфейсы с обеспечения бесшовной и непрерывной коммуникации с клиентом</div>
-                                <div class="features__link"></div>
-                                <div class="features__background" style="background-image: url('')"></div>
-                            </a>
-
-                            <a class="features__item -inverted">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/Group 56.svg" class="features__icon" alt="">
-                                <div class="features__title">Омниканальность</div>
-                                <div class="features__text">Доступность продуктов и услуг через различные устройства и интерфейсы с обеспечения бесшовной и непрерывной коммуникации с клиентом</div>
-                                <div class="features__link"></div>
-                                <div class="features__background" style="background-image: url('')"></div>
-                            </a>
-                        </div>
-                        <div class="features__col">
-                            <a class="features__item -inverted">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/Group 56.svg" class="features__icon" alt="">
-                                <div class="features__title">Омниканальность</div>
-                                <div class="features__text">Доступность продуктов и услуг через различные устройства и интерфейсы с обеспечения бесшовной и непрерывной коммуникации с клиентом</div>
-                                <div class="features__link"></div>
-                                <div class="features__background" style="background-image: url('')"></div>
-                            </a>
-                            <a class="features__item -inverted">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/Group 56.svg" class="features__icon" alt="">
-                                <div class="features__title">Омниканальность</div>
-                                <div class="features__text">Доступность продуктов и услуг через различные устройства и интерфейсы с обеспечения бесшовной и непрерывной коммуникации с клиентом</div>
-                                <div class="features__link"></div>
-                                <div class="features__background" style="background-image: url('')"></div>
-                            </a>
-                            <a class="features__item -inverted">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/Group 56.svg" class="features__icon" alt="">
-                                <div class="features__title">Омниканальность</div>
-                                <div class="features__text">Доступность продуктов и услуг через различные устройства и интерфейсы с обеспечения бесшовной и непрерывной коммуникации с клиентом</div>
-                                <div class="features__link"></div>
-                                <div class="features__background" style="background-image: url('')"></div>
-                            </a>
-                        </div>
-                        <div class="features__col">
-                            <a class="features__item -inverted">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/Group 56.svg" class="features__icon" alt="">
-                                <div class="features__title">Омниканальность</div>
-                                <div class="features__text">Доступность продуктов и услуг через различные устройства и интерфейсы с обеспечения бесшовной и непрерывной коммуникации с клиентом</div>
-                                <div class="features__link"></div>
-                                <div class="features__background" style="background-image: url('')"></div>
-                            </a>
-
-                            <a class="features__item -inverted">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/Group 56.svg" class="features__icon" alt="">
-                                <div class="features__title">Омниканальность</div>
-                                <div class="features__text">Доступность продуктов и услуг через различные устройства и интерфейсы с обеспечения бесшовной и непрерывной коммуникации с клиентом</div>
-                                <div class="features__link"></div>
-                                <div class="features__background" style="background-image: url('')"></div>
-                            </a>
-
-                            <a class="features__item -inverted">
-                                <img src="<?php bloginfo('template_url'); ?>/static/img/general/Group 56.svg" class="features__icon" alt="">
-                                <div class="features__title">Омниканальность</div>
-                                <div class="features__text">Доступность продуктов и услуг через различные устройства и интерфейсы с обеспечения бесшовной и непрерывной коммуникации с клиентом</div>
-                                <div class="features__link"></div>
-                                <div class="features__background" style="background-image: url('')"></div>
-                            </a>
-
-                        </div>
-                    </div>
-        </div></div></div></div>
+				<div class="cta -sm mt-5">
+					<div class="cta__card" style="<?php bloginfo('template_url'); ?>/static/img/content/info-bg.jpg">
+						<div class="cta__title">Что входит в платформу Digital Bank?</div>
+					</div>
+				</div>			
+			</div>
+		</div>
         <!-- Page Content Begin -->
         <div class="page__content">
             <div class="container">

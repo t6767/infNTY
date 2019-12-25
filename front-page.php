@@ -416,18 +416,21 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                                     <div class="info-card">
                                         <div class="info-card__title"><?=$PTitle166 ?></div>
                                         <div class="info-card__text"><?=$PContent166?></div>
+                                        <div class="info-card__background" style="background-image: url('static/img/content/business-people-during-business-meeting-5LPY2LY 1.jpg')"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="info-card">
                                         <div class="info-card__title"><?=$PTitle425 ?></div>
                                         <div class="info-card__text"><?=$PContent425?></div>
+                                        <div class="info-card__background" style="background-image: url('static/img/content/happy-business-colleagues-in-modern-office-C7R6QMW 1.jpg')"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="info-card">
                                         <div class="info-card__title"><?=$PTitle423 ?></div>
                                         <div class="info-card__text"><?=$PContent423?></div>
+                                        <div class="info-card__background" style="background-image: url('static/img/content/it-consultant-working-with-servers-P9Z8P7X 1.jpg')"></div>
                                     </div>
                                 </div>
                             </div>
