@@ -50,7 +50,7 @@
                             $dpoleAnkor180 = get_post_meta( $post_180->ID, 'ankor' )[0];
                             if ((int)$dpoleVid180[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="/resheniya/#<?=$dpoleAnkor180?>" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor180?>" class="features__item -inverted">
                                 <img src="<?=$dpoleIcon180[0] ?>" class="features__icon" alt="<?=$PTitle180?>">
                                 <div class="features__title"><?=$PTitle180?></div>
                                 <div class="features__text"><?=$output180?></div>
@@ -69,7 +69,7 @@
                             $dpoleAnkor289 = get_post_meta( $post_289->ID, 'ankor' )[0];
                             if ((int)$dpoleVid289[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="/resheniya/#<?=$dpoleAnkor289?>" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor289?>" class="features__item">
                                 <img src="<?=$dpoleIcon289[0] ?>" class="features__icon" alt="<?=$PTitle289?>">
                                 <div class="features__title"><?=$PTitle289?></div>
                                 <div class="features__text"><?=$output289?></div>
@@ -88,7 +88,7 @@
                             $dpoleAnkor296 = get_post_meta( $post_296->ID, 'ankor' )[0];
                             if ((int)$dpoleVid296[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="/resheniya/#<?=$dpoleAnkor296?>" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor296?>" class="features__item -inverted">
                                 <img src="<?=$dpoleIcon296[0] ?>" class="features__icon" alt="<?=$PTitle296?>">
                                 <div class="features__title"><?=$PTitle296?></div>
                                 <div class="features__text"><?=$output296?></div>
@@ -108,7 +108,7 @@
                             $dpoleAnkor187 = get_post_meta( $post_187->ID, 'ankor' )[0];
                             if ((int)$dpoleVid187[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="/resheniya/#<?=$dpoleAnkor187?>" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor187?>" class="features__item">
                                 <img src="<?=$dpoleIcon187[0] ?>" class="features__icon" alt="<?=$PTitle187?>">
                                 <div class="features__title"><?=$PTitle187?></div>
                                 <div class="features__text"><?=$output187?></div>
@@ -128,7 +128,7 @@
                             $dpoleAnkor291 = get_post_meta( $post_291->ID, 'ankor' )[0];
                             if ((int)$dpoleVid291[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="/resheniya/#<?=$dpoleAnkor291?>" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor291?>" class="features__item -inverted">
                                 <img src="<?=$dpoleIcon291[0] ?>" class="features__icon" alt="<?=$PTitle291?>">
                                 <div class="features__title"><?=$PTitle291?></div>
                                 <div class="features__text"><?=$output291?></div>
@@ -147,7 +147,7 @@
                             $dpoleAnkor298 = get_post_meta( $post_298->ID, 'ankor' )[0];
                             if ((int)$dpoleVid298[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="/resheniya/#<?=$dpoleAnkor298?>" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor298?>" class="features__item">
                                 <img src="<?=$dpoleIcon298[0] ?>" class="features__icon" alt="<?=$PTitle298?>">
                                 <div class="features__title"><?=$PTitle298?></div>
                                 <div class="features__text"><?=$output298?></div>
@@ -167,7 +167,7 @@
                             $dpoleAnkor287 = get_post_meta( $post_287->ID, 'ankor' )[0];
                             if ((int)$dpoleVid287[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="/resheniya/#<?=$dpoleAnkor287?>" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor287?>" class="features__item -inverted">
                                 <img src="<?=$dpoleIcon287[0] ?>" class="features__icon" alt="<?=$PTitle287?>">
                                 <div class="features__title"><?=$PTitle287?></div>
                                 <div class="features__text"><?=$output287?></div>
@@ -186,7 +186,7 @@
                             $dpoleAnkor300 = get_post_meta( $post_300->ID, 'ankor' )[0];
                             if ((int)$dpoleVid300[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="/resheniya/#<?=$dpoleAnkor300?>" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor300?>" class="features__item">
                                 <img src="<?=$dpoleIcon300[0] ?>" class="features__icon" alt="<?=$PTitle300?>">
                                 <div class="features__title"><?=$PTitle300?></div>
                                 <div class="features__text"><?=$output300?></div>
@@ -205,7 +205,7 @@
                             $dpoleAnkor293 = get_post_meta( $post_293->ID, 'ankor' )[0];
                             if ((int)$dpoleVid293[0] > 0) $style=" -inverted"; else $style="";
                             ?>
-                            <a href="/resheniya/#<?=$dpoleAnkor293?>" class="features__item<?=$style?>">
+                            <a href="/resheniya/#<?=$dpoleAnkor293?>" class="features__item -inverted">
                                 <img src="<?=$dpoleIcon293[0] ?>" class="features__icon" alt="<?=$PTitle293?>">
                                 <div class="features__title"><?=$PTitle293?></div>
                                 <div class="features__text"><?=$output293?></div>
