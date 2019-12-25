@@ -194,7 +194,7 @@ $lklnk = get_post_meta( 566, 'linkedinlink' )[0];
 
                                     <div class="col-md-6 col-lg-4">
                                         <div class="vacancy">
-                                            <a href="#" class="vacancy__title"><?php the_title(); ?></a>
+                                            <a href="<?php the_permalink(); ?>" class="vacancy__title"><?php the_title(); ?></a>
                                             <div class="vacancy__content">
                                                 <div class="vacancy__text">
                                                     <p>
