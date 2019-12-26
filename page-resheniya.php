@@ -93,7 +93,7 @@
 				</div>
 
 				<div class="cta -sm mt-5">
-					<div class="cta__card" style="<?php bloginfo('template_url'); ?>/static/img/content/info-bg.jpg">
+					<div class="cta__card" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/info-bg.jpg"')>
 						<div class="cta__title">Что входит в платформу Digital Bank?</div>
 					</div>
 				</div>			
