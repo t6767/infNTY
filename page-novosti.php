@@ -36,8 +36,6 @@
                                 'post_type' => 'post',
                                 'post_status' => 'publish',
                                 'cat' => [17],  //1 7 8
-                                'orderby' => 'date',
-                                'order' => 'DESC',
                             )
                         );
                         $myquery = new WP_Query($queryEbta);
