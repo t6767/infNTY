@@ -54,7 +54,8 @@ $the_query = new WP_Query( $args );
                                 $glush=1;
                                 $categories = get_the_category( get_the_ID() );
                                 foreach ($categories as $ct) {
-                                    if ($ct->name=="Новости") $glush=0;
+                                    echo $ct->id;
+                                    if ($ct->id=="Новости") $glush=0;
                                 }
                                 if ($glush>0) {
                                     ?>
