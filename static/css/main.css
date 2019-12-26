@@ -21692,7 +21692,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 .news__img {
   display: block;
   width: 100%;
-  min-height: 200px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center 80%;
@@ -22879,6 +22879,22 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 
 .cta.-sm .cta__card {
   min-height: 145px;
+}
+
+.cta.-sm .cta__title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin-left: 30px;
+  margin-left: 1.875rem;
+}
+
+@media (max-width: 767.98px) {
+  .cta.-sm .cta__title {
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin-left: 16px;
+    margin-left: 1rem;
+  }
 }
 
 /*
