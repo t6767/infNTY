@@ -48,7 +48,7 @@ $the_query = new WP_Query( $args );
                         if ( $the_query->have_posts() ) {
                             $finds=$the_query->found_posts;
                             ?>
-                            <h5>Результаты поиска <?=$finds?></h5>
+                            <h5>Результаты поиска <span id="mx"></span><?=$finds?></h5>
                     <?php
                             while ( $the_query->have_posts() ) {
                                 $the_query->the_post();
@@ -77,7 +77,10 @@ $the_query = new WP_Query( $args );
                                     </div>
                                     <?php
                                 }
-                            }} else {
+                            } ?>
+                            <script>document.getElementById('mx').innerText="<?=$finds?>";</script>
+                            <?php
+                        } else {
                             ?>
                             <h5>По вашему запросу ничего не найдено</h5>
                             <?php
