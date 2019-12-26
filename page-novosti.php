@@ -249,8 +249,9 @@
                                                 </div>
                                                 <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> /
                                                 <?php
-                                                $all_categories = get_categories('fields=names');
-                                                echo implode(', ', $all_categories); ?>
+                                                $categories = get_the_category( get_the_ID() );
+                                                var_dump( $categories );
+                                                echo implode(', ', $categories); ?>
                                             </div>
                                         </div>
                                     </div>
