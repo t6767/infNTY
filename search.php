@@ -46,8 +46,9 @@ $the_query = new WP_Query( $args );
                     </form>
                     <?php
                         if ( $the_query->have_posts() ) {
+                            $finds=$the_query->found_posts;
                             ?>
-                            <h5>Результаты поиска <?=$the_query->found_posts?></h5>
+                            <h5>Результаты поиска <?=$finds?></h5>
                     <?php
                             while ( $the_query->have_posts() ) {
                                 $the_query->the_post();
@@ -56,13 +57,13 @@ $the_query = new WP_Query( $args );
                                 foreach ($categories as $ct) {
                                     switch ($ct->term_id)
                                     {
-                                        case 8: $glush=0; break;
-                                        case 9: $glush=0; break;
-                                        case 22: $glush=0; break;
-                                        case 23: $glush=0; break;
-                                        case 24: $glush=0; break;
-                                        case 25: $glush=0; break;
-                                        case 26: $glush=0; break;
+                                        case 8: $glush=0; $finds--; break;
+                                        case 9: $glush=0; $finds--; break;
+                                        case 22: $glush=0; $finds--; break;
+                                        case 23: $glush=0; $finds--; break;
+                                        case 24: $glush=0; $finds--; break;
+                                        case 25: $glush=0; $finds--; break;
+                                        case 26: $glush=0; $finds--; break;
                                     }
                                 }
                                 if ($glush>0) {
