@@ -46,7 +46,7 @@
                         */
                         $count_posts = wp_count_posts('novosti'); //указываем созданный вами тип записи - services
                         $published_posts = $count_posts->publish; //количество только опубликованных записей
-                        echo $published_posts; //выводим полученное количество
+                        echo $published_posts."tttttttttttttttttttt"; //выводим полученное количество
                         //$kolichestvo_rubrik = wp_count_terms( 'novosti' ); // присвоим значение переменной, у меня допустим это число 18
                         //echo $kolichestvo_rubrik."tttttttttttttttt";
                         ?>
