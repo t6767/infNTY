@@ -38,7 +38,7 @@ $the_query = new WP_Query( $args );
                         <div class="control mb-0">
                             <input type="search" class="control__input search-results__input" name="s" placeholder="Найти" value="<?=$s?>">
                         </div>
-                        <input type="hidden" name="category_name" value="События" />
+                        <input type="hidden" name="tag" value="qr" />
                         <button type="submit" class="button -bordered search-results__button" value="Search">Искать</button>
                     </form>
                     <?php
