@@ -251,6 +251,9 @@
                                                 <?php
                                                 $categories = get_the_category( get_the_ID() );
                                                 var_dump( $categories );
+                                                foreach ($categories as $ct) {
+                                                    echo $ct->name;
+                                                }
                                                 ?>
                                             </div>
                                         </div>
