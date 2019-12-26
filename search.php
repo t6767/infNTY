@@ -11,7 +11,7 @@ $the_query = new WP_Query( $args );
     <div class="page">
 
         <!-- Page Header Begin -->
-        <div class="page__header" style="background-image: url('static/img/content/header-bg.jpg')">
+        <div class="page__header" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/header-bg.jpg')">
             <div class="container">
                 <div class="page__header-title typed-effect">
                     <div id="js-typed-strings">
