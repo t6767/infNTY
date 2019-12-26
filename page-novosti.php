@@ -247,7 +247,7 @@
                                                 <div class="news__text">
                                                     <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
                                                 </div>
-                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / 11<?=get_the_category(', '); ?>
+                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / <?php foreach (get_the_category(', ') as $ttt) echo $ttt; ?>
                                             </div>
                                         </div>
                                     </div>
