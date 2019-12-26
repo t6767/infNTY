@@ -30,11 +30,6 @@
                     </li>
                     <li class="breadcrumbs__item">
                         <?php the_title(); ?>
-                        <?php
-                        $category = get_category(17);
-                        $count = $category->category_count;
-                        echo $count."eee";
-                        ?>
                     </li>
                 </ul>
             </div>
@@ -111,7 +106,13 @@
                             }
                             ?>
                         </div>
-                        <div class="text-center mt-5" id="ebat1">
+                        <?php
+                        $category = get_category(17);
+                        $count = $category->category_count;
+                        $stvis="";
+                        if ($count<5) $stvis="displey: none";
+                        ?>
+                        <div class="text-center mt-5" id="ebat1" style="<?=$stvis?>">
                             <a href="javascript:void(0);" onclick="getAjaxViebu(10, '17', ids, '#pizdez1', 'ebat1')">Показать еще</a>
                         </div>
                     </div>
