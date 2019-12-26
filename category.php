@@ -81,7 +81,7 @@
                         <?php
                         $category = get_category($category_id);
                         $count = $category->category_count;
-                        $stvis="$count";
+                        $stvis="";
                         if ($count<5) $stvis="display: none";
                         ?>
                         <div class="text-center mt-5" id="bider" style="<?=$stvis?>">
