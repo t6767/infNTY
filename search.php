@@ -38,10 +38,7 @@ $the_query = new WP_Query( $args );
                         <div class="control mb-0">
                             <input type="search" class="control__input search-results__input" name="s" placeholder="Найти" value="<?=$s?>">
                         </div>
-                        <input type="hidden" name="post_type[]" value="book" />
-                        <input type="hidden" name="post_type[]" value="magazine" />
-                        <input type="hidden" name="post_type[]" value="ebook" />
-                        <input type="hidden" name="post_type[]" value="pdf" />
+                        <input type="hidden" name="category_name" value="События" />
                         <button type="submit" class="button -bordered search-results__button" value="Search">Искать</button>
                     </form>
                     <?php
