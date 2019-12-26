@@ -251,7 +251,7 @@
                                                 <?php
                                                 $categories = get_the_category( get_the_ID() );
                                                 var_dump( $categories );
-                                                echo implode(', ', $categories); ?>
+                                                ?>
                                             </div>
                                         </div>
                                     </div>
