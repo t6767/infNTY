@@ -59,6 +59,7 @@ $the_query = new WP_Query( $args );
                                     {
                                         case 8: $glush=0; break;
                                         case 17: $glush=0; break;
+                                        case 7: $glush=0; break;
                                     }
                                 }
                                 if ($glush>0) {
