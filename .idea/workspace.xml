@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2504e9bb-1d3f-497a-8647-f16f282eb8dc" name="Default Changelist" comment="Поменял блок УСЛУГИ на главной, изменил вид решении">
-      <change beforePath="$PROJECT_DIR$/front-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,12 +24,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="130" />
-    <option name="width" value="1440" />
-    <option name="height" value="780" />
   </component>
   <component name="ProjectId" id="1UY7j1epNInHbEiJeMf0Ju2PdTP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -88,7 +83,7 @@
       <workItem from="1577272182803" duration="1069000" />
       <workItem from="1577279936574" duration="1146000" />
       <workItem from="1577301493129" duration="1399000" />
-      <workItem from="1577331961006" duration="89000" />
+      <workItem from="1577331961006" duration="821000" />
     </task>
     <task id="LOCAL-00001" summary="Заменил лого в футере, переделал классы на странице РЕШЕНИЯ">
       <created>1576612224584</created>
