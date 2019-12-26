@@ -31,18 +31,9 @@
                     <li class="breadcrumbs__item">
                         <?php the_title(); ?>
                         <?php
-                        $queryEbta = new WP_Query(
-                            array(
-                                'post_type' => 'post',
-                                'post_status' => 'publish',
-                                'cat' => [17],  //1 7 8
-                                'posts_per_page' => 999999,
-                            )
-                        );
-                        $myquery = new WP_Query($queryEbta);
-                        echo $myquery->post_count."xxx";
-                        //$kolichestvo_rubrik = wp_count_terms( 'novosti' ); // присвоим значение переменной, у меня допустим это число 18
-                        //echo $kolichestvo_rubrik."tttttttttttttttt";
+                        $category = get_category(17);
+                        $count = $category->category_count;
+                        echo $count."eee";
                         ?>
                     </li>
                 </ul>
