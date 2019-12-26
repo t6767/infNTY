@@ -54,6 +54,7 @@ $the_query = new WP_Query( $args );
                                 $categories = get_the_category( get_the_ID() );
                                 foreach ($categories as $ct) {
                                     echo $ct->name;
+                                    if ($ct->name=="Новости") continue;
                                 }
                                 ?>
                                 <div class="search-results__item">
