@@ -48,7 +48,7 @@ $the_query = new WP_Query( $args );
                         if ( $the_query->have_posts() ) {
                             $finds=$the_query->found_posts;
                             ?>
-                            <h5>Результаты поиска <span id="mx"></span><?=$finds?></h5>
+                            <h5>Результаты поиска <span id="mx"></span></h5>
                     <?php
                             while ( $the_query->have_posts() ) {
                                 $the_query->the_post();
