@@ -247,8 +247,10 @@
                                                 <div class="news__text">
                                                     <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
                                                 </div>
-                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / <?php foreach( $categories as $cat ){
-                                                echo $cat->name; } ?>
+                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> /
+                                                <?php
+                                                $all_categories = get_categories('fields=names');
+                                                echo implode(', ', $all_categories); ?>
                                             </div>
                                         </div>
                                     </div>
