@@ -51,19 +51,23 @@ $the_query = new WP_Query( $args );
                     <?php
                             while ( $the_query->have_posts() ) {
                                 $the_query->the_post();
+                                $glush=1;
                                 $categories = get_the_category( get_the_ID() );
                                 foreach ($categories as $ct) {
                                     echo $ct->name;
-                                    if ($ct->name=="Новости") continue;
+                                    if ($ct->name=="Новости") $glush=0;
                                 }
-                                ?>
-                                <div class="search-results__item">
-                                    <a href="<?php the_permalink(); ?>" class="search-results__title"><?php the_title(); ?></a>
-                                    <p><?=the_excerpt()?></p>
-                                    <p class="mb-2">Дата: <?php echo get_the_date("d.m.Y"); ?></p>
-                                    </p>
-                                </div>
-                                <?php
+                                if ($glush>0) {
+                                    ?>
+                                    <div class="search-results__item">
+                                        <a href="<?php the_permalink(); ?>"
+                                           class="search-results__title"><?php the_title(); ?></a>
+                                        <p><?= the_excerpt() ?></p>
+                                        <p class="mb-2">Дата: <?php echo get_the_date("d.m.Y"); ?></p>
+                                        </p>
+                                    </div>
+                                    <?php
+                                }
                             }} else {
                             ?>
                             <h5>По вашему запросу ничего не найдено</h5>
