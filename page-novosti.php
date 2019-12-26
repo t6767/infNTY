@@ -97,7 +97,17 @@
                                                 <div class="news__text">
                                                     <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
                                                 </div>
-                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / <?php the_category(', '); ?>
+                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> /
+                                                <?php
+                                                $categories = get_the_category( get_the_ID() );
+                                                $i=1;
+                                                foreach ($categories as $ct) {
+                                                    $hash=", ";
+                                                    if($i==1) $hash="";
+                                                    echo $hash.$ct->name;
+                                                    $i++;
+                                                }
+                                                ?>
                                             </div>
                                         </div>
                                     </div>
@@ -147,7 +157,17 @@
                                                 <div class="news__text">
                                                     <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
                                                 </div>
-                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / <?php the_category(', '); ?>
+                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> /
+                                                <?php
+                                                $categories = get_the_category( get_the_ID() );
+                                                $i=1;
+                                                foreach ($categories as $ct) {
+                                                    $hash=", ";
+                                                    if($i==1) $hash="";
+                                                    echo $hash.$ct->name;
+                                                    $i++;
+                                                }
+                                                ?>
                                             </div>
                                         </div>
                                     </div>
@@ -197,7 +217,17 @@
                                                 <div class="news__text">
                                                     <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
                                                 </div>
-                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / <?php the_category(', '); ?>
+                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> /
+                                                <?php
+                                                $categories = get_the_category( get_the_ID() );
+                                                $i=1;
+                                                foreach ($categories as $ct) {
+                                                    $hash=", ";
+                                                    if($i==1) $hash="";
+                                                    echo $hash.$ct->name;
+                                                    $i++;
+                                                }
+                                                ?>
                                             </div>
                                         </div>
                                     </div>
