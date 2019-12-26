@@ -51,6 +51,10 @@ $the_query = new WP_Query( $args );
                     <?php
                             while ( $the_query->have_posts() ) {
                                 $the_query->the_post();
+                                $categories = get_the_category( get_the_ID() );
+                                foreach ($categories as $ct) {
+                                    echo $ct->name;
+                                }
                                 ?>
                                 <div class="search-results__item">
                                     <a href="<?php the_permalink(); ?>" class="search-results__title"><?php the_title(); ?></a>
