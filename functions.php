@@ -63,7 +63,7 @@ function advanced_search_query($query) {
 
         // tag search
         if (isset($_GET['tag'])) {
-            $query->set('tag_slug__and', 'tag');
+            $query->set('tag_slug__or', 'tag');
         }
         return $query;
     }
