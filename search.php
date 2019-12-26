@@ -78,7 +78,7 @@ $the_query = new WP_Query( $args );
                                     <?php
                                 }
                             } ?>
-                            <script>document.getElementById('mx').innerText="<?=$finds?>";</script>
+                            <script>document.getElementById('mx').innerText="<?php if ($finds>0) echo $finds; else echo 0; ?>";</script>
                             <?php
                         } else {
                             ?>
