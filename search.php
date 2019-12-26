@@ -55,7 +55,11 @@ $the_query = new WP_Query( $args );
                                 $categories = get_the_category( get_the_ID() );
                                 foreach ($categories as $ct) {
                                     echo $ct->term_id;
-                                    if ($ct->term_id==17) $glush=0;
+                                    switch ($ct->term_id)
+                                    {
+                                        case 8: $glush=0; break;
+                                        case 17: $glush=0; break;
+                                    }
                                 }
                                 if ($glush>0) {
                                     ?>
