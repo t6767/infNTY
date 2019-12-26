@@ -20,7 +20,7 @@ get_header();
                         <a href="/" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a href="/novosti/" class="breadcrumbs__link">Новости</a>
+                        <a href="/novosti/" class="breadcrumbs__link">ПРЕСС-ЦЕНТР</a>
                     </li>
                     <li class="breadcrumbs__item">
                         <?=$wp_query->post->post_title ?>

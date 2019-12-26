@@ -38,29 +38,46 @@ $the_query = new WP_Query( $args );
                         <div class="control mb-0">
                             <input type="search" class="control__input search-results__input" name="s" placeholder="Найти" value="<?=$s?>">
                         </div>
-                        <input type="hidden" name="post_type[]" value="book" />
-                        <input type="hidden" name="post_type[]" value="magazine" />
-                        <input type="hidden" name="post_type[]" value="ebook" />
-                        <input type="hidden" name="post_type[]" value="pdf" />
+                        <input type="hidden" name="tag" value="qr" />
                         <button type="submit" class="button -bordered search-results__button" value="Search">Искать</button>
                     </form>
                     <?php
                         if ( $the_query->have_posts() ) {
+                            $finds=$the_query->found_posts;
                             ?>
-                            <h5>Результаты поиска <?=$the_query->found_posts?></h5>
+                            <h5>Результаты поиска <span id="mx"></span></h5>
                     <?php
                             while ( $the_query->have_posts() ) {
                                 $the_query->the_post();
-                                ?>
-                                <div class="search-results__item">
-                                    <a href="<?php the_permalink(); ?>" class="search-results__title"><?php the_title(); ?></a>
-                                    <p><?=the_excerpt()?></p>
-                                    <p class="mb-2">Дата: <?php echo get_the_date("d.m.Y"); ?></p>
-                                    <p>Путь: <a style="color:#1a73e8;" href="/">Главная</a> / <span class="ttt"><?php the_category(', '); ?></span>
-                                    </p>
-                                </div>
-                                <?php
-                            }} else {
+                                $glush=1;
+                                $categories = get_the_category( get_the_ID() );
+                                foreach ($categories as $ct) {
+                                    switch ($ct->term_id)
+                                    {
+                                        case 8: $glush=0; $finds--; break;
+                                        case 9: $glush=0; $finds--; break;
+                                        case 22: $glush=0; $finds--; break;
+                                        case 23: $glush=0; $finds--; break;
+                                        case 24: $glush=0; $finds--; break;
+                                        case 25: $glush=0; $finds--; break;
+                                        case 26: $glush=0; $finds--; break;
+                                    }
+                                }
+                                if ($glush>0) {
+                                    ?>
+                                    <div class="search-results__item">
+                                        <a href="<?php the_permalink(); ?>"
+                                           class="search-results__title"><?php the_title(); ?></a>
+                                        <p><?= the_excerpt() ?></p>
+                                        <p class="mb-2">Дата: <?php echo get_the_date("d.m.Y"); ?></p>
+                                        </p>
+                                    </div>
+                                    <?php
+                                }
+                            } ?>
+                            <script>document.getElementById('mx').innerText="<?php if ($finds>0) echo $finds; else echo 0; ?>";</script>
+                            <?php
+                        } else {
                             ?>
                             <h5>По вашему запросу ничего не найдено</h5>
                             <?php

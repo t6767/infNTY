@@ -92,11 +92,12 @@
 					</div>
 				</div>
 
-				<div class="cta -sm mt-5">
-					<div class="cta__card" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/info-bg.jpg"')>
-						<div class="cta__title">Что входит в платформу Digital Bank?</div>
-					</div>
-				</div>			
+            <div class="cta -sm mt-5">
+                <div class="cta__card" style="background-image: url('<?php bloginfo('template_url'); ?>/static/img/content/info-bg.jpg')">
+                    <img src="<?php bloginfo('template_url'); ?>/static/img/general/ic-cta.svg" alt="">
+                    <div class="cta__title">Что входит в платформу Digital Bank?</div>
+                </div>
+            </div>
 			</div>
 		</div>
         <!-- Page Content Begin -->

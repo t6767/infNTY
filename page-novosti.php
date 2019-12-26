@@ -30,10 +30,6 @@
                     </li>
                     <li class="breadcrumbs__item">
                         <?php the_title(); ?>
-                        <?php
-                        //$kolichestvo_rubrik = wp_count_terms( 'novosti' ); // присвоим значение переменной, у меня допустим это число 18
-                        //echo $kolichestvo_rubrik."tttttttttttttttt";
-                        ?>
                     </li>
                 </ul>
             </div>
@@ -101,7 +97,17 @@
                                                 <div class="news__text">
                                                     <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
                                                 </div>
-                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / <?php the_category(', '); ?>
+                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> /
+                                                <?php
+                                                $categories = get_the_category( get_the_ID() );
+                                                $i=1;
+                                                foreach ($categories as $ct) {
+                                                    $hash=", ";
+                                                    if($i==1) $hash="";
+                                                    echo $hash.$ct->name;
+                                                    $i++;
+                                                }
+                                                ?>
                                             </div>
                                         </div>
                                     </div>
@@ -110,7 +116,13 @@
                             }
                             ?>
                         </div>
-                        <div class="text-center mt-5" id="ebat1">
+                        <?php
+                        $category = get_category(17);
+                        $count = $category->category_count;
+                        $stvis="";
+                        if ($count<5) $stvis="display: none";
+                        ?>
+                        <div class="text-center mt-5" id="ebat1" style="<?=$stvis?>">
                             <a href="javascript:void(0);" onclick="getAjaxViebu(10, '17', ids, '#pizdez1', 'ebat1')">Показать еще</a>
                         </div>
                     </div>
@@ -145,7 +157,17 @@
                                                 <div class="news__text">
                                                     <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
                                                 </div>
-                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / <?php the_category(', '); ?>
+                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> /
+                                                <?php
+                                                $categories = get_the_category( get_the_ID() );
+                                                $i=1;
+                                                foreach ($categories as $ct) {
+                                                    $hash=", ";
+                                                    if($i==1) $hash="";
+                                                    echo $hash.$ct->name;
+                                                    $i++;
+                                                }
+                                                ?>
                                             </div>
                                         </div>
                                     </div>
@@ -154,7 +176,13 @@
                             }
                             ?>
                         </div>
-                        <div class="text-center mt-5" id="ebat2">
+                        <?php
+                        $category = get_category(7);
+                        $count = $category->category_count;
+                        $stvis="";
+                        if ($count<5) $stvis="display: none";
+                        ?>
+                        <div class="text-center mt-5" id="ebat2" style="<?=$stvis?>">
                             <a href="javascript:void(0);" onclick="getAjaxViebu(11, '7', ids2, '#pizdez2', 'ebat2')">Показать еще</a>
                         </div>
                     </div>
@@ -189,7 +217,17 @@
                                                 <div class="news__text">
                                                     <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
                                                 </div>
-                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / <?php the_category(', '); ?>
+                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> /
+                                                <?php
+                                                $categories = get_the_category( get_the_ID() );
+                                                $i=1;
+                                                foreach ($categories as $ct) {
+                                                    $hash=", ";
+                                                    if($i==1) $hash="";
+                                                    echo $hash.$ct->name;
+                                                    $i++;
+                                                }
+                                                ?>
                                             </div>
                                         </div>
                                     </div>
@@ -198,7 +236,13 @@
                             }
                             ?>
                         </div>
-                        <div class="text-center mt-5" id="ebat3">
+                        <?php
+                        $category = get_category(18);
+                        $count = $category->category_count;
+                        $stvis="";
+                        if ($count<5) $stvis="display: none";
+                        ?>
+                        <div class="text-center mt-5" id="ebat3" style="<?=$stvis?>">
                             <a href="javascript:void(0);" onclick="getAjaxViebu(12, '18', ids3, '#pizdez3', 'ebat3')">Показать еще</a>
                         </div>
                     </div>
@@ -233,7 +277,17 @@
                                                 <div class="news__text">
                                                     <?=new_excerpt_more(the_excerpt_max_charlength(150))?>
                                                 </div>
-                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> / <?php the_category(', '); ?>
+                                                <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> /
+                                                <?php
+                                                $categories = get_the_category( get_the_ID() );
+                                                $i=1;
+                                                foreach ($categories as $ct) {
+                                                    $hash=", ";
+                                                    if($i==1) $hash="";
+                                                    echo $hash.$ct->name;
+                                                    $i++;
+                                                }
+                                                ?>
                                             </div>
                                         </div>
                                     </div>
@@ -242,7 +296,13 @@
                             }
                             ?>
                         </div>
-                        <div class="text-center mt-5" id="ebat4">
+                        <?php
+                        $category = get_category(19);
+                        $count = $category->category_count;
+                        $stvis="";
+                        if ($count<5) $stvis="display: none";
+                        ?>
+                        <div class="text-center mt-5" id="ebat4" style="<?=$stvis?>">
                             <a href="javascript:void(0);" onclick="getAjaxViebu(13, '19', ids4, '#pizdez4', 'ebat4')">Показать еще</a>
                         </div>
                     </div>

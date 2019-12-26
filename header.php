@@ -136,10 +136,7 @@ $lklnk = get_post_meta( 566, 'linkedinlink' )[0];
         <div class="menu__inner">
             <form class="menu__search" id="searchform" method="get" action="<?php echo home_url('/'); ?>">
                 <input type="search" class="menu__search-input" name="s" value="<?php the_search_query(); ?>">
-                <input type="hidden" name="post_type[]" value="book" />
-                <input type="hidden" name="post_type[]" value="magazine" />
-                <input type="hidden" name="post_type[]" value="ebook" />
-                <input type="hidden" name="post_type[]" value="pdf" />
+                <input type="hidden" name="tag" value="qr" />
                 <button type="submit" class="menu__search-button" value="Search">Искать</button>
             </form>
             <?php

@@ -78,7 +78,13 @@
                             }
                             ?>
                         </div>
-                        <div class="text-center mt-5" id="bider">
+                        <?php
+                        $category = get_category($category_id);
+                        $count = $category->category_count;
+                        $stvis="";
+                        if ($count<5) $stvis="display: none";
+                        ?>
+                        <div class="text-center mt-5" id="bider" style="<?=$stvis?>">
                             <a href="javascript:void(0);" onclick="getAjaxXXX(10, '<?=$category_id?>', ids)">Посмотреть ещё</a>
                         </div>
                     </section>
