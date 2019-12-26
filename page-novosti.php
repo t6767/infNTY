@@ -250,9 +250,12 @@
                                                 <a href="<?php the_permalink(); ?>" class="news__date"><?=$date ?></a> /
                                                 <?php
                                                 $categories = get_the_category( get_the_ID() );
-                                                var_dump( $categories );
+                                                $i=1;
                                                 foreach ($categories as $ct) {
-                                                    echo $ct->name;
+                                                    $hash=", ";
+                                                    if($i==1) $hash="";
+                                                    echo $hash.$ct->name;
+                                                    $i++;
                                                 }
                                                 ?>
                                             </div>
