@@ -32,7 +32,7 @@
                         <?php the_title(); ?>
                         <?php
                         $kolichestvo_rubrik = wp_count_terms( 'novosti' ); // присвоим значение переменной, у меня допустим это число 18
-                        echo $kolichestvo_rubrik;
+                        echo $kolichestvo_rubrik."tttttttttttttttt";
                         ?>
                     </li>
                 </ul>
