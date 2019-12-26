@@ -23557,7 +23557,6 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
       -ms-flex: 0 0 33.3333%;
           flex: 0 0 33.3333%;
   max-width: 33.3333%;
-  height: 100%;
   text-align: center;
   padding: 30px;
   padding: 1.875rem;
