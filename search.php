@@ -58,8 +58,12 @@ $the_query = new WP_Query( $args );
                                     switch ($ct->term_id)
                                     {
                                         case 8: $glush=0; break;
-                                        case 17: $glush=0; break;
-                                        case 7: $glush=0; break;
+                                        case 9: $glush=0; break;
+                                        case 22: $glush=0; break;
+                                        case 23: $glush=0; break;
+                                        case 24: $glush=0; break;
+                                        case 25: $glush=0; break;
+                                        case 26: $glush=0; break;
                                     }
                                 }
                                 if ($glush>0) {
