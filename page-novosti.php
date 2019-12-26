@@ -31,6 +31,22 @@
                     <li class="breadcrumbs__item">
                         <?php the_title(); ?>
                         <?php
+                        /*
+                        $queryEbta = new WP_Query(
+                            array(
+                                'post_type' => 'post',
+                                'post_status' => 'publish',
+                                'posts_per_page' => 4,
+                                'cat' => [17],  //1 7 8
+                                'orderby' => 'date',
+                                'order' => 'DESC',
+                            )
+                        );
+                        $myquery = new WP_Query($queryEbta);
+                        */
+                        $count_posts = wp_count_posts('novosti'); //указываем созданный вами тип записи - services
+                        $published_posts = $count_posts->publish; //количество только опубликованных записей
+                        echo $published_posts; //выводим полученное количество
                         //$kolichestvo_rubrik = wp_count_terms( 'novosti' ); // присвоим значение переменной, у меня допустим это число 18
                         //echo $kolichestvo_rubrik."tttttttttttttttt";
                         ?>
