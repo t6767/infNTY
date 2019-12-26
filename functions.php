@@ -57,3 +57,16 @@ remove_action( 'wp_head', 'start_post_rel_link', 10, 0 );
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );
+function advanced_search_query($query) {
+
+    if($query->is_search()) {
+
+        // tag search
+        if (isset($_GET['tag'])) {
+            $query->set('tag_slug__and', 'tag');
+        }
+        return $query;
+    }
+
+}
+add_action('pre_get_posts', 'advanced_search_query', 1000);
