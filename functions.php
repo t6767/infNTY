@@ -57,3 +57,14 @@ remove_action( 'wp_head', 'start_post_rel_link', 10, 0 );
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );
+add_action( 'pre_get_posts', function( $query ) {
+
+    // Check that it is the query we want to change: front-end search query
+    if( $query->is_main_query() && ! is_admin() && $query->is_search() ) {
+
+        // Change the query parameters
+        $query->set( 'posts_per_page', 3 );
+
+    }
+
+} );
