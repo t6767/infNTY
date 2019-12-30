@@ -43,8 +43,9 @@ $the_query = new WP_Query( $args );
                     <?php
                         if ( $the_query->have_posts() ) {
                             $finds=$the_query->found_posts;
+                            $xblya=0;
                             ?>
-                            <h5>Результаты поиска <?=$finds?><!--<span id="mx"></span>--></h5>
+                            <h5>Результаты поиска <span id="mx"></span></h5>
                     <?php
                             while ( $the_query->have_posts() ) {
                                 $the_query->the_post();
@@ -53,13 +54,13 @@ $the_query = new WP_Query( $args );
                                 foreach ($categories as $ct) {
                                     switch ($ct->term_id)
                                     {
-                                        case 8: $glush=0; $finds--; break;
-                                        case 9: $glush=0; $finds--; break;
-                                        case 22: $glush=0; $finds--; break;
-                                        case 23: $glush=0; $finds--; break;
-                                        case 24: $glush=0; $finds--; break;
-                                        case 25: $glush=0; $finds--; break;
-                                        case 26: $glush=0; $finds--; break;
+                                        case 8: $glush=0; $xblya++; break;
+                                        case 9: $glush=0; $xblya++; break;
+                                        case 22: $glush=0; $xblya++; break;
+                                        case 23: $glush=0; $xblya++; break;
+                                        case 24: $glush=0; $xblya++; break;
+                                        case 25: $glush=0; $xblya++; break;
+                                        case 26: $glush=0; $xblya++; break;
                                     }
                                 }
                                 if ($glush>0) {
@@ -74,7 +75,7 @@ $the_query = new WP_Query( $args );
                                     <?php
                                 }
                             } ?>
-                            <script>document.getElementById('mx').innerText="<?php if ($finds>0) echo $finds; else echo 0; ?>";</script>
+                            <script>document.getElementById('mx').innerText="<?php if ($xblya>0) echo $finds-$xblya; else echo $finds; ?>";</script>
                             <?php
                         } else {
                             ?>
