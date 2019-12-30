@@ -177,6 +177,13 @@ $lklnk = get_post_meta( 566, 'linkedinlink' )[0];
 
 </noindex>
 <!--/. Modals End -->
+<script src="https://www.google.com/recaptcha/api.js?render=6Lc06soUAAAAALuCAIbbyRYLsHpZar5PI5NMbQOO"></script>
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6Lc06soUAAAAALuCAIbbyRYLsHpZar5PI5NMbQOO', {action: 'homepage'}).then(function(token) {
+        });
+    });
+</script>
 
 <!-- Main scripts. You can replace it, but I recommend you to leave it here -->
 <script>
@@ -201,7 +208,24 @@ $lklnk = get_post_meta( 566, 'linkedinlink' )[0];
 /** конец Использование патернов для контактных форм**/
 
     function getAjax1(operation, name, phone, solution) {
-        $.ajax({
+    grecaptcha.ready(function() {
+        // do request for recaptcha token
+        // response is promise with passed token
+        grecaptcha.execute('6Lc06soUAAAAALuCAIbbyRYLsHpZar5PI5NMbQOO', {action: 'create_comment'}).then(function(token) {
+            // add token to form
+            $('#comment_form').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+            $.post("/ajax.php",{operation: operation, name: name, solution: solution, phone:phone, token: token}, function(result) {
+                if(result.success) {
+                    console.log(result);
+                } else {
+                    alert('You are spammer ! Get the @$%K out.');
+                }
+            });
+        });
+    });
+
+
+    $.ajax({
             type:'POST',
             url:'/ajax.php',
             data:{
@@ -221,44 +245,39 @@ $lklnk = get_post_meta( 566, 'linkedinlink' )[0];
     }
 
     function getAjaxModal1(operation, name, company, phone, email) {
-        $.ajax({
-            type:'POST',
-            url:'/ajax.php',
-            data:{
-                'operation':operation,
-                'name': name,
-                'company': company,
-                'phone': phone,
-                'email': email
-            },
-            success:function(html){
-                $('#ajax').html(html);
-            },
-            error:function(html){
-                $('body').css('cursor','default');
-                alert('Ошибка подключения!');
-            },
+        grecaptcha.ready(function() {
+            // do request for recaptcha token
+            // response is promise with passed token
+            grecaptcha.execute('6Lc06soUAAAAALuCAIbbyRYLsHpZar5PI5NMbQOO', {action: 'create_comment'}).then(function(token) {
+                // add token to form
+                $('#comment_form').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+                $.post("/ajax.php",{operation: operation, name: name, company: company, phone:phone, email: email , token: token}, function(result) {
+                    if(result.success) {
+                        console.log(result);
+                    } else {
+                        alert('You are spammer ! Get the @$%K out.');
+                    }
+                });
+            });
         });
     }
 
+
     function getAjaxContactForm(operation, name, message, phone, email) {
-        $.ajax({
-            type:'POST',
-            url:'/ajax.php',
-            data:{
-                'operation':operation,
-                'name': name,
-                'message': message,
-                'phone': phone,
-                'email': email
-            },
-            success:function(html){
-                $('#ajax').html(html);
-            },
-            error:function(html){
-                $('body').css('cursor','default');
-                alert('Ошибка подключения!');
-            },
+        grecaptcha.ready(function() {
+            // do request for recaptcha token
+            // response is promise with passed token
+            grecaptcha.execute('6Lc06soUAAAAALuCAIbbyRYLsHpZar5PI5NMbQOO', {action: 'create_comment'}).then(function(token) {
+                // add token to form
+                $('#comment_form').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+                $.post("/ajax.php",{operation: operation, name: name, message: message, phone:phone, email: email , token: token}, function(result) {
+                    if(result.success) {
+                        console.log(result);
+                    } else {
+                        alert('You are spammer ! Get the @$%K out.');
+                    }
+                });
+            });
         });
     }
 </script>

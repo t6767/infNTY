@@ -90,6 +90,7 @@ $lklnk = get_post_meta( 566, 'linkedinlink' )[0];
 
         </main>
         <!--/. App Main End -->
+
     <script>
         function proverka() {
             nameCF=nm(document.getElementById('kontaktpagename').value);
