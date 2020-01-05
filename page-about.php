@@ -384,7 +384,6 @@ $lklnk = get_post_meta( 566, 'linkedinlink' )[0];
         hashKoder(hash);
     }
     window.onhashchange = locationHashChanged;
-
 </script>
 
 <?php get_footer(); ?>
