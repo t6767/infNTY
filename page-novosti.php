@@ -403,5 +403,14 @@
             },
         });
     }
+    $(window).on('load', () => {
+        let iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+        if (iOS)
+            $('a[role="tab"]').each((i,e) => {
+                if (!$(e).attr('href'))
+                    $(e).attr('href', $(e).data('target'));
+            })
+    })
 </script>
+
 <?php get_footer(); ?>
