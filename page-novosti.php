@@ -403,6 +403,7 @@
             },
         });
     }
+/*
     $(window).on('load', () => {
         let iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
         if (iOS)
@@ -411,6 +412,7 @@
                     $(e).attr('href', $(e).data('target'));
             })
     })
+ */
 </script>
 
 <?php get_footer(); ?>
