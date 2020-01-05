@@ -42,7 +42,7 @@
                 <div class="page__topbar">
                     <ul class="nav tabs">
                         <li class="tabs__item">
-                            <a class="tabs__link active" id="t1" href="/novosti/" role="tab">Новости</a>
+                            <a class="tabs__link active" id="t1" href="/novosti/#" role="tab">Новости</a>
                         </li>
                         <li class="tabs__item">
                             <a class="tabs__link" id="t2" href="/novosti/#sobitiya" role="tab">События</a>

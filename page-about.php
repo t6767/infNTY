@@ -34,19 +34,19 @@ $lklnk = get_post_meta( 566, 'linkedinlink' )[0];
                 <div class="page__topbar">
                     <ul class="nav tabs">
                         <li class="tabs__item">
-                            <a class="tabs__link active" data-toggle="tab" id="t1" onclick="changeHash('#history');" href="#tabs-1" role="tab">Компания</a>
+                            <a class="tabs__link active" id="t1" href="/about/#history" role="tab">Компания</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" id="t2" href="#tabs-2" onclick="changeHash('#team');"  role="tab">Руководство</a>
+                            <a class="tabs__link" id="t2" href="/about/#team" role="tab">Руководство</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" id="t3" href="#tabs-3"  onclick="changeHash('#reviews');" role="tab">Отзывы</a>
+                            <a class="tabs__link" id="t3" href="/about/#reviews" role="tab">Отзывы</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" id="t4" href="#tabs-4" onclick="changeHash('#vacancy');" role="tab">Вакансии</a>
+                            <a class="tabs__link" id="t4" href="/about/#vacancy" role="tab">Вакансии</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab" id="t5" href="#tabs-5" onclick="changeHash('#contacts');" role="tab">Контакты</a>
+                            <a class="tabs__link" id="t5" href="/about/#contacts" role="tab">Контакты</a>
                         </li>
                     </ul>
                 </div>
