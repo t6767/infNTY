@@ -42,16 +42,16 @@
                 <div class="page__topbar">
                     <ul class="nav tabs">
                         <li class="tabs__item">
-                            <a class="tabs__link active" data-toggle="tab" id="t1" onclick="changeHash('');" href="/novosti/" role="tab">Новости</a>
+                            <a class="tabs__link active" data-toggle="tab" id="t1" href="/novosti/" role="tab">Новости</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab"  id="t2" onclick="changeHash('#sobitiya');" href="/novosti/#sobitiya" role="tab">События</a>
+                            <a class="tabs__link" data-toggle="tab"  id="t2" href="/novosti/#sobitiya" role="tab">События</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab"  id="t3" onclick="changeHash('#meropriyatiya');" href="/novosti/#meropriyatiya" role="tab">Мероприятия</a>
+                            <a class="tabs__link" data-toggle="tab"  id="t3" href="/novosti/#meropriyatiya" role="tab">Мероприятия</a>
                         </li>
                         <li class="tabs__item">
-                            <a class="tabs__link" data-toggle="tab"  id="t4" onclick="changeHash('#smionas');" href="/novosti/#smionas" role="tab">СМИ о нас</a>
+                            <a class="tabs__link" data-toggle="tab"  id="t4" href="/novosti/#smionas" role="tab">СМИ о нас</a>
                         </li>
                     </ul>
                     <!--<div class="category-select dropdown">
