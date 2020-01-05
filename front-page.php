@@ -35,9 +35,10 @@ $dpoleblok3presscenter566 = get_post_meta( $post_566->ID, 'blok3presscenter' );
                         if ($query->have_posts()) {
                             while ($query->have_posts()) {
                                 $query->the_post();
+								$dpoleAnkor293 = get_post_meta( get_the_ID(), 'ankor' )[0];
                                 ?>
 
-                                <a href="<?php the_permalink(); ?>" class="entry__features-item" data-aos="zoom-in" data-aos-duration="2000">
+                                <a href="/resheniya/#<?=$dpoleAnkor293?>" class="entry__features-item" data-aos="zoom-in" data-aos-duration="2000">
                                     <div class="entry__features-title"><?php the_title(); ?></div>
                                     <div class="entry__features-link">Подробнее</div>
                                 </a>
